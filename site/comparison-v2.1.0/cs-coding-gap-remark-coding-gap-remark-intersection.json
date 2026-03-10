@@ -1,0 +1,51 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "5e6e573b-7095-4e53-bfef-40169d0ef6bc-6",
+  "url" : "http://hl7.org/fhir/comparison/CodeSystem/5e6e573b-7095-4e53-bfef-40169d0ef6bc-6",
+  "name" : "IntersectionCodingGapRemarkAndCodingGapRemark",
+  "title" : "Intersection of Coding Gap Remark Codes And Coding Gap Remark Codes",
+  "status" : "active",
+  "date" : "2026-03-08T15:05:51-07:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "US",
+      "display" : "United States of America"
+    }]
+  }],
+  "concept" : [{
+    "code" : "assessed-present",
+    "display" : "Assessed and present",
+    "definition" : "Assessed the gap and acknowledged it is still present."
+  },
+  {
+    "code" : "assessed-not-present",
+    "display" : "Assessed and not present",
+    "definition" : "Assessed the gap and acknowledged it is not present."
+  },
+  {
+    "code" : "in-progress",
+    "display" : "In progress",
+    "definition" : "Assessed the gap and actions are taken to address the gap."
+  },
+  {
+    "code" : "deferred",
+    "display" : "Deferred",
+    "definition" : "Assessed the gap and actions will be taken in the future to address the gap."
+  },
+  {
+    "code" : "not-assessed",
+    "display" : "Not assessed",
+    "definition" : "Gap was shown to the provider but no action was taken to assess the gap."
+  },
+  {
+    "code" : "not-presented",
+    "display" : "Not presented",
+    "definition" : "System did not present the gap to the end user."
+  },
+  {
+    "code" : "not-ingested",
+    "display" : "Not ingested",
+    "definition" : "System cannot process the gap that was received."
+  }]
+}

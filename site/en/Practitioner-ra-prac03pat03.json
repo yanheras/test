@@ -1,0 +1,36 @@
+{
+  "resourceType" : "Practitioner",
+  "id" : "ra-prac03pat03",
+  "meta" : {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/instance-name",
+      "valueString" : "Practitioner03: Otto Osler"
+    },
+    {
+      "url" : "http://hl7.org/fhir/StructureDefinition/instance-description",
+      "valueMarkdown" : "This is an example practitioner that uses the US Core Practitioner profile. The example practitioner is an organization: Community HealthCenter."
+    }],
+    "profile" : ["http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner|7.0.0"]
+  },
+  "language" : "en",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\" lang=\"en\"><p class=\"res-header-id\"><b>Generated Narrative: Practitioner ra-prac03pat03</b></p><a name=\"ra-prac03pat03\"> </a><a name=\"hcra-prac03pat03\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Language: en</p><p style=\"margin-bottom: 0px\">Profile: <a href=\"http://hl7.org/fhir/us/core/STU7/StructureDefinition-us-core-practitioner.html\">US Core Practitioner Profileversion: null7.0.0)</a></p></div><p><b>identifier</b>: <a href=\"http://terminology.hl7.org/5.5.0/NamingSystem-npi.html\" title=\"National Provider Identifier\">United States National Provider Identifier</a>/1245319599</p><p><b>name</b>: Otto Osler </p><p><b>address</b>: 1003 Healthcare Drive Ann Harbor MI 99999 (home)</p></div>"
+  },
+  "identifier" : [{
+    "system" : "http://hl7.org/fhir/sid/us-npi",
+    "value" : "1245319599"
+  }],
+  "name" : [{
+    "family" : "Osler",
+    "given" : ["Otto"],
+    "prefix" : ["Dr"]
+  }],
+  "address" : [{
+    "use" : "home",
+    "line" : ["1003 Healthcare Drive"],
+    "city" : "Ann Harbor",
+    "state" : "MI",
+    "postalCode" : "99999"
+  }]
+}

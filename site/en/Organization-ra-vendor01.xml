@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Organization xmlns="http://hl7.org/fhir">
+  <id value="ra-vendor01"/>
+  <meta>
+    <extension url="http://hl7.org/fhir/StructureDefinition/instance-name">
+      <valueString value="Organization: Best RA Vendor"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/StructureDefinition/instance-description">
+      <valueMarkdown value="Best RA Vendor is an Organization example that generated Risk Adjustment Data Exchange MeasureReport."/>
+    </extension>
+    <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization|7.0.0"/>
+  </meta>
+  <language value="en"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><p class="res-header-id"><b>Generated Narrative: Organization ra-vendor01</b></p><a name="ra-vendor01"> </a><a name="hcra-vendor01"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Language: en</p><p style="margin-bottom: 0px">Profile: <a href="http://hl7.org/fhir/us/core/STU7/StructureDefinition-us-core-organization.html">US Core Organization Profileversion: null7.0.0)</a></p></div><p><b>active</b>: true</p><p><b>type</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/organization-type bus}">non-healthcare business or corporation</span></p><p><b>name</b>: Best RA Vendor</p><p><b>telecom</b>: ph: (+1) 999-888-7777, <a href="mailto:customer-service@BestRAVendor.com">customer-service@BestRAVendor.com</a></p><p><b>address</b>: 100 Vendor Lane Wildwood MO 63040 USA </p></div>
+  </text>
+  <active value="true"/>
+  <type>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/organization-type"/>
+      <code value="bus"/>
+      <display value="non-healthcare business or corporation"/>
+    </coding>
+  </type>
+  <name value="Best RA Vendor"/>
+  <telecom>
+    <system value="phone"/>
+    <value value="(+1) 999-888-7777"/>
+  </telecom>
+  <telecom>
+    <system value="email"/>
+    <value value="customer-service@BestRAVendor.com"/>
+  </telecom>
+  <address>
+    <line value="100 Vendor Lane"/>
+    <city value="Wildwood"/>
+    <state value="MO"/>
+    <postalCode value="63040"/>
+    <country value="USA"/>
+  </address>
+</Organization>

@@ -1,0 +1,56 @@
+{
+  "resourceType" : "MeasureReport",
+  "id" : "ra-datax-measurereport01",
+  "meta" : {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/instance-name",
+      "valueString" : "Data Exchange MeasureReport Example01"
+    },
+    {
+      "url" : "http://hl7.org/fhir/StructureDefinition/instance-description",
+      "valueMarkdown" : "This is an example for the Risk Adjustment Data Exchange MeasureReport profile. It evaluatedResource references an example C-CDA document that is being submitted."
+    }],
+    "profile" : ["http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-datax-measurereport"]
+  },
+  "language" : "en",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\" lang=\"en\"><p class=\"res-header-id\"><b>Generated Narrative: MeasureReport ra-datax-measurereport01</b></p><a name=\"ra-datax-measurereport01\"> </a><a name=\"hcra-datax-measurereport01\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Language: en</p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ra-datax-measurereport.html\">Risk Adjustment Data Exchange MeasureReport</a></p></div><p><b>Measure Report Category</b>: <span title=\"Codes:{http://hl7.org/fhir/CodeSystem/measurereport-category ra}\">Risk Adjustment</span></p><p><b>Payer Coding Gap Report Id Extension</b>: ra-measurereport01</p><p><b>Reporting Vendor Extension</b>: <a href=\"Organization-ra-vendor01.html\">Organization Best RA Vendor</a></p><p><b>status</b>: Complete</p><p><b>type</b>: Data Collection</p><p><b>measure</b>: <a href=\"Measure-RAModelExample01.html\">Risk Adjustment Model Version 24 - CMS Hierarchical Category Condition (CMS-HCC)</a></p><p><b>subject</b>: <a href=\"Patient-ra-patient01.html\">Eve Everywoman (official) Female, DoB: 1975-01-16 ( Medical record number: 12345\u00a0(use:\u00a0usual,\u00a0))</a></p><p><b>date</b>: 2021-11-10</p><p><b>reporter</b>: <a href=\"Organization-ra-org02pat02.html\">Organization GHH Outpatient Clinic</a></p><p><b>period</b>: 2021-01-01 --&gt; 2021-09-30</p><p><b>evaluatedResource</b>: <a href=\"DocumentReference-ra-documentreference01pat01.html\">DocumentReference: identifier = OID:2.16.840.1.113883.19.5.99999.1; status = current; type = Outpatient Note; category = Clinical Note; date = 2021-03-27 15:29:46+0000; description = Clinical Note</a></p></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/measurereport-category",
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://hl7.org/fhir/CodeSystem/measurereport-category",
+        "code" : "ra"
+      }]
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-payerCodingGapReportId",
+    "valueId" : "ra-measurereport01"
+  },
+  {
+    "url" : "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-reportingVendor",
+    "valueReference" : {
+      "reference" : "Organization/ra-vendor01"
+    }
+  }],
+  "status" : "complete",
+  "type" : "data-collection",
+  "measure" : "http://hl7.org/fhir/us/davinci-ra/Measure/RAModelExample01",
+  "subject" : {
+    "reference" : "Patient/ra-patient01"
+  },
+  "date" : "2021-11-10",
+  "reporter" : {
+    "reference" : "Organization/ra-org02pat02"
+  },
+  "period" : {
+    "start" : "2021-01-01",
+    "end" : "2021-09-30"
+  },
+  "evaluatedResource" : [{
+    "reference" : "DocumentReference/ra-documentreference01pat01"
+  }]
+}

@@ -1,0 +1,16 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "ffa394b3-314f-4696-8e7b-0b5bf97f81a8-51",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/ffa394b3-314f-4696-8e7b-0b5bf97f81a8-51",
+  "name" : "IntersectionRiskAdjustmentEvidenceStatusValueSetAndRiskAdjustmentEvidenceStatusVS",
+  "title" : "Intersection of Risk Adjustment Evidence Status Value Set And Evidence Status",
+  "status" : "active",
+  "date" : "2026-03-08T15:05:49-07:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "US",
+      "display" : "United States of America"
+    }]
+  }]
+}

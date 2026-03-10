@@ -1,0 +1,44 @@
+{
+  "resourceType" : "Organization",
+  "id" : "ra-payer01",
+  "meta" : {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/instance-name",
+      "valueString" : "Organization: ABC Payer"
+    },
+    {
+      "url" : "http://hl7.org/fhir/StructureDefinition/instance-description",
+      "valueMarkdown" : "ABC Payer is an Organization example that generated Risk Adjustment Coding Gap Report."
+    }],
+    "profile" : ["http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization|7.0.0"]
+  },
+  "language" : "en",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\" lang=\"en\"><p class=\"res-header-id\"><b>Generated Narrative: Organization ra-payer01</b></p><a name=\"ra-payer01\"> </a><a name=\"hcra-payer01\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Language: en</p><p style=\"margin-bottom: 0px\">Profile: <a href=\"http://hl7.org/fhir/us/core/STU7/StructureDefinition-us-core-organization.html\">US Core Organization Profileversion: null7.0.0)</a></p></div><p><b>active</b>: true</p><p><b>type</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/organization-type pay}\">payer</span></p><p><b>name</b>: ABC Payer</p><p><b>telecom</b>: ph: (+1) 123-456-7890, <a href=\"mailto:customer-service@ABCPayer.com\">customer-service@ABCPayer.com</a></p><p><b>address</b>: 100 Insurance Lane, Suite 700 Amherst MA 01002 USA </p></div>"
+  },
+  "active" : true,
+  "type" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/organization-type",
+      "code" : "pay",
+      "display" : "payer"
+    }]
+  }],
+  "name" : "ABC Payer",
+  "telecom" : [{
+    "system" : "phone",
+    "value" : "(+1) 123-456-7890"
+  },
+  {
+    "system" : "email",
+    "value" : "customer-service@ABCPayer.com"
+  }],
+  "address" : [{
+    "line" : ["100 Insurance Lane, Suite 700"],
+    "city" : "Amherst",
+    "state" : "MA",
+    "postalCode" : "01002",
+    "country" : "USA"
+  }]
+}

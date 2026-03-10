@@ -1,0 +1,339 @@
+{
+  "codeSystems" : [{
+    "url" : "http://hl7.org/fhir/CodeSystem/measurereport-category",
+    "version" : "5.2.0",
+    "status" : "active",
+    "name" : "MeasureReportCategory",
+    "title" : "Measure Report Category CS",
+    "description" : "Codes defining measure report categories",
+    "oids" : ["2.16.840.1.113883.4.642.1.2122"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/extensions/5.2.0/ValueSet-measurereport-category.html" : "Measure Report Category VS"
+  },
+  {
+    "url" : "http://hl7.org/fhir/bundle-type",
+    "version" : "4.0.1",
+    "status" : "active",
+    "name" : "BundleType",
+    "title" : "BundleType",
+    "description" : "Indicates the purpose of a bundle - how it is intended to be used.",
+    "oids" : ["2.16.840.1.113883.4.642.4.621"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-bundle-type.html" : "BundleType"
+  },
+  {
+    "url" : "http://hl7.org/fhir/group-type",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "GroupType",
+    "title" : "GroupType",
+    "description" : "Types of resources that are part of group.",
+    "oids" : ["2.16.840.1.113883.4.642.4.285"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-group-type.html" : "GroupType"
+  },
+  {
+    "url" : "http://hl7.org/fhir/http-verb",
+    "version" : "4.0.1",
+    "status" : "active",
+    "name" : "HTTPVerb",
+    "title" : "HTTPVerb",
+    "description" : "HTTP verbs (in the HTTP command line). See [HTTP rfc](https://tools.ietf.org/html/rfc7231) for details.",
+    "oids" : ["2.16.840.1.113883.4.642.4.625"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-http-verb.html" : "HTTPVerb"
+  },
+  {
+    "url" : "http://hl7.org/fhir/measure-report-status",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "MeasureReportStatus",
+    "title" : "MeasureReportStatus",
+    "description" : "The status of the measure report.",
+    "oids" : ["2.16.840.1.113883.4.642.4.777"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-measure-report-status.html" : "MeasureReportStatus"
+  },
+  {
+    "url" : "http://hl7.org/fhir/measure-report-type",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "MeasureReportType",
+    "title" : "MeasureReportType",
+    "description" : "The type of the measure report.",
+    "oids" : ["2.16.840.1.113883.4.642.4.779"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-measure-report-type.html" : "MeasureReportType"
+  },
+  {
+    "url" : "http://hl7.org/fhir/publication-status",
+    "version" : "4.0.1",
+    "status" : "active",
+    "name" : "PublicationStatus",
+    "title" : "PublicationStatus",
+    "description" : "The lifecycle status of an artifact.",
+    "oids" : ["2.16.840.1.113883.4.642.4.4"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-publication-status.html" : "PublicationStatus"
+  },
+  {
+    "url" : "http://hl7.org/fhir/resource-types",
+    "version" : "4.0.1",
+    "status" : "active",
+    "name" : "ResourceType",
+    "title" : "ResourceType",
+    "description" : "One of the resource types defined as part of this version of FHIR.",
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-resource-types.html" : "ResourceType",
+    "http://hl7.org/fhir/R4/valueset-subject-type.html" : "Subject type"
+  },
+  {
+    "url" : "http://hl7.org/fhir/search-entry-mode",
+    "version" : "4.0.1",
+    "status" : "active",
+    "name" : "SearchEntryMode",
+    "title" : "SearchEntryMode",
+    "description" : "Why an entry is in the result set - whether it's included as a match or because of an _include requirement, or to convey information or warning information about the search process.",
+    "oids" : ["2.16.840.1.113883.4.642.4.623"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-search-entry-mode.html" : "SearchEntryMode"
+  },
+  {
+    "url" : "http://hl7.org/fhir/sid/icd-10-cm",
+    "version" : "2.0.1",
+    "status" : "active",
+    "name" : "Icd10CM",
+    "title" : "International Classification of Diseases, 10th Revision, Clinical Modification (ICD-10-CM)",
+    "description" : "The International Classification of Diseases, 10th Revision, Clinical Modification (ICD-10-CM), describes the classification of morbidity and mortality information for statistical purposes and for the indexing of healthcare records by diseases. The ICD-10-CM codes can be used as the value of the Act.cd attribute.",
+    "oids" : ["2.16.840.1.113883.6.90"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/us/core/STU7/ValueSet-us-core-condition-code.html" : "US Core Condition Codes"
+  },
+  {
+    "url" : "http://hl7.org/fhir/us/davinci-ra/CodeSystem/cc-type",
+    "version" : "3.0.0-ballot",
+    "status" : "active",
+    "name" : "RiskAdjustmentConditionCategoryType",
+    "title" : "Risk Adjustment Condition Category Type Codes",
+    "description" : "Code sytstem that indicates whether it is a suspected Condition Category (CC) gap, a historic Condition Category (CC) gap, or a net-new Condition Category (CC). Historic, suspected, and net-new are mutually exclusive.",
+    "oids" : ["2.16.840.1.113883.4.642.40.29.16.1"],
+    "uses" : {
+    },
+    "ValueSet-cc-type.html" : "Condition Category Type"
+  },
+  {
+    "url" : "http://hl7.org/fhir/us/davinci-ra/CodeSystem/coding-gap-remark",
+    "version" : "3.0.0-ballot",
+    "status" : "active",
+    "name" : "CodingGapRemark",
+    "title" : "Coding Gap Remark Codes",
+    "description" : "Code sytstem that indicates coded remark for a coding gap.",
+    "oids" : ["2.16.840.1.113883.4.642.40.29.16.2"],
+    "uses" : {
+    },
+    "ValueSet-coding-gap-remark.html" : "Coding Gap Remark"
+  },
+  {
+    "url" : "http://hl7.org/fhir/us/davinci-ra/CodeSystem/evidence-status",
+    "version" : "3.0.0-ballot",
+    "status" : "active",
+    "name" : "RiskAdjustmentEvidenceStatus",
+    "title" : "Risk Adjustment Evidence Status Codes",
+    "description" : "Code System that indicates whether a coding gap is an open-gap, invalid-gap, closed-gap or pending",
+    "oids" : ["2.16.840.1.113883.4.642.40.29.16.3"],
+    "uses" : {
+    },
+    "ValueSet-evidence-status.html" : "Evidence Status"
+  },
+  {
+    "url" : "http://hl7.org/fhir/us/davinci-ra/CodeSystem/hierarchical-status",
+    "version" : "3.0.0-ballot",
+    "status" : "active",
+    "name" : "RiskAdjustmenthierarchicalStatus",
+    "title" : "Risk Adjustment Hierarchical Status Codes",
+    "description" : "Code system that indicates how hierarchies were applied to a Condition Category (CC), and if applied, whether the Condition Category (CC) is superseded.",
+    "oids" : ["2.16.840.1.113883.4.642.40.29.16.4"],
+    "uses" : {
+    },
+    "ValueSet-hierarchical-status.html" : "Hierarchical Status"
+  },
+  {
+    "url" : "http://hl7.org/fhir/us/davinci-ra/CodeSystem/ra-temp",
+    "version" : "3.0.0-ballot",
+    "status" : "active",
+    "name" : "RATemporaryCodes",
+    "title" : "RA Temporary Code System",
+    "description" : "Temporary code system defined in this implementation guide",
+    "oids" : ["2.16.840.1.113883.4.642.40.29.16.8"],
+    "uses" : {
+    },
+    "ValueSet-remark-type.html" : "Remark Type"
+  },
+  {
+    "url" : "http://hl7.org/fhir/us/davinci-ra/CodeSystem/remark-reason",
+    "version" : "3.0.0-ballot",
+    "status" : "active",
+    "name" : "RemarkReason",
+    "title" : "Remark Reason Codes",
+    "description" : "Reason codes for remark",
+    "oids" : ["2.16.840.1.113883.4.642.40.29.16.5"],
+    "uses" : {
+    },
+    "ValueSet-remark-reason.html" : "Remark Reason"
+  },
+  {
+    "url" : "http://snomed.info/sct",
+    "version" : null,
+    "status" : "active",
+    "name" : "SNOMED_CT",
+    "title" : "SNOMED CT (all versions)",
+    "description" : "SNOMED CT is the most comprehensive and precise clinical health terminology product in the world, owned and distributed around the world by The International Health Terminology Standards Development Organisation (IHTSDO).",
+    "oids" : ["2.16.840.1.113883.6.96"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/us/core/STU7/ValueSet-us-core-condition-code.html" : "US Core Condition Codes",
+    "ValueSet-confidence-scale.html" : "RA Confidence Scale"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/cmshcc",
+    "version" : "1.1.0",
+    "status" : "active",
+    "name" : "CMSHCC",
+    "title" : "CMS Hierarchical Condition Categories",
+    "description" : "The CMS-HCC model uses more than 9,000 ICD-10-CM codes, which are mapped to condition categories that predict costs well. The condition categories are based on diagnoses clinically related to one another and with similar predicted cost implications. Hierarchies are imposed on the condition categories to capture the most costly diagnoses. Hierarchy logic is imposed on certain condition categories to account for different hierarchical costs, thus, the term Hierarchical Condition Category, or HCC.\r\n\r\nFor more information, see https://www.cms.gov/Medicare/Health-Plans/MedicareAdvtgSpecRateStats/Risk-Adjustors.\r\n\r\nThe CMS HCCs are in the public domain and are free to use without restriction.",
+    "oids" : ["2.16.840.1.113883.6.349"],
+    "uses" : {
+    },
+    "ValueSet-sample-cmshcc.html" : "Sample CMS Hierarchical Condition Category"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/composite-measure-scoring",
+    "version" : "1.0.1",
+    "status" : "active",
+    "name" : "CompositeMeasureScoring",
+    "title" : "CompositeMeasureScoring",
+    "description" : "The composite scoring method of the measure.",
+    "oids" : ["2.16.840.1.113883.4.642.1.1235"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-composite-measure-scoring.html" : "CompositeMeasureScoring"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/definition-topic",
+    "version" : "1.0.1",
+    "status" : "active",
+    "name" : "DefinitionTopic",
+    "title" : "DefinitionTopic",
+    "description" : "High-level categorization of the definition, used for searching, sorting, and filtering.",
+    "oids" : ["2.16.840.1.113883.4.642.1.1244"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-definition-topic.html" : "DefinitionTopic"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/measure-data-usage",
+    "version" : "1.0.1",
+    "status" : "active",
+    "name" : "MeasureDataUsage",
+    "title" : "MeasureDataUsage",
+    "description" : "The intended usage for supplemental data elements in the measure.",
+    "oids" : ["2.16.840.1.113883.4.642.1.1234"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-measure-data-usage.html" : "MeasureDataUsage"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/measure-improvement-notation",
+    "version" : "1.0.1",
+    "status" : "active",
+    "name" : "MeasureImprovementNotation",
+    "title" : "MeasureImprovementNotation",
+    "description" : "Observation values that indicate what change in a measurement value or score is indicative of an improvement in the measured item or scored issue.",
+    "oids" : ["2.16.840.1.113883.4.642.1.1395"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-measure-improvement-notation.html" : "MeasureImprovementNotation"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/measure-population",
+    "version" : "2.0.0",
+    "status" : "active",
+    "name" : "MeasurePopulationType",
+    "title" : "Measure Population Type",
+    "description" : "The type of population.",
+    "oids" : ["2.16.840.1.113883.4.642.1.1231"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-measure-population.html" : "MeasurePopulationType"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/measure-scoring",
+    "version" : "4.0.0",
+    "status" : "active",
+    "name" : "MeasureScoring",
+    "title" : "Measure Scoring",
+    "description" : "The scoring type of the measure.",
+    "oids" : ["2.16.840.1.113883.4.642.1.1232"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-measure-scoring.html" : "MeasureScoring"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/measure-type",
+    "version" : "3.0.1",
+    "status" : "active",
+    "name" : "MeasureType",
+    "title" : "MeasureType",
+    "description" : "The type of measure (includes codes from 2.16.840.1.113883.1.11.20368).",
+    "oids" : ["2.16.840.1.113883.4.642.1.1233"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-measure-type.html" : "MeasureType"
+  },
+  {
+    "url" : "urn:ietf:bcp:47",
+    "version" : "2.0.1",
+    "status" : "active",
+    "name" : "Ietf3066",
+    "title" : "Tags for the Identification of Languages",
+    "description" : "Older value from OID registry.  Superceded; see recommendations in BCP-47.",
+    "oids" : ["2.16.840.1.113883.6.121"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-languages.html" : "Common Languages"
+  },
+  {
+    "url" : "urn:iso:std:iso:3166",
+    "version" : "1.0.1",
+    "status" : "active",
+    "name" : "ISO3166Part1",
+    "title" : "ISO 3166-1 Codes for the representation of names of countries and their subdivisions — Part 1: Country code",
+    "description" : "ISO 3166-1 establishes codes that represent the current names of countries, dependencies, and other areas of particular geopolitical interest, on the basis of country names obtained from the United Nations.",
+    "oids" : ["1.0.3166.1"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-jurisdiction.html" : "Jurisdiction"
+  },
+  {
+    "url" : "urn:iso:std:iso:3166:-2",
+    "version" : "1.0.1",
+    "status" : "active",
+    "name" : "ISO3166Part2",
+    "title" : "ISO 3166-2 Codes for the representation of names of countries and their subdivisions — Part 2: Country subdivision code",
+    "description" : "ISO 3166-2 establishes a code that represents the names of the principal administrative divisions, or similar areas, of the countries and entities included in ISO 3166-1.",
+    "oids" : ["1.0.3166.2"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-jurisdiction.html" : "Jurisdiction"
+  }]
+}

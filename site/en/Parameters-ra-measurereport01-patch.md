@@ -1,0 +1,60 @@
+# Patch Example02 (ra-measurereport01) - Da Vinci Risk Adjustment Implementation Guide v3.0.0-ballot
+
+## Example Parameters: Patch Example02 (ra-measurereport01)
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "Parameters",
+  "id" : "ra-measurereport01-patch",
+  "meta" : {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/instance-name",
+      "valueString" : "Patch Example02 (ra-measurereport01)"
+    },
+    {
+      "url" : "http://hl7.org/fhir/StructureDefinition/instance-description",
+      "valueMarkdown" : "This is an example using the patch operation to send a Condition Category Remark for one Condition Category (group-001) with one attribute: authorDatetime."
+    }],
+    "profile" : ["http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-parameters-cc-remark-patch"]
+  },
+  "language" : "en",
+  "parameter" : [{
+    "name" : "operation",
+    "part" : [{
+      "name" : "type",
+      "valueCode" : "add"
+    },
+    {
+      "name" : "path",
+      "valueString" : "MeasureReport.group.where(id='group-001')"
+    },
+    {
+      "name" : "name",
+      "valueString" : "extension"
+    },
+    {
+      "name" : "value",
+      "part" : [{
+        "name" : "url",
+        "valueUri" : "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-ccRemark"
+      },
+      {
+        "name" : "extension",
+        "part" : [{
+          "name" : "url",
+          "valueUri" : "authorDatetime"
+        },
+        {
+          "name" : "value",
+          "valueDateTime" : "2023-12-11"
+        }]
+      }]
+    }]
+  }]
+}
+
+```

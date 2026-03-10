@@ -1,0 +1,32 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "5e6e573b-7095-4e53-bfef-40169d0ef6bc-93",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/5e6e573b-7095-4e53-bfef-40169d0ef6bc-93",
+  "name" : "IntersectionSampleCMSHCCAndSampleCMSHCC",
+  "title" : "Intersection of Sample CMS Hierarchical Condition Category And Sample CMS Hierarchical Condition Category",
+  "status" : "active",
+  "date" : "2026-03-08T15:05:58-07:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "US",
+      "display" : "United States of America"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "concept" : [{
+        "code" : "22",
+        "display" : "Morbid Obesity"
+      },
+      {
+        "code" : "88",
+        "display" : "Angina Pectoris"
+      },
+      {
+        "code" : "112",
+        "display" : "Fibrosis of Lung and Other Chronic Lung Disorders"
+      }]
+    }]
+  }
+}

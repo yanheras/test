@@ -1,0 +1,2585 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="4283f114-f51d-49a5-9d08-6f6e5c9b59ea"/>
+  <meta>
+    <lastUpdated value="2026-03-08T15:02:59.327-07:00"/>
+  </meta>
+  <type value="collection"/>
+  <entry>
+    <fullUrl value="http://hl7.org/fhir/us/davinci-ra/ValueSet/cc-type"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
+            <p class="res-header-id"/>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
+              <a href="CodeSystem-cc-type.html">codesystem Risk Adjustment Condition Category Type Codes v3.0.0-ballot (CodeSystem)</a>
+              <span class="copy-text-inline">
+                <button data-clipboard-text="http://hl7.org/fhir/us/davinci-ra/CodeSystem/cc-type|3.0.0-ballot" title="Click to Copy URL" class="btn-copy"> </button>
+              </span>
+            </p>
+            <p>This value set contains 3 concepts</p>
+            <table class="codes" data-fhir="generated">
+              <tr>
+                <td>
+                  <b>System</b>
+                </td>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display (en)</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+                <td>
+                  <b>JSON</b>
+                </td>
+                <td>
+                  <b>XML</b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://hl7.org/fhir/us/davinci-ra/CodeSystem/cc-type-historic"> </a>
+                  <code>http://hl7.org/fhir/us/davinci-ra/CodeSystem/cc-type</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-cc-type.html#cc-type-historic">historic</a>
+                </td>
+                <td>Historic Condition Category Gap</td>
+                <td>Historic Condition Category (CC) Gap. Historic Condition Category (CC) is based on verified data from any clinical evaluation period.</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://hl7.org/fhir/us/davinci-ra/CodeSystem/cc-type&quot;, &quot;version&quot;: &quot;3.0.0-ballot&quot;, &quot;code&quot;: &quot;historic&quot;, &quot;display&quot;: &quot;Historic Condition Category Gap&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://hl7.org/fhir/us/davinci-ra/CodeSystem/cc-type&quot;&gt;&lt;version value=&quot;3.0.0-ballot&quot;&gt;&lt;code value=&quot;historic&quot;&gt;&lt;display value=&quot;Historic Condition Category Gap&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://hl7.org/fhir/us/davinci-ra/CodeSystem/cc-type-suspected"> </a>
+                  <code>http://hl7.org/fhir/us/davinci-ra/CodeSystem/cc-type</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-cc-type.html#cc-type-suspected">suspected</a>
+                </td>
+                <td>Suspected Condition Category Gap</td>
+                <td>Suspected Condition Category (CC) Gap. A member has never had this as a verified Condition Category (CC), but when a Server runs a suspecting algorithm, suspected Condition Categories (CCs) are identified.</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://hl7.org/fhir/us/davinci-ra/CodeSystem/cc-type&quot;, &quot;version&quot;: &quot;3.0.0-ballot&quot;, &quot;code&quot;: &quot;suspected&quot;, &quot;display&quot;: &quot;Suspected Condition Category Gap&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://hl7.org/fhir/us/davinci-ra/CodeSystem/cc-type&quot;&gt;&lt;version value=&quot;3.0.0-ballot&quot;&gt;&lt;code value=&quot;suspected&quot;&gt;&lt;display value=&quot;Suspected Condition Category Gap&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://hl7.org/fhir/us/davinci-ra/CodeSystem/cc-type-net-new"> </a>
+                  <code>http://hl7.org/fhir/us/davinci-ra/CodeSystem/cc-type</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-cc-type.html#cc-type-net-new">net-new</a>
+                </td>
+                <td>Net-New Condition Category</td>
+                <td>Net-New Condition Category (CC). New Condition Category (CC), not from suspected process or historic. A Net-New Condition Category (CC) is documented for the first time during the clinical evaluation period for the risk adjustment model. Any Condition Categories (CCs) that are net new must be either closed-gap or pending and cannot be open-gap.</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://hl7.org/fhir/us/davinci-ra/CodeSystem/cc-type&quot;, &quot;version&quot;: &quot;3.0.0-ballot&quot;, &quot;code&quot;: &quot;net-new&quot;, &quot;display&quot;: &quot;Net-New Condition Category&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://hl7.org/fhir/us/davinci-ra/CodeSystem/cc-type&quot;&gt;&lt;version value=&quot;3.0.0-ballot&quot;&gt;&lt;code value=&quot;net-new&quot;&gt;&lt;display value=&quot;Net-New Condition Category&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://hl7.org/fhir/us/davinci-ra/ValueSet/cc-type"/>
+        <identifier>
+          <system value="urn:ietf:rfc:3986"/>
+          <value value="urn:oid:2.16.840.1.113883.4.642.40.29.48.1"/>
+        </identifier>
+        <version value="3.0.0-ballot"/>
+        <name value="RiskAdjustmentConditionCategoryTypeVS"/>
+        <title value="Condition Category Type"/>
+        <status value="active"/>
+        <experimental value="false"/>
+        <date value="2026-03-08T15:02:59-07:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="US"/>
+            <display value="United States of America"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:5b41957b-11bd-4938-b675-164a8174dbd3"/>
+          <timestamp value="2026-03-08T15:06:40-07:00"/>
+          <total value="3"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://hl7.org/fhir/us/davinci-ra/CodeSystem/cc-type|3.0.0-ballot"/>
+          </parameter>
+          <contains>
+            <system value="http://hl7.org/fhir/us/davinci-ra/CodeSystem/cc-type"/>
+            <code value="historic"/>
+            <display value="Historic Condition Category Gap"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.org/fhir/us/davinci-ra/CodeSystem/cc-type"/>
+            <code value="suspected"/>
+            <display value="Suspected Condition Category Gap"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.org/fhir/us/davinci-ra/CodeSystem/cc-type"/>
+            <code value="net-new"/>
+            <display value="Net-New Condition Category"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://hl7.org/fhir/us/davinci-ra/ValueSet/cc-type"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
+            <p class="res-header-id"/>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
+              <a href="CodeSystem-cc-type.html">codesystem Risk Adjustment Condition Category Type Codes v3.0.0-ballot (CodeSystem)</a>
+              <span class="copy-text-inline">
+                <button data-clipboard-text="http://hl7.org/fhir/us/davinci-ra/CodeSystem/cc-type|3.0.0-ballot" title="Click to Copy URL" class="btn-copy"> </button>
+              </span>
+            </p>
+            <p>This value set contains 3 concepts</p>
+            <table class="codes" data-fhir="generated">
+              <tr>
+                <td>
+                  <b>System</b>
+                </td>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display (en)</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+                <td>
+                  <b>JSON</b>
+                </td>
+                <td>
+                  <b>XML</b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://hl7.org/fhir/us/davinci-ra/CodeSystem/cc-type-historic"> </a>
+                  <code>http://hl7.org/fhir/us/davinci-ra/CodeSystem/cc-type</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-cc-type.html#cc-type-historic">historic</a>
+                </td>
+                <td>Historic Condition Category Gap</td>
+                <td>Historic Condition Category (CC) Gap. Historic Condition Category (CC) is based on verified data from any clinical evaluation period.</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://hl7.org/fhir/us/davinci-ra/CodeSystem/cc-type&quot;, &quot;version&quot;: &quot;3.0.0-ballot&quot;, &quot;code&quot;: &quot;historic&quot;, &quot;display&quot;: &quot;Historic Condition Category Gap&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://hl7.org/fhir/us/davinci-ra/CodeSystem/cc-type&quot;&gt;&lt;version value=&quot;3.0.0-ballot&quot;&gt;&lt;code value=&quot;historic&quot;&gt;&lt;display value=&quot;Historic Condition Category Gap&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://hl7.org/fhir/us/davinci-ra/CodeSystem/cc-type-suspected"> </a>
+                  <code>http://hl7.org/fhir/us/davinci-ra/CodeSystem/cc-type</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-cc-type.html#cc-type-suspected">suspected</a>
+                </td>
+                <td>Suspected Condition Category Gap</td>
+                <td>Suspected Condition Category (CC) Gap. A member has never had this as a verified Condition Category (CC), but when a Server runs a suspecting algorithm, suspected Condition Categories (CCs) are identified.</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://hl7.org/fhir/us/davinci-ra/CodeSystem/cc-type&quot;, &quot;version&quot;: &quot;3.0.0-ballot&quot;, &quot;code&quot;: &quot;suspected&quot;, &quot;display&quot;: &quot;Suspected Condition Category Gap&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://hl7.org/fhir/us/davinci-ra/CodeSystem/cc-type&quot;&gt;&lt;version value=&quot;3.0.0-ballot&quot;&gt;&lt;code value=&quot;suspected&quot;&gt;&lt;display value=&quot;Suspected Condition Category Gap&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://hl7.org/fhir/us/davinci-ra/CodeSystem/cc-type-net-new"> </a>
+                  <code>http://hl7.org/fhir/us/davinci-ra/CodeSystem/cc-type</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-cc-type.html#cc-type-net-new">net-new</a>
+                </td>
+                <td>Net-New Condition Category</td>
+                <td>Net-New Condition Category (CC). New Condition Category (CC), not from suspected process or historic. A Net-New Condition Category (CC) is documented for the first time during the clinical evaluation period for the risk adjustment model. Any Condition Categories (CCs) that are net new must be either closed-gap or pending and cannot be open-gap.</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://hl7.org/fhir/us/davinci-ra/CodeSystem/cc-type&quot;, &quot;version&quot;: &quot;3.0.0-ballot&quot;, &quot;code&quot;: &quot;net-new&quot;, &quot;display&quot;: &quot;Net-New Condition Category&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://hl7.org/fhir/us/davinci-ra/CodeSystem/cc-type&quot;&gt;&lt;version value=&quot;3.0.0-ballot&quot;&gt;&lt;code value=&quot;net-new&quot;&gt;&lt;display value=&quot;Net-New Condition Category&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://hl7.org/fhir/us/davinci-ra/ValueSet/cc-type"/>
+        <identifier>
+          <system value="urn:ietf:rfc:3986"/>
+          <value value="urn:oid:2.16.840.1.113883.4.642.40.29.48.1"/>
+        </identifier>
+        <version value="3.0.0-ballot"/>
+        <name value="RiskAdjustmentConditionCategoryTypeVS"/>
+        <title value="Condition Category Type"/>
+        <status value="active"/>
+        <experimental value="false"/>
+        <date value="2026-03-08T15:02:59-07:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="US"/>
+            <display value="United States of America"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:5b41957b-11bd-4938-b675-164a8174dbd3"/>
+          <timestamp value="2026-03-08T15:06:40-07:00"/>
+          <total value="3"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://hl7.org/fhir/us/davinci-ra/CodeSystem/cc-type|3.0.0-ballot"/>
+          </parameter>
+          <contains>
+            <system value="http://hl7.org/fhir/us/davinci-ra/CodeSystem/cc-type"/>
+            <code value="historic"/>
+            <display value="Historic Condition Category Gap"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.org/fhir/us/davinci-ra/CodeSystem/cc-type"/>
+            <code value="suspected"/>
+            <display value="Suspected Condition Category Gap"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.org/fhir/us/davinci-ra/CodeSystem/cc-type"/>
+            <code value="net-new"/>
+            <display value="Net-New Condition Category"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://hl7.org/fhir/us/davinci-ra/ValueSet/coding-gap-remark"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
+            <p class="res-header-id"/>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
+              <a href="CodeSystem-coding-gap-remark.html">codesystem Coding Gap Remark Codes v3.0.0-ballot (CodeSystem)</a>
+              <span class="copy-text-inline">
+                <button data-clipboard-text="http://hl7.org/fhir/us/davinci-ra/CodeSystem/coding-gap-remark|3.0.0-ballot" title="Click to Copy URL" class="btn-copy"> </button>
+              </span>
+            </p>
+            <p>This value set contains 7 concepts</p>
+            <table class="codes" data-fhir="generated">
+              <tr>
+                <td>
+                  <b>System</b>
+                </td>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display (en)</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+                <td>
+                  <b>JSON</b>
+                </td>
+                <td>
+                  <b>XML</b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://hl7.org/fhir/us/davinci-ra/CodeSystem/coding-gap-remark-assessed-present"> </a>
+                  <code>http://hl7.org/fhir/us/davinci-ra/CodeSystem/coding-gap-remark</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-coding-gap-remark.html#coding-gap-remark-assessed-present">assessed-present</a>
+                </td>
+                <td>Assessed and present</td>
+                <td>Assessed the gap and acknowledged it is still present.</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://hl7.org/fhir/us/davinci-ra/CodeSystem/coding-gap-remark&quot;, &quot;version&quot;: &quot;3.0.0-ballot&quot;, &quot;code&quot;: &quot;assessed-present&quot;, &quot;display&quot;: &quot;Assessed and present&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://hl7.org/fhir/us/davinci-ra/CodeSystem/coding-gap-remark&quot;&gt;&lt;version value=&quot;3.0.0-ballot&quot;&gt;&lt;code value=&quot;assessed-present&quot;&gt;&lt;display value=&quot;Assessed and present&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://hl7.org/fhir/us/davinci-ra/CodeSystem/coding-gap-remark-assessed-not-present"> </a>
+                  <code>http://hl7.org/fhir/us/davinci-ra/CodeSystem/coding-gap-remark</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-coding-gap-remark.html#coding-gap-remark-assessed-not-present">assessed-not-present</a>
+                </td>
+                <td>Assessed and not present</td>
+                <td>Assessed the gap and acknowledged it is not present.</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://hl7.org/fhir/us/davinci-ra/CodeSystem/coding-gap-remark&quot;, &quot;version&quot;: &quot;3.0.0-ballot&quot;, &quot;code&quot;: &quot;assessed-not-present&quot;, &quot;display&quot;: &quot;Assessed and not present&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://hl7.org/fhir/us/davinci-ra/CodeSystem/coding-gap-remark&quot;&gt;&lt;version value=&quot;3.0.0-ballot&quot;&gt;&lt;code value=&quot;assessed-not-present&quot;&gt;&lt;display value=&quot;Assessed and not present&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://hl7.org/fhir/us/davinci-ra/CodeSystem/coding-gap-remark-in-progress"> </a>
+                  <code>http://hl7.org/fhir/us/davinci-ra/CodeSystem/coding-gap-remark</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-coding-gap-remark.html#coding-gap-remark-in-progress">in-progress</a>
+                </td>
+                <td>In progress</td>
+                <td>Assessed the gap and actions are taken to address the gap.</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://hl7.org/fhir/us/davinci-ra/CodeSystem/coding-gap-remark&quot;, &quot;version&quot;: &quot;3.0.0-ballot&quot;, &quot;code&quot;: &quot;in-progress&quot;, &quot;display&quot;: &quot;In progress&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://hl7.org/fhir/us/davinci-ra/CodeSystem/coding-gap-remark&quot;&gt;&lt;version value=&quot;3.0.0-ballot&quot;&gt;&lt;code value=&quot;in-progress&quot;&gt;&lt;display value=&quot;In progress&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://hl7.org/fhir/us/davinci-ra/CodeSystem/coding-gap-remark-deferred"> </a>
+                  <code>http://hl7.org/fhir/us/davinci-ra/CodeSystem/coding-gap-remark</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-coding-gap-remark.html#coding-gap-remark-deferred">deferred</a>
+                </td>
+                <td>Deferred</td>
+                <td>Assessed the gap and actions will be taken in the future to address the gap.</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://hl7.org/fhir/us/davinci-ra/CodeSystem/coding-gap-remark&quot;, &quot;version&quot;: &quot;3.0.0-ballot&quot;, &quot;code&quot;: &quot;deferred&quot;, &quot;display&quot;: &quot;Deferred&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://hl7.org/fhir/us/davinci-ra/CodeSystem/coding-gap-remark&quot;&gt;&lt;version value=&quot;3.0.0-ballot&quot;&gt;&lt;code value=&quot;deferred&quot;&gt;&lt;display value=&quot;Deferred&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://hl7.org/fhir/us/davinci-ra/CodeSystem/coding-gap-remark-not-assessed"> </a>
+                  <code>http://hl7.org/fhir/us/davinci-ra/CodeSystem/coding-gap-remark</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-coding-gap-remark.html#coding-gap-remark-not-assessed">not-assessed</a>
+                </td>
+                <td>Not assessed</td>
+                <td>Gap was shown to the provider but no action was taken to assess the gap.</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://hl7.org/fhir/us/davinci-ra/CodeSystem/coding-gap-remark&quot;, &quot;version&quot;: &quot;3.0.0-ballot&quot;, &quot;code&quot;: &quot;not-assessed&quot;, &quot;display&quot;: &quot;Not assessed&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://hl7.org/fhir/us/davinci-ra/CodeSystem/coding-gap-remark&quot;&gt;&lt;version value=&quot;3.0.0-ballot&quot;&gt;&lt;code value=&quot;not-assessed&quot;&gt;&lt;display value=&quot;Not assessed&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://hl7.org/fhir/us/davinci-ra/CodeSystem/coding-gap-remark-not-presented"> </a>
+                  <code>http://hl7.org/fhir/us/davinci-ra/CodeSystem/coding-gap-remark</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-coding-gap-remark.html#coding-gap-remark-not-presented">not-presented</a>
+                </td>
+                <td>Not presented</td>
+                <td>System did not present the gap to the end user.</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://hl7.org/fhir/us/davinci-ra/CodeSystem/coding-gap-remark&quot;, &quot;version&quot;: &quot;3.0.0-ballot&quot;, &quot;code&quot;: &quot;not-presented&quot;, &quot;display&quot;: &quot;Not presented&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://hl7.org/fhir/us/davinci-ra/CodeSystem/coding-gap-remark&quot;&gt;&lt;version value=&quot;3.0.0-ballot&quot;&gt;&lt;code value=&quot;not-presented&quot;&gt;&lt;display value=&quot;Not presented&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://hl7.org/fhir/us/davinci-ra/CodeSystem/coding-gap-remark-not-ingested"> </a>
+                  <code>http://hl7.org/fhir/us/davinci-ra/CodeSystem/coding-gap-remark</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-coding-gap-remark.html#coding-gap-remark-not-ingested">not-ingested</a>
+                </td>
+                <td>Not ingested</td>
+                <td>System cannot process the gap that was received.</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://hl7.org/fhir/us/davinci-ra/CodeSystem/coding-gap-remark&quot;, &quot;version&quot;: &quot;3.0.0-ballot&quot;, &quot;code&quot;: &quot;not-ingested&quot;, &quot;display&quot;: &quot;Not ingested&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://hl7.org/fhir/us/davinci-ra/CodeSystem/coding-gap-remark&quot;&gt;&lt;version value=&quot;3.0.0-ballot&quot;&gt;&lt;code value=&quot;not-ingested&quot;&gt;&lt;display value=&quot;Not ingested&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://hl7.org/fhir/us/davinci-ra/ValueSet/coding-gap-remark"/>
+        <identifier>
+          <system value="urn:ietf:rfc:3986"/>
+          <value value="urn:oid:2.16.840.1.113883.4.642.40.29.48.2"/>
+        </identifier>
+        <version value="3.0.0-ballot"/>
+        <name value="CodingGapRemarkVS"/>
+        <title value="Coding Gap Remark"/>
+        <status value="active"/>
+        <experimental value="false"/>
+        <date value="2026-03-08T15:02:59-07:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="US"/>
+            <display value="United States of America"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:49f06c79-9872-4c9c-be1a-01619b33251a"/>
+          <timestamp value="2026-03-08T15:06:40-07:00"/>
+          <total value="7"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://hl7.org/fhir/us/davinci-ra/CodeSystem/coding-gap-remark|3.0.0-ballot"/>
+          </parameter>
+          <contains>
+            <system value="http://hl7.org/fhir/us/davinci-ra/CodeSystem/coding-gap-remark"/>
+            <code value="assessed-present"/>
+            <display value="Assessed and present"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.org/fhir/us/davinci-ra/CodeSystem/coding-gap-remark"/>
+            <code value="assessed-not-present"/>
+            <display value="Assessed and not present"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.org/fhir/us/davinci-ra/CodeSystem/coding-gap-remark"/>
+            <code value="in-progress"/>
+            <display value="In progress"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.org/fhir/us/davinci-ra/CodeSystem/coding-gap-remark"/>
+            <code value="deferred"/>
+            <display value="Deferred"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.org/fhir/us/davinci-ra/CodeSystem/coding-gap-remark"/>
+            <code value="not-assessed"/>
+            <display value="Not assessed"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.org/fhir/us/davinci-ra/CodeSystem/coding-gap-remark"/>
+            <code value="not-presented"/>
+            <display value="Not presented"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.org/fhir/us/davinci-ra/CodeSystem/coding-gap-remark"/>
+            <code value="not-ingested"/>
+            <display value="Not ingested"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://hl7.org/fhir/us/davinci-ra/ValueSet/coding-gap-remark"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
+            <p class="res-header-id"/>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
+              <a href="CodeSystem-coding-gap-remark.html">codesystem Coding Gap Remark Codes v3.0.0-ballot (CodeSystem)</a>
+              <span class="copy-text-inline">
+                <button data-clipboard-text="http://hl7.org/fhir/us/davinci-ra/CodeSystem/coding-gap-remark|3.0.0-ballot" title="Click to Copy URL" class="btn-copy"> </button>
+              </span>
+            </p>
+            <p>This value set contains 7 concepts</p>
+            <table class="codes" data-fhir="generated">
+              <tr>
+                <td>
+                  <b>System</b>
+                </td>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display (en)</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+                <td>
+                  <b>JSON</b>
+                </td>
+                <td>
+                  <b>XML</b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://hl7.org/fhir/us/davinci-ra/CodeSystem/coding-gap-remark-assessed-present"> </a>
+                  <code>http://hl7.org/fhir/us/davinci-ra/CodeSystem/coding-gap-remark</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-coding-gap-remark.html#coding-gap-remark-assessed-present">assessed-present</a>
+                </td>
+                <td>Assessed and present</td>
+                <td>Assessed the gap and acknowledged it is still present.</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://hl7.org/fhir/us/davinci-ra/CodeSystem/coding-gap-remark&quot;, &quot;version&quot;: &quot;3.0.0-ballot&quot;, &quot;code&quot;: &quot;assessed-present&quot;, &quot;display&quot;: &quot;Assessed and present&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://hl7.org/fhir/us/davinci-ra/CodeSystem/coding-gap-remark&quot;&gt;&lt;version value=&quot;3.0.0-ballot&quot;&gt;&lt;code value=&quot;assessed-present&quot;&gt;&lt;display value=&quot;Assessed and present&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://hl7.org/fhir/us/davinci-ra/CodeSystem/coding-gap-remark-assessed-not-present"> </a>
+                  <code>http://hl7.org/fhir/us/davinci-ra/CodeSystem/coding-gap-remark</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-coding-gap-remark.html#coding-gap-remark-assessed-not-present">assessed-not-present</a>
+                </td>
+                <td>Assessed and not present</td>
+                <td>Assessed the gap and acknowledged it is not present.</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://hl7.org/fhir/us/davinci-ra/CodeSystem/coding-gap-remark&quot;, &quot;version&quot;: &quot;3.0.0-ballot&quot;, &quot;code&quot;: &quot;assessed-not-present&quot;, &quot;display&quot;: &quot;Assessed and not present&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://hl7.org/fhir/us/davinci-ra/CodeSystem/coding-gap-remark&quot;&gt;&lt;version value=&quot;3.0.0-ballot&quot;&gt;&lt;code value=&quot;assessed-not-present&quot;&gt;&lt;display value=&quot;Assessed and not present&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://hl7.org/fhir/us/davinci-ra/CodeSystem/coding-gap-remark-in-progress"> </a>
+                  <code>http://hl7.org/fhir/us/davinci-ra/CodeSystem/coding-gap-remark</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-coding-gap-remark.html#coding-gap-remark-in-progress">in-progress</a>
+                </td>
+                <td>In progress</td>
+                <td>Assessed the gap and actions are taken to address the gap.</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://hl7.org/fhir/us/davinci-ra/CodeSystem/coding-gap-remark&quot;, &quot;version&quot;: &quot;3.0.0-ballot&quot;, &quot;code&quot;: &quot;in-progress&quot;, &quot;display&quot;: &quot;In progress&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://hl7.org/fhir/us/davinci-ra/CodeSystem/coding-gap-remark&quot;&gt;&lt;version value=&quot;3.0.0-ballot&quot;&gt;&lt;code value=&quot;in-progress&quot;&gt;&lt;display value=&quot;In progress&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://hl7.org/fhir/us/davinci-ra/CodeSystem/coding-gap-remark-deferred"> </a>
+                  <code>http://hl7.org/fhir/us/davinci-ra/CodeSystem/coding-gap-remark</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-coding-gap-remark.html#coding-gap-remark-deferred">deferred</a>
+                </td>
+                <td>Deferred</td>
+                <td>Assessed the gap and actions will be taken in the future to address the gap.</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://hl7.org/fhir/us/davinci-ra/CodeSystem/coding-gap-remark&quot;, &quot;version&quot;: &quot;3.0.0-ballot&quot;, &quot;code&quot;: &quot;deferred&quot;, &quot;display&quot;: &quot;Deferred&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://hl7.org/fhir/us/davinci-ra/CodeSystem/coding-gap-remark&quot;&gt;&lt;version value=&quot;3.0.0-ballot&quot;&gt;&lt;code value=&quot;deferred&quot;&gt;&lt;display value=&quot;Deferred&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://hl7.org/fhir/us/davinci-ra/CodeSystem/coding-gap-remark-not-assessed"> </a>
+                  <code>http://hl7.org/fhir/us/davinci-ra/CodeSystem/coding-gap-remark</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-coding-gap-remark.html#coding-gap-remark-not-assessed">not-assessed</a>
+                </td>
+                <td>Not assessed</td>
+                <td>Gap was shown to the provider but no action was taken to assess the gap.</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://hl7.org/fhir/us/davinci-ra/CodeSystem/coding-gap-remark&quot;, &quot;version&quot;: &quot;3.0.0-ballot&quot;, &quot;code&quot;: &quot;not-assessed&quot;, &quot;display&quot;: &quot;Not assessed&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://hl7.org/fhir/us/davinci-ra/CodeSystem/coding-gap-remark&quot;&gt;&lt;version value=&quot;3.0.0-ballot&quot;&gt;&lt;code value=&quot;not-assessed&quot;&gt;&lt;display value=&quot;Not assessed&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://hl7.org/fhir/us/davinci-ra/CodeSystem/coding-gap-remark-not-presented"> </a>
+                  <code>http://hl7.org/fhir/us/davinci-ra/CodeSystem/coding-gap-remark</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-coding-gap-remark.html#coding-gap-remark-not-presented">not-presented</a>
+                </td>
+                <td>Not presented</td>
+                <td>System did not present the gap to the end user.</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://hl7.org/fhir/us/davinci-ra/CodeSystem/coding-gap-remark&quot;, &quot;version&quot;: &quot;3.0.0-ballot&quot;, &quot;code&quot;: &quot;not-presented&quot;, &quot;display&quot;: &quot;Not presented&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://hl7.org/fhir/us/davinci-ra/CodeSystem/coding-gap-remark&quot;&gt;&lt;version value=&quot;3.0.0-ballot&quot;&gt;&lt;code value=&quot;not-presented&quot;&gt;&lt;display value=&quot;Not presented&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://hl7.org/fhir/us/davinci-ra/CodeSystem/coding-gap-remark-not-ingested"> </a>
+                  <code>http://hl7.org/fhir/us/davinci-ra/CodeSystem/coding-gap-remark</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-coding-gap-remark.html#coding-gap-remark-not-ingested">not-ingested</a>
+                </td>
+                <td>Not ingested</td>
+                <td>System cannot process the gap that was received.</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://hl7.org/fhir/us/davinci-ra/CodeSystem/coding-gap-remark&quot;, &quot;version&quot;: &quot;3.0.0-ballot&quot;, &quot;code&quot;: &quot;not-ingested&quot;, &quot;display&quot;: &quot;Not ingested&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://hl7.org/fhir/us/davinci-ra/CodeSystem/coding-gap-remark&quot;&gt;&lt;version value=&quot;3.0.0-ballot&quot;&gt;&lt;code value=&quot;not-ingested&quot;&gt;&lt;display value=&quot;Not ingested&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://hl7.org/fhir/us/davinci-ra/ValueSet/coding-gap-remark"/>
+        <identifier>
+          <system value="urn:ietf:rfc:3986"/>
+          <value value="urn:oid:2.16.840.1.113883.4.642.40.29.48.2"/>
+        </identifier>
+        <version value="3.0.0-ballot"/>
+        <name value="CodingGapRemarkVS"/>
+        <title value="Coding Gap Remark"/>
+        <status value="active"/>
+        <experimental value="false"/>
+        <date value="2026-03-08T15:02:59-07:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="US"/>
+            <display value="United States of America"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:49f06c79-9872-4c9c-be1a-01619b33251a"/>
+          <timestamp value="2026-03-08T15:06:40-07:00"/>
+          <total value="7"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://hl7.org/fhir/us/davinci-ra/CodeSystem/coding-gap-remark|3.0.0-ballot"/>
+          </parameter>
+          <contains>
+            <system value="http://hl7.org/fhir/us/davinci-ra/CodeSystem/coding-gap-remark"/>
+            <code value="assessed-present"/>
+            <display value="Assessed and present"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.org/fhir/us/davinci-ra/CodeSystem/coding-gap-remark"/>
+            <code value="assessed-not-present"/>
+            <display value="Assessed and not present"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.org/fhir/us/davinci-ra/CodeSystem/coding-gap-remark"/>
+            <code value="in-progress"/>
+            <display value="In progress"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.org/fhir/us/davinci-ra/CodeSystem/coding-gap-remark"/>
+            <code value="deferred"/>
+            <display value="Deferred"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.org/fhir/us/davinci-ra/CodeSystem/coding-gap-remark"/>
+            <code value="not-assessed"/>
+            <display value="Not assessed"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.org/fhir/us/davinci-ra/CodeSystem/coding-gap-remark"/>
+            <code value="not-presented"/>
+            <display value="Not presented"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.org/fhir/us/davinci-ra/CodeSystem/coding-gap-remark"/>
+            <code value="not-ingested"/>
+            <display value="Not ingested"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://hl7.org/fhir/us/davinci-ra/ValueSet/evidence-status"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
+            <p class="res-header-id"/>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
+              <a href="CodeSystem-evidence-status.html">codesystem Risk Adjustment Evidence Status Codes v3.0.0-ballot (CodeSystem)</a>
+              <span class="copy-text-inline">
+                <button data-clipboard-text="http://hl7.org/fhir/us/davinci-ra/CodeSystem/evidence-status|3.0.0-ballot" title="Click to Copy URL" class="btn-copy"> </button>
+              </span>
+            </p>
+            <p>This value set contains 4 concepts</p>
+            <table class="codes" data-fhir="generated">
+              <tr>
+                <td>
+                  <b>System</b>
+                </td>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display (en)</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+                <td>
+                  <b>JSON</b>
+                </td>
+                <td>
+                  <b>XML</b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://hl7.org/fhir/us/davinci-ra/CodeSystem/evidence-status-closed-gap"> </a>
+                  <code>http://hl7.org/fhir/us/davinci-ra/CodeSystem/evidence-status</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-evidence-status.html#evidence-status-closed-gap">closed-gap</a>
+                </td>
+                <td>Closed Condition Category Gap</td>
+                <td>Evidence to support a Condition Category (CC) was confirmed</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://hl7.org/fhir/us/davinci-ra/CodeSystem/evidence-status&quot;, &quot;version&quot;: &quot;3.0.0-ballot&quot;, &quot;code&quot;: &quot;closed-gap&quot;, &quot;display&quot;: &quot;Closed Condition Category Gap&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://hl7.org/fhir/us/davinci-ra/CodeSystem/evidence-status&quot;&gt;&lt;version value=&quot;3.0.0-ballot&quot;&gt;&lt;code value=&quot;closed-gap&quot;&gt;&lt;display value=&quot;Closed Condition Category Gap&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://hl7.org/fhir/us/davinci-ra/CodeSystem/evidence-status-invalid-gap"> </a>
+                  <code>http://hl7.org/fhir/us/davinci-ra/CodeSystem/evidence-status</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-evidence-status.html#evidence-status-invalid-gap">invalid-gap</a>
+                </td>
+                <td>Invalid Condition Category Gap</td>
+                <td>Evidence to support a Condition Category (CC) was invalidated.</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://hl7.org/fhir/us/davinci-ra/CodeSystem/evidence-status&quot;, &quot;version&quot;: &quot;3.0.0-ballot&quot;, &quot;code&quot;: &quot;invalid-gap&quot;, &quot;display&quot;: &quot;Invalid Condition Category Gap&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://hl7.org/fhir/us/davinci-ra/CodeSystem/evidence-status&quot;&gt;&lt;version value=&quot;3.0.0-ballot&quot;&gt;&lt;code value=&quot;invalid-gap&quot;&gt;&lt;display value=&quot;Invalid Condition Category Gap&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://hl7.org/fhir/us/davinci-ra/CodeSystem/evidence-status-open-gap"> </a>
+                  <code>http://hl7.org/fhir/us/davinci-ra/CodeSystem/evidence-status</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-evidence-status.html#evidence-status-open-gap">open-gap</a>
+                </td>
+                <td>Open Condition Category Gap</td>
+                <td>Action is needed to confirm whether the Condition Category (CC) is valid.</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://hl7.org/fhir/us/davinci-ra/CodeSystem/evidence-status&quot;, &quot;version&quot;: &quot;3.0.0-ballot&quot;, &quot;code&quot;: &quot;open-gap&quot;, &quot;display&quot;: &quot;Open Condition Category Gap&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://hl7.org/fhir/us/davinci-ra/CodeSystem/evidence-status&quot;&gt;&lt;version value=&quot;3.0.0-ballot&quot;&gt;&lt;code value=&quot;open-gap&quot;&gt;&lt;display value=&quot;Open Condition Category Gap&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://hl7.org/fhir/us/davinci-ra/CodeSystem/evidence-status-pending"> </a>
+                  <code>http://hl7.org/fhir/us/davinci-ra/CodeSystem/evidence-status</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-evidence-status.html#evidence-status-pending">pending</a>
+                </td>
+                <td>Pending Condition Category Gap</td>
+                <td>Evidence was received by the payer and is in the process of being evaluated.</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://hl7.org/fhir/us/davinci-ra/CodeSystem/evidence-status&quot;, &quot;version&quot;: &quot;3.0.0-ballot&quot;, &quot;code&quot;: &quot;pending&quot;, &quot;display&quot;: &quot;Pending Condition Category Gap&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://hl7.org/fhir/us/davinci-ra/CodeSystem/evidence-status&quot;&gt;&lt;version value=&quot;3.0.0-ballot&quot;&gt;&lt;code value=&quot;pending&quot;&gt;&lt;display value=&quot;Pending Condition Category Gap&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://hl7.org/fhir/us/davinci-ra/ValueSet/evidence-status"/>
+        <identifier>
+          <system value="urn:ietf:rfc:3986"/>
+          <value value="urn:oid:2.16.840.1.113883.4.642.40.29.48.4"/>
+        </identifier>
+        <version value="3.0.0-ballot"/>
+        <name value="RiskAdjustmentEvidenceStatusVS"/>
+        <title value="Evidence Status"/>
+        <status value="active"/>
+        <experimental value="false"/>
+        <date value="2026-03-08T15:02:59-07:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="US"/>
+            <display value="United States of America"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:f6410785-4716-4a3c-8a97-0c5fb59955c1"/>
+          <timestamp value="2026-03-08T15:06:41-07:00"/>
+          <total value="4"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://hl7.org/fhir/us/davinci-ra/CodeSystem/evidence-status|3.0.0-ballot"/>
+          </parameter>
+          <contains>
+            <system value="http://hl7.org/fhir/us/davinci-ra/CodeSystem/evidence-status"/>
+            <code value="closed-gap"/>
+            <display value="Closed Condition Category Gap"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.org/fhir/us/davinci-ra/CodeSystem/evidence-status"/>
+            <code value="invalid-gap"/>
+            <display value="Invalid Condition Category Gap"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.org/fhir/us/davinci-ra/CodeSystem/evidence-status"/>
+            <code value="open-gap"/>
+            <display value="Open Condition Category Gap"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.org/fhir/us/davinci-ra/CodeSystem/evidence-status"/>
+            <code value="pending"/>
+            <display value="Pending Condition Category Gap"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://hl7.org/fhir/us/davinci-ra/ValueSet/evidence-status"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
+            <p class="res-header-id"/>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
+              <a href="CodeSystem-evidence-status.html">codesystem Risk Adjustment Evidence Status Codes v3.0.0-ballot (CodeSystem)</a>
+              <span class="copy-text-inline">
+                <button data-clipboard-text="http://hl7.org/fhir/us/davinci-ra/CodeSystem/evidence-status|3.0.0-ballot" title="Click to Copy URL" class="btn-copy"> </button>
+              </span>
+            </p>
+            <p>This value set contains 4 concepts</p>
+            <table class="codes" data-fhir="generated">
+              <tr>
+                <td>
+                  <b>System</b>
+                </td>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display (en)</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+                <td>
+                  <b>JSON</b>
+                </td>
+                <td>
+                  <b>XML</b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://hl7.org/fhir/us/davinci-ra/CodeSystem/evidence-status-closed-gap"> </a>
+                  <code>http://hl7.org/fhir/us/davinci-ra/CodeSystem/evidence-status</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-evidence-status.html#evidence-status-closed-gap">closed-gap</a>
+                </td>
+                <td>Closed Condition Category Gap</td>
+                <td>Evidence to support a Condition Category (CC) was confirmed</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://hl7.org/fhir/us/davinci-ra/CodeSystem/evidence-status&quot;, &quot;version&quot;: &quot;3.0.0-ballot&quot;, &quot;code&quot;: &quot;closed-gap&quot;, &quot;display&quot;: &quot;Closed Condition Category Gap&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://hl7.org/fhir/us/davinci-ra/CodeSystem/evidence-status&quot;&gt;&lt;version value=&quot;3.0.0-ballot&quot;&gt;&lt;code value=&quot;closed-gap&quot;&gt;&lt;display value=&quot;Closed Condition Category Gap&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://hl7.org/fhir/us/davinci-ra/CodeSystem/evidence-status-invalid-gap"> </a>
+                  <code>http://hl7.org/fhir/us/davinci-ra/CodeSystem/evidence-status</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-evidence-status.html#evidence-status-invalid-gap">invalid-gap</a>
+                </td>
+                <td>Invalid Condition Category Gap</td>
+                <td>Evidence to support a Condition Category (CC) was invalidated.</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://hl7.org/fhir/us/davinci-ra/CodeSystem/evidence-status&quot;, &quot;version&quot;: &quot;3.0.0-ballot&quot;, &quot;code&quot;: &quot;invalid-gap&quot;, &quot;display&quot;: &quot;Invalid Condition Category Gap&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://hl7.org/fhir/us/davinci-ra/CodeSystem/evidence-status&quot;&gt;&lt;version value=&quot;3.0.0-ballot&quot;&gt;&lt;code value=&quot;invalid-gap&quot;&gt;&lt;display value=&quot;Invalid Condition Category Gap&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://hl7.org/fhir/us/davinci-ra/CodeSystem/evidence-status-open-gap"> </a>
+                  <code>http://hl7.org/fhir/us/davinci-ra/CodeSystem/evidence-status</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-evidence-status.html#evidence-status-open-gap">open-gap</a>
+                </td>
+                <td>Open Condition Category Gap</td>
+                <td>Action is needed to confirm whether the Condition Category (CC) is valid.</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://hl7.org/fhir/us/davinci-ra/CodeSystem/evidence-status&quot;, &quot;version&quot;: &quot;3.0.0-ballot&quot;, &quot;code&quot;: &quot;open-gap&quot;, &quot;display&quot;: &quot;Open Condition Category Gap&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://hl7.org/fhir/us/davinci-ra/CodeSystem/evidence-status&quot;&gt;&lt;version value=&quot;3.0.0-ballot&quot;&gt;&lt;code value=&quot;open-gap&quot;&gt;&lt;display value=&quot;Open Condition Category Gap&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://hl7.org/fhir/us/davinci-ra/CodeSystem/evidence-status-pending"> </a>
+                  <code>http://hl7.org/fhir/us/davinci-ra/CodeSystem/evidence-status</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-evidence-status.html#evidence-status-pending">pending</a>
+                </td>
+                <td>Pending Condition Category Gap</td>
+                <td>Evidence was received by the payer and is in the process of being evaluated.</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://hl7.org/fhir/us/davinci-ra/CodeSystem/evidence-status&quot;, &quot;version&quot;: &quot;3.0.0-ballot&quot;, &quot;code&quot;: &quot;pending&quot;, &quot;display&quot;: &quot;Pending Condition Category Gap&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://hl7.org/fhir/us/davinci-ra/CodeSystem/evidence-status&quot;&gt;&lt;version value=&quot;3.0.0-ballot&quot;&gt;&lt;code value=&quot;pending&quot;&gt;&lt;display value=&quot;Pending Condition Category Gap&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://hl7.org/fhir/us/davinci-ra/ValueSet/evidence-status"/>
+        <identifier>
+          <system value="urn:ietf:rfc:3986"/>
+          <value value="urn:oid:2.16.840.1.113883.4.642.40.29.48.4"/>
+        </identifier>
+        <version value="3.0.0-ballot"/>
+        <name value="RiskAdjustmentEvidenceStatusVS"/>
+        <title value="Evidence Status"/>
+        <status value="active"/>
+        <experimental value="false"/>
+        <date value="2026-03-08T15:02:59-07:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="US"/>
+            <display value="United States of America"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:f6410785-4716-4a3c-8a97-0c5fb59955c1"/>
+          <timestamp value="2026-03-08T15:06:41-07:00"/>
+          <total value="4"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://hl7.org/fhir/us/davinci-ra/CodeSystem/evidence-status|3.0.0-ballot"/>
+          </parameter>
+          <contains>
+            <system value="http://hl7.org/fhir/us/davinci-ra/CodeSystem/evidence-status"/>
+            <code value="closed-gap"/>
+            <display value="Closed Condition Category Gap"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.org/fhir/us/davinci-ra/CodeSystem/evidence-status"/>
+            <code value="invalid-gap"/>
+            <display value="Invalid Condition Category Gap"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.org/fhir/us/davinci-ra/CodeSystem/evidence-status"/>
+            <code value="open-gap"/>
+            <display value="Open Condition Category Gap"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.org/fhir/us/davinci-ra/CodeSystem/evidence-status"/>
+            <code value="pending"/>
+            <display value="Pending Condition Category Gap"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://hl7.org/fhir/us/davinci-ra/ValueSet/hierarchical-status"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
+            <p class="res-header-id"/>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
+              <a href="CodeSystem-hierarchical-status.html">codesystem Risk Adjustment Hierarchical Status Codes v3.0.0-ballot (CodeSystem)</a>
+              <span class="copy-text-inline">
+                <button data-clipboard-text="http://hl7.org/fhir/us/davinci-ra/CodeSystem/hierarchical-status|3.0.0-ballot" title="Click to Copy URL" class="btn-copy"> </button>
+              </span>
+            </p>
+            <p>This value set contains 4 concepts</p>
+            <table class="codes" data-fhir="generated">
+              <tr>
+                <td>
+                  <b>System</b>
+                </td>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display (en)</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+                <td>
+                  <b>JSON</b>
+                </td>
+                <td>
+                  <b>XML</b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://hl7.org/fhir/us/davinci-ra/CodeSystem/hierarchical-status-applied-superseded"> </a>
+                  <code>http://hl7.org/fhir/us/davinci-ra/CodeSystem/hierarchical-status</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-hierarchical-status.html#hierarchical-status-applied-superseded">applied-superseded</a>
+                </td>
+                <td>Hierarchies applied and Condition Category is superseded</td>
+                <td>Hierarchies were applied to a Condition Category (CC) and the Condition Category (CC) is superseded.</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://hl7.org/fhir/us/davinci-ra/CodeSystem/hierarchical-status&quot;, &quot;version&quot;: &quot;3.0.0-ballot&quot;, &quot;code&quot;: &quot;applied-superseded&quot;, &quot;display&quot;: &quot;Hierarchies applied and Condition Category is superseded&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://hl7.org/fhir/us/davinci-ra/CodeSystem/hierarchical-status&quot;&gt;&lt;version value=&quot;3.0.0-ballot&quot;&gt;&lt;code value=&quot;applied-superseded&quot;&gt;&lt;display value=&quot;Hierarchies applied and Condition Category is superseded&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://hl7.org/fhir/us/davinci-ra/CodeSystem/hierarchical-status-applied-not-superseded"> </a>
+                  <code>http://hl7.org/fhir/us/davinci-ra/CodeSystem/hierarchical-status</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-hierarchical-status.html#hierarchical-status-applied-not-superseded">applied-not-superseded</a>
+                </td>
+                <td>Hierarchies applied and Condition Category is not superseded</td>
+                <td>Hierarchies were applied to a Condition Category (CC) and the Condition Category (CC) is not superseded.</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://hl7.org/fhir/us/davinci-ra/CodeSystem/hierarchical-status&quot;, &quot;version&quot;: &quot;3.0.0-ballot&quot;, &quot;code&quot;: &quot;applied-not-superseded&quot;, &quot;display&quot;: &quot;Hierarchies applied and Condition Category is not superseded&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://hl7.org/fhir/us/davinci-ra/CodeSystem/hierarchical-status&quot;&gt;&lt;version value=&quot;3.0.0-ballot&quot;&gt;&lt;code value=&quot;applied-not-superseded&quot;&gt;&lt;display value=&quot;Hierarchies applied and Condition Category is not superseded&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://hl7.org/fhir/us/davinci-ra/CodeSystem/hierarchical-status-not-applied"> </a>
+                  <code>http://hl7.org/fhir/us/davinci-ra/CodeSystem/hierarchical-status</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-hierarchical-status.html#hierarchical-status-not-applied">not-applied</a>
+                </td>
+                <td>Hierarchies not applied</td>
+                <td>Hierarchies were not applied to a Condition Category (CC).</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://hl7.org/fhir/us/davinci-ra/CodeSystem/hierarchical-status&quot;, &quot;version&quot;: &quot;3.0.0-ballot&quot;, &quot;code&quot;: &quot;not-applied&quot;, &quot;display&quot;: &quot;Hierarchies not applied&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://hl7.org/fhir/us/davinci-ra/CodeSystem/hierarchical-status&quot;&gt;&lt;version value=&quot;3.0.0-ballot&quot;&gt;&lt;code value=&quot;not-applied&quot;&gt;&lt;display value=&quot;Hierarchies not applied&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://hl7.org/fhir/us/davinci-ra/CodeSystem/hierarchical-status-not-applicable"> </a>
+                  <code>http://hl7.org/fhir/us/davinci-ra/CodeSystem/hierarchical-status</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-hierarchical-status.html#hierarchical-status-not-applicable">not-applicable</a>
+                </td>
+                <td>Not applicable</td>
+                <td>Applying hierarchies to a Condition Category (CC) is not applicable.</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://hl7.org/fhir/us/davinci-ra/CodeSystem/hierarchical-status&quot;, &quot;version&quot;: &quot;3.0.0-ballot&quot;, &quot;code&quot;: &quot;not-applicable&quot;, &quot;display&quot;: &quot;Not applicable&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://hl7.org/fhir/us/davinci-ra/CodeSystem/hierarchical-status&quot;&gt;&lt;version value=&quot;3.0.0-ballot&quot;&gt;&lt;code value=&quot;not-applicable&quot;&gt;&lt;display value=&quot;Not applicable&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://hl7.org/fhir/us/davinci-ra/ValueSet/hierarchical-status"/>
+        <identifier>
+          <system value="urn:ietf:rfc:3986"/>
+          <value value="urn:oid:2.16.840.1.113883.4.642.40.29.48.5"/>
+        </identifier>
+        <version value="3.0.0-ballot"/>
+        <name value="RiskAdjustmenthierarchicalStatusVS"/>
+        <title value="Hierarchical Status"/>
+        <status value="active"/>
+        <experimental value="false"/>
+        <date value="2026-03-08T15:02:59-07:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="US"/>
+            <display value="United States of America"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:b346b466-71ed-470a-bc10-4ff7bd9219fe"/>
+          <timestamp value="2026-03-08T15:06:42-07:00"/>
+          <total value="4"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://hl7.org/fhir/us/davinci-ra/CodeSystem/hierarchical-status|3.0.0-ballot"/>
+          </parameter>
+          <contains>
+            <system value="http://hl7.org/fhir/us/davinci-ra/CodeSystem/hierarchical-status"/>
+            <code value="applied-superseded"/>
+            <display value="Hierarchies applied and Condition Category is superseded"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.org/fhir/us/davinci-ra/CodeSystem/hierarchical-status"/>
+            <code value="applied-not-superseded"/>
+            <display value="Hierarchies applied and Condition Category is not superseded"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.org/fhir/us/davinci-ra/CodeSystem/hierarchical-status"/>
+            <code value="not-applied"/>
+            <display value="Hierarchies not applied"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.org/fhir/us/davinci-ra/CodeSystem/hierarchical-status"/>
+            <code value="not-applicable"/>
+            <display value="Not applicable"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://hl7.org/fhir/us/davinci-ra/ValueSet/hierarchical-status"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
+            <p class="res-header-id"/>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
+              <a href="CodeSystem-hierarchical-status.html">codesystem Risk Adjustment Hierarchical Status Codes v3.0.0-ballot (CodeSystem)</a>
+              <span class="copy-text-inline">
+                <button data-clipboard-text="http://hl7.org/fhir/us/davinci-ra/CodeSystem/hierarchical-status|3.0.0-ballot" title="Click to Copy URL" class="btn-copy"> </button>
+              </span>
+            </p>
+            <p>This value set contains 4 concepts</p>
+            <table class="codes" data-fhir="generated">
+              <tr>
+                <td>
+                  <b>System</b>
+                </td>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display (en)</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+                <td>
+                  <b>JSON</b>
+                </td>
+                <td>
+                  <b>XML</b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://hl7.org/fhir/us/davinci-ra/CodeSystem/hierarchical-status-applied-superseded"> </a>
+                  <code>http://hl7.org/fhir/us/davinci-ra/CodeSystem/hierarchical-status</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-hierarchical-status.html#hierarchical-status-applied-superseded">applied-superseded</a>
+                </td>
+                <td>Hierarchies applied and Condition Category is superseded</td>
+                <td>Hierarchies were applied to a Condition Category (CC) and the Condition Category (CC) is superseded.</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://hl7.org/fhir/us/davinci-ra/CodeSystem/hierarchical-status&quot;, &quot;version&quot;: &quot;3.0.0-ballot&quot;, &quot;code&quot;: &quot;applied-superseded&quot;, &quot;display&quot;: &quot;Hierarchies applied and Condition Category is superseded&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://hl7.org/fhir/us/davinci-ra/CodeSystem/hierarchical-status&quot;&gt;&lt;version value=&quot;3.0.0-ballot&quot;&gt;&lt;code value=&quot;applied-superseded&quot;&gt;&lt;display value=&quot;Hierarchies applied and Condition Category is superseded&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://hl7.org/fhir/us/davinci-ra/CodeSystem/hierarchical-status-applied-not-superseded"> </a>
+                  <code>http://hl7.org/fhir/us/davinci-ra/CodeSystem/hierarchical-status</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-hierarchical-status.html#hierarchical-status-applied-not-superseded">applied-not-superseded</a>
+                </td>
+                <td>Hierarchies applied and Condition Category is not superseded</td>
+                <td>Hierarchies were applied to a Condition Category (CC) and the Condition Category (CC) is not superseded.</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://hl7.org/fhir/us/davinci-ra/CodeSystem/hierarchical-status&quot;, &quot;version&quot;: &quot;3.0.0-ballot&quot;, &quot;code&quot;: &quot;applied-not-superseded&quot;, &quot;display&quot;: &quot;Hierarchies applied and Condition Category is not superseded&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://hl7.org/fhir/us/davinci-ra/CodeSystem/hierarchical-status&quot;&gt;&lt;version value=&quot;3.0.0-ballot&quot;&gt;&lt;code value=&quot;applied-not-superseded&quot;&gt;&lt;display value=&quot;Hierarchies applied and Condition Category is not superseded&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://hl7.org/fhir/us/davinci-ra/CodeSystem/hierarchical-status-not-applied"> </a>
+                  <code>http://hl7.org/fhir/us/davinci-ra/CodeSystem/hierarchical-status</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-hierarchical-status.html#hierarchical-status-not-applied">not-applied</a>
+                </td>
+                <td>Hierarchies not applied</td>
+                <td>Hierarchies were not applied to a Condition Category (CC).</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://hl7.org/fhir/us/davinci-ra/CodeSystem/hierarchical-status&quot;, &quot;version&quot;: &quot;3.0.0-ballot&quot;, &quot;code&quot;: &quot;not-applied&quot;, &quot;display&quot;: &quot;Hierarchies not applied&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://hl7.org/fhir/us/davinci-ra/CodeSystem/hierarchical-status&quot;&gt;&lt;version value=&quot;3.0.0-ballot&quot;&gt;&lt;code value=&quot;not-applied&quot;&gt;&lt;display value=&quot;Hierarchies not applied&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://hl7.org/fhir/us/davinci-ra/CodeSystem/hierarchical-status-not-applicable"> </a>
+                  <code>http://hl7.org/fhir/us/davinci-ra/CodeSystem/hierarchical-status</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-hierarchical-status.html#hierarchical-status-not-applicable">not-applicable</a>
+                </td>
+                <td>Not applicable</td>
+                <td>Applying hierarchies to a Condition Category (CC) is not applicable.</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://hl7.org/fhir/us/davinci-ra/CodeSystem/hierarchical-status&quot;, &quot;version&quot;: &quot;3.0.0-ballot&quot;, &quot;code&quot;: &quot;not-applicable&quot;, &quot;display&quot;: &quot;Not applicable&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://hl7.org/fhir/us/davinci-ra/CodeSystem/hierarchical-status&quot;&gt;&lt;version value=&quot;3.0.0-ballot&quot;&gt;&lt;code value=&quot;not-applicable&quot;&gt;&lt;display value=&quot;Not applicable&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://hl7.org/fhir/us/davinci-ra/ValueSet/hierarchical-status"/>
+        <identifier>
+          <system value="urn:ietf:rfc:3986"/>
+          <value value="urn:oid:2.16.840.1.113883.4.642.40.29.48.5"/>
+        </identifier>
+        <version value="3.0.0-ballot"/>
+        <name value="RiskAdjustmenthierarchicalStatusVS"/>
+        <title value="Hierarchical Status"/>
+        <status value="active"/>
+        <experimental value="false"/>
+        <date value="2026-03-08T15:02:59-07:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="US"/>
+            <display value="United States of America"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:b346b466-71ed-470a-bc10-4ff7bd9219fe"/>
+          <timestamp value="2026-03-08T15:06:42-07:00"/>
+          <total value="4"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://hl7.org/fhir/us/davinci-ra/CodeSystem/hierarchical-status|3.0.0-ballot"/>
+          </parameter>
+          <contains>
+            <system value="http://hl7.org/fhir/us/davinci-ra/CodeSystem/hierarchical-status"/>
+            <code value="applied-superseded"/>
+            <display value="Hierarchies applied and Condition Category is superseded"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.org/fhir/us/davinci-ra/CodeSystem/hierarchical-status"/>
+            <code value="applied-not-superseded"/>
+            <display value="Hierarchies applied and Condition Category is not superseded"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.org/fhir/us/davinci-ra/CodeSystem/hierarchical-status"/>
+            <code value="not-applied"/>
+            <display value="Hierarchies not applied"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.org/fhir/us/davinci-ra/CodeSystem/hierarchical-status"/>
+            <code value="not-applicable"/>
+            <display value="Not applicable"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://hl7.org/fhir/us/davinci-ra/ValueSet/remark-reason"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
+            <p class="res-header-id"/>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
+              <a href="CodeSystem-remark-reason.html">codesystem Remark Reason Codes v3.0.0-ballot (CodeSystem)</a>
+              <span class="copy-text-inline">
+                <button data-clipboard-text="http://hl7.org/fhir/us/davinci-ra/CodeSystem/remark-reason|3.0.0-ballot" title="Click to Copy URL" class="btn-copy"> </button>
+              </span>
+            </p>
+            <p>This value set contains 3 concepts</p>
+            <table class="codes" data-fhir="generated">
+              <tr>
+                <td>
+                  <b>System</b>
+                </td>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display (en)</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+                <td>
+                  <b>JSON</b>
+                </td>
+                <td>
+                  <b>XML</b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://hl7.org/fhir/us/davinci-ra/CodeSystem/remark-reason-never-had-condition"> </a>
+                  <code>http://hl7.org/fhir/us/davinci-ra/CodeSystem/remark-reason</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-remark-reason.html#remark-reason-never-had-condition">never-had-condition</a>
+                </td>
+                <td>Patient never had the condition</td>
+                <td>Reason for the assessed-not-present remark is because the patient has never had this condition.</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://hl7.org/fhir/us/davinci-ra/CodeSystem/remark-reason&quot;, &quot;version&quot;: &quot;3.0.0-ballot&quot;, &quot;code&quot;: &quot;never-had-condition&quot;, &quot;display&quot;: &quot;Patient never had the condition&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://hl7.org/fhir/us/davinci-ra/CodeSystem/remark-reason&quot;&gt;&lt;version value=&quot;3.0.0-ballot&quot;&gt;&lt;code value=&quot;never-had-condition&quot;&gt;&lt;display value=&quot;Patient never had the condition&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://hl7.org/fhir/us/davinci-ra/CodeSystem/remark-reason-inactive-condition"> </a>
+                  <code>http://hl7.org/fhir/us/davinci-ra/CodeSystem/remark-reason</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-remark-reason.html#remark-reason-inactive-condition">inactive-condition</a>
+                </td>
+                <td>Condition no longer active</td>
+                <td>Reason for the assessed-not-present remark is because the patient's condition is no longer active.</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://hl7.org/fhir/us/davinci-ra/CodeSystem/remark-reason&quot;, &quot;version&quot;: &quot;3.0.0-ballot&quot;, &quot;code&quot;: &quot;inactive-condition&quot;, &quot;display&quot;: &quot;Condition no longer active&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://hl7.org/fhir/us/davinci-ra/CodeSystem/remark-reason&quot;&gt;&lt;version value=&quot;3.0.0-ballot&quot;&gt;&lt;code value=&quot;inactive-condition&quot;&gt;&lt;display value=&quot;Condition no longer active&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://hl7.org/fhir/us/davinci-ra/CodeSystem/remark-reason-inapplicable-gap"> </a>
+                  <code>http://hl7.org/fhir/us/davinci-ra/CodeSystem/remark-reason</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-remark-reason.html#remark-reason-inapplicable-gap">inapplicable-gap</a>
+                </td>
+                <td>Inapplicable gap</td>
+                <td>Reason for the assessed-not-present remark is because the patient has an active condition but the gap does not accurately describe it.</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://hl7.org/fhir/us/davinci-ra/CodeSystem/remark-reason&quot;, &quot;version&quot;: &quot;3.0.0-ballot&quot;, &quot;code&quot;: &quot;inapplicable-gap&quot;, &quot;display&quot;: &quot;Inapplicable gap&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://hl7.org/fhir/us/davinci-ra/CodeSystem/remark-reason&quot;&gt;&lt;version value=&quot;3.0.0-ballot&quot;&gt;&lt;code value=&quot;inapplicable-gap&quot;&gt;&lt;display value=&quot;Inapplicable gap&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://hl7.org/fhir/us/davinci-ra/ValueSet/remark-reason"/>
+        <identifier>
+          <system value="urn:ietf:rfc:3986"/>
+          <value value="urn:oid:2.16.840.1.113883.4.642.40.29.48.6"/>
+        </identifier>
+        <version value="3.0.0-ballot"/>
+        <name value="RemarkReasonVS"/>
+        <title value="Remark Reason"/>
+        <status value="active"/>
+        <experimental value="false"/>
+        <date value="2026-03-08T15:02:59-07:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="US"/>
+            <display value="United States of America"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:f0434f2f-32b0-4d20-a118-85f7f64c8303"/>
+          <timestamp value="2026-03-08T15:06:42-07:00"/>
+          <total value="3"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://hl7.org/fhir/us/davinci-ra/CodeSystem/remark-reason|3.0.0-ballot"/>
+          </parameter>
+          <contains>
+            <system value="http://hl7.org/fhir/us/davinci-ra/CodeSystem/remark-reason"/>
+            <code value="never-had-condition"/>
+            <display value="Patient never had the condition"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.org/fhir/us/davinci-ra/CodeSystem/remark-reason"/>
+            <code value="inactive-condition"/>
+            <display value="Condition no longer active"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.org/fhir/us/davinci-ra/CodeSystem/remark-reason"/>
+            <code value="inapplicable-gap"/>
+            <display value="Inapplicable gap"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://hl7.org/fhir/us/davinci-ra/ValueSet/remark-reason"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
+            <p class="res-header-id"/>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
+              <a href="CodeSystem-remark-reason.html">codesystem Remark Reason Codes v3.0.0-ballot (CodeSystem)</a>
+              <span class="copy-text-inline">
+                <button data-clipboard-text="http://hl7.org/fhir/us/davinci-ra/CodeSystem/remark-reason|3.0.0-ballot" title="Click to Copy URL" class="btn-copy"> </button>
+              </span>
+            </p>
+            <p>This value set contains 3 concepts</p>
+            <table class="codes" data-fhir="generated">
+              <tr>
+                <td>
+                  <b>System</b>
+                </td>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display (en)</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+                <td>
+                  <b>JSON</b>
+                </td>
+                <td>
+                  <b>XML</b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://hl7.org/fhir/us/davinci-ra/CodeSystem/remark-reason-never-had-condition"> </a>
+                  <code>http://hl7.org/fhir/us/davinci-ra/CodeSystem/remark-reason</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-remark-reason.html#remark-reason-never-had-condition">never-had-condition</a>
+                </td>
+                <td>Patient never had the condition</td>
+                <td>Reason for the assessed-not-present remark is because the patient has never had this condition.</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://hl7.org/fhir/us/davinci-ra/CodeSystem/remark-reason&quot;, &quot;version&quot;: &quot;3.0.0-ballot&quot;, &quot;code&quot;: &quot;never-had-condition&quot;, &quot;display&quot;: &quot;Patient never had the condition&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://hl7.org/fhir/us/davinci-ra/CodeSystem/remark-reason&quot;&gt;&lt;version value=&quot;3.0.0-ballot&quot;&gt;&lt;code value=&quot;never-had-condition&quot;&gt;&lt;display value=&quot;Patient never had the condition&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://hl7.org/fhir/us/davinci-ra/CodeSystem/remark-reason-inactive-condition"> </a>
+                  <code>http://hl7.org/fhir/us/davinci-ra/CodeSystem/remark-reason</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-remark-reason.html#remark-reason-inactive-condition">inactive-condition</a>
+                </td>
+                <td>Condition no longer active</td>
+                <td>Reason for the assessed-not-present remark is because the patient's condition is no longer active.</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://hl7.org/fhir/us/davinci-ra/CodeSystem/remark-reason&quot;, &quot;version&quot;: &quot;3.0.0-ballot&quot;, &quot;code&quot;: &quot;inactive-condition&quot;, &quot;display&quot;: &quot;Condition no longer active&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://hl7.org/fhir/us/davinci-ra/CodeSystem/remark-reason&quot;&gt;&lt;version value=&quot;3.0.0-ballot&quot;&gt;&lt;code value=&quot;inactive-condition&quot;&gt;&lt;display value=&quot;Condition no longer active&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://hl7.org/fhir/us/davinci-ra/CodeSystem/remark-reason-inapplicable-gap"> </a>
+                  <code>http://hl7.org/fhir/us/davinci-ra/CodeSystem/remark-reason</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-remark-reason.html#remark-reason-inapplicable-gap">inapplicable-gap</a>
+                </td>
+                <td>Inapplicable gap</td>
+                <td>Reason for the assessed-not-present remark is because the patient has an active condition but the gap does not accurately describe it.</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://hl7.org/fhir/us/davinci-ra/CodeSystem/remark-reason&quot;, &quot;version&quot;: &quot;3.0.0-ballot&quot;, &quot;code&quot;: &quot;inapplicable-gap&quot;, &quot;display&quot;: &quot;Inapplicable gap&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://hl7.org/fhir/us/davinci-ra/CodeSystem/remark-reason&quot;&gt;&lt;version value=&quot;3.0.0-ballot&quot;&gt;&lt;code value=&quot;inapplicable-gap&quot;&gt;&lt;display value=&quot;Inapplicable gap&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://hl7.org/fhir/us/davinci-ra/ValueSet/remark-reason"/>
+        <identifier>
+          <system value="urn:ietf:rfc:3986"/>
+          <value value="urn:oid:2.16.840.1.113883.4.642.40.29.48.6"/>
+        </identifier>
+        <version value="3.0.0-ballot"/>
+        <name value="RemarkReasonVS"/>
+        <title value="Remark Reason"/>
+        <status value="active"/>
+        <experimental value="false"/>
+        <date value="2026-03-08T15:02:59-07:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="US"/>
+            <display value="United States of America"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:f0434f2f-32b0-4d20-a118-85f7f64c8303"/>
+          <timestamp value="2026-03-08T15:06:42-07:00"/>
+          <total value="3"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://hl7.org/fhir/us/davinci-ra/CodeSystem/remark-reason|3.0.0-ballot"/>
+          </parameter>
+          <contains>
+            <system value="http://hl7.org/fhir/us/davinci-ra/CodeSystem/remark-reason"/>
+            <code value="never-had-condition"/>
+            <display value="Patient never had the condition"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.org/fhir/us/davinci-ra/CodeSystem/remark-reason"/>
+            <code value="inactive-condition"/>
+            <display value="Condition no longer active"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.org/fhir/us/davinci-ra/CodeSystem/remark-reason"/>
+            <code value="inapplicable-gap"/>
+            <display value="Inapplicable gap"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://hl7.org/fhir/us/davinci-ra/ValueSet/remark-type"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
+            <p class="res-header-id"/>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
+              <a href="CodeSystem-ra-temp.html">codesystem RA Temporary Code System v3.0.0-ballot (CodeSystem)</a>
+              <span class="copy-text-inline">
+                <button data-clipboard-text="http://hl7.org/fhir/us/davinci-ra/CodeSystem/ra-temp|3.0.0-ballot" title="Click to Copy URL" class="btn-copy"> </button>
+              </span>
+            </p>
+            <p>This value set contains 1 concepts</p>
+            <table class="codes" data-fhir="generated">
+              <tr>
+                <td>
+                  <b>System</b>
+                </td>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display (en)</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+                <td>
+                  <b>JSON</b>
+                </td>
+                <td>
+                  <b>XML</b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://hl7.org/fhir/us/davinci-ra/CodeSystem/ra-temp-evidence-note"> </a>
+                  <code>http://hl7.org/fhir/us/davinci-ra/CodeSystem/ra-temp</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-ra-temp.html#ra-temp-evidence-note">evidence-note</a>
+                </td>
+                <td>Evidence Note</td>
+                <td>The type of remark that provides evidence notes for Condition Category.</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://hl7.org/fhir/us/davinci-ra/CodeSystem/ra-temp&quot;, &quot;version&quot;: &quot;3.0.0-ballot&quot;, &quot;code&quot;: &quot;evidence-note&quot;, &quot;display&quot;: &quot;Evidence Note&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://hl7.org/fhir/us/davinci-ra/CodeSystem/ra-temp&quot;&gt;&lt;version value=&quot;3.0.0-ballot&quot;&gt;&lt;code value=&quot;evidence-note&quot;&gt;&lt;display value=&quot;Evidence Note&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://hl7.org/fhir/us/davinci-ra/ValueSet/remark-type"/>
+        <identifier>
+          <system value="urn:ietf:rfc:3986"/>
+          <value value="urn:oid:2.16.840.1.113883.4.642.40.29.48.21"/>
+        </identifier>
+        <version value="3.0.0-ballot"/>
+        <name value="RemarkTypeVS"/>
+        <title value="Remark Type"/>
+        <status value="active"/>
+        <experimental value="false"/>
+        <date value="2026-03-08T15:02:59-07:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="US"/>
+            <display value="United States of America"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:cc44501e-5725-4b37-bad0-a6ca9a7877dd"/>
+          <timestamp value="2026-03-08T15:06:43-07:00"/>
+          <total value="1"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://hl7.org/fhir/us/davinci-ra/CodeSystem/ra-temp|3.0.0-ballot"/>
+          </parameter>
+          <contains>
+            <system value="http://hl7.org/fhir/us/davinci-ra/CodeSystem/ra-temp"/>
+            <code value="evidence-note"/>
+            <display value="Evidence Note"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://hl7.org/fhir/us/davinci-ra/ValueSet/remark-type"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
+            <p class="res-header-id"/>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
+              <a href="CodeSystem-ra-temp.html">codesystem RA Temporary Code System v3.0.0-ballot (CodeSystem)</a>
+              <span class="copy-text-inline">
+                <button data-clipboard-text="http://hl7.org/fhir/us/davinci-ra/CodeSystem/ra-temp|3.0.0-ballot" title="Click to Copy URL" class="btn-copy"> </button>
+              </span>
+            </p>
+            <p>This value set contains 1 concepts</p>
+            <table class="codes" data-fhir="generated">
+              <tr>
+                <td>
+                  <b>System</b>
+                </td>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display (en)</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+                <td>
+                  <b>JSON</b>
+                </td>
+                <td>
+                  <b>XML</b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://hl7.org/fhir/us/davinci-ra/CodeSystem/ra-temp-evidence-note"> </a>
+                  <code>http://hl7.org/fhir/us/davinci-ra/CodeSystem/ra-temp</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-ra-temp.html#ra-temp-evidence-note">evidence-note</a>
+                </td>
+                <td>Evidence Note</td>
+                <td>The type of remark that provides evidence notes for Condition Category.</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://hl7.org/fhir/us/davinci-ra/CodeSystem/ra-temp&quot;, &quot;version&quot;: &quot;3.0.0-ballot&quot;, &quot;code&quot;: &quot;evidence-note&quot;, &quot;display&quot;: &quot;Evidence Note&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://hl7.org/fhir/us/davinci-ra/CodeSystem/ra-temp&quot;&gt;&lt;version value=&quot;3.0.0-ballot&quot;&gt;&lt;code value=&quot;evidence-note&quot;&gt;&lt;display value=&quot;Evidence Note&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://hl7.org/fhir/us/davinci-ra/ValueSet/remark-type"/>
+        <identifier>
+          <system value="urn:ietf:rfc:3986"/>
+          <value value="urn:oid:2.16.840.1.113883.4.642.40.29.48.21"/>
+        </identifier>
+        <version value="3.0.0-ballot"/>
+        <name value="RemarkTypeVS"/>
+        <title value="Remark Type"/>
+        <status value="active"/>
+        <experimental value="false"/>
+        <date value="2026-03-08T15:02:59-07:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="US"/>
+            <display value="United States of America"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:cc44501e-5725-4b37-bad0-a6ca9a7877dd"/>
+          <timestamp value="2026-03-08T15:06:43-07:00"/>
+          <total value="1"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://hl7.org/fhir/us/davinci-ra/CodeSystem/ra-temp|3.0.0-ballot"/>
+          </parameter>
+          <contains>
+            <system value="http://hl7.org/fhir/us/davinci-ra/CodeSystem/ra-temp"/>
+            <code value="evidence-note"/>
+            <display value="Evidence Note"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://hl7.org/fhir/us/davinci-ra/ValueSet/confidence-scale"/>
+    <resource>
+      <ValueSet>
+        <meta>
+          <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
+        </meta>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
+            <p class="res-header-id"/>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on SNOMED CT United States edition 01-Sep 2023
+              <span class="copy-text-inline">
+                <button data-clipboard-text="http://snomed.info/sct|http://snomed.info/sct/731000124108/version/20230901" title="Click to Copy URL" class="btn-copy"> </button>
+              </span>
+            </p>
+            <p>This value set expansion contains 4 concepts.</p>
+            <table class="codes" data-fhir="generated">
+              <tr>
+                <td>
+                  <b>System</b>
+                </td>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display (en)</b>
+                </td>
+                <td>
+                  <b>JSON</b>
+                </td>
+                <td>
+                  <b>XML</b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://snomed.info/sct-62482003"> </a>
+                  <code>http://snomed.info/sct</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://snomed.info/id/62482003">62482003</a>
+                </td>
+                <td>Low</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/731000124108&quot;, &quot;code&quot;: &quot;62482003&quot;, &quot;display&quot;: &quot;Low&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/731000124108&quot;&gt;&lt;code value=&quot;62482003&quot;&gt;&lt;display value=&quot;Low&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://snomed.info/sct-255508009"> </a>
+                  <code>http://snomed.info/sct</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://snomed.info/id/255508009">255508009</a>
+                </td>
+                <td>Medium</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/731000124108&quot;, &quot;code&quot;: &quot;255508009&quot;, &quot;display&quot;: &quot;Medium&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/731000124108&quot;&gt;&lt;code value=&quot;255508009&quot;&gt;&lt;display value=&quot;Medium&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://snomed.info/sct-75540009"> </a>
+                  <code>http://snomed.info/sct</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://snomed.info/id/75540009">75540009</a>
+                </td>
+                <td>High</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/731000124108&quot;, &quot;code&quot;: &quot;75540009&quot;, &quot;display&quot;: &quot;High&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/731000124108&quot;&gt;&lt;code value=&quot;75540009&quot;&gt;&lt;display value=&quot;High&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://snomed.info/sct-260360000"> </a>
+                  <code>http://snomed.info/sct</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://snomed.info/id/260360000">260360000</a>
+                </td>
+                <td>Very high</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/731000124108&quot;, &quot;code&quot;: &quot;260360000&quot;, &quot;display&quot;: &quot;Very high&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/731000124108&quot;&gt;&lt;code value=&quot;260360000&quot;&gt;&lt;display value=&quot;Very high&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://hl7.org/fhir/us/davinci-ra/ValueSet/confidence-scale"/>
+        <identifier>
+          <system value="urn:ietf:rfc:3986"/>
+          <value value="urn:oid:2.16.840.1.113883.4.642.40.29.48.3"/>
+        </identifier>
+        <version value="3.0.0-ballot"/>
+        <name value="ConfidenceScale"/>
+        <title value="RA Confidence Scale"/>
+        <status value="active"/>
+        <experimental value="false"/>
+        <date value="2026-03-08T15:02:59-07:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="US"/>
+            <display value="United States of America"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:4dda5ed5-0884-4062-8a40-364487cfac9d"/>
+          <timestamp value="2026-03-08T15:09:54-07:00"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="system-version"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/731000124108"/>
+          </parameter>
+          <parameter>
+            <name value="used-valueset"/>
+            <valueUri value="null"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/731000124108/version/20230901"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/731000124108/version/20230901"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="62482003"/>
+            <display value="Low"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="255508009"/>
+            <display value="Medium"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="75540009"/>
+            <display value="High"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="260360000"/>
+            <display value="Very high"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://hl7.org/fhir/us/davinci-ra/ValueSet/confidence-scale"/>
+    <resource>
+      <ValueSet>
+        <meta>
+          <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
+        </meta>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
+            <p class="res-header-id"/>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on SNOMED CT United States edition 01-Sep 2023
+              <span class="copy-text-inline">
+                <button data-clipboard-text="http://snomed.info/sct|http://snomed.info/sct/731000124108/version/20230901" title="Click to Copy URL" class="btn-copy"> </button>
+              </span>
+            </p>
+            <p>This value set expansion contains 4 concepts.</p>
+            <table class="codes" data-fhir="generated">
+              <tr>
+                <td>
+                  <b>System</b>
+                </td>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display (en)</b>
+                </td>
+                <td>
+                  <b>JSON</b>
+                </td>
+                <td>
+                  <b>XML</b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://snomed.info/sct-62482003"> </a>
+                  <code>http://snomed.info/sct</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://snomed.info/id/62482003">62482003</a>
+                </td>
+                <td>Low</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/731000124108&quot;, &quot;code&quot;: &quot;62482003&quot;, &quot;display&quot;: &quot;Low&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/731000124108&quot;&gt;&lt;code value=&quot;62482003&quot;&gt;&lt;display value=&quot;Low&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://snomed.info/sct-255508009"> </a>
+                  <code>http://snomed.info/sct</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://snomed.info/id/255508009">255508009</a>
+                </td>
+                <td>Medium</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/731000124108&quot;, &quot;code&quot;: &quot;255508009&quot;, &quot;display&quot;: &quot;Medium&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/731000124108&quot;&gt;&lt;code value=&quot;255508009&quot;&gt;&lt;display value=&quot;Medium&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://snomed.info/sct-75540009"> </a>
+                  <code>http://snomed.info/sct</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://snomed.info/id/75540009">75540009</a>
+                </td>
+                <td>High</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/731000124108&quot;, &quot;code&quot;: &quot;75540009&quot;, &quot;display&quot;: &quot;High&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/731000124108&quot;&gt;&lt;code value=&quot;75540009&quot;&gt;&lt;display value=&quot;High&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://snomed.info/sct-260360000"> </a>
+                  <code>http://snomed.info/sct</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://snomed.info/id/260360000">260360000</a>
+                </td>
+                <td>Very high</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/731000124108&quot;, &quot;code&quot;: &quot;260360000&quot;, &quot;display&quot;: &quot;Very high&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/731000124108&quot;&gt;&lt;code value=&quot;260360000&quot;&gt;&lt;display value=&quot;Very high&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://hl7.org/fhir/us/davinci-ra/ValueSet/confidence-scale"/>
+        <identifier>
+          <system value="urn:ietf:rfc:3986"/>
+          <value value="urn:oid:2.16.840.1.113883.4.642.40.29.48.3"/>
+        </identifier>
+        <version value="3.0.0-ballot"/>
+        <name value="ConfidenceScale"/>
+        <title value="RA Confidence Scale"/>
+        <status value="active"/>
+        <experimental value="false"/>
+        <date value="2026-03-08T15:02:59-07:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="US"/>
+            <display value="United States of America"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:4dda5ed5-0884-4062-8a40-364487cfac9d"/>
+          <timestamp value="2026-03-08T15:09:54-07:00"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="system-version"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/731000124108"/>
+          </parameter>
+          <parameter>
+            <name value="used-valueset"/>
+            <valueUri value="null"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/731000124108/version/20230901"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/731000124108/version/20230901"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="62482003"/>
+            <display value="Low"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="255508009"/>
+            <display value="Medium"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="75540009"/>
+            <display value="High"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="260360000"/>
+            <display value="Very high"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+</Bundle>

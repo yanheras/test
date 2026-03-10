@@ -1,0 +1,2443 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ImplementationGuide xmlns="http://hl7.org/fhir">
+  <id value="hl7.fhir.us.davinci-ra"/>
+  <language value="en"/>
+  <text>
+    <status value="generated"/><div xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en"><p class="res-header-id"><b>Generated Narrative: ImplementationGuide hl7.fhir.us.davinci-ra</b></p><a name="hl7.fhir.us.davinci-ra"> </a><a name="hchl7.fhir.us.davinci-ra"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Language: en</p></div><h2>RiskAdjustment</h2><p>The official URL for this implementation guide is: </p><pre>http://hl7.org/fhir/us/davinci-ra/ImplementationGuide/hl7.fhir.us.davinci-ra</pre><div><p>The Da Vinci Fast Healthcare Interoperability Resource (FHIR) Risk Adjustment Implementation Guide (this IG) describes exchange of risk-based coding gaps among stakeholders such as payers, providers, and government care programs in support of driving towards accurate and complete documentation of health conditions that would lead to more accurate risk-adjustment payment calculations.</p>
+</div></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="trial-use"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="2"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+    <valueCode value="cqi"/>
+  </extension>
+  <url value="http://hl7.org/fhir/us/davinci-ra/ImplementationGuide/hl7.fhir.us.davinci-ra"/>
+  <version value="3.0.0-ballot"/>
+  <name value="RiskAdjustment"/>
+  <title value="Da Vinci Risk Adjustment Implementation Guide"/>
+  <status value="active"/>
+  <date value="2026-03-08T15:02:59-07:00"/>
+  <publisher value="HL7 International / Clinical Quality Information"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.org/Special/committees/cqi"/>
+    </telecom>
+  </contact>
+  <description value="The Da Vinci Fast Healthcare Interoperability Resource (FHIR) Risk Adjustment Implementation Guide (this IG) describes exchange of risk-based coding gaps among stakeholders such as payers, providers, and government care programs in support of driving towards accurate and complete documentation of health conditions that would lead to more accurate risk-adjustment payment calculations."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
+      <display value="United States of America"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="Used by permission of HL7 International, all rights reserved Creative Commons License"/>
+  <packageId value="hl7.fhir.us.davinci-ra"/>
+  <license value="CC0-1.0"/>
+  <fhirVersion value="4.0.1"/>
+  <dependsOn id="hl7tx">
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment">
+      <valueMarkdown value="Automatically added as a dependency - all IGs depend on HL7 Terminology"/>
+    </extension>
+    <uri value="http://terminology.hl7.org/ImplementationGuide/hl7.terminology"/>
+    <packageId value="hl7.terminology.r4"/>
+    <version value="7.0.1"/>
+  </dependsOn>
+  <dependsOn id="uscore7">
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-ImplementationGuide.dependsOn.reason">
+      <valueMarkdown value="Needed for systems supporting USCDI v4&#xA;"/>
+    </extension>
+    <uri value="http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core"/>
+    <packageId value="hl7.fhir.us.core"/>
+    <version value="7.0.0"/>
+  </dependsOn>
+  <dependsOn id="uscore6">
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-ImplementationGuide.dependsOn.reason">
+      <valueMarkdown value="Needed for systems supporting USCDI v3&#xA;"/>
+    </extension>
+    <uri value="http://hl7.org/fhir/us/core/v610/ImplementationGuide/hl7.fhir.us.core.v610"/>
+    <packageId value="hl7.fhir.us.core.v610"/>
+    <version value="6.1.0"/>
+  </dependsOn>
+  <dependsOn id="uscore3">
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-ImplementationGuide.dependsOn.reason">
+      <valueMarkdown value="Needed for systems supporting USCDI v1&#xA;"/>
+    </extension>
+    <uri value="http://hl7.org/fhir/us/core/v311/ImplementationGuide/hl7.fhir.us.core.v311"/>
+    <packageId value="hl7.fhir.us.core.v311"/>
+    <version value="3.1.1"/>
+  </dependsOn>
+  <dependsOn id="crmi">
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-ImplementationGuide.dependsOn.reason">
+      <valueMarkdown value="Needed for the RA Data Exchange MeasureReport Profile having an extension using CRMI Software System Device profile      &#xA;"/>
+    </extension>
+    <uri value="http://hl7.org/fhir/uv/crmi/ImplementationGuide/hl7.fhir.uv.crmi"/>
+    <packageId value="hl7.fhir.uv.crmi"/>
+    <version value="1.0.0"/>
+  </dependsOn>
+  <dependsOn id="hl7_fhir_uv_extensions_r4">
+    <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-ImplementationGuide.dependsOn.reason">
+      <valueMarkdown value="Needed for the measurereport-category extension.  &#xA;"/>
+    </extension>
+    <uri value="http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions"/>
+    <packageId value="hl7.fhir.uv.extensions.r4"/>
+    <version value="5.2.0"/>
+  </dependsOn>
+  <definition>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="copyrightyear"/>
+      </extension>
+      <extension url="value">
+        <valueString value="2021+"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="releaselabel"/>
+      </extension>
+      <extension url="value">
+        <valueString value="STU 3.0.0-ballot"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-expansion-params"/>
+      </extension>
+      <extension url="value">
+        <valueString value="../../input/exp-params.json"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-history"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://hl7.org/fhir/us/davinci-ra/history.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-publisher"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-contact"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="show-inherited-invariants"/>
+      </extension>
+      <extension url="value">
+        <valueString value="false"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="usage-stats-opt-out"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="auto-oid-root"/>
+      </extension>
+      <extension url="value">
+        <valueString value="2.16.840.1.113883.4.642.40.29"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="version-comparison"/>
+      </extension>
+      <extension url="value">
+        <valueString value="1.0.0"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="version-comparison"/>
+      </extension>
+      <extension url="value">
+        <valueString value="2.0.0"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="version-comparison"/>
+      </extension>
+      <extension url="value">
+        <valueString value="2.1.0"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="excludettl"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="pin-canonicals"/>
+      </extension>
+      <extension url="value">
+        <valueString value="pin-multiples"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="autoload-resources"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-liquid"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template/liquid"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-liquid"/>
+      </extension>
+      <extension url="value">
+        <valueString value="input/liquid"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-qa"/>
+      </extension>
+      <extension url="value">
+        <valueString value="temp/qa"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-temp"/>
+      </extension>
+      <extension url="value">
+        <valueString value="temp/pages"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-output"/>
+      </extension>
+      <extension url="value">
+        <valueString value="output"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-suppressed-warnings"/>
+      </extension>
+      <extension url="value">
+        <valueString value="input/ignoreWarnings.txt"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="template-html"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template-page.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="template-md"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template-page-md.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-context"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-copyright"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-jurisdiction"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-license"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-version"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-wg"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="active-tables"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="fmm-definition"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://hl7.org/fhir/versions.html#maturity"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="propagate-status"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="excludelogbinaryformat"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="tabbed-snapshots"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="i18n-default-lang"/>
+      </extension>
+      <extension url="value">
+        <valueString value="en"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="wantGen-ttl"/>
+      </extension>
+      <extension url="value">
+        <valueString value="false"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="wantGen-ttl-html"/>
+      </extension>
+      <extension url="value">
+        <valueString value="false"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="shownav"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/expansion-parameters">
+      <valueReference>
+        <reference value="Parameters/expansion-parameters"/>
+      </valueReference>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency">
+      <valueCode value="hl7.fhir.uv.tools.r4#0.9.0"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="copyrightyear"/>
+      </extension>
+      <extension url="value">
+        <valueString value="2021+"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="releaselabel"/>
+      </extension>
+      <extension url="value">
+        <valueString value="STU 3.0.0-ballot"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-expansion-params"/>
+      </extension>
+      <extension url="value">
+        <valueString value="../../input/exp-params.json"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-history"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://hl7.org/fhir/us/davinci-ra/history.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-publisher"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-contact"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="show-inherited-invariants"/>
+      </extension>
+      <extension url="value">
+        <valueString value="false"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="usage-stats-opt-out"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="auto-oid-root"/>
+      </extension>
+      <extension url="value">
+        <valueString value="2.16.840.1.113883.4.642.40.29"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="version-comparison"/>
+      </extension>
+      <extension url="value">
+        <valueString value="1.0.0"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="version-comparison"/>
+      </extension>
+      <extension url="value">
+        <valueString value="2.0.0"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="version-comparison"/>
+      </extension>
+      <extension url="value">
+        <valueString value="2.1.0"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="excludettl"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="pin-canonicals"/>
+      </extension>
+      <extension url="value">
+        <valueString value="pin-multiples"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="autoload-resources"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-liquid"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template/liquid"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-liquid"/>
+      </extension>
+      <extension url="value">
+        <valueString value="input/liquid"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-qa"/>
+      </extension>
+      <extension url="value">
+        <valueString value="temp/qa"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-temp"/>
+      </extension>
+      <extension url="value">
+        <valueString value="temp/pages"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-output"/>
+      </extension>
+      <extension url="value">
+        <valueString value="output"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-suppressed-warnings"/>
+      </extension>
+      <extension url="value">
+        <valueString value="input/ignoreWarnings.txt"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="template-html"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template-page.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="template-md"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template-page-md.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-context"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-copyright"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-jurisdiction"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-license"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-version"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-wg"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="active-tables"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="fmm-definition"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://hl7.org/fhir/versions.html#maturity"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="propagate-status"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="excludelogbinaryformat"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="tabbed-snapshots"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="i18n-default-lang"/>
+      </extension>
+      <extension url="value">
+        <valueString value="en"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="wantGen-ttl"/>
+      </extension>
+      <extension url="value">
+        <valueString value="false"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="wantGen-ttl-html"/>
+      </extension>
+      <extension url="value">
+        <valueString value="false"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="shownav"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/ra-riskgap-data1"/>
+      </reference>
+      <name value="Bundle example for the data parameter of the risk-gap operation"/>
+      <description value="This is a Bundle example includes referenced resources by parameters of the risk-gap operation."/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ra-clinicalDataCollectionDeadline"/>
+      </reference>
+      <name value="Clinical Data Collection Deadline Extension"/>
+      <description value="Indicates the deadline for collecting data to close Condition Category (CC) coding gaps for a risk adjustment model of a measurement period."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/coding-gap-remark"/>
+      </reference>
+      <name value="Coding Gap Remark"/>
+      <description value="Coded remark for a coding gap."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/coding-gap-remark"/>
+      </reference>
+      <name value="Coding Gap Remark Codes"/>
+      <description value="Code sytstem that indicates coded remark for a coding gap."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ra-ccRemark"/>
+      </reference>
+      <name value="Condition Category Remark Extension"/>
+      <description value="The Condition Category Remark extension allows a coded and/or narrative remark be added to a Condition Category (CC) coding gap that is on a Payer generated risk adjustment coding gap report by a provider, an organization, or a software."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/cc-type"/>
+      </reference>
+      <name value="Condition Category Type"/>
+      <description value="Type of value-based performance reporting performance metric."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ra-ccType"/>
+      </reference>
+      <name value="Condition Category Type Extension"/>
+      <description value="Indicates whether the Condition Category (CC) gap is historic or suspected. This extension is also used to indicate if a Condition Category (CC) is net-new."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Condition"/>
+      </extension>
+      <reference>
+        <reference value="Condition/ra-condition01pat03"/>
+      </reference>
+      <name value="Condition01Pat03: Other artificial openings of gastrointestinal tract status"/>
+      <description value="This is a Condition example with code Z93.4: Other artificial openings of gastrointestinal tract status."/>
+      <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition-encounter-diagnosis|7.0.0"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Condition"/>
+      </extension>
+      <reference>
+        <reference value="Condition/ra-condition02pat01"/>
+      </reference>
+      <name value="Condition02Pat02: Diabetes mellitus due to underlying condition with other diabetic kidney complication"/>
+      <description value="This is a Condition example with code E08.29: Diabetes mellitus due to underlying condition with other diabetic kidney complication."/>
+      <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition-encounter-diagnosis|7.0.0"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Condition"/>
+      </extension>
+      <reference>
+        <reference value="Condition/ra-condition03pat01"/>
+      </reference>
+      <name value="Condition03Pat01: Chronic obstructive pulmonary disease with (acute) exacerbation"/>
+      <description value="This is a Condition example with code J44.1: Chronic obstructive pulmonary disease with (acute) exacerbation."/>
+      <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition-encounter-diagnosis|7.0.0"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Condition"/>
+      </extension>
+      <reference>
+        <reference value="Condition/ra-condition04pat03"/>
+      </reference>
+      <name value="Condition04Pat03: Chronic obstructive pulmonary disease with (acute) exacerbation"/>
+      <description value="This is a Condition example with code J44.1: Chronic obstructive pulmonary disease with (acute) exacerbation."/>
+      <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition-encounter-diagnosis|7.0.0"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Condition"/>
+      </extension>
+      <reference>
+        <reference value="Condition/ra-condition05pat03"/>
+      </reference>
+      <name value="Condition05Pat03: Unspecified protein-calorie malnutrition"/>
+      <description value="This is a Condition example with code E46: Unspecified protein-calorie malnutrition."/>
+      <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition-encounter-diagnosis|7.0.0"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Condition"/>
+      </extension>
+      <reference>
+        <reference value="Condition/ra-condition06pat03"/>
+      </reference>
+      <name value="Condition06Pat03: Crohn’s disease of large intestine with unspecified complications"/>
+      <description value="This is a Condition example with code K50.119: Crohn's disease of large intestine with unspecified complications."/>
+      <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition-encounter-diagnosis|7.0.0"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Condition"/>
+      </extension>
+      <reference>
+        <reference value="Condition/ra-condition07pat03"/>
+      </reference>
+      <name value="Condition07Pat03: Other persistent atrial fibrillation"/>
+      <description value="This is a Condition example with code I48.19: Other persistent atrial fibrillation."/>
+      <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition-encounter-diagnosis|7.0.0"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Condition"/>
+      </extension>
+      <reference>
+        <reference value="Condition/ra-condition08pat01"/>
+      </reference>
+      <name value="Condition08Pat01: Bipolar disorder, current episode mixed, mild"/>
+      <description value="This is a Condition example with code F31.61: Bipolar disorder, current episode mixed, mild."/>
+      <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition-encounter-diagnosis|7.0.0"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Condition"/>
+      </extension>
+      <reference>
+        <reference value="Condition/ra-condition09pat01"/>
+      </reference>
+      <name value="Condition09Pat01: Allergic bronchopulmonary aspergillosis"/>
+      <description value="This is a Condition example with code B44.81: Allergic bronchopulmonary aspergillosis."/>
+      <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition-encounter-diagnosis|7.0.0"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Condition"/>
+      </extension>
+      <reference>
+        <reference value="Condition/ra-condition10pat01"/>
+      </reference>
+      <name value="Condition10Pat01: Long term (current) use of insulin"/>
+      <description value="This is a Condition example with code Z79.4: Long term (current) use of insulin."/>
+      <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition-encounter-diagnosis|7.0.0"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Condition"/>
+      </extension>
+      <reference>
+        <reference value="Condition/ra-condition11pat01"/>
+      </reference>
+      <name value="Condition11Pat01: Acute pulmonary edema"/>
+      <description value="This is a Condition example with code J81.0: Acute pulmonary edema."/>
+      <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition-encounter-diagnosis|7.0.0"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Condition"/>
+      </extension>
+      <reference>
+        <reference value="Condition/ra-condition12pat01"/>
+      </reference>
+      <name value="Condition12Pat01: Manic episode, unspecified"/>
+      <description value="This is a Condition example with code F30.9: Manic episode, unspecified."/>
+      <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition-encounter-diagnosis|7.0.0"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Condition"/>
+      </extension>
+      <reference>
+        <reference value="Condition/ra-condition15pat03"/>
+      </reference>
+      <name value="Condition15Pat03: Diabetes mellitus due to underlying condition with diabetic chronic kidney disease"/>
+      <description value="This is a Condition example with code E08.22: Diabetes mellitus due to underlying condition with diabetic chronic kidney disease."/>
+      <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition-encounter-diagnosis|7.0.0"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Condition"/>
+      </extension>
+      <reference>
+        <reference value="Condition/ra-condition16pat03"/>
+      </reference>
+      <name value="Condition16Pat03: Dependence on renal dialysis"/>
+      <description value="This is a Condition example with code Z99.2: Dependence on renal dialysis."/>
+      <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition-encounter-diagnosis|7.0.0"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Condition"/>
+      </extension>
+      <reference>
+        <reference value="Condition/ra-condition17pat01"/>
+      </reference>
+      <name value="Condition17Pat01: Body mass index (BMI) 45.0-49.9, adult"/>
+      <description value="This is a Condition example with code Z68.42: Body mass index [BMI] 45.0-49.9, adult."/>
+      <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition-encounter-diagnosis|7.0.0"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Condition"/>
+      </extension>
+      <reference>
+        <reference value="Condition/ra-condition18pat01"/>
+      </reference>
+      <name value="Condition18Pat01: Longstanding persistent atrial fibrillation"/>
+      <description value="This is a Condition example with code I48.11: Longstanding persistent atrial fibrillation."/>
+      <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition-encounter-diagnosis|7.0.0"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Condition"/>
+      </extension>
+      <reference>
+        <reference value="Condition/ra-condition21pat03"/>
+      </reference>
+      <name value="Condition21Pat03: Type 2 diabetes mellitus without complications"/>
+      <description value="This is a Condition example with code E11.9: Type 2 diabetes mellitus without complications."/>
+      <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition-encounter-diagnosis|7.0.0"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Condition"/>
+      </extension>
+      <reference>
+        <reference value="Condition/ra-condition22pat03"/>
+      </reference>
+      <name value="Condition22Pat03: Other acute kidney failure"/>
+      <description value="This is a Condition example with code N17.8: Other acute kidney failure."/>
+      <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition-encounter-diagnosis|7.0.0"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Condition"/>
+      </extension>
+      <reference>
+        <reference value="Condition/ra-condition23pat03"/>
+      </reference>
+      <name value="Condition23Pat03: Chronic kidney disease, stage 5"/>
+      <description value="This is a Condition example with code N18.5: Chronic kidney disease, stage 5."/>
+      <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition-encounter-diagnosis|7.0.0"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Condition"/>
+      </extension>
+      <reference>
+        <reference value="Condition/ra-condition31pat02"/>
+      </reference>
+      <name value="Condition31Pat02: Typical atrial flutter"/>
+      <description value="This is a Condition example with code I48.3: Typical atrial flutter."/>
+      <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition-encounter-diagnosis|7.0.0"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Condition"/>
+      </extension>
+      <reference>
+        <reference value="Condition/ra-condition32pat03"/>
+      </reference>
+      <name value="Condition32Pat03: Chronic pulmonary embolism"/>
+      <description value="This is a Condition example with code I27.82: Chronic pulmonary embolism."/>
+      <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition-encounter-diagnosis|7.0.0"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Condition"/>
+      </extension>
+      <reference>
+        <reference value="Condition/ra-condition33pat01"/>
+      </reference>
+      <name value="Condition33Pat01: Respiratory arrest"/>
+      <description value="This is a Condition example with code R09.2: Respiratory arrest."/>
+      <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition-encounter-diagnosis|7.0.0"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Condition"/>
+      </extension>
+      <reference>
+        <reference value="Condition/ra-condition35pat03"/>
+      </reference>
+      <name value="Condition35Pat03: Type 2 diabetes mellitus with diabetic peripheral angiopathy without gangrene"/>
+      <description value="This is a Condition example with code E11.51: Type 2 diabetes mellitus with diabetic peripheral angiopathy without gangrene."/>
+      <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition-encounter-diagnosis|7.0.0"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Condition"/>
+      </extension>
+      <reference>
+        <reference value="Condition/ra-condition42pat03"/>
+      </reference>
+      <name value="Condition42Pat03: Other artificial openings of gastrointestinal tract status"/>
+      <description value="This is a Condition example with code Z93.4: Other artificial openings of gastrointestinal tract status."/>
+      <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition-encounter-diagnosis|7.0.0"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Condition"/>
+      </extension>
+      <reference>
+        <reference value="Condition/ra-condition43pat01"/>
+      </reference>
+      <name value="Condition43Pat01: Diabetes mellitus due to underlying condition with other diabetic kidney"/>
+      <description value="This is a Condition example with code E08.29: Diabetes mellitus due to underlying condition with other diabetic kidney complication."/>
+      <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition-encounter-diagnosis|7.0.0"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Condition"/>
+      </extension>
+      <reference>
+        <reference value="Condition/ra-condition44pat01"/>
+      </reference>
+      <name value="Condition44Pat01: Allergic bronchopulmonary aspergillosis"/>
+      <description value="This is a Condition example with code B44.81: Allergic bronchopulmonary aspergillosis."/>
+      <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition-encounter-diagnosis|7.0.0"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Condition"/>
+      </extension>
+      <reference>
+        <reference value="Condition/ra-conditionR01pat01"/>
+      </reference>
+      <name value="ConditionR01Pat01: Cystic fibrosis with other intestinal manifestations"/>
+      <description value="This is a Condition example with code E84.19: Cystic fibrosis with other intestinal manifestations."/>
+      <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition-encounter-diagnosis|7.0.0"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ra-confidenceScale"/>
+      </reference>
+      <name value="Confidence Scale Extension"/>
+      <description value="A coded confidence scale, the degree of certainty, for a Condition Category (CC) coding gap presented in a Payer generated risk adjustment coding gap report."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ra-contextId"/>
+      </reference>
+      <name value="Context Id Extension"/>
+      <description value="The contextId is intended to be used for 'non-standard' identifiers provided as part of the $risk-gap operation API call, for example, some systems may have an internally defined gap-request-id."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MeasureReport"/>
+      </extension>
+      <reference>
+        <reference value="MeasureReport/ra-datax-measurereport01"/>
+      </reference>
+      <name value="Data Exchange MeasureReport Example01"/>
+      <description value="This is an example for the Risk Adjustment Data Exchange MeasureReport profile. It evaluatedResource references an example C-CDA document that is being submitted."/>
+      <exampleCanonical value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-datax-measurereport"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ra-dxCode"/>
+      </reference>
+      <name value="Diagnosis Code Extension"/>
+      <description value="Diganosis code(s) of the condition, such as ICD-10 codes."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Encounter"/>
+      </extension>
+      <reference>
+        <reference value="Encounter/ra-encounter44pat01"/>
+      </reference>
+      <name value="Encounter with Dr Hippocrates on 2017-01-18 for Patient 01"/>
+      <description value="This is an Encounter example for encounter with Dr Hippocrates on 2017-01-18 for Patient 01."/>
+      <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter|7.0.0"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Encounter"/>
+      </extension>
+      <reference>
+        <reference value="Encounter/ra-encounter08pat01"/>
+      </reference>
+      <name value="Encounter with Dr Hippocrates on 2017-02-03 for Patient 03"/>
+      <description value="This is an Encounter example for encounter with Dr Hippocrates on 2017-02-03 for Patient 03."/>
+      <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter|7.0.0"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Encounter"/>
+      </extension>
+      <reference>
+        <reference value="Encounter/ra-encounter45pat01"/>
+      </reference>
+      <name value="Encounter with Dr Hippocrates on 2018-07-21 for Patient 01"/>
+      <description value="This is an Encounter example for encounter with Dr Hippocrates on 2018-07-21 for Patient 01."/>
+      <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter|7.0.0"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Encounter"/>
+      </extension>
+      <reference>
+        <reference value="Encounter/ra-encounter43pat01"/>
+      </reference>
+      <name value="Encounter with Dr Hippocrates on 2019-02-10 for Patient 01"/>
+      <description value="This is an Encounter example for encounter with Dr Hippocrates on 2019-02-10 for Patient 01."/>
+      <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter|7.0.0"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Encounter"/>
+      </extension>
+      <reference>
+        <reference value="Encounter/ra-encounter11pat01"/>
+      </reference>
+      <name value="Encounter with Dr Hippocrates on 2020-11-02 for Patient 03"/>
+      <description value="This is an Encounter example for encounter with Dr Hippocrates on 2020-11-02 for Patient 03."/>
+      <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter|7.0.0"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Encounter"/>
+      </extension>
+      <reference>
+        <reference value="Encounter/ra-encounter02pat01"/>
+      </reference>
+      <name value="Encounter with Dr Hippocrates on 2021-01-31 for Patient 03"/>
+      <description value="This is an Encounter example for encounter with Dr Hippocrates on 2021-01-31 for Patient 03."/>
+      <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter|7.0.0"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Encounter"/>
+      </extension>
+      <reference>
+        <reference value="Encounter/ra-encounter09pat01"/>
+      </reference>
+      <name value="Encounter with Dr Hippocrates on 2021-03-27 for Patient 03"/>
+      <description value="This is an Encounter example for encounter with Dr Hippocrates on 2021-03-27 for Patient 03."/>
+      <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter|7.0.0"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Encounter"/>
+      </extension>
+      <reference>
+        <reference value="Encounter/ra-encounter03pat01"/>
+      </reference>
+      <name value="Encounter with Dr Hippocrates on 2021-09-26 for Patient 03"/>
+      <description value="This is an Encounter example for encounter with Dr Hippocrates on 2021-09-26 for Patient 03."/>
+      <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter|7.0.0"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Encounter"/>
+      </extension>
+      <reference>
+        <reference value="Encounter/ra-encounter46pat01"/>
+      </reference>
+      <name value="Encounter with Dr Hippocrates on 2021-10-15 for Patient 01"/>
+      <description value="This is an Encounter example for encounter with Dr Hippocrates on 2021-10-15 for Patient 01."/>
+      <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter|7.0.0"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Encounter"/>
+      </extension>
+      <reference>
+        <reference value="Encounter/ra-encounter07pat03"/>
+      </reference>
+      <name value="Encounter with Dr Osler on 2019-02-07 for Patient 03"/>
+      <description value="This is an Encounter example for encounter with Dr Osler on 2019-02-07 for Patient 03."/>
+      <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter|7.0.0"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Encounter"/>
+      </extension>
+      <reference>
+        <reference value="Encounter/ra-encounter19pat03"/>
+      </reference>
+      <name value="Encounter with Dr Osler on 2019-08-23 for Patient 03"/>
+      <description value="This is an Encounter example for encounter with Dr Osler on 2019-08-23 for Patient 03."/>
+      <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter|7.0.0"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Encounter"/>
+      </extension>
+      <reference>
+        <reference value="Encounter/ra-encounter42pat03"/>
+      </reference>
+      <name value="Encounter with Dr Osler on 2020-02-10 for Patient 03"/>
+      <description value="This is an Encounter example for encounter with Dr Osler on 2020-02-10 for Patient 03."/>
+      <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter|7.0.0"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Encounter"/>
+      </extension>
+      <reference>
+        <reference value="Encounter/ra-encounter05pat03"/>
+      </reference>
+      <name value="Encounter with Dr Osler on 2020-03-03 for Patient 03"/>
+      <description value="This is an Encounter example for encounter with Dr Osler on 2020-03-03 for Patient 03."/>
+      <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter|7.0.0"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Encounter"/>
+      </extension>
+      <reference>
+        <reference value="Encounter/ra-encounter06pat03"/>
+      </reference>
+      <name value="Encounter with Dr Osler on 2020-09-17 for Patient 03"/>
+      <description value="This is an Encounter example for encounter with Dr Osler on 2020-09-17 for Patient 03."/>
+      <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter|7.0.0"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Encounter"/>
+      </extension>
+      <reference>
+        <reference value="Encounter/ra-encounter04pat03"/>
+      </reference>
+      <name value="Encounter with Dr Osler on 2020-12-18 for Patient 03"/>
+      <description value="This is an Encounter example for encounter with Dr Osler on 2020-12-18 for Patient 03."/>
+      <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter|7.0.0"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Encounter"/>
+      </extension>
+      <reference>
+        <reference value="Encounter/ra-encounter21pat03"/>
+      </reference>
+      <name value="Encounter with Dr Osler on 2021-01-30 for Patient 03"/>
+      <description value="This is an Encounter example for encounter with Dr Osler on 2021-01-30 for Patient 03."/>
+      <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter|7.0.0"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Encounter"/>
+      </extension>
+      <reference>
+        <reference value="Encounter/ra-encounter35pat03"/>
+      </reference>
+      <name value="Encounter with Dr Osler on 2021-02-12 for Patient 03"/>
+      <description value="This is an Encounter example for encounter with Dr Osler on 2021-02-12 for Patient 03."/>
+      <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter|7.0.0"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Encounter"/>
+      </extension>
+      <reference>
+        <reference value="Encounter/ra-encounter22pat03"/>
+      </reference>
+      <name value="Encounter with Dr Osler on 2021-07-01 for Patient 03"/>
+      <description value="This is an Encounter example for encounter with Dr Osler on 2021-07-01 for Patient 03."/>
+      <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter|7.0.0"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Encounter"/>
+      </extension>
+      <reference>
+        <reference value="Encounter/ra-encounter01pat03"/>
+      </reference>
+      <name value="Encounter with Dr Osler on 2021-07-14 for Patient 03"/>
+      <description value="This is an Encounter example for encounter with Dr Osler on 2021-07-14 for Patient 03."/>
+      <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter|7.0.0"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Encounter"/>
+      </extension>
+      <reference>
+        <reference value="Encounter/ra-encounter16pat03"/>
+      </reference>
+      <name value="Encounter with Dr Osler on 2021-07-27 for Patient 03"/>
+      <description value="This is an Encounter example for encounter with Dr Osler on 2021-07-27 for Patient 03."/>
+      <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter|7.0.0"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Encounter"/>
+      </extension>
+      <reference>
+        <reference value="Encounter/ra-encounter15pat03"/>
+      </reference>
+      <name value="Encounter with Dr Osler on 2021-08-08 for Patient 03"/>
+      <description value="This is an Encounter example for encounter with Dr Osler on 2021-08-08 for Patient 03."/>
+      <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter|7.0.0"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Encounter"/>
+      </extension>
+      <reference>
+        <reference value="Encounter/ra-encounter31pat02"/>
+      </reference>
+      <name value="Encounter with Dr Pump on 2021-08-06 for Patient 02"/>
+      <description value="This is an Encounter example for encounter with Dr Pump on 2021-08-06 for Patient 02."/>
+      <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter|7.0.0"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="OperationDefinition"/>
+      </extension>
+      <reference>
+        <reference value="OperationDefinition/ra.evaluate-measure"/>
+      </reference>
+      <name value="Evaluate Measure"/>
+      <description value="The ra.evaluate-measure operation is used to evaluate Digital Condition Category and obtain the results."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/evidence-status"/>
+      </reference>
+      <name value="Evidence Status"/>
+      <description value="Codes that indicate whether a coding gap is an open-gap, invalid-gap, closed-gap, or pending."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ra-evidenceStatusDate"/>
+      </reference>
+      <name value="Evidence Status Date Extension"/>
+      <description value="Risk adjustment evidence status date"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ra-evidenceStatus"/>
+      </reference>
+      <name value="Evidence Status Extension"/>
+      <description value="Indicates whether a Condition Category (CC) coding gap is closed-gap, open-gap, invalid-gap, or pending based on the clinical evidence available for risk adjustment."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ra-groupReference"/>
+      </reference>
+      <name value="Group Reference Extension"/>
+      <description value="This extension identifies which Condition Category (CC) the supporting evidence (represented by `MeasureReport.evaluatedResource`) is for."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/hierarchical-status"/>
+      </reference>
+      <name value="Hierarchical Status"/>
+      <description value="Codes that indicate how hierarchies were applied to a Condition Category (CC), and if applied, whether the Condition Category (CC) is superseded."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ra-hierarchicalStatus"/>
+      </reference>
+      <name value="Hierarchical Status Extension"/>
+      <description value="Indicates how hiearchies were applied to a Condition Category (CC), and if applied, whether the Condition Category (CC) is superseded."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/measurereport-category"/>
+      </reference>
+      <name value="MeasureReportCategory"/>
+      <description value="Search based on the measurereport-category extension"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Organization"/>
+      </extension>
+      <reference>
+        <reference value="Organization/ra-laboratory01"/>
+      </reference>
+      <name value="Organization Example: XYZ Laboratory"/>
+      <description value="Laboratory that created lab observations"/>
+      <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization|7.0.0"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Organization"/>
+      </extension>
+      <reference>
+        <reference value="Organization/ra-payer01"/>
+      </reference>
+      <name value="Organization: ABC Payer"/>
+      <description value="ABC Payer is an Organization example that generated Risk Adjustment Coding Gap Report."/>
+      <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization|7.0.0"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Organization"/>
+      </extension>
+      <reference>
+        <reference value="Organization/ra-vendor01"/>
+      </reference>
+      <name value="Organization: Best RA Vendor"/>
+      <description value="Best RA Vendor is an Organization example that generated Risk Adjustment Data Exchange MeasureReport."/>
+      <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization|7.0.0"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Organization"/>
+      </extension>
+      <reference>
+        <reference value="Organization/ra-org03pat03"/>
+      </reference>
+      <name value="Organization: Community HealthCenter"/>
+      <description value="Community HealthCenter is an Organization example, which is used for example Patient 03 data."/>
+      <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization|7.0.0"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Organization"/>
+      </extension>
+      <reference>
+        <reference value="Organization/ra-org01pat01"/>
+      </reference>
+      <name value="Organization: Community Urgent Care"/>
+      <description value="Community Urgent Care is an Organization example, which is used for example Patient 01 data."/>
+      <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization|7.0.0"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Organization"/>
+      </extension>
+      <reference>
+        <reference value="Organization/ra-org02pat02"/>
+      </reference>
+      <name value="Organization: GHH Outpatient Clinic"/>
+      <description value="GHH Outpatient Clinic is an Organization example, which is used for example Patient 02 data."/>
+      <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization|7.0.0"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Organization"/>
+      </extension>
+      <reference>
+        <reference value="Organization/ra-org-author"/>
+      </reference>
+      <name value="Organization: Risk Adjustment Author"/>
+      <description value="This is an example Organization that is the author of the RA report"/>
+      <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization|7.0.0"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="DocumentReference"/>
+      </extension>
+      <reference>
+        <reference value="DocumentReference/ra-documentreference01pat01"/>
+      </reference>
+      <name value="Outpatient Note for Patient01 Eve Everywoman"/>
+      <description value="This is an outpatient note example for the *US Core DocumentReference Profile*."/>
+      <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-documentreference|7.0.0"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Parameters"/>
+      </extension>
+      <reference>
+        <reference value="Parameters/ra-measurereport01-patch-mult"/>
+      </reference>
+      <name value="Patch Example01 with multiple value (ra-measurereport01)"/>
+      <description value="This is an example using the patch operation to send a Condition Category Remark with data for two Condition Categories (group-001, group-002) and one with multiple attributes: authorDatetime, text."/>
+      <exampleCanonical value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-parameters-cc-remark-patch"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Parameters"/>
+      </extension>
+      <reference>
+        <reference value="Parameters/ra-measurereport01-patch"/>
+      </reference>
+      <name value="Patch Example02 (ra-measurereport01)"/>
+      <description value="This is an example using the patch operation to send a Condition Category Remark for one Condition Category (group-001) with one attribute: authorDatetime."/>
+      <exampleCanonical value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-parameters-cc-remark-patch"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ra-patient-group"/>
+      </reference>
+      <name value="Patient Group"/>
+      <description value="The Patient Group Profile describes a group consisting of one or more patients. It can be used a) when generating risk adjustment gap reports using Bulk FHIR or b) for the evaluated-approach for generating reports as defined on the dCC page."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Group"/>
+      </extension>
+      <reference>
+        <reference value="Group/ra-group01"/>
+      </reference>
+      <name value="Patient Group Example 1"/>
+      <description value="This is an example for the Patient Group profile. This example patient group has one member."/>
+      <exampleCanonical value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-patient-group"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Group"/>
+      </extension>
+      <reference>
+        <reference value="Group/ra-group02"/>
+      </reference>
+      <name value="Patient Group Example 2"/>
+      <description value="This is an example for the Patient Group profile. This example patient group has two members."/>
+      <exampleCanonical value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-patient-group"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/ra-patient01"/>
+      </reference>
+      <name value="Patient01: Eve Everywoman"/>
+      <description value="This is an example patient that uses the USCore profile. The example patient name is Eve Everywoman."/>
+      <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient|7.0.0"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/ra-patient02"/>
+      </reference>
+      <name value="Patient02: Adam Everyman"/>
+      <description value="This is an example patient that uses the US Core Patient profile. The example patient name is Adam Everyman."/>
+      <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient|7.0.0"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/ra-patient03"/>
+      </reference>
+      <name value="Patient03: Nelda Nuclear"/>
+      <description value="This is an example patient that uses the US Core Patient profile. The example patient name is Nelda Nuclear."/>
+      <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient|7.0.0"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ra-payerCodingGapReportId"/>
+      </reference>
+      <name value="Payer Coding Gap Report Id Extension"/>
+      <description value="Unique id of the original payer generated coding gap report. This is the MeasureReport.id from the Risk Adjustment Coding Gap Report profile."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/ra-obs02pat03"/>
+      </reference>
+      <name value="PHQ9 Total Score for Patient 03"/>
+      <description value="This is a PHQ9 Total Score for Patient 03."/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Practitioner"/>
+      </extension>
+      <reference>
+        <reference value="Practitioner/ra-prac01pat01"/>
+      </reference>
+      <name value="Practitioner01: Harold Hippocrates"/>
+      <description value="This is an example practitioner that uses the US Core Practitioner profile. The example practitioner is an individual practitioner: Harold Hippocrates."/>
+      <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner|7.0.0"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Practitioner"/>
+      </extension>
+      <reference>
+        <reference value="Practitioner/ra-prac02pat02"/>
+      </reference>
+      <name value="Practitioner02: Patrick Pump"/>
+      <description value="This is an example practitioner that uses the US Core Practitioner profile. The example practitioner is an organization: GHH Outpatient Clinic."/>
+      <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner|7.0.0"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Practitioner"/>
+      </extension>
+      <reference>
+        <reference value="Practitioner/ra-prac03pat03"/>
+      </reference>
+      <name value="Practitioner03: Otto Osler"/>
+      <description value="This is an example practitioner that uses the US Core Practitioner profile. The example practitioner is an organization: Community HealthCenter."/>
+      <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner|7.0.0"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ra-qualifyingDxCode"/>
+      </reference>
+      <name value="QualifyingDxCode Extension"/>
+      <description value="Diagnosis code(s) classified under a Condition Category, as defined by the risk adjustment model. This usually comes into play in the scenario where proprietary risk models are used and the mappings of ICD-10 codes to Condition Categories are not readily available. Note that whether qualifying codes may be included in a report depending may depend on individual Risk Adjustment model licensing agreement."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MeasureReport"/>
+      </extension>
+      <reference>
+        <reference value="MeasureReport/ra-measurereport01"/>
+      </reference>
+      <name value="RA Coding Gap MeasureReport Example01 with RA Model CMS-HCC V24 for Patient01 Eve Everywoman"/>
+      <description value="This is an example for the Risk Adjustment Coding Gap MeasureReport profile. This example report uses the CMS-HCC version 24 as the Risk Adjustment Model and the example patient used is Eve Everywoman."/>
+      <exampleCanonical value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-measurereport"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MeasureReport"/>
+      </extension>
+      <reference>
+        <reference value="MeasureReport/ra-measurereport02"/>
+      </reference>
+      <name value="RA Coding Gap MeasureReport Example02 with RA Model CMS-RxHCC V5 for Patient01 Eve Everywoman"/>
+      <description value="This is an example for the Risk Adjustment Coding Gap MeasureReport profile. This example report uses the CMS-RxHCC version 5 as the Risk Adjustment Model and the example patient used is Eve Everywoman."/>
+      <exampleCanonical value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-measurereport"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MeasureReport"/>
+      </extension>
+      <reference>
+        <reference value="MeasureReport/ra-measurereport03"/>
+      </reference>
+      <name value="RA Coding Gap MeasureReport Example03 with RA Model CMS-HCC V24 for Patient02 Adam Everyman"/>
+      <description value="This is an example for the Risk Adjustment Coding Gap MeasureReport profile. This example report uses the CMS-HCC version 24 as the Risk Adjustment Model and the example patient used is Eve Everywoman."/>
+      <exampleCanonical value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-measurereport"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MeasureReport"/>
+      </extension>
+      <reference>
+        <reference value="MeasureReport/ra-measurereport04"/>
+      </reference>
+      <name value="RA Coding Gap MeasureReport Example04 with RA Model CMS-HCC V21 for Patient03 Nelda Nuclear"/>
+      <description value="This is an example for the Risk Adjustment Coding Gap MeasureReport profile. This example report uses the CMS-HCC version 21 as the Risk Adjustment Model and the example patient used is Eve Everywoman."/>
+      <exampleCanonical value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-measurereport"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MeasureReport"/>
+      </extension>
+      <reference>
+        <reference value="MeasureReport/ra-measurereport05"/>
+      </reference>
+      <name value="RA Coding Gap MeasureReport Example05 with RA Model CMS-RxHCC V5 for Patient03 Nelda Nuclear"/>
+      <description value="This is an example for the Risk Adjustment Coding Gap MeasureReport profile. This example report uses the CMS-RxHCC version 5 as the Risk Adjustment Model and the example patient used is Eve Everywoman."/>
+      <exampleCanonical value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-measurereport"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MeasureReport"/>
+      </extension>
+      <reference>
+        <reference value="MeasureReport/ra-measurereport06"/>
+      </reference>
+      <name value="RA Coding Gap MeasureReport Example06 with RA Model CMS-RxHCC V5 for Patient02 Adam Everyman"/>
+      <description value="This is an example for the Risk Adjustment Coding Gap MeasureReport profile. This example report uses the CMS-RxHCC version 5 as the Risk Adjustment Model and the example patient used is Eve Everywoman."/>
+      <exampleCanonical value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-measurereport"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/confidence-scale"/>
+      </reference>
+      <name value="RA Confidence Scale"/>
+      <description value="Codes that describe the confidence scale of a risk adjustment Condition Category (CC)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MeasureReport"/>
+      </extension>
+      <reference>
+        <reference value="MeasureReport/ra-measurereport01-with-remark"/>
+      </reference>
+      <name value="RA MeasureReport with Remark Example (ra-measurereport01-with-remark)"/>
+      <description value="This is an example for the Risk Adjustment Coding Gap MeasureReport profile that shows using the Condition Category Remark extension. The remark is added to MeasureReport."/>
+      <exampleCanonical value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-measurereport"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Measure"/>
+      </extension>
+      <reference>
+        <reference value="Measure/RAModelExample01"/>
+      </reference>
+      <name value="RA Model Example01 CMS-HCC version 24"/>
+      <description value="This is an example for the Risk Adjustment Model Measure profile. The example uses the CMS-HCC version 24 as the example Risk Adjustment Model."/>
+      <exampleCanonical value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-model-measure"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Measure"/>
+      </extension>
+      <reference>
+        <reference value="Measure/RAModelExample02"/>
+      </reference>
+      <name value="RA Model Example02 CMS-HCC version 21"/>
+      <description value="This is an example for the Risk Adjustment Model Measure profile. The example uses the CMS-HCC version 21 as the example Risk Adjustment Model."/>
+      <exampleCanonical value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-model-measure"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Measure"/>
+      </extension>
+      <reference>
+        <reference value="Measure/RAModelExample03"/>
+      </reference>
+      <name value="RA Model Example03 CMS-RxHCC version 5"/>
+      <description value="This is an example for the Risk Adjustment Model Measure profile. The example uses the CMS-RxHCC version 5 as the example Risk Adjustment Model."/>
+      <exampleCanonical value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-model-measure"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ra-parameters-cc-remark-patch"/>
+      </reference>
+      <name value="RA Parameters ccRemark Patch Profile"/>
+      <description value="A Parameters profile that defines structures of multi-part Parameters to be used for sending [Condition Category Remarks](StructureDefinition-ra-ccRemark.html) to a [Risk Adjustment Coding Gap Report](StructureDefinition-ra-measurereport.html) using the [PATCH](https://www.hl7.org/fhir/http.html#patch) operation."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/ra-temp"/>
+      </reference>
+      <name value="RA Temporary Code System"/>
+      <description value="Temporary code system defined in this implementation guide"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/remark-reason"/>
+      </reference>
+      <name value="Remark Reason"/>
+      <description value="Reason for the remark"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/remark-reason"/>
+      </reference>
+      <name value="Remark Reason Codes"/>
+      <description value="Reason codes for remark"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/remark-type"/>
+      </reference>
+      <name value="Remark Type"/>
+      <description value="Type of Condition Category Remark"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ra-reportingVendor"/>
+      </reference>
+      <name value="Reporting Vendor Extension"/>
+      <description value="A reference to the vendor who generated the report. The 'reporting vendor' is intended to represent the submitting entity when it is not the same as the reporting entity. This extension is used when the Receiver is interested in getting vendor information in the report."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ra-measurereport"/>
+      </reference>
+      <name value="Risk Adjustment Coding Gap MeasureReport"/>
+      <description value="This profile is based on the [MeasureReport](http://hl7.org/fhir/R4/measurereport.html) to represent a risk adjustment coding gap report. Payer runs risk adjustment engine and uses this profile to represent the risk adjustment Condition Category (CC) coding gaps and their detailed information for a patient."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ra-measurereport-with-remark"/>
+      </reference>
+      <name value="Risk Adjustment Coding Gap MeasureReport with Remark"/>
+      <description value="This profile represents a risk adjustment coding gap report with condition categories and at least one of the condition category has one or more condition category remark(s)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ra-measurereport-bundle"/>
+      </reference>
+      <name value="Risk Adjustment Coding Gap Report Bundle"/>
+      <description value="The Risk Adjustment Coding Gap Report Bundle Profile describes a collection bundle returned by the [$ra.evaluate-measure](OperationDefinition-ra.evaluate-measure.html) operation. This bundle is a collection of Risk Adjustment Coding Gap Reports."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/cc-type"/>
+      </reference>
+      <name value="Risk Adjustment Condition Category Type Codes"/>
+      <description value="Code sytstem that indicates whether it is a suspected Condition Category (CC) gap, a historic Condition Category (CC) gap, or a net-new Condition Category (CC). Historic, suspected, and net-new are mutually exclusive."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ra-datax-measurereport"/>
+      </reference>
+      <name value="Risk Adjustment Data Exchange MeasureReport"/>
+      <description value="This profile is based on the [MeasureReport](http://hl7.org/fhir/R4/measurereport.html). It is used for Provider to submit data such as clinical evaluation evidence to Payer."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CapabilityStatement"/>
+      </extension>
+      <reference>
+        <reference value="CapabilityStatement/ra-data-submission-client"/>
+      </reference>
+      <name value="Risk Adjustment Data Submission Client Capability Statement"/>
+      <description value="This profile defines the expected capabilities of a Da Vinci Risk Adjustment Data Submission Client when conforming to the Da Vinci Risk Adjustment Implementation Guide for interactions between Data Submission Clients and Data Submission Servers. Clients are the actors creating and submitting the Risk Adjustment Data Exchange Measure Reports using the $submit-data operation to the Server."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CapabilityStatement"/>
+      </extension>
+      <reference>
+        <reference value="CapabilityStatement/ra-data-submission-server"/>
+      </reference>
+      <name value="Risk Adjustment Data Submission Server Capability Statement"/>
+      <description value="This profile defines the expected capabilities of a Da Vinci Risk Adjustment Data Submission Server when conforming to the Da Vinci Risk Adjustment Implementation Guide for interactions between Clients and Servers. Servers are the actors receiving and processing the Risk Adjustment Data Exchange MeasureReports submitted by the Client."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/evidence-status"/>
+      </reference>
+      <name value="Risk Adjustment Evidence Status Codes"/>
+      <description value="Code System that indicates whether a coding gap is an open-gap, invalid-gap, closed-gap or pending"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/hierarchical-status"/>
+      </reference>
+      <name value="Risk Adjustment Hierarchical Status Codes"/>
+      <description value="Code system that indicates how hierarchies were applied to a Condition Category (CC), and if applied, whether the Condition Category (CC) is superseded."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/ra-bundle01"/>
+      </reference>
+      <name value="Risk Adjustment MeasureReport Bundle example, MeasureReport01: Patient01"/>
+      <description value="This is an Risk Adjustment MeasureReport Bundle example includes MeasureReport01 for Patient01."/>
+      <exampleCanonical value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-measurereport-bundle"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ra-measurereport-remark-bundle"/>
+      </reference>
+      <name value="Risk Adjustment MeasureReport With Remark Bundle"/>
+      <description value="This bundle contains a Risk Adjustment Coding Gap MeasureReport that has Condition Category Remark (ccRemark) present on at least one of the Condition Categories. It also contains the relevant resources referenced by the ccRemark."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ra-model-measure"/>
+      </reference>
+      <name value="Risk Adjustment Model Measure"/>
+      <description value="This risk adjustment model measure profile is based on the [Measure](http://hl7.org/fhir/R4/measure.html) resource to represent a risk adjustment model and its version, such as CMS-HCC version 24, CMS-HCC version 28."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CapabilityStatement"/>
+      </extension>
+      <reference>
+        <reference value="CapabilityStatement/ra-reporting-client"/>
+      </reference>
+      <name value="Risk Adjustment Reporting Client Capability Statement"/>
+      <description value="This profile defines the expected capabilities of a Da Vinci Risk Adjustment Reporting Client when conforming to the Da Vinci Risk Adjustment Implementation Guide for interactions between Reporting Clients and Reporting Servers. Clients are the actors making the request for Risk Adjustment Coding Gap Reports for patient(s) and for Risk Adjustmenet Models that are available on the Server. This CapabilityStatement resource includes the complete list of the *recommended* Da Vinci Risk Adjustment profiles and RESTful operations that a Risk Adjustment Reporting Client could support. Clients have the option of choosing from this list based on their local use cases and other contextual requirements."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CapabilityStatement"/>
+      </extension>
+      <reference>
+        <reference value="CapabilityStatement/ra-reporting-server"/>
+      </reference>
+      <name value="Risk Adjustment Reporting Server Capability Statement"/>
+      <description value="This profile defines the expected capabilities of a Da Vinci Risk Adjustment Reporting Server when conforming to the Da Vinci Risk Adjustment Implementation Guide for interactions between Reporting Clients and Reporting Servers. Servers are the actors receiving the request for Risk Adjustment Coding Gap Reports for patient(s) and for Risk Adjustmenet Models that are available on the Server. This CapabilityStatement resource includes the complete list of the *recommended* Da Vinci Risk Adjustment profiles and RESTful operations that a Risk Adjustment Reporting Server could support. Servers have the option of choosing from this list based on their local use cases and other contextual requirements."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="OperationDefinition"/>
+      </extension>
+      <reference>
+        <reference value="OperationDefinition/risk-gap"/>
+      </reference>
+      <name value="Risk Gap"/>
+      <description value="The risk-gap operation is used to request condition Category (CC) gaps for a patient/member and coverage within a specified time period, and for a specific context. The context-id is provided as an HTTP header and not as a parameter of the operation. The Client (i.e., Provider) who calls this operation may also POST references to Organization, PracitionerRole, and/or Encounter resources using the parameters. The data parameter is a Bundle, which could be used to provide the referenced resources. Additionally, this operation also includes parameters to povide ccType and evidenceStatus. The Server (i.e. Payer) uses the resources and/or codes provided using the parameters as filter to get the right risk adjustment coding gap reports to return to the Client."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/sample-cmshcc"/>
+      </reference>
+      <name value="Sample CMS Hierarchical Condition Category"/>
+      <description value="This is a sample of the concepts that can be found in the CMS Hierarchical Condition Categories (CMS-HCC) code system version 24. The source of the codes included in this example was published at https://www.cms.gov/Medicare/Health-Plans/MedicareAdvtgSpecRateStats/Downloads/Announcement2020.pdf. The CMS-HCC model uses more than 9,000 ICD-10-CM codes, which are mapped to condition categories (CCs) that predict costs well. The condition categories (CCs) are based on diagnoses clinically related to one another and with similar predicted cost implications. Hierarchies are imposed on the Condition Categories (CCs) to capture the most costly diagnoses. Hierarchy logic is imposed on certain Condition Categories (CCs) to account for different hierarchical costs, thus, the term Hierarchical Condition Category, or HCC."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/ra-obs01pat03"/>
+      </reference>
+      <name value="Serum Creatinine for Patient 03"/>
+      <description value="This is an example for Observation. Serum Creatinine for Patient 03 Nelda Nuclear performed at XYZ Laboratory."/>
+      <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab|7.0.0"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Parameters"/>
+      </extension>
+      <reference>
+        <reference value="Parameters/ra-submit-data"/>
+      </reference>
+      <name value="Submit Data example for sending a C-CDA document"/>
+      <description value="This is an example for using $submit-data oepration to send a C-CDA document as supporting evidence using the RA Data Exchange MeasureReport."/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="OperationDefinition"/>
+      </extension>
+      <reference>
+        <reference value="OperationDefinition/submit-remark-data"/>
+      </reference>
+      <name value="Submit Remark Data"/>
+      <description value="A [Condition Category Remark](StructureDefinition-ra-ccRemark.html) may reference resources such as Pracitioner and Condition, using Patch to submit the remark may not be feasible. This operation is used to submit a Risk Adjustment Coding Gap Report with one or more ccRemarks on at least one of the Condition Categories, along with the relevant resources referenced by the ccRemark(s)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/ra-obs21pat01"/>
+      </reference>
+      <name value="Trypsin [Mass/volume] in Serum or Plasma for Patient 01"/>
+      <description value="Trypsin [Mass/volume] in Serum or Plasma for Patient 01."/>
+      <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab|7.0.0"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/ra-obs01pat02"/>
+      </reference>
+      <name value="Trypsin [Mass/volume] in Serum or Plasma for Patient 02"/>
+      <description value="This is an example for Observation profile. Trypsin [Mass/volume] in Serum or Plasma for Patient 02 Adam Everyman performed at XYZ Laboratory."/>
+      <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab|7.0.0"/>
+    </resource>
+    <page>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="informative"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+        <valueUrl value="toc.html"/>
+      </extension>
+      <nameUrl value="toc.html"/>
+      <title value="Table of Contents"/>
+      <generation value="html"/>
+      <page>
+        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+          <valueCode value="informative"/>
+        </extension>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="index.html"/>
+        </extension>
+        <nameUrl value="index.html"/>
+        <title value="Home"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+          <valueCode value="informative"/>
+        </extension>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="fhir.html"/>
+        </extension>
+        <nameUrl value="fhir.html"/>
+        <title value="Reading this IG - FHIR Introduction"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+          <valueCode value="informative"/>
+        </extension>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="background.html"/>
+        </extension>
+        <nameUrl value="background.html"/>
+        <title value="Background"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+          <valueCode value="informative"/>
+        </extension>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="credits.html"/>
+        </extension>
+        <nameUrl value="credits.html"/>
+        <title value="Projects and Participants"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+          <valueCode value="trial-use"/>
+        </extension>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="general-guidance.html"/>
+        </extension>
+        <nameUrl value="general-guidance.html"/>
+        <title value="General Guidance"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+          <valueCode value="trial-use"/>
+        </extension>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="report-generation.html"/>
+        </extension>
+        <nameUrl value="report-generation.html"/>
+        <title value="Report Generation"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+          <valueCode value="trial-use"/>
+        </extension>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="report-query.html"/>
+        </extension>
+        <nameUrl value="report-query.html"/>
+        <title value="Report Query"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+          <valueCode value="trial-use"/>
+        </extension>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="submit-data-to-payer.html"/>
+        </extension>
+        <nameUrl value="submit-data-to-payer.html"/>
+        <title value="Submit Data To Payer"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+          <valueCode value="trial-use"/>
+        </extension>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="cc-remark.html"/>
+        </extension>
+        <nameUrl value="cc-remark.html"/>
+        <title value="Add Remark to Condition Category"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+          <valueCode value="draft"/>
+        </extension>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="dcc.html"/>
+        </extension>
+        <nameUrl value="dcc.html"/>
+        <title value="Digital Condition Category (dCC)"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+          <valueCode value="trial-use"/>
+        </extension>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="security.html"/>
+        </extension>
+        <nameUrl value="security.html"/>
+        <title value="Security, Privacy, and Safety"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+          <valueCode value="informative"/>
+        </extension>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="glossary.html"/>
+        </extension>
+        <nameUrl value="glossary.html"/>
+        <title value="Glossary"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+          <valueCode value="informative"/>
+        </extension>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="profiles.html"/>
+        </extension>
+        <nameUrl value="profiles.html"/>
+        <title value="Profiles"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+          <valueCode value="informative"/>
+        </extension>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="extensions.html"/>
+        </extension>
+        <nameUrl value="extensions.html"/>
+        <title value="Extensions"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+          <valueCode value="informative"/>
+        </extension>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="search-parameters.html"/>
+        </extension>
+        <nameUrl value="search-parameters.html"/>
+        <title value="Search Parameters"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+          <valueCode value="informative"/>
+        </extension>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="terminology.html"/>
+        </extension>
+        <nameUrl value="terminology.html"/>
+        <title value="Terminology"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+          <valueCode value="informative"/>
+        </extension>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="operations.html"/>
+        </extension>
+        <nameUrl value="operations.html"/>
+        <title value="Operation"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+          <valueCode value="informative"/>
+        </extension>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="capabilities.html"/>
+        </extension>
+        <nameUrl value="capabilities.html"/>
+        <title value="Capability Statements"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+          <valueCode value="informative"/>
+        </extension>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="examples.html"/>
+        </extension>
+        <nameUrl value="examples.html"/>
+        <title value="Examples"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+          <valueCode value="informative"/>
+        </extension>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="downloads.html"/>
+        </extension>
+        <nameUrl value="downloads.html"/>
+        <title value="Downloads"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+          <valueCode value="informative"/>
+        </extension>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="tools.html"/>
+        </extension>
+        <nameUrl value="tools.html"/>
+        <title value="Tooling and Support"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+          <valueCode value="informative"/>
+        </extension>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="change-log.html"/>
+        </extension>
+        <nameUrl value="change-log.html"/>
+        <title value="Change Log"/>
+        <generation value="markdown"/>
+      </page>
+    </page>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/resources"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/vocabulary"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="fsh-generated/resources"/>
+    </parameter>
+    <parameter>
+      <code value="path-pages"/>
+      <value value="input/pagecontent"/>
+    </parameter>
+    <parameter>
+      <code value="path-pages"/>
+      <value value="input/intro-notes"/>
+    </parameter>
+    <parameter>
+      <code value="path-pages"/>
+      <value value="fsh-generated/includes"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/capabilities"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/examples"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/extensions"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/models"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/operations"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/profiles"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/testing"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/history"/>
+    </parameter>
+    <parameter>
+      <code value="path-pages"/>
+      <value value="template/config"/>
+    </parameter>
+    <parameter>
+      <code value="path-pages"/>
+      <value value="input/assets"/>
+    </parameter>
+    <parameter>
+      <code value="path-pages"/>
+      <value value="input/images"/>
+    </parameter>
+    <parameter>
+      <code value="path-tx-cache"/>
+      <value value="input-cache/txcache"/>
+    </parameter>
+  </definition>
+</ImplementationGuide>

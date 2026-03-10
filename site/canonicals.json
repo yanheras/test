@@ -1,0 +1,376 @@
+[{
+  "id" : "ra-data-submission-client",
+  "type" : "CapabilityStatement",
+  "url" : "http://hl7.org/fhir/us/davinci-ra/CapabilityStatement/ra-data-submission-client",
+  "version" : "3.0.0-ballot",
+  "name" : "RADataSubmissionClientCapabilityStatement",
+  "oids" : ["2.16.840.1.113883.4.642.40.29.13.1"]
+},
+{
+  "id" : "ra-data-submission-server",
+  "type" : "CapabilityStatement",
+  "url" : "http://hl7.org/fhir/us/davinci-ra/CapabilityStatement/ra-data-submission-server",
+  "version" : "3.0.0-ballot",
+  "name" : "RADataSubmissionServerCapabilityStatement",
+  "oids" : ["2.16.840.1.113883.4.642.40.29.13.2"]
+},
+{
+  "id" : "ra-reporting-client",
+  "type" : "CapabilityStatement",
+  "url" : "http://hl7.org/fhir/us/davinci-ra/CapabilityStatement/ra-reporting-client",
+  "version" : "3.0.0-ballot",
+  "name" : "RAClientCapabilityStatement",
+  "oids" : ["2.16.840.1.113883.4.642.40.29.13.3"]
+},
+{
+  "id" : "ra-reporting-server",
+  "type" : "CapabilityStatement",
+  "url" : "http://hl7.org/fhir/us/davinci-ra/CapabilityStatement/ra-reporting-server",
+  "version" : "3.0.0-ballot",
+  "name" : "RAServerCapabilityStatement",
+  "oids" : ["2.16.840.1.113883.4.642.40.29.13.4"]
+},
+{
+  "id" : "cc-type",
+  "type" : "CodeSystem",
+  "url" : "http://hl7.org/fhir/us/davinci-ra/CodeSystem/cc-type",
+  "version" : "3.0.0-ballot",
+  "name" : "RiskAdjustmentConditionCategoryType",
+  "oids" : ["2.16.840.1.113883.4.642.40.29.16.1"]
+},
+{
+  "id" : "coding-gap-remark",
+  "type" : "CodeSystem",
+  "url" : "http://hl7.org/fhir/us/davinci-ra/CodeSystem/coding-gap-remark",
+  "version" : "3.0.0-ballot",
+  "name" : "CodingGapRemark",
+  "oids" : ["2.16.840.1.113883.4.642.40.29.16.2"]
+},
+{
+  "id" : "evidence-status",
+  "type" : "CodeSystem",
+  "url" : "http://hl7.org/fhir/us/davinci-ra/CodeSystem/evidence-status",
+  "version" : "3.0.0-ballot",
+  "name" : "RiskAdjustmentEvidenceStatus",
+  "oids" : ["2.16.840.1.113883.4.642.40.29.16.3"]
+},
+{
+  "id" : "hierarchical-status",
+  "type" : "CodeSystem",
+  "url" : "http://hl7.org/fhir/us/davinci-ra/CodeSystem/hierarchical-status",
+  "version" : "3.0.0-ballot",
+  "name" : "RiskAdjustmenthierarchicalStatus",
+  "oids" : ["2.16.840.1.113883.4.642.40.29.16.4"]
+},
+{
+  "id" : "ra-temp",
+  "type" : "CodeSystem",
+  "url" : "http://hl7.org/fhir/us/davinci-ra/CodeSystem/ra-temp",
+  "version" : "3.0.0-ballot",
+  "name" : "RATemporaryCodes",
+  "oids" : ["2.16.840.1.113883.4.642.40.29.16.8"]
+},
+{
+  "id" : "remark-reason",
+  "type" : "CodeSystem",
+  "url" : "http://hl7.org/fhir/us/davinci-ra/CodeSystem/remark-reason",
+  "version" : "3.0.0-ballot",
+  "name" : "RemarkReason",
+  "oids" : ["2.16.840.1.113883.4.642.40.29.16.5"]
+},
+{
+  "id" : "hl7.fhir.us.davinci-ra",
+  "type" : "ImplementationGuide",
+  "url" : "http://hl7.org/fhir/us/davinci-ra/ImplementationGuide/hl7.fhir.us.davinci-ra",
+  "version" : "3.0.0-ballot",
+  "name" : "RiskAdjustment",
+  "oids" : ["2.16.840.1.113883.4.642.40.29"]
+},
+{
+  "id" : "RAModelExample01",
+  "type" : "Measure",
+  "url" : "http://hl7.org/fhir/us/davinci-ra/Measure/RAModelExample01",
+  "version" : "3.0.0-ballot",
+  "name" : "RAModelExample01",
+  "oids" : ["2.16.840.1.113883.4.642.40.29.29.1"]
+},
+{
+  "id" : "RAModelExample02",
+  "type" : "Measure",
+  "url" : "http://hl7.org/fhir/us/davinci-ra/Measure/RAModelExample02",
+  "version" : "3.0.0-ballot",
+  "name" : "RAModelExample02",
+  "oids" : ["2.16.840.1.113883.4.642.40.29.29.2"]
+},
+{
+  "id" : "RAModelExample03",
+  "type" : "Measure",
+  "url" : "http://hl7.org/fhir/us/davinci-ra/Measure/RAModelExample03",
+  "version" : "3.0.0-ballot",
+  "name" : "RAModelExample03",
+  "oids" : ["2.16.840.1.113883.4.642.40.29.29.3"]
+},
+{
+  "id" : "ra.evaluate-measure",
+  "type" : "OperationDefinition",
+  "url" : "http://hl7.org/fhir/us/davinci-ra/OperationDefinition/ra.evaluate-measure",
+  "version" : "3.0.0-ballot",
+  "name" : "RAEvaluateMeasure",
+  "oids" : ["2.16.840.1.113883.4.642.40.29.33.1"]
+},
+{
+  "id" : "risk-gap",
+  "type" : "OperationDefinition",
+  "url" : "http://hl7.org/fhir/us/davinci-ra/OperationDefinition/risk-gap",
+  "version" : "3.0.0-ballot",
+  "name" : "RiskGap",
+  "oids" : ["2.16.840.1.113883.4.642.40.29.33.2"]
+},
+{
+  "id" : "submit-remark-data",
+  "type" : "OperationDefinition",
+  "url" : "http://hl7.org/fhir/us/davinci-ra/OperationDefinition/submit-remark-data",
+  "version" : "3.0.0-ballot",
+  "name" : "SubmitRemarkData",
+  "oids" : ["2.16.840.1.113883.4.642.40.29.33.3"]
+},
+{
+  "id" : "measurereport-category",
+  "type" : "SearchParameter",
+  "url" : "http://hl7.org/fhir/us/davinci-ra/SearchParameter/measurereport-category",
+  "version" : "3.0.0-ballot",
+  "name" : "MeasureReportCategory",
+  "oids" : ["2.16.840.1.113883.4.642.40.29.40.1"]
+},
+{
+  "id" : "ra-ccRemark",
+  "type" : "StructureDefinition",
+  "url" : "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-ccRemark",
+  "version" : "3.0.0-ballot",
+  "name" : "ConditionCategoryRemark",
+  "oids" : ["2.16.840.1.113883.4.642.40.29.42.1"]
+},
+{
+  "id" : "ra-ccType",
+  "type" : "StructureDefinition",
+  "url" : "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-ccType",
+  "version" : "3.0.0-ballot",
+  "name" : "CCType",
+  "oids" : ["2.16.840.1.113883.4.642.40.29.42.2"]
+},
+{
+  "id" : "ra-clinicalDataCollectionDeadline",
+  "type" : "StructureDefinition",
+  "url" : "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-clinicalDataCollectionDeadline",
+  "version" : "3.0.0-ballot",
+  "name" : "RAClinicalDataCollectionDeadline",
+  "oids" : ["2.16.840.1.113883.4.642.40.29.42.3"]
+},
+{
+  "id" : "ra-confidenceScale",
+  "type" : "StructureDefinition",
+  "url" : "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-confidenceScale",
+  "version" : "3.0.0-ballot",
+  "name" : "ConfidenceScale",
+  "oids" : ["2.16.840.1.113883.4.642.40.29.42.4"]
+},
+{
+  "id" : "ra-contextId",
+  "type" : "StructureDefinition",
+  "url" : "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-contextId",
+  "version" : "3.0.0-ballot",
+  "name" : "ContextId",
+  "oids" : ["2.16.840.1.113883.4.642.40.29.42.22"]
+},
+{
+  "id" : "ra-datax-measurereport",
+  "type" : "StructureDefinition",
+  "url" : "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-datax-measurereport",
+  "version" : "3.0.0-ballot",
+  "name" : "RiskAdjustmentDataExchangeMeasureReport",
+  "oids" : ["2.16.840.1.113883.4.642.40.29.42.5"]
+},
+{
+  "id" : "ra-dxCode",
+  "type" : "StructureDefinition",
+  "url" : "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-dxCode",
+  "version" : "3.0.0-ballot",
+  "name" : "DxCode",
+  "oids" : ["2.16.840.1.113883.4.642.40.29.42.6"]
+},
+{
+  "id" : "ra-evidenceStatus",
+  "type" : "StructureDefinition",
+  "url" : "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-evidenceStatus",
+  "version" : "3.0.0-ballot",
+  "name" : "EvidenceStatus",
+  "oids" : ["2.16.840.1.113883.4.642.40.29.42.7"]
+},
+{
+  "id" : "ra-evidenceStatusDate",
+  "type" : "StructureDefinition",
+  "url" : "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-evidenceStatusDate",
+  "version" : "3.0.0-ballot",
+  "name" : "RAClinicalEvidenceStatusDate",
+  "oids" : ["2.16.840.1.113883.4.642.40.29.42.8"]
+},
+{
+  "id" : "ra-groupReference",
+  "type" : "StructureDefinition",
+  "url" : "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-groupReference",
+  "version" : "3.0.0-ballot",
+  "name" : "GroupReference",
+  "oids" : ["2.16.840.1.113883.4.642.40.29.42.9"]
+},
+{
+  "id" : "ra-hierarchicalStatus",
+  "type" : "StructureDefinition",
+  "url" : "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-hierarchicalStatus",
+  "version" : "3.0.0-ballot",
+  "name" : "HierarchicalStatus",
+  "oids" : ["2.16.840.1.113883.4.642.40.29.42.10"]
+},
+{
+  "id" : "ra-measurereport",
+  "type" : "StructureDefinition",
+  "url" : "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-measurereport",
+  "version" : "3.0.0-ballot",
+  "name" : "RiskAdjustmentCodingGapMeasureReport",
+  "oids" : ["2.16.840.1.113883.4.642.40.29.42.12"]
+},
+{
+  "id" : "ra-measurereport-bundle",
+  "type" : "StructureDefinition",
+  "url" : "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-measurereport-bundle",
+  "version" : "3.0.0-ballot",
+  "name" : "RAMeasureReportBundle",
+  "oids" : ["2.16.840.1.113883.4.642.40.29.42.11"]
+},
+{
+  "id" : "ra-measurereport-remark-bundle",
+  "type" : "StructureDefinition",
+  "url" : "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-measurereport-remark-bundle",
+  "version" : "3.0.0-ballot",
+  "name" : "RiskAdjustmentMeasureReportRemarkBundle",
+  "oids" : ["2.16.840.1.113883.4.642.40.29.42.20"]
+},
+{
+  "id" : "ra-measurereport-with-remark",
+  "type" : "StructureDefinition",
+  "url" : "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-measurereport-with-remark",
+  "version" : "3.0.0-ballot",
+  "name" : "RiskAdjustmentCodingGapMeasureReport",
+  "oids" : ["2.16.840.1.113883.4.642.40.29.42.19"]
+},
+{
+  "id" : "ra-model-measure",
+  "type" : "StructureDefinition",
+  "url" : "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-model-measure",
+  "version" : "3.0.0-ballot",
+  "name" : "RiskAdjustmentModelMeasure",
+  "oids" : ["2.16.840.1.113883.4.642.40.29.42.13"]
+},
+{
+  "id" : "ra-parameters-cc-remark-patch",
+  "type" : "StructureDefinition",
+  "url" : "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-parameters-cc-remark-patch",
+  "version" : "3.0.0-ballot",
+  "name" : "CCRemarkPatchParameters",
+  "oids" : ["2.16.840.1.113883.4.642.40.29.42.14"]
+},
+{
+  "id" : "ra-patient-group",
+  "type" : "StructureDefinition",
+  "url" : "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-patient-group",
+  "version" : "3.0.0-ballot",
+  "name" : "PatientGroup",
+  "oids" : ["2.16.840.1.113883.4.642.40.29.42.15"]
+},
+{
+  "id" : "ra-payerCodingGapReportId",
+  "type" : "StructureDefinition",
+  "url" : "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-payerCodingGapReportId",
+  "version" : "3.0.0-ballot",
+  "name" : "PayerCodingGapReportId",
+  "oids" : ["2.16.840.1.113883.4.642.40.29.42.16"]
+},
+{
+  "id" : "ra-qualifyingDxCode",
+  "type" : "StructureDefinition",
+  "url" : "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-qualifyingDxCode",
+  "version" : "3.0.0-ballot",
+  "name" : "QualifyingDxCode",
+  "oids" : ["2.16.840.1.113883.4.642.40.29.42.21"]
+},
+{
+  "id" : "ra-reportingVendor",
+  "type" : "StructureDefinition",
+  "url" : "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-reportingVendor",
+  "version" : "3.0.0-ballot",
+  "name" : "ReportingVendor",
+  "oids" : ["2.16.840.1.113883.4.642.40.29.42.17"]
+},
+{
+  "id" : "cc-type",
+  "type" : "ValueSet",
+  "url" : "http://hl7.org/fhir/us/davinci-ra/ValueSet/cc-type",
+  "version" : "3.0.0-ballot",
+  "name" : "RiskAdjustmentConditionCategoryTypeVS",
+  "oids" : ["2.16.840.1.113883.4.642.40.29.48.1"]
+},
+{
+  "id" : "coding-gap-remark",
+  "type" : "ValueSet",
+  "url" : "http://hl7.org/fhir/us/davinci-ra/ValueSet/coding-gap-remark",
+  "version" : "3.0.0-ballot",
+  "name" : "CodingGapRemarkVS",
+  "oids" : ["2.16.840.1.113883.4.642.40.29.48.2"]
+},
+{
+  "id" : "confidence-scale",
+  "type" : "ValueSet",
+  "url" : "http://hl7.org/fhir/us/davinci-ra/ValueSet/confidence-scale",
+  "version" : "3.0.0-ballot",
+  "name" : "ConfidenceScale",
+  "oids" : ["2.16.840.1.113883.4.642.40.29.48.3"]
+},
+{
+  "id" : "evidence-status",
+  "type" : "ValueSet",
+  "url" : "http://hl7.org/fhir/us/davinci-ra/ValueSet/evidence-status",
+  "version" : "3.0.0-ballot",
+  "name" : "RiskAdjustmentEvidenceStatusVS",
+  "oids" : ["2.16.840.1.113883.4.642.40.29.48.4"]
+},
+{
+  "id" : "hierarchical-status",
+  "type" : "ValueSet",
+  "url" : "http://hl7.org/fhir/us/davinci-ra/ValueSet/hierarchical-status",
+  "version" : "3.0.0-ballot",
+  "name" : "RiskAdjustmenthierarchicalStatusVS",
+  "oids" : ["2.16.840.1.113883.4.642.40.29.48.5"]
+},
+{
+  "id" : "remark-reason",
+  "type" : "ValueSet",
+  "url" : "http://hl7.org/fhir/us/davinci-ra/ValueSet/remark-reason",
+  "version" : "3.0.0-ballot",
+  "name" : "RemarkReasonVS",
+  "oids" : ["2.16.840.1.113883.4.642.40.29.48.6"]
+},
+{
+  "id" : "remark-type",
+  "type" : "ValueSet",
+  "url" : "http://hl7.org/fhir/us/davinci-ra/ValueSet/remark-type",
+  "version" : "3.0.0-ballot",
+  "name" : "RemarkTypeVS",
+  "oids" : ["2.16.840.1.113883.4.642.40.29.48.21"]
+},
+{
+  "id" : "sample-cmshcc",
+  "type" : "ValueSet",
+  "url" : "http://hl7.org/fhir/us/davinci-ra/ValueSet/sample-cmshcc",
+  "version" : "3.0.0-ballot",
+  "name" : "SampleCMSHCC",
+  "oids" : ["2.16.840.1.113883.4.642.40.29.48.7"]
+}]

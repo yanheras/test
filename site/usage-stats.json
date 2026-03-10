@@ -1,0 +1,403 @@
+{
+  "package": "hl7.fhir.us.davinci-ra",
+  "version": "3.0.0-ballot",
+  "fhirVersion": "4.0.1",
+  "jurisdiction": "US",
+  "extensions": [
+    {
+      "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-ccRemark",
+      "title": "Condition Category Remark Extension",
+      "types": [
+        "CodeableConcept",
+        "Identifier",
+        "string",
+        "Reference",
+        "Identifier",
+        "string",
+        "Reference",
+        "Identifier",
+        "string",
+        "dateTime",
+        "string",
+        "CodeableConcept",
+        "CodeableConcept",
+        "Identifier",
+        "Reference",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-ccType",
+      "title": "Condition Category Type Extension",
+      "types": [
+        "CodeableConcept",
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-clinicalDataCollectionDeadline",
+      "title": "Clinical Data Collection Deadline Extension",
+      "types": [
+        "date",
+        "date"
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-confidenceScale",
+      "title": "Confidence Scale Extension",
+      "types": [
+        "CodeableConcept",
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-contextId",
+      "title": "Context Id Extension",
+      "types": [
+        "id",
+        "id"
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-dxCode",
+      "title": "Diagnosis Code Extension",
+      "types": [
+        "CodeableConcept",
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-evidenceStatus",
+      "title": "Evidence Status Extension",
+      "types": [
+        "CodeableConcept",
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-evidenceStatusDate",
+      "title": "Evidence Status Date Extension",
+      "types": [
+        "date",
+        "date"
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-groupReference",
+      "title": "Group Reference Extension",
+      "types": [
+        "string",
+        "string"
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-hierarchicalStatus",
+      "title": "Hierarchical Status Extension",
+      "types": [
+        "CodeableConcept",
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-payerCodingGapReportId",
+      "title": "Payer Coding Gap Report Id Extension",
+      "types": [
+        "id",
+        "id"
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-qualifyingDxCode",
+      "title": "QualifyingDxCode Extension",
+      "types": [
+        "CodeableConcept",
+        "CodeableConcept",
+        "string",
+        "Extension",
+        "Extension",
+        "Coding",
+        "string"
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-reportingVendor",
+      "title": "Reporting Vendor Extension",
+      "types": [
+        "Reference"
+      ]
+    }
+  ],
+  "profiles": {
+    "MeasureReport": [
+      {
+        "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-measurereport-with-remark",
+        "title": "Risk Adjustment Coding Gap MeasureReport with Remark"
+      }
+    ],
+    "Bundle": [
+      {
+        "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-measurereport-bundle",
+        "title": "Risk Adjustment Coding Gap Report Bundle"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-measurereport-remark-bundle",
+        "title": "Risk Adjustment MeasureReport With Remark Bundle"
+      }
+    ],
+    "Measure": [
+      {
+        "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-model-measure",
+        "title": "Risk Adjustment Model Measure"
+      }
+    ],
+    "Parameters": [
+      {
+        "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-parameters-cc-remark-patch",
+        "title": "RA Parameters ccRemark Patch Profile"
+      }
+    ],
+    "Group": [
+      {
+        "url": "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-patient-group",
+        "title": "Patient Group"
+      }
+    ]
+  },
+  "usage": {
+    "http://hl7.org/fhir/5.0/StructureDefinition/extension-ImplementationGuide.dependsOn.reason": [
+      "ImplementationGuide.dependsOn"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation": [
+      "CapabilityStatement.rest.interaction",
+      "CapabilityStatement.rest.resource",
+      "CapabilityStatement.rest.resource.interaction",
+      "CapabilityStatement.rest.resource.operation",
+      "CapabilityStatement.rest.resource.searchParam"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/codeOptions": [
+      "Extension.value[x]"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
+      "StructureDefinition.snapshot.element.constraint"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice-explanation": [
+      "StructureDefinition.snapshot.element.constraint"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/instance-description": [
+      "Bundle.entry.resource.meta",
+      "Bundle.meta",
+      "Condition.meta",
+      "DocumentReference.meta",
+      "Encounter.meta",
+      "Group.meta",
+      "Measure.meta",
+      "MeasureReport.meta",
+      "Observation.meta",
+      "Organization.meta",
+      "Parameters.meta",
+      "Parameters.parameter.resource.meta",
+      "Patient.meta",
+      "Practitioner.meta"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/instance-name": [
+      "Bundle.entry.resource.meta",
+      "Bundle.meta",
+      "Condition.meta",
+      "DocumentReference.meta",
+      "Encounter.meta",
+      "Group.meta",
+      "Measure.meta",
+      "MeasureReport.meta",
+      "Observation.meta",
+      "Organization.meta",
+      "Parameters.meta",
+      "Parameters.parameter.resource.meta",
+      "Patient.meta",
+      "Practitioner.meta"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/measurereport-category": [
+      "Bundle.entry.resource",
+      "MeasureReport",
+      "Parameters.parameter.resource"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/measurereport-category|5.2.0": [
+      "MeasureReport"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm": [
+      "CapabilityStatement",
+      "CodeSystem",
+      "ImplementationGuide",
+      "OperationDefinition",
+      "SearchParameter",
+      "StructureDefinition",
+      "ValueSet"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status": [
+      "CapabilityStatement",
+      "CodeSystem",
+      "ImplementationGuide",
+      "ImplementationGuide.definition.page",
+      "ImplementationGuide.definition.page.page",
+      "OperationDefinition",
+      "SearchParameter",
+      "StructureDefinition",
+      "ValueSet"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg": [
+      "CapabilityStatement",
+      "CodeSystem",
+      "ImplementationGuide",
+      "OperationDefinition",
+      "SearchParameter",
+      "StructureDefinition",
+      "ValueSet"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/expansion-parameters": [
+      "ImplementationGuide.definition"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency": [
+      "ImplementationGuide.definition"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name": [
+      "ImplementationGuide.definition.page",
+      "ImplementationGuide.definition.page.page"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter": [
+      "ImplementationGuide.definition"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment": [
+      "ImplementationGuide.dependsOn"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
+      "ImplementationGuide.definition.resource"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version": [
+      "StructureDefinition.snapshot"
+    ],
+    "http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex": [
+      "Bundle.entry.resource",
+      "Parameters.parameter.resource",
+      "Patient"
+    ],
+    "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity": [
+      "Bundle.entry.resource",
+      "Parameters.parameter.resource",
+      "Patient"
+    ],
+    "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race": [
+      "Bundle.entry.resource",
+      "Parameters.parameter.resource",
+      "Patient"
+    ],
+    "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-ccRemark": [
+      "MeasureReport.group"
+    ],
+    "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-ccType": [
+      "Bundle.entry.resource.group",
+      "MeasureReport.group"
+    ],
+    "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-clinicalDataCollectionDeadline": [
+      "Bundle.entry.resource",
+      "MeasureReport"
+    ],
+    "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-confidenceScale": [
+      "MeasureReport.group"
+    ],
+    "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-contextId": [
+      "MeasureReport"
+    ],
+    "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-dxCode": [
+      "MeasureReport.group"
+    ],
+    "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-evidenceStatus": [
+      "Bundle.entry.resource.group",
+      "MeasureReport.group"
+    ],
+    "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-evidenceStatusDate": [
+      "Bundle.entry.resource.group",
+      "MeasureReport.group"
+    ],
+    "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-groupReference": [
+      "Bundle.entry.resource.evaluatedResource",
+      "MeasureReport.evaluatedResource"
+    ],
+    "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-hierarchicalStatus": [
+      "Bundle.entry.resource.group",
+      "MeasureReport.group"
+    ],
+    "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-payerCodingGapReportId": [
+      "MeasureReport",
+      "Parameters.parameter.resource"
+    ],
+    "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-qualifyingDxCode": [
+      "MeasureReport.group"
+    ],
+    "http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-reportingVendor": [
+      "MeasureReport"
+    ],
+    "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-softwaresystem": [
+      "MeasureReport"
+    ]
+  }
+}

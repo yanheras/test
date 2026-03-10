@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<OperationDefinition xmlns="http://hl7.org/fhir">
+  <id value="ra.evaluate-measure"/>
+  <language value="en"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: OperationDefinition ra.evaluate-measure</b></p><a name="ra.evaluate-measure"> </a><a name="hcra.evaluate-measure"> </a><p>URL: [base]/Measure/$ra.evaluate-measure</p><p>URL: [base]/Measure/[id]/$ra.evaluate-measure</p><h3>Parameters</h3><table class="grid"><tr><td><b>Use</b></td><td><b>Name</b></td><td><b>Scope</b></td><td><b>Cardinality</b></td><td><b>Type</b></td><td><b>Binding</b></td><td><b>Documentation</b></td></tr><tr><td>IN</td><td>periodStart</td><td/><td>1..1</td><td><a href="http://hl7.org/fhir/R4/datatypes.html#date">date</a></td><td/><td><div><p>The start of a clinical evaluation period. The periodStart and periodEnd parameters will be compared with the clinical evaluation period (<code>MeasureReport.period.start</code> and <code>MeasureReport.period.end</code>)           of a <a href="StructureDefinition-ra-measurereport.html">Risk Adjustment Coding Gap MeasureReport</a> available on the Server. The MeasureReport will be returned if there is an overlap of the two periods.</p>
+</div></td></tr><tr><td>IN</td><td>periodEnd</td><td/><td>1..1</td><td><a href="http://hl7.org/fhir/R4/datatypes.html#date">date</a></td><td/><td><div><p>The end of a clinical evaluation period.</p>
+</div></td></tr><tr><td>IN</td><td>subject</td><td/><td>1..1</td><td><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a><br/>(<a href="https://hl7.org/fhir/R4/search.html#reference">reference</a>)</td><td/><td><div><p>Subject will be a reference to either Patient (<a href="http://hl7.org/fhir/us/core/STU3.1.1/StructureDefinition-us-core-patient.html">US Core Patient</a>) or Group (<a href="StructureDefinition-ra-patient-group.html">Patient Group</a>). Must provide either Patient/123 or Group/123, cannot simply provide 123. If only 123 is provided, then the operation would not know if it is a Patient reference or a Group reference.</p>
+</div></td></tr><tr><td>IN</td><td>measureId</td><td/><td>0..*</td><td><a href="http://hl7.org/fhir/R4/datatypes.html#id">id</a></td><td/><td><div><p>The id of a Measure resource for risk adjustment model, e.g., CMS HCC v24</p>
+</div></td></tr><tr><td>IN</td><td>measureIdentifier</td><td/><td>0..*</td><td><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a><br/>(<a href="https://hl7.org/fhir/R4/search.html#token">token</a>)</td><td/><td><div><p>The business identifier of a Measure resource for risk adjustment model, e.g., CMS HCC v24.</p>
+</div></td></tr><tr><td>IN</td><td>measureUrl</td><td/><td>0..*</td><td><a href="http://hl7.org/fhir/R4/datatypes.html#canonical">canonical</a></td><td/><td><div><p>This the URL of a Measure resource for risk adjustment model, e.g., CMS HCC v24</p>
+</div></td></tr><tr><td>OUT</td><td>return</td><td/><td>0..1</td><td><a href="http://hl7.org/fhir/R4/bundle.html">Bundle</a></td><td/><td><div><p>The $ra.evaluate-measure operation will always return one <a href="https://www.hl7.org/fhir/parameters.html">Parameters</a> whether the subject is a single patient or a group of patients. <a href="StructureDefinition-ra-measurereport-bundle.html">Risk Adjustment Coding Gap Report Bundle</a> for a patient is in a <code>Parameters.parameter</code> element. A Risk Adjustment Coding Gap Report Bundle contains the Risk Adjustment Coding Gap Reports for the same patient. For example, if a Group has 10 valid patients, then a <a href="https://www.hl7.org/fhir/parameters.html">Parameters</a> will contain 10 <code>Parameters.parameter</code>elements, with each <code>Parameters.parameter</code> for a unique patient.</p>
+</div></td></tr></table></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="1"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+    <valueCode value="cqi"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="draft"/>
+  </extension>
+  <url value="http://hl7.org/fhir/us/davinci-ra/OperationDefinition/ra.evaluate-measure"/>
+  <version value="3.0.0-ballot"/>
+  <name value="RAEvaluateMeasure"/>
+  <title value="Evaluate Measure"/>
+  <status value="draft"/>
+  <kind value="operation"/>
+  <date value="2026-03-08T15:02:59-07:00"/>
+  <publisher value="HL7 International / Clinical Quality Information"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.org/Special/committees/cqi"/>
+    </telecom>
+  </contact>
+  <description value="The ra.evaluate-measure operation is used to evaluate Digital Condition Category and obtain the results."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
+      <display value="United States of America"/>
+    </coding>
+  </jurisdiction>
+  <code value="ra.evaluate-measure"/>
+  <base value="http://hl7.org/fhir/OperationDefinition/Measure-evaluate-measure"/>
+  <resource value="Measure"/>
+  <system value="false"/>
+  <type value="true"/>
+  <instance value="true"/>
+  <parameter>
+    <name value="periodStart"/>
+    <use value="in"/>
+    <min value="1"/>
+    <max value="1"/>
+    <documentation value="The start of a clinical evaluation period. The periodStart and periodEnd parameters will be compared with the clinical evaluation period (`MeasureReport.period.start` and `MeasureReport.period.end`)           of a [Risk Adjustment Coding Gap MeasureReport](StructureDefinition-ra-measurereport.html) available on the Server. The MeasureReport will be returned if there is an overlap of the two periods."/>
+    <type value="date"/>
+  </parameter>
+  <parameter>
+    <name value="periodEnd"/>
+    <use value="in"/>
+    <min value="1"/>
+    <max value="1"/>
+    <documentation value="The end of a clinical evaluation period."/>
+    <type value="date"/>
+  </parameter>
+  <parameter>
+    <name value="subject"/>
+    <use value="in"/>
+    <min value="1"/>
+    <max value="1"/>
+    <documentation value="Subject will be a reference to either Patient ([US Core Patient](http://hl7.org/fhir/us/core/STU3.1.1/StructureDefinition-us-core-patient.html)) or Group ([Patient Group](StructureDefinition-ra-patient-group.html)). Must provide either Patient/123 or Group/123, cannot simply provide 123. If only 123 is provided, then the operation would not know if it is a Patient reference or a Group reference."/>
+    <type value="string"/>
+    <searchType value="reference"/>
+  </parameter>
+  <parameter>
+    <name value="measureId"/>
+    <use value="in"/>
+    <min value="0"/>
+    <max value="*"/>
+    <documentation value="The id of a Measure resource for risk adjustment model, e.g., CMS HCC v24"/>
+    <type value="id"/>
+  </parameter>
+  <parameter>
+    <name value="measureIdentifier"/>
+    <use value="in"/>
+    <min value="0"/>
+    <max value="*"/>
+    <documentation value="The business identifier of a Measure resource for risk adjustment model, e.g., CMS HCC v24."/>
+    <type value="string"/>
+    <searchType value="token"/>
+  </parameter>
+  <parameter>
+    <name value="measureUrl"/>
+    <use value="in"/>
+    <min value="0"/>
+    <max value="*"/>
+    <documentation value="This the URL of a Measure resource for risk adjustment model, e.g., CMS HCC v24"/>
+    <type value="canonical"/>
+  </parameter>
+  <parameter>
+    <name value="return"/>
+    <use value="out"/>
+    <min value="0"/>
+    <max value="1"/>
+    <documentation value="The $ra.evaluate-measure operation will always return one [Parameters](https://www.hl7.org/fhir/parameters.html) whether the subject is a single patient or a group of patients. [Risk Adjustment Coding Gap Report Bundle](StructureDefinition-ra-measurereport-bundle.html) for a patient is in a `Parameters.parameter` element. A Risk Adjustment Coding Gap Report Bundle contains the Risk Adjustment Coding Gap Reports for the same patient. For example, if a Group has 10 valid patients, then a [Parameters](https://www.hl7.org/fhir/parameters.html) will contain 10 `Parameters.parameter`elements, with each `Parameters.parameter` for a unique patient."/>
+    <type value="Bundle"/>
+  </parameter>
+</OperationDefinition>

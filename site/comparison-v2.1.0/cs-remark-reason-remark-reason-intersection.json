@@ -1,0 +1,31 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "5e6e573b-7095-4e53-bfef-40169d0ef6bc-15",
+  "url" : "http://hl7.org/fhir/comparison/CodeSystem/5e6e573b-7095-4e53-bfef-40169d0ef6bc-15",
+  "name" : "IntersectionRemarkReasonAndRemarkReason",
+  "title" : "Intersection of Remark Reason Codes And Remark Reason Codes",
+  "status" : "active",
+  "date" : "2026-03-08T15:05:51-07:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "US",
+      "display" : "United States of America"
+    }]
+  }],
+  "concept" : [{
+    "code" : "never-had-condition",
+    "display" : "Patient never had the condition",
+    "definition" : "Reason for the assessed-not-present remark is because the patient has never had this condition."
+  },
+  {
+    "code" : "inactive-condition",
+    "display" : "Condition no longer active",
+    "definition" : "Reason for the assessed-not-present remark is because the patient's condition is no longer active."
+  },
+  {
+    "code" : "inapplicable-gap",
+    "display" : "Inapplicable gap",
+    "definition" : "Reason for the assessed-not-present remark is because the patient has an active condition but the gap does not accurately describe it."
+  }]
+}

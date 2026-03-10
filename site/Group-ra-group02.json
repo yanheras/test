@@ -1,0 +1,32 @@
+{
+  "resourceType" : "Group",
+  "id" : "ra-group02",
+  "meta" : {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/instance-name",
+      "valueString" : "Patient Group Example 2"
+    },
+    {
+      "url" : "http://hl7.org/fhir/StructureDefinition/instance-description",
+      "valueMarkdown" : "This is an example for the Patient Group profile. This example patient group has two members."
+    }],
+    "profile" : ["http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-patient-group"]
+  },
+  "language" : "en",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\" lang=\"en\"><p class=\"res-header-id\"><b>Generated Narrative: Group ra-group02</b></p><a name=\"ra-group02\"> </a><a name=\"hcra-group02\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Language: en</p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ra-patient-group.html\">Patient Group</a></p></div><p><b>type</b>: Person</p><p><b>actual</b>: true</p><blockquote><p><b>member</b></p><p><b>entity</b>: <a href=\"Patient-ra-patient02.html\">Adam Everyman (official) Female, DoB: 1950-12-16 ( Medical record number: 23456\u00a0(use:\u00a0usual,\u00a0))</a></p></blockquote><blockquote><p><b>member</b></p><p><b>entity</b>: <a href=\"Patient-ra-patient03.html\">Nelda Nuclear (official) Female, DoB: 1965-07-26 ( Medical record number: 34567\u00a0(use:\u00a0usual,\u00a0))</a></p></blockquote></div>"
+  },
+  "type" : "person",
+  "actual" : true,
+  "member" : [{
+    "entity" : {
+      "reference" : "Patient/ra-patient02"
+    }
+  },
+  {
+    "entity" : {
+      "reference" : "Patient/ra-patient03"
+    }
+  }]
+}

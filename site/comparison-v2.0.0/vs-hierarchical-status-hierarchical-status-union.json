@@ -1,0 +1,16 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "d61184c9-9dda-45bd-916e-4eecec63d6b0-92",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/d61184c9-9dda-45bd-916e-4eecec63d6b0-92",
+  "name" : "UnionRiskAdjustmenthierarchicalStatusAndRiskAdjustmenthierarchicalStatusVS",
+  "title" : "Union of Risk Adjustment Hierarchical Status ValueSet And Hierarchical Status",
+  "status" : "active",
+  "date" : "2026-03-08T15:05:51-07:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "US",
+      "display" : "United States of America"
+    }]
+  }]
+}

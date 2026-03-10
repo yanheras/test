@@ -1,0 +1,56 @@
+{
+  "codeSystems" : [{
+    "url" : "http://hl7.org/fhir/us/davinci-ra/CodeSystem/cc-type",
+    "version" : "3.0.0-ballot",
+    "status" : "active",
+    "name" : "RiskAdjustmentConditionCategoryType",
+    "title" : "Risk Adjustment Condition Category Type Codes",
+    "description" : "Code sytstem that indicates whether it is a suspected Condition Category (CC) gap, a historic Condition Category (CC) gap, or a net-new Condition Category (CC). Historic, suspected, and net-new are mutually exclusive.",
+    "oids" : ["2.16.840.1.113883.4.642.40.29.16.1"]
+  },
+  {
+    "url" : "http://hl7.org/fhir/us/davinci-ra/CodeSystem/coding-gap-remark",
+    "version" : "3.0.0-ballot",
+    "status" : "active",
+    "name" : "CodingGapRemark",
+    "title" : "Coding Gap Remark Codes",
+    "description" : "Code sytstem that indicates coded remark for a coding gap.",
+    "oids" : ["2.16.840.1.113883.4.642.40.29.16.2"]
+  },
+  {
+    "url" : "http://hl7.org/fhir/us/davinci-ra/CodeSystem/evidence-status",
+    "version" : "3.0.0-ballot",
+    "status" : "active",
+    "name" : "RiskAdjustmentEvidenceStatus",
+    "title" : "Risk Adjustment Evidence Status Codes",
+    "description" : "Code System that indicates whether a coding gap is an open-gap, invalid-gap, closed-gap or pending",
+    "oids" : ["2.16.840.1.113883.4.642.40.29.16.3"]
+  },
+  {
+    "url" : "http://hl7.org/fhir/us/davinci-ra/CodeSystem/hierarchical-status",
+    "version" : "3.0.0-ballot",
+    "status" : "active",
+    "name" : "RiskAdjustmenthierarchicalStatus",
+    "title" : "Risk Adjustment Hierarchical Status Codes",
+    "description" : "Code system that indicates how hierarchies were applied to a Condition Category (CC), and if applied, whether the Condition Category (CC) is superseded.",
+    "oids" : ["2.16.840.1.113883.4.642.40.29.16.4"]
+  },
+  {
+    "url" : "http://hl7.org/fhir/us/davinci-ra/CodeSystem/ra-temp",
+    "version" : "3.0.0-ballot",
+    "status" : "active",
+    "name" : "RATemporaryCodes",
+    "title" : "RA Temporary Code System",
+    "description" : "Temporary code system defined in this implementation guide",
+    "oids" : ["2.16.840.1.113883.4.642.40.29.16.8"]
+  },
+  {
+    "url" : "http://hl7.org/fhir/us/davinci-ra/CodeSystem/remark-reason",
+    "version" : "3.0.0-ballot",
+    "status" : "active",
+    "name" : "RemarkReason",
+    "title" : "Remark Reason Codes",
+    "description" : "Reason codes for remark",
+    "oids" : ["2.16.840.1.113883.4.642.40.29.16.5"]
+  }]
+}

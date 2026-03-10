@@ -1,0 +1,36 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "ffa394b3-314f-4696-8e7b-0b5bf97f81a8-6",
+  "url" : "http://hl7.org/fhir/comparison/CodeSystem/ffa394b3-314f-4696-8e7b-0b5bf97f81a8-6",
+  "name" : "IntersectionRiskAdjustmenthierarchicalStatusCodeSystemAndRiskAdjustmenthierarchicalStatus",
+  "title" : "Intersection of Risk Adjustment Hierarchical Status Code System And Risk Adjustment Hierarchical Status Codes",
+  "status" : "active",
+  "date" : "2026-03-08T15:05:49-07:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "US",
+      "display" : "United States of America"
+    }]
+  }],
+  "concept" : [{
+    "code" : "applied-superseded",
+    "display" : "Hierarchies applied and Condition Category is superseded",
+    "definition" : "Hierarchies were applied to a Condition Catetory (CC) and the Condition Category (CC) is superseded."
+  },
+  {
+    "code" : "applied-not-superseded",
+    "display" : "Hierarchies applied and Condition Category is not superseded",
+    "definition" : "Hierarchies were applied to a Condition Catetory (CC) and the Condition Category (CC) is not superseded."
+  },
+  {
+    "code" : "not-applied",
+    "display" : "Hierarchies not applied",
+    "definition" : "Hierarchies were not applied to a Condition Catetory (CC)."
+  },
+  {
+    "code" : "not-applicable",
+    "display" : "Not applicable",
+    "definition" : "Applying hierarchies to a Condition Category (CC) is not applicable."
+  }]
+}

@@ -1,0 +1,558 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<MeasureReport xmlns="http://hl7.org/fhir">
+  <id value="ra-measurereport01"/>
+  <meta>
+    <extension url="http://hl7.org/fhir/StructureDefinition/instance-name">
+      <valueString value="RA Coding Gap MeasureReport Example01 with RA Model CMS-HCC V24 for Patient01 Eve Everywoman"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/StructureDefinition/instance-description">
+      <valueMarkdown value="This is an example for the Risk Adjustment Coding Gap MeasureReport profile. This example report uses the CMS-HCC version 24 as the Risk Adjustment Model and the example patient used is Eve Everywoman."/>
+    </extension>
+    <profile value="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-measurereport"/>
+  </meta>
+  <language value="en"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><p class="res-header-id"><b>Generated Narrative: MeasureReport ra-measurereport01</b></p><a name="ra-measurereport01"> </a><a name="hcra-measurereport01"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Language: en</p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ra-measurereport.html">Risk Adjustment Coding Gap MeasureReport</a></p></div><p><b>Measure Report Category</b>: <span title="Codes:{http://hl7.org/fhir/CodeSystem/measurereport-category ra}">Risk Adjustment</span></p><p><b>Clinical Data Collection Deadline Extension</b>: 2022-03-31</p><p><b>status</b>: Complete</p><p><b>type</b>: Individual</p><p><b>measure</b>: <a href="Measure-RAModelExample01.html">Risk Adjustment Model Version 24 - CMS Hierarchical Category Condition (CMS-HCC)</a></p><p><b>subject</b>: <a href="Patient-ra-patient01.html">Eve Everywoman (official) Female, DoB: 1975-01-16 ( Medical record number: 12345 (use: usual, ))</a></p><p><b>date</b>: 2021-10-18</p><p><b>reporter</b>: <a href="Organization-ra-payer01.html">Organization ABC Payer</a></p><p><b>period</b>: 2021-01-01 --&gt; 2021-09-30</p><blockquote><p><b>group</b></p><blockquote><p><b>id</b></p>group-001</blockquote><p><b>Condition Category Type Extension</b>: <span title="Codes:{http://hl7.org/fhir/us/davinci-ra/CodeSystem/cc-type historic}">Historic Condition Category Gap</span></p><p><b>Evidence Status Extension</b>: <span title="Codes:{http://hl7.org/fhir/us/davinci-ra/CodeSystem/evidence-status closed-gap}">Closed Condition Category Gap</span></p><p><b>Evidence Status Date Extension</b>: 2021-04-01</p><p><b>Hierarchical Status Extension</b>: <span title="Codes:{http://hl7.org/fhir/us/davinci-ra/CodeSystem/hierarchical-status applied-not-superseded}">Hierarchies applied and Condition Category is not superseded</span></p><p><b>code</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/cmshcc 18}">HCC 18: Diabetes with Chronic Complications</span></p></blockquote><blockquote><p><b>group</b></p><blockquote><p><b>id</b></p>group-002</blockquote><p><b>Condition Category Type Extension</b>: <span title="Codes:{http://hl7.org/fhir/us/davinci-ra/CodeSystem/cc-type historic}">Historic Condition Category Gap</span></p><p><b>Evidence Status Extension</b>: <span title="Codes:{http://hl7.org/fhir/us/davinci-ra/CodeSystem/evidence-status pending}">Pending Condition Category Gap</span></p><p><b>Evidence Status Date Extension</b>: 2021-09-29</p><p><b>Hierarchical Status Extension</b>: <span title="Codes:{http://hl7.org/fhir/us/davinci-ra/CodeSystem/hierarchical-status applied-not-superseded}">Hierarchies applied and Condition Category is not superseded</span></p><p><b>code</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/cmshcc 111}">HCC 111: Chronic Obstructive Pulmonary Disease</span></p></blockquote><blockquote><p><b>group</b></p><blockquote><p><b>id</b></p>group-003</blockquote><p><b>Condition Category Type Extension</b>: <span title="Codes:{http://hl7.org/fhir/us/davinci-ra/CodeSystem/cc-type historic}">Historic Condition Category Gap</span></p><p><b>Evidence Status Extension</b>: <span title="Codes:{http://hl7.org/fhir/us/davinci-ra/CodeSystem/evidence-status open-gap}">Open Condition Category Gap</span></p><p><b>Evidence Status Date Extension</b>: 2020-07-15</p><p><b>Hierarchical Status Extension</b>: <span title="Codes:{http://hl7.org/fhir/us/davinci-ra/CodeSystem/hierarchical-status applied-not-superseded}">Hierarchies applied and Condition Category is not superseded</span></p><p><b>code</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/cmshcc 59}">HCC 59: Major Depressive, Bipolar, and Paranoid Disorders</span></p></blockquote><blockquote><p><b>group</b></p><blockquote><p><b>id</b></p>group-004</blockquote><p><b>Condition Category Type Extension</b>: <span title="Codes:{http://hl7.org/fhir/us/davinci-ra/CodeSystem/cc-type historic}">Historic Condition Category Gap</span></p><p><b>Evidence Status Extension</b>: <span title="Codes:{http://hl7.org/fhir/us/davinci-ra/CodeSystem/evidence-status closed-gap}">Closed Condition Category Gap</span></p><p><b>Evidence Status Date Extension</b>: 2021-04-27</p><p><b>Hierarchical Status Extension</b>: <span title="Codes:{http://hl7.org/fhir/us/davinci-ra/CodeSystem/hierarchical-status applied-superseded}">Hierarchies applied and Condition Category is superseded</span></p><p><b>code</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/cmshcc 112}">HCC 112: Fibrosis of lung and other chronic lung disorders</span></p></blockquote><blockquote><p><b>group</b></p><blockquote><p><b>id</b></p>group-005</blockquote><p><b>Condition Category Type Extension</b>: <span title="Codes:{http://hl7.org/fhir/us/davinci-ra/CodeSystem/cc-type historic}">Historic Condition Category Gap</span></p><p><b>Evidence Status Extension</b>: <span title="Codes:{http://hl7.org/fhir/us/davinci-ra/CodeSystem/evidence-status pending}">Pending Condition Category Gap</span></p><p><b>Evidence Status Date Extension</b>: 2021-09-27</p><p><b>Hierarchical Status Extension</b>: <span title="Codes:{http://hl7.org/fhir/us/davinci-ra/CodeSystem/hierarchical-status applied-superseded}">Hierarchies applied and Condition Category is superseded</span></p><p><b>code</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/cmshcc 19}">HCC 19: Diabetes without Complications</span></p></blockquote><blockquote><p><b>group</b></p><blockquote><p><b>id</b></p>group-006</blockquote><p><b>Condition Category Type Extension</b>: <span title="Codes:{http://hl7.org/fhir/us/davinci-ra/CodeSystem/cc-type historic}">Historic Condition Category Gap</span></p><p><b>Evidence Status Extension</b>: <span title="Codes:{http://hl7.org/fhir/us/davinci-ra/CodeSystem/evidence-status open-gap}">Open Condition Category Gap</span></p><p><b>Evidence Status Date Extension</b>: 2020-12-15</p><p><b>Hierarchical Status Extension</b>: <span title="Codes:{http://hl7.org/fhir/us/davinci-ra/CodeSystem/hierarchical-status applied-superseded}">Hierarchies applied and Condition Category is superseded</span></p><p><b>code</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/cmshcc 84}">HCC 84: Cardio-Respiratory Failure and Shock</span></p></blockquote><blockquote><p><b>group</b></p><blockquote><p><b>id</b></p>group-007</blockquote><p><b>Condition Category Type Extension</b>: <span title="Codes:{http://hl7.org/fhir/us/davinci-ra/CodeSystem/cc-type suspected}">Suspected Condition Category Gap</span></p><p><b>Evidence Status Extension</b>: <span title="Codes:{http://hl7.org/fhir/us/davinci-ra/CodeSystem/evidence-status closed-gap}">Closed Condition Category Gap</span></p><p><b>Evidence Status Date Extension</b>: 2021-03-15</p><p><b>Hierarchical Status Extension</b>: <span title="Codes:{http://hl7.org/fhir/us/davinci-ra/CodeSystem/hierarchical-status applied-not-superseded}">Hierarchies applied and Condition Category is not superseded</span></p><p><b>code</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/cmshcc 22}">HCC 22: Morbid Obesity</span></p></blockquote><blockquote><p><b>group</b></p><blockquote><p><b>id</b></p>group-008</blockquote><p><b>Condition Category Type Extension</b>: <span title="Codes:{http://hl7.org/fhir/us/davinci-ra/CodeSystem/cc-type suspected}">Suspected Condition Category Gap</span></p><p><b>Evidence Status Extension</b>: <span title="Codes:{http://hl7.org/fhir/us/davinci-ra/CodeSystem/evidence-status pending}">Pending Condition Category Gap</span></p><p><b>Evidence Status Date Extension</b>: 2021-09-27</p><p><b>Hierarchical Status Extension</b>: <span title="Codes:{http://hl7.org/fhir/us/davinci-ra/CodeSystem/hierarchical-status applied-not-superseded}">Hierarchies applied and Condition Category is not superseded</span></p><p><b>code</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/cmshcc 96}">HCC 96: Specified Heart Arrhythmias</span></p></blockquote><blockquote><p><b>group</b></p><blockquote><p><b>id</b></p>group-009</blockquote><p><b>Condition Category Type Extension</b>: <span title="Codes:{http://hl7.org/fhir/us/davinci-ra/CodeSystem/cc-type suspected}">Suspected Condition Category Gap</span></p><p><b>Evidence Status Extension</b>: <span title="Codes:{http://hl7.org/fhir/us/davinci-ra/CodeSystem/evidence-status open-gap}">Open Condition Category Gap</span></p><p><b>Evidence Status Date Extension</b>: 2020-07-15</p><p><b>Hierarchical Status Extension</b>: <span title="Codes:{http://hl7.org/fhir/us/davinci-ra/CodeSystem/hierarchical-status applied-not-superseded}">Hierarchies applied and Condition Category is not superseded</span></p><p><b>Confidence Scale Extension</b>: <span title="Codes:{http://snomed.info/sct 255508009}">Medium</span></p><p><b>code</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/cmshcc 110}">HCC 110: Cystic Fibrosis</span></p></blockquote><blockquote><p><b>group</b></p><blockquote><p><b>id</b></p>group-010</blockquote><p><b>Condition Category Type Extension</b>: <span title="Codes:{http://hl7.org/fhir/us/davinci-ra/CodeSystem/cc-type net-new}">Net-New Condition Category</span></p><p><b>Evidence Status Extension</b>: <span title="Codes:{http://hl7.org/fhir/us/davinci-ra/CodeSystem/evidence-status pending}">Pending Condition Category Gap</span></p><p><b>Evidence Status Date Extension</b>: 2021-09-28</p><p><b>Hierarchical Status Extension</b>: <span title="Codes:{http://hl7.org/fhir/us/davinci-ra/CodeSystem/hierarchical-status applied-not-superseded}">Hierarchies applied and Condition Category is not superseded</span></p><p><b>code</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/cmshcc 83}">HCC 83: Respiratory Arrest</span></p></blockquote><p><b>evaluatedResource</b>: </p><ul><li><a href="Condition-ra-condition02pat01.html">Condition Diabetes mellitus due to underlying condition with other diabetic kidney complication</a></li><li><a href="Condition-ra-condition03pat01.html">Condition Chronic obstructive pulmonary disease with (acute) exacerbation</a></li><li><a href="Condition-ra-condition08pat01.html">Condition Bipolar disorder, current episode mixed, mild</a></li><li><a href="Condition-ra-condition09pat01.html">Condition Allergic bronchopulmonary aspergillosis</a></li><li><a href="Condition-ra-condition10pat01.html">Condition Long term (current) use of insulin</a></li><li><a href="Condition-ra-condition11pat01.html">Condition Acute pulmonary edema</a></li><li><a href="Condition-ra-condition17pat01.html">Condition Body mass index [BMI] 45.0-49.9, adult</a></li><li><a href="Condition-ra-condition18pat01.html">Condition Longstanding persistent atrial fibrillation</a></li><li><a href="Condition-ra-condition33pat01.html">Condition Respiratory arrest</a></li><li><a href="Condition-ra-condition43pat01.html">Condition Diabetes mellitus due to underlying condition with other diabetic kidney complication</a></li><li><a href="Condition-ra-condition44pat01.html">Condition Allergic bronchopulmonary aspergillosis</a></li><li><a href="Encounter-ra-encounter02pat01.html">Encounter: status = finished; class = ambulatory (ActCode#AMB); type = Office or other outpatient visit for the evaluation and management of an established patient, which requires a medically appropriate history and/or examination and high level of medical decision making. When using time for code selection, 40-54 minutes of total time is spent on the date of the encounter.; period = 2021-01-31 --&gt; 2021-01-31</a></li><li><a href="Encounter-ra-encounter03pat01.html">Encounter: status = finished; class = ambulatory (ActCode#AMB); type = Office or other outpatient visit for the evaluation and management of an established patient, which requires a medically appropriate history and/or examination and high level of medical decision making. When using time for code selection, 40-54 minutes of total time is spent on the date of the encounter.; period = 2021-09-26 --&gt; 2021-09-26</a></li><li><a href="Encounter-ra-encounter08pat01.html">Encounter: status = finished; class = ambulatory (ActCode#AMB); type = Office or other outpatient visit for the evaluation and management of an established patient, which requires a medically appropriate history and/or examination and high level of medical decision making. When using time for code selection, 40-54 minutes of total time is spent on the date of the encounter.; period = 2017-02-03 --&gt; 2017-02-03</a></li><li><a href="Encounter-ra-encounter09pat01.html">Encounter: status = finished; class = ambulatory (ActCode#AMB); type = Office or other outpatient visit for the evaluation and management of an established patient, which requires a medically appropriate history and/or examination and high level of medical decision making. When using time for code selection, 40-54 minutes of total time is spent on the date of the encounter.; period = 2021-03-27 --&gt; 2021-03-27</a></li><li><a href="Encounter-ra-encounter11pat01.html">Encounter: status = finished; class = ambulatory (ActCode#AMB); type = Office or other outpatient visit for the evaluation and management of an established patient, which requires a medically appropriate history and/or examination and high level of medical decision making. When using time for code selection, 40-54 minutes of total time is spent on the date of the encounter.; period = 2020-11-02 --&gt; 2020-11-02</a></li><li><a href="Encounter-ra-encounter43pat01.html">Encounter: status = finished; class = ambulatory (ActCode#AMB); type = Office or other outpatient visit for the evaluation and management of an established patient, which requires a medically appropriate history and/or examination and high level of medical decision making. When using time for code selection, 40-54 minutes of total time is spent on the date of the encounter.; period = 2019-02-10 --&gt; 2019-02-10</a></li><li><a href="Encounter-ra-encounter44pat01.html">Encounter: status = finished; class = ambulatory (ActCode#AMB); type = Office or other outpatient visit for the evaluation and management of an established patient, which requires a medically appropriate history and/or examination and high level of medical decision making. When using time for code selection, 40-54 minutes of total time is spent on the date of the encounter.; period = 2017-01-18 --&gt; 2017-01-18</a></li><li><a href="Observation-ra-obs21pat01.html">Observation Trypsin [Mass/volume] in Serum or Plasma</a></li></ul></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/measurereport-category">
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://hl7.org/fhir/CodeSystem/measurereport-category"/>
+        <code value="ra"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <extension url="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-clinicalDataCollectionDeadline">
+    <valueDate value="2022-03-31"/>
+  </extension>
+  <status value="complete"/>
+  <type value="individual"/>
+  <measure value="http://hl7.org/fhir/us/davinci-ra/Measure/RAModelExample01"/>
+  <subject>
+    <reference value="Patient/ra-patient01"/>
+  </subject>
+  <date value="2021-10-18"/>
+  <reporter>
+    <reference value="Organization/ra-payer01"/>
+  </reporter>
+  <period>
+    <start value="2021-01-01"/>
+    <end value="2021-09-30"/>
+  </period>
+  <group id="group-001">
+    <extension url="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-ccType">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://hl7.org/fhir/us/davinci-ra/CodeSystem/cc-type"/>
+          <code value="historic"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <extension url="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-evidenceStatus">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://hl7.org/fhir/us/davinci-ra/CodeSystem/evidence-status"/>
+          <code value="closed-gap"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <extension url="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-evidenceStatusDate">
+      <valueDate value="2021-04-01"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-hierarchicalStatus">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://hl7.org/fhir/us/davinci-ra/CodeSystem/hierarchical-status"/>
+          <code value="applied-not-superseded"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <code>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/cmshcc"/>
+        <version value="24"/>
+        <code value="18"/>
+        <display value="Diabetes with Chronic Complications"/>
+      </coding>
+      <text value="HCC 18: Diabetes with Chronic Complications"/>
+    </code>
+  </group>
+  <group id="group-002">
+    <extension url="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-ccType">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://hl7.org/fhir/us/davinci-ra/CodeSystem/cc-type"/>
+          <code value="historic"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <extension url="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-evidenceStatus">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://hl7.org/fhir/us/davinci-ra/CodeSystem/evidence-status"/>
+          <code value="pending"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <extension url="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-evidenceStatusDate">
+      <valueDate value="2021-09-29"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-hierarchicalStatus">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://hl7.org/fhir/us/davinci-ra/CodeSystem/hierarchical-status"/>
+          <code value="applied-not-superseded"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <code>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/cmshcc"/>
+        <version value="24"/>
+        <code value="111"/>
+        <display value="Chronic Obstructive Pulmonary Disease"/>
+      </coding>
+      <text value="HCC 111: Chronic Obstructive Pulmonary Disease"/>
+    </code>
+  </group>
+  <group id="group-003">
+    <extension url="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-ccType">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://hl7.org/fhir/us/davinci-ra/CodeSystem/cc-type"/>
+          <code value="historic"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <extension url="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-evidenceStatus">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://hl7.org/fhir/us/davinci-ra/CodeSystem/evidence-status"/>
+          <code value="open-gap"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <extension url="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-evidenceStatusDate">
+      <valueDate value="2020-07-15"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-hierarchicalStatus">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://hl7.org/fhir/us/davinci-ra/CodeSystem/hierarchical-status"/>
+          <code value="applied-not-superseded"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <code>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/cmshcc"/>
+        <version value="24"/>
+        <code value="59"/>
+        <display value="Major Depressive, Bipolar, and Paranoid Disorders"/>
+      </coding>
+      <text value="HCC 59: Major Depressive, Bipolar, and Paranoid Disorders"/>
+    </code>
+  </group>
+  <group id="group-004">
+    <extension url="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-ccType">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://hl7.org/fhir/us/davinci-ra/CodeSystem/cc-type"/>
+          <code value="historic"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <extension url="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-evidenceStatus">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://hl7.org/fhir/us/davinci-ra/CodeSystem/evidence-status"/>
+          <code value="closed-gap"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <extension url="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-evidenceStatusDate">
+      <valueDate value="2021-04-27"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-hierarchicalStatus">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://hl7.org/fhir/us/davinci-ra/CodeSystem/hierarchical-status"/>
+          <code value="applied-superseded"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <code>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/cmshcc"/>
+        <version value="24"/>
+        <code value="112"/>
+        <display value="Fibrosis of lung and other chronic lung disorders"/>
+      </coding>
+      <text value="HCC 112: Fibrosis of lung and other chronic lung disorders"/>
+    </code>
+  </group>
+  <group id="group-005">
+    <extension url="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-ccType">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://hl7.org/fhir/us/davinci-ra/CodeSystem/cc-type"/>
+          <code value="historic"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <extension url="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-evidenceStatus">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://hl7.org/fhir/us/davinci-ra/CodeSystem/evidence-status"/>
+          <code value="pending"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <extension url="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-evidenceStatusDate">
+      <valueDate value="2021-09-27"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-hierarchicalStatus">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://hl7.org/fhir/us/davinci-ra/CodeSystem/hierarchical-status"/>
+          <code value="applied-superseded"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <code>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/cmshcc"/>
+        <version value="24"/>
+        <code value="19"/>
+        <display value="Diabetes without Complications"/>
+      </coding>
+      <text value="HCC 19: Diabetes without Complications"/>
+    </code>
+  </group>
+  <group id="group-006">
+    <extension url="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-ccType">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://hl7.org/fhir/us/davinci-ra/CodeSystem/cc-type"/>
+          <code value="historic"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <extension url="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-evidenceStatus">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://hl7.org/fhir/us/davinci-ra/CodeSystem/evidence-status"/>
+          <code value="open-gap"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <extension url="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-evidenceStatusDate">
+      <valueDate value="2020-12-15"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-hierarchicalStatus">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://hl7.org/fhir/us/davinci-ra/CodeSystem/hierarchical-status"/>
+          <code value="applied-superseded"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <code>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/cmshcc"/>
+        <version value="24"/>
+        <code value="84"/>
+        <display value="Cardio-Respiratory Failure and Shock"/>
+      </coding>
+      <text value="HCC 84: Cardio-Respiratory Failure and Shock"/>
+    </code>
+  </group>
+  <group id="group-007">
+    <extension url="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-ccType">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://hl7.org/fhir/us/davinci-ra/CodeSystem/cc-type"/>
+          <code value="suspected"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <extension url="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-evidenceStatus">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://hl7.org/fhir/us/davinci-ra/CodeSystem/evidence-status"/>
+          <code value="closed-gap"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <extension url="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-evidenceStatusDate">
+      <valueDate value="2021-03-15"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-hierarchicalStatus">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://hl7.org/fhir/us/davinci-ra/CodeSystem/hierarchical-status"/>
+          <code value="applied-not-superseded"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <code>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/cmshcc"/>
+        <version value="24"/>
+        <code value="22"/>
+        <display value="Morbid Obesity"/>
+      </coding>
+      <text value="HCC 22: Morbid Obesity"/>
+    </code>
+  </group>
+  <group id="group-008">
+    <extension url="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-ccType">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://hl7.org/fhir/us/davinci-ra/CodeSystem/cc-type"/>
+          <code value="suspected"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <extension url="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-evidenceStatus">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://hl7.org/fhir/us/davinci-ra/CodeSystem/evidence-status"/>
+          <code value="pending"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <extension url="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-evidenceStatusDate">
+      <valueDate value="2021-09-27"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-hierarchicalStatus">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://hl7.org/fhir/us/davinci-ra/CodeSystem/hierarchical-status"/>
+          <code value="applied-not-superseded"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <code>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/cmshcc"/>
+        <version value="24"/>
+        <code value="96"/>
+        <display value="Specified Heart Arrhythmias"/>
+      </coding>
+      <text value="HCC 96: Specified Heart Arrhythmias"/>
+    </code>
+  </group>
+  <group id="group-009">
+    <extension url="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-ccType">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://hl7.org/fhir/us/davinci-ra/CodeSystem/cc-type"/>
+          <code value="suspected"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <extension url="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-evidenceStatus">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://hl7.org/fhir/us/davinci-ra/CodeSystem/evidence-status"/>
+          <code value="open-gap"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <extension url="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-evidenceStatusDate">
+      <valueDate value="2020-07-15"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-hierarchicalStatus">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://hl7.org/fhir/us/davinci-ra/CodeSystem/hierarchical-status"/>
+          <code value="applied-not-superseded"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <extension url="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-confidenceScale">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://snomed.info/sct"/>
+          <code value="255508009"/>
+          <display value="Medium"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <code>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/cmshcc"/>
+        <version value="24"/>
+        <code value="110"/>
+        <display value="Cystic Fibrosis"/>
+      </coding>
+      <text value="HCC 110: Cystic Fibrosis"/>
+    </code>
+  </group>
+  <group id="group-010">
+    <extension url="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-ccType">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://hl7.org/fhir/us/davinci-ra/CodeSystem/cc-type"/>
+          <code value="net-new"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <extension url="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-evidenceStatus">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://hl7.org/fhir/us/davinci-ra/CodeSystem/evidence-status"/>
+          <code value="pending"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <extension url="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-evidenceStatusDate">
+      <valueDate value="2021-09-28"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-hierarchicalStatus">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://hl7.org/fhir/us/davinci-ra/CodeSystem/hierarchical-status"/>
+          <code value="applied-not-superseded"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <code>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/cmshcc"/>
+        <version value="24"/>
+        <code value="83"/>
+        <display value="Respiratory Arrest"/>
+      </coding>
+      <text value="HCC 83: Respiratory Arrest"/>
+    </code>
+  </group>
+  <evaluatedResource>
+    <extension url="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-groupReference">
+      <valueString value="group-001"/>
+    </extension>
+    <reference value="Condition/ra-condition02pat01"/>
+  </evaluatedResource>
+  <evaluatedResource>
+    <extension url="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-groupReference">
+      <valueString value="group-002"/>
+    </extension>
+    <reference value="Condition/ra-condition03pat01"/>
+  </evaluatedResource>
+  <evaluatedResource>
+    <extension url="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-groupReference">
+      <valueString value="group-003"/>
+    </extension>
+    <reference value="Condition/ra-condition08pat01"/>
+  </evaluatedResource>
+  <evaluatedResource>
+    <extension url="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-groupReference">
+      <valueString value="group-004"/>
+    </extension>
+    <reference value="Condition/ra-condition09pat01"/>
+  </evaluatedResource>
+  <evaluatedResource>
+    <extension url="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-groupReference">
+      <valueString value="group-005"/>
+    </extension>
+    <reference value="Condition/ra-condition10pat01"/>
+  </evaluatedResource>
+  <evaluatedResource>
+    <extension url="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-groupReference">
+      <valueString value="group-006"/>
+    </extension>
+    <reference value="Condition/ra-condition11pat01"/>
+  </evaluatedResource>
+  <evaluatedResource>
+    <extension url="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-groupReference">
+      <valueString value="group-007"/>
+    </extension>
+    <reference value="Condition/ra-condition17pat01"/>
+  </evaluatedResource>
+  <evaluatedResource>
+    <extension url="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-groupReference">
+      <valueString value="group-008"/>
+    </extension>
+    <reference value="Condition/ra-condition18pat01"/>
+  </evaluatedResource>
+  <evaluatedResource>
+    <extension url="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-groupReference">
+      <valueString value="group-010"/>
+    </extension>
+    <reference value="Condition/ra-condition33pat01"/>
+  </evaluatedResource>
+  <evaluatedResource>
+    <extension url="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-groupReference">
+      <valueString value="group-001"/>
+    </extension>
+    <reference value="Condition/ra-condition43pat01"/>
+  </evaluatedResource>
+  <evaluatedResource>
+    <extension url="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-groupReference">
+      <valueString value="group-004"/>
+    </extension>
+    <reference value="Condition/ra-condition44pat01"/>
+  </evaluatedResource>
+  <evaluatedResource>
+    <extension url="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-groupReference">
+      <valueString value="group-001"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-groupReference">
+      <valueString value="group-007"/>
+    </extension>
+    <reference value="Encounter/ra-encounter02pat01"/>
+  </evaluatedResource>
+  <evaluatedResource>
+    <extension url="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-groupReference">
+      <valueString value="group-002"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-groupReference">
+      <valueString value="group-005"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-groupReference">
+      <valueString value="group-008"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-groupReference">
+      <valueString value="group-010"/>
+    </extension>
+    <reference value="Encounter/ra-encounter03pat01"/>
+  </evaluatedResource>
+  <evaluatedResource>
+    <extension url="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-groupReference">
+      <valueString value="group-003"/>
+    </extension>
+    <reference value="Encounter/ra-encounter08pat01"/>
+  </evaluatedResource>
+  <evaluatedResource>
+    <extension url="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-groupReference">
+      <valueString value="group-004"/>
+    </extension>
+    <reference value="Encounter/ra-encounter09pat01"/>
+  </evaluatedResource>
+  <evaluatedResource>
+    <extension url="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-groupReference">
+      <valueString value="group-006"/>
+    </extension>
+    <reference value="Encounter/ra-encounter11pat01"/>
+  </evaluatedResource>
+  <evaluatedResource>
+    <extension url="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-groupReference">
+      <valueString value="group-001"/>
+    </extension>
+    <reference value="Encounter/ra-encounter43pat01"/>
+  </evaluatedResource>
+  <evaluatedResource>
+    <extension url="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-groupReference">
+      <valueString value="group-004"/>
+    </extension>
+    <reference value="Encounter/ra-encounter44pat01"/>
+  </evaluatedResource>
+  <evaluatedResource>
+    <extension url="http://hl7.org/fhir/us/davinci-ra/StructureDefinition/ra-groupReference">
+      <valueString value="group-009"/>
+    </extension>
+    <reference value="Observation/ra-obs21pat01"/>
+  </evaluatedResource>
+</MeasureReport>

@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="ra-riskgap-data1"/>
+  <meta>
+    <extension url="http://hl7.org/fhir/StructureDefinition/instance-name">
+      <valueString value="Bundle example for the data parameter of the risk-gap operation"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/StructureDefinition/instance-description">
+      <valueMarkdown value="This is a Bundle example includes referenced resources by parameters of the risk-gap operation."/>
+    </extension>
+  </meta>
+  <language value="en"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:uuid:97935a18-56b7-490b-a12c-9dac8995f6d5"/>
+  </identifier>
+  <type value="collection"/>
+  <timestamp value="2026-01-07T06:17:58.172+00:00"/>
+  <entry>
+    <fullUrl value="http://example.org/fhir/Patient/ra-patient01"/>
+    <resource>
+      <Patient>
+        <id value="ra-patient01"/>
+        <meta>
+          <extension url="http://hl7.org/fhir/StructureDefinition/instance-name">
+            <valueString value="Patient Example01"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/instance-description">
+            <valueMarkdown value="This is an example patient that uses the US Core Patient profile. The example patient name is Eve Everywoman."/>
+          </extension>
+          <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient|7.0.0"/>
+        </meta>
+        <language value="en"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><div class="hapiHeaderText"><a name="Patient_ra-patient01"> </a>Eve <b>EVERYWOMAN </b></div><table class="hapiPropertyTable"><tbody><tr><td>Identifier</td><td>12345</td></tr><tr><td>Address</td><td><span>2222 Home Street </span><br/><span>Ann Arbor </span><span>MI </span><span>USA </span></td></tr><tr><td>Date of birth</td><td><span>16 January 1975</span></td></tr></tbody></table></div>
+        </text>
+        <extension url="http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex">
+          <valueCode value="F"/>
+        </extension>
+        <extension url="http://hl7.org/fhir/us/core/StructureDefinition/us-core-race">
+          <extension url="ombCategory">
+            <valueCoding>
+              <system value="urn:oid:2.16.840.1.113883.6.238"/>
+              <code value="2106-3"/>
+              <display value="White"/>
+            </valueCoding>
+          </extension>
+          <extension url="text">
+            <valueString value="White"/>
+          </extension>
+        </extension>
+        <extension url="http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity">
+          <extension url="ombCategory">
+            <valueCoding>
+              <system value="urn:oid:2.16.840.1.113883.6.238"/>
+              <code value="2186-5"/>
+              <display value="Not Hispanic or Latino"/>
+            </valueCoding>
+          </extension>
+          <extension url="text">
+            <valueString value="Not Hispanic or Latino"/>
+          </extension>
+        </extension>
+        <identifier>
+          <use value="usual"/>
+          <type>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+              <code value="MR"/>
+              <display value="Medical record number"/>
+            </coding>
+          </type>
+          <system value="http://example.org/hospital-davinci"/>
+          <value value="12345"/>
+        </identifier>
+        <active value="true"/>
+        <name>
+          <use value="official"/>
+          <family value="Everywoman"/>
+          <given value="Eve"/>
+        </name>
+        <gender value="female"/>
+        <birthDate value="1975-01-16"/>
+        <deceasedBoolean value="false"/>
+        <address>
+          <use value="home"/>
+          <line value="2222 Home Street"/>
+          <city value="Ann Arbor"/>
+          <state value="MI"/>
+          <postalCode value="99999"/>
+          <country value="USA"/>
+        </address>
+        <maritalStatus>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-MaritalStatus"/>
+            <code value="M"/>
+            <display value="Married"/>
+          </coding>
+        </maritalStatus>
+        <communication>
+          <language>
+            <coding>
+              <system value="urn:ietf:bcp:47"/>
+              <code value="en-US"/>
+              <display value="English (United States)"/>
+            </coding>
+          </language>
+          <preferred value="true"/>
+        </communication>
+      </Patient>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://example.org/fhir/Encounter/ra-encounter03pat01"/>
+    <resource>
+      <Encounter>
+        <id value="ra-encounter03pat01"/>
+        <meta>
+          <extension url="http://hl7.org/fhir/StructureDefinition/instance-name">
+            <valueString value="Encounter with Dr Howell on 20210714 for Patient 03"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/instance-description">
+            <valueMarkdown value="This is Encounter with Dr Howell on 20210714 for Patient 03."/>
+          </extension>
+          <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter|7.0.0"/>
+        </meta>
+        <language value="en"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Encounter_ra-encounter03pat01"> </a><p class="res-header-id"><b>Generated Narrative: Encounter ra-encounter03pat01</b></p><a name="ra-encounter03pat01"> </a><a name="hcra-encounter03pat01"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="http://hl7.org/fhir/us/core/STU7/StructureDefinition-us-core-encounter.html">US Core Encounter Profileversion: null7.0.0)</a></p></div><p><b>status</b>: Finished</p><p><b>class</b>: <a href="http://terminology.hl7.org/7.0.1/CodeSystem-v3-ActCode.html#v3-ActCode-AMB">ActCode: AMB</a> (ambulatory)</p><p><b>type</b>: <span title="Codes:{http://www.ama-assn.org/go/cpt 99215}">Office Visit, High Complexity</span></p><p><b>subject</b>: <a href="Patient-ra-patient01.html">Eve Everywoman (official) Female, DoB: 1975-01-16 ( Medical record number: 12345 (use: usual, ))</a></p><h3>Participants</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Individual</b></td></tr><tr><td style="display: none">*</td><td><a href="Practitioner-ra-prac01pat01.html">Practitioner Harold Hippocrates </a></td></tr></table><p><b>period</b>: 2021-09-26 --&gt; 2021-09-26</p><blockquote><p><b>diagnosis</b></p><p><b>condition</b>: <a href="Condition-ra-condition03pat01.html">Condition Chronic obstructive pulmonary disease with (acute) exacerbation</a></p></blockquote><blockquote><p><b>diagnosis</b></p><p><b>condition</b>: <a href="Condition-ra-condition10pat01.html">Condition Long term (current) use of insulin</a></p></blockquote><blockquote><p><b>diagnosis</b></p><p><b>condition</b>: <a href="Condition-ra-condition18pat01.html">Condition Longstanding persistent atrial fibrillation</a></p></blockquote><blockquote><p><b>diagnosis</b></p><p><b>condition</b>: <a href="Condition-ra-condition33pat01.html">Condition Respiratory arrest</a></p></blockquote><p><b>serviceProvider</b>: <a href="Organization-ra-org01pat01.html">Organization Community Urgent Care</a></p></div>
+        </text>
+        <status value="finished"/>
+        <class>
+          <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
+          <code value="AMB"/>
+          <display value="ambulatory"/>
+        </class>
+        <type>
+          <coding>
+            <system value="http://www.ama-assn.org/go/cpt"/>
+            <code value="99215"/>
+          </coding>
+          <text value="Office Visit, High Complexity"/>
+        </type>
+        <subject>
+          <reference value="Patient/ra-patient01"/>
+        </subject>
+        <participant>
+          <individual>
+            <reference value="Practitioner/ra-prac01pat01"/>
+          </individual>
+        </participant>
+        <period>
+          <start value="2021-09-26"/>
+          <end value="2021-09-26"/>
+        </period>
+        <diagnosis>
+          <condition>
+            <reference value="Condition/ra-condition03pat01"/>
+          </condition>
+        </diagnosis>
+        <diagnosis>
+          <condition>
+            <reference value="Condition/ra-condition10pat01"/>
+          </condition>
+        </diagnosis>
+        <diagnosis>
+          <condition>
+            <reference value="Condition/ra-condition18pat01"/>
+          </condition>
+        </diagnosis>
+        <diagnosis>
+          <condition>
+            <reference value="Condition/ra-condition33pat01"/>
+          </condition>
+        </diagnosis>
+        <serviceProvider>
+          <reference value="Organization/ra-org01pat01"/>
+        </serviceProvider>
+      </Encounter>
+    </resource>
+  </entry>
+</Bundle>

@@ -1,0 +1,83 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "hierarchical-status",
+  "language" : "en",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem hierarchical-status</b></p><a name=\"hierarchical-status\"> </a><a name=\"hchierarchical-status\"> </a><p>This case-sensitive code system <code>http://hl7.org/fhir/us/davinci-ra/CodeSystem/hierarchical-status</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">applied-superseded<a name=\"hierarchical-status-applied-superseded\"> </a></td><td>Hierarchies applied and Condition Category is superseded</td><td>Hierarchies were applied to a Condition Category (CC) and the Condition Category (CC) is superseded.</td></tr><tr><td style=\"white-space:nowrap\">applied-not-superseded<a name=\"hierarchical-status-applied-not-superseded\"> </a></td><td>Hierarchies applied and Condition Category is not superseded</td><td>Hierarchies were applied to a Condition Category (CC) and the Condition Category (CC) is not superseded.</td></tr><tr><td style=\"white-space:nowrap\">not-applied<a name=\"hierarchical-status-not-applied\"> </a></td><td>Hierarchies not applied</td><td>Hierarchies were not applied to a Condition Category (CC).</td></tr><tr><td style=\"white-space:nowrap\">not-applicable<a name=\"hierarchical-status-not-applicable\"> </a></td><td>Not applicable</td><td>Applying hierarchies to a Condition Category (CC) is not applicable.</td></tr></table></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+    "valueCode" : "cqi"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+    "valueInteger" : 2,
+    "_valueInteger" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
+        "valueCanonical" : "http://hl7.org/fhir/us/davinci-ra/ImplementationGuide/davinci-ra"
+      }]
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+    "valueCode" : "trial-use",
+    "_valueCode" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
+        "valueCanonical" : "http://hl7.org/fhir/us/davinci-ra/ImplementationGuide/davinci-ra"
+      }]
+    }
+  }],
+  "url" : "http://hl7.org/fhir/us/davinci-ra/CodeSystem/hierarchical-status",
+  "identifier" : [{
+    "system" : "urn:ietf:rfc:3986",
+    "value" : "urn:oid:2.16.840.1.113883.4.642.40.29.16.4"
+  }],
+  "version" : "3.0.0-ballot",
+  "name" : "RiskAdjustmenthierarchicalStatus",
+  "title" : "Risk Adjustment Hierarchical Status Codes",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2026-03-08T15:02:59-07:00",
+  "publisher" : "HL7 International / Clinical Quality Information",
+  "contact" : [{
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://www.hl7.org/Special/committees/cqi"
+    }]
+  }],
+  "description" : "Code system that indicates how hierarchies were applied to a Condition Category (CC), and if applied, whether the Condition Category (CC) is superseded.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "US",
+      "display" : "United States of America"
+    }]
+  }],
+  "copyright" : "Used by permission of HL7 International, all rights reserved Creative Commons License",
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 4,
+  "concept" : [{
+    "code" : "applied-superseded",
+    "display" : "Hierarchies applied and Condition Category is superseded",
+    "definition" : "Hierarchies were applied to a Condition Category (CC) and the Condition Category (CC) is superseded."
+  },
+  {
+    "code" : "applied-not-superseded",
+    "display" : "Hierarchies applied and Condition Category is not superseded",
+    "definition" : "Hierarchies were applied to a Condition Category (CC) and the Condition Category (CC) is not superseded."
+  },
+  {
+    "code" : "not-applied",
+    "display" : "Hierarchies not applied",
+    "definition" : "Hierarchies were not applied to a Condition Category (CC)."
+  },
+  {
+    "code" : "not-applicable",
+    "display" : "Not applicable",
+    "definition" : "Applying hierarchies to a Condition Category (CC) is not applicable."
+  }]
+}
