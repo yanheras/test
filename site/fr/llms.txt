@@ -1,0 +1,77 @@
+# example.fhir.uv.myig#0.2.0: Your User Friendly Name for MyIG Here(fr)
+
+## Pages
+
+* [MyIG Home Page](index.md)
+* [Example Server](ActorDefinition-example-testing.md)
+* [Example Server](ActorDefinition-example.ai.md)
+* [](ActorDefinition-example.change.history.md)
+* [Example Server](ActorDefinition-example.md)
+* [Example Server - JSON Representation](ActorDefinition-example.json.md)
+* [Example Server - TTL Representation](ActorDefinition-example.ttl.md)
+* [Example Server - XML Representation](ActorDefinition-example.xml.md)
+* [Résumé des artefacts](artifacts.md)
+* [Background](background.md)
+* [IG Change History](changes.md)
+* [Useful Downloads](downloads.md)
+* [Fragments](fragments.md)
+* [Detailed Specification](spec.md)
+* [Spec sub-page](spec2.md)
+
+## Resources
+
+### CodeSystems
+
+* [CodeSystem fake](CodeSystem-cs-fake.md)
+
+### ValueSets
+
+* [ValueSet fake](ValueSet-valueset-fake.md)
+* [ValueSet with no code-system](ValueSet-valueset-no-codesystem.md)
+
+### Logicals
+
+* [My Logical Model](StructureDefinition-MyLogical.md)
+
+### Resource Profiles
+
+* [My Observation Profile](StructureDefinition-myObservation.md)
+* [My Favorite Patient Profile](StructureDefinition-mypatient.md)
+* [Some Practitioner profile](StructureDefinition-mypractitioner.md)
+
+### Extensions
+
+* [My awesome extension](StructureDefinition-ext-myExtension.md)
+
+### Basics
+
+* [example](Basic-example.md)
+
+### Binaries
+
+* [example](Binary-example.md)
+* [image-example](Binary-image-example.md)
+
+### Bundles
+
+* [h1](Bundle-h1.md)
+
+### ImplementationGuides
+
+* [Your User Friendly Name for MyIG Here](ImplementationGuide-example.fhir.uv.myig.md)
+
+### Libraries
+
+* [Example Library Image](Library-example-image.md)
+* [Example Library](Library-example-sql.md)
+* [Example CQL Library](Library-example.md)
+
+### Questionnaires
+
+* [Cancer Quality Forum Questionnaire 2012](Questionnaire-example.md)
+
+### Examples
+
+* [logical-example (Binary)](Binary-logical-example.md)
+* [example (Observation)](Observation-example.md)
+* [example (Patient)](Patient-example.md)

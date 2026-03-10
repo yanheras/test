@@ -1,0 +1,992 @@
+
+
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+
+
+<html xml:lang="de" xmlns="http://www.w3.org/1999/xhtml" lang="de" dir="ltr">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Example CQL Library - XML Representation - Your User Friendly Name for MyIG Here v0.2.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <link href="assets/css/project.css" rel="stylesheet"/>
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+    <script type="text/javascript" src="assets/js/direction-management.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"6.4"}
+    h3,h4,h5,h6{--heading-prefix:"6.4"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+        <div id="project-nav">
+          <a id="project-logo" no-external="true" href="http://example.org"><img height="55" alt="Visit the Example website" src="assets/images/SampleLogo.png"/> </a>
+        </div>
+
+        <div id="ig-status" data-fhir="generated">
+          <p><span style="font-size:12pt;font-weight:bold">Your User Friendly Name for MyIG Here</span>
+            <br/>
+            <span style="display:inline-block;">0.2.0 - CI Build
+
+
+
+  <img alt="International Flagge" src="../assets/images/001.svg" height="16" title="International"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment" data-fhir="generated">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li><a href="index.html">IG Home</a></li>
+  <li><a href="toc.html">Table of Contents</a></li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">MyIg Background<b class="caret">
+      </b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="background.html">Background</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Specification<b class="caret">
+      </b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="spec.html">Detailed Specification</a>
+      </li>
+      <li>
+        <a href="fragments.html">Instance Fragments</a>
+      </li>
+    </ul>
+  </li>
+  <li><a href="artifacts.html">Artifact Index</a></li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Support<b class="caret">
+      </b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a target="_blank" href="http://hl7.org/fhir/R4/index.html">FHIR Spec <img src="external.png" style="text-align: baseline"/></a>
+      </li>
+      <li>
+        <a href="downloads.html">Downloads</a>
+      </li>
+    </ul>
+  </li>
+</ul>      
+
+            </div>  <!-- /.nav-collapse -->
+
+              
+
+
+<div style="float: var(--ig-right);padding: 8px 0px;" id="language">
+  <div id="select_flg" class="flaglist" style="background-image: url(assets/images/icon_arrow_down.png);background-position: 133px 3px;">
+    <div><img class="flag" alt="flag en" src="assets/images/lang-de.png"/>Deutsch</div>
+  </div>
+  <div style="float: var(--ig-right); margin: 2px 0px; padding: 1px 0;color: var(--btn-text-color);font-size:12px">Language:</div>
+ 	<div id="flaglist" class="flaglist" style="display: none;position: absolute;right: 0;z-index: 100;background-image: url(assets/images/icon_arrow_up.png);background-position: 133px 3px;">
+    <div><img class="flag" alt="flag de" src="assets/images/lang-de.png"/>Deutsch</div>
+
+    <div><a href="../en/Library-example.xml.html"><img class="flag" src="assets/images/lang-en.png" alt="flag en"/>English</a></div>
+
+    <div><a href="../fr/Library-example.xml.html"><img class="flag" src="assets/images/lang-fr.png" alt="flag fr"/>Français</a></div>
+
+  </div>
+</div>
+
+
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment" data-fhir="generated">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artefaktübersicht</b></a></li><li><b>Example CQL Library</b></li>
+
+          <span style="float: var(--ig-right);">
+
+            <a href="Library-example-testing.html">&lt; zurück</a> | 
+
+            <a href="#bottom">Ende</a>
+
+          | <a href="Library-example.json.html">weiter &gt;</a>
+
+          </span>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<!-- layouts\layout-instance-format -->
+<div style="counter-reset: section 7" class="col-12">
+<!--ReleaseHeader--><p id="publish-box">Your User Friendly Name for MyIG Here - Local Development build (v0.2.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='http://somewhere.org/fhir/uv/myig/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+
+
+
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li>
+    <a href="Library-example.html">Narrativer Inhalt</a>
+  </li>
+
+
+
+  
+    <li class="active">
+      <a href="#">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="Library-example.json.html">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="Library-example.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+
+<a name="root"> </a>
+
+
+
+<h2 id="root">: Example CQL Library</h2>
+
+  <table class="colsi" data-fhir="generated">
+    <tr>
+
+      <td colspan="2">
+        
+          <i>Standard-Status der Seite:</i> <a href="http://hl7.org/fhir/R4/versions.html#std-process" title="Standard-Status">Informative</a>
+          
+        
+      </td>
+
+    </tr>
+  </table>
+
+
+<p><a href="Library-example.xml" no-download="true">Raw xml</a> | <a href="Library-example.xml" download>Download</a></p>
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <pre class="xml" data-fhir="generated" style="white-space: pre; text-wrap: nowrap; width: auto;"><code style="white-space: pre; text-wrap: nowrap;">
+&lt;<a href="http://hl7.org/fhir/R4/library.html#Library">Library</a> xmlns=&quot;http://hl7.org/fhir&quot;&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/resource.html#Library.id">id</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;example&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/resource.html#Library.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;de&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/domainresource.html#Library.text">text</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;extensions&quot;/&gt;
+    &lt;div xml:lang=&quot;de&quot; lang=&quot;de&quot;&gt;&lt;hr/&gt;&lt;p&gt;&lt;b&gt;German&lt;/b&gt;&lt;/p&gt;&lt;hr/&gt;
+&lt;div&gt;
+    &lt;table class=&quot;grid dict&quot;&gt;
+        
+        
+        &lt;tr&gt;
+            &lt;th scope=&quot;row&quot;&gt;&lt;b&gt;Title: &lt;/b&gt;&lt;/th&gt;
+            &lt;td style=&quot;padding-left: 4px;&quot;&gt;Example CQL Library&lt;/td&gt;
+        &lt;/tr&gt;
+        
+
+        
+        
+        &lt;tr&gt;
+            &lt;th scope=&quot;row&quot;&gt;&lt;b&gt;Id: &lt;/b&gt;&lt;/th&gt;
+            &lt;td style=&quot;padding-left: 4px;&quot;&gt;example&lt;/td&gt;
+        &lt;/tr&gt;
+        
+
+        
+        
+        &lt;tr&gt;
+            &lt;th scope=&quot;row&quot;&gt;&lt;b&gt;Version: &lt;/b&gt;&lt;/th&gt;
+            &lt;td style=&quot;padding-left: 4px;&quot;&gt;0.2.0&lt;/td&gt;
+        &lt;/tr&gt;
+        
+
+        
+        &lt;tr&gt;
+            &lt;th scope=&quot;row&quot;&gt;&lt;b&gt;Url: &lt;/b&gt;&lt;/th&gt;
+            &lt;td style=&quot;padding-left: 4px;&quot;&gt;&lt;a href=&quot;Library-example.html&quot;&gt;Example CQL Library&lt;/a&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+        
+
+        
+
+        
+
+        
+        &lt;tr&gt;
+            &lt;th scope=&quot;row&quot;&gt;&lt;b&gt;Status: &lt;/b&gt;&lt;/th&gt;
+            &lt;td style=&quot;padding-left: 4px;&quot;&gt;draft&lt;/td&gt;
+        &lt;/tr&gt;
+        
+
+        
+        &lt;tr&gt;
+            &lt;th scope=&quot;row&quot;&gt;&lt;b&gt;Experimental: &lt;/b&gt;&lt;/th&gt;
+            &lt;td style=&quot;padding-left: 4px;&quot;&gt;true&lt;/td&gt;
+        &lt;/tr&gt;
+        
+
+        
+        &lt;tr&gt;
+            &lt;th scope=&quot;row&quot;&gt;&lt;b&gt;Type: &lt;/b&gt;&lt;/th&gt;
+            &lt;td style=&quot;padding-left: 4px;&quot;&gt;
+                
+                    
+                        
+                        &lt;p style=&quot;margin-bottom: 5px;&quot;&gt;
+                            &lt;b&gt;system: &lt;/b&gt; &lt;span&gt;&lt;a href=&quot;http://terminology.hl7.org/7.1.0/CodeSystem-library-type.html&quot;&gt;http://terminology.hl7.org/CodeSystem/library-type&lt;/a&gt;&lt;/span&gt;
+                        &lt;/p&gt;
+                        
+                        
+                        &lt;p style=&quot;margin-bottom: 5px;&quot;&gt;
+                            &lt;b&gt;code: &lt;/b&gt; &lt;span&gt;logic-library&lt;/span&gt;
+                        &lt;/p&gt;
+                        
+                        
+                    
+                
+                
+            &lt;/td&gt;
+        &lt;/tr&gt;
+        
+
+        
+        &lt;tr&gt;
+            &lt;th scope=&quot;row&quot;&gt;&lt;b&gt;Subject: &lt;/b&gt;&lt;/th&gt;
+            
+            &lt;td style=&quot;padding-left: 4px;&quot;&gt;
+                
+                    
+                        
+                        &lt;p style=&quot;margin-bottom: 5px;&quot;&gt;
+                            &lt;b&gt;system: &lt;/b&gt; &lt;span&gt;&lt;a href=&quot;http://hl7.org/fhir/R4/codesystem-resource-types.html&quot;&gt;http://hl7.org/fhir/resource-types&lt;/a&gt;&lt;/span&gt;
+                        &lt;/p&gt;
+                        
+                        
+                        &lt;p style=&quot;margin-bottom: 5px;&quot;&gt;
+                            &lt;b&gt;code: &lt;/b&gt; &lt;span&gt;Patient&lt;/span&gt;
+                        &lt;/p&gt;
+                        
+                        
+                    
+                
+                
+            &lt;/td&gt;
+            
+            
+        &lt;/tr&gt;
+        
+
+        
+        &lt;tr&gt;
+            &lt;th scope=&quot;row&quot;&gt;&lt;b&gt;Date: &lt;/b&gt;&lt;/th&gt;
+            &lt;td style=&quot;padding-left: 4px;&quot;&gt;2026-03-10 09:13:26-0700&lt;/td&gt;
+        &lt;/tr&gt;
+        
+
+        
+        &lt;tr&gt;
+            &lt;th scope=&quot;row&quot;&gt;&lt;b&gt;Publisher: &lt;/b&gt;&lt;/th&gt;
+            &lt;td style=&quot;padding-left: 4px;&quot;&gt;HL7 International - [Some] Work Group&lt;/td&gt;
+        &lt;/tr&gt;
+        
+
+        
+        &lt;tr&gt;
+            &lt;th scope=&quot;row&quot;&gt;&lt;b&gt;Description: &lt;/b&gt;&lt;/th&gt;
+            &lt;td style=&quot;padding-left: 4px;&quot;&gt;&lt;div&gt;&lt;p&gt;Some example library&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+        
+
+        
+
+        
+
+        
+
+        
+        &lt;tr&gt;
+            &lt;th scope=&quot;row&quot;&gt;&lt;b&gt;Jurisdiction: &lt;/b&gt;&lt;/th&gt;
+            &lt;td style=&quot;padding-left: 4px;&quot;&gt;001&lt;/td&gt;
+        &lt;/tr&gt;
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+        &lt;tr&gt;
+            &lt;th scope=&quot;row&quot;&gt;&lt;b&gt;Related Artifacts: &lt;/b&gt;&lt;/th&gt;
+            &lt;td style=&quot;padding-left: 4px;&quot;&gt;
+                
+                
+                
+                &lt;p&gt;&lt;b&gt;Dependencies&lt;/b&gt;&lt;/p&gt;
+                &lt;ul&gt;
+                  
+                    &lt;li&gt;&lt;a href=&quot;http://fhir.org/guides/cqf/common/4.0.1/4.0.1/Library-FHIRHelpers.html&quot;&gt;http://fhir.org/guides/cqf/common/Library/FHIRHelpers|4.0.1&lt;/a&gt;&lt;/li&gt;
+                  
+                    &lt;li&gt;&lt;a href=&quot;http://terminology.hl7.org/7.1.0/CodeSystem-observation-category.html&quot;&gt;Observation Category Codes&lt;/a&gt;&lt;/li&gt;
+                  
+                    &lt;li&gt;&lt;code&gt;http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.666.5.307&lt;/code&gt;&lt;/li&gt;
+                  
+                    &lt;li&gt;&lt;code&gt;http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.117.1.7.1.292&lt;/code&gt;&lt;/li&gt;
+                  
+                    &lt;li&gt;&lt;code&gt;http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1082&lt;/code&gt;&lt;/li&gt;
+                  
+                    &lt;li&gt;&lt;code&gt;http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1053&lt;/code&gt;&lt;/li&gt;
+                  
+                    &lt;li&gt;&lt;code&gt;TBD&lt;/code&gt;&lt;/li&gt;
+                  
+                &lt;/ul&gt;
+                
+                
+                
+                
+                
+            &lt;/td&gt;
+        &lt;/tr&gt;
+        
+
+        
+        &lt;tr&gt;
+          &lt;th scope=&quot;row&quot;&gt;&lt;b&gt;Parameters: &lt;/b&gt;&lt;/th&gt;
+          &lt;td style=&quot;padding-left: 4px;&quot;&gt;
+            &lt;table class=&quot;grid-dict&quot;&gt;
+              &lt;tr&gt;&lt;th&gt;&lt;b&gt;Name&lt;/b&gt;&lt;/th&gt;&lt;th&gt;&lt;b&gt;Type&lt;/b&gt;&lt;/th&gt;&lt;th&gt;&lt;b&gt;Min&lt;/b&gt;&lt;/th&gt;&lt;th&gt;&lt;b&gt;Max&lt;/b&gt;&lt;/th&gt;&lt;th&gt;&lt;b&gt;In/Out&lt;/b&gt;&lt;/th&gt;&lt;/tr&gt;
+              
+                &lt;tr&gt;&lt;th&gt;Measurement Period&lt;/th&gt;&lt;th&gt;Period&lt;/th&gt;&lt;th&gt;0&lt;/th&gt;&lt;th&gt;1&lt;/th&gt;&lt;th&gt;In&lt;/th&gt;&lt;/tr&gt;
+              
+                &lt;tr&gt;&lt;th&gt;Patient&lt;/th&gt;&lt;th&gt;Patient&lt;/th&gt;&lt;th&gt;0&lt;/th&gt;&lt;th&gt;1&lt;/th&gt;&lt;th&gt;Out&lt;/th&gt;&lt;/tr&gt;
+              
+                &lt;tr&gt;&lt;th&gt;Inpatient, Emergency, or Telephone Evaluation or Management Encounter&lt;/th&gt;&lt;th&gt;Encounter&lt;/th&gt;&lt;th&gt;0&lt;/th&gt;&lt;th&gt;*&lt;/th&gt;&lt;th&gt;Out&lt;/th&gt;&lt;/tr&gt;
+              
+                &lt;tr&gt;&lt;th&gt;Initial Population&lt;/th&gt;&lt;th&gt;boolean&lt;/th&gt;&lt;th&gt;0&lt;/th&gt;&lt;th&gt;1&lt;/th&gt;&lt;th&gt;Out&lt;/th&gt;&lt;/tr&gt;
+              
+                &lt;tr&gt;&lt;th&gt;Denominator&lt;/th&gt;&lt;th&gt;boolean&lt;/th&gt;&lt;th&gt;0&lt;/th&gt;&lt;th&gt;1&lt;/th&gt;&lt;th&gt;Out&lt;/th&gt;&lt;/tr&gt;
+              
+                &lt;tr&gt;&lt;th&gt;COVID-19 Communicable Disease Screening&lt;/th&gt;&lt;th&gt;Observation&lt;/th&gt;&lt;th&gt;0&lt;/th&gt;&lt;th&gt;*&lt;/th&gt;&lt;th&gt;Out&lt;/th&gt;&lt;/tr&gt;
+              
+                &lt;tr&gt;&lt;th&gt;Numerator&lt;/th&gt;&lt;th&gt;boolean&lt;/th&gt;&lt;th&gt;0&lt;/th&gt;&lt;th&gt;1&lt;/th&gt;&lt;th&gt;Out&lt;/th&gt;&lt;/tr&gt;
+              
+            &lt;/table&gt;
+          &lt;/td&gt;
+        &lt;/tr&gt;
+        
+
+        
+        &lt;tr&gt;
+          &lt;th scope=&quot;row&quot;&gt;&lt;b&gt;Data Requirements:&lt;/b&gt;&lt;/th&gt;
+          &lt;td style=&quot;padding-left: 4px;&quot;&gt;
+            &lt;table class=&quot;grid-dict&quot;&gt;
+              &lt;tr&gt;&lt;th&gt;&lt;b&gt;Type&lt;/b&gt;&lt;/th&gt;&lt;th&gt;&lt;b&gt;Profile&lt;/b&gt;&lt;/th&gt;&lt;th&gt;&lt;b&gt;MS&lt;/b&gt;&lt;/th&gt;&lt;th&gt;&lt;b&gt;Code Filter&lt;/b&gt;&lt;/th&gt;&lt;/tr&gt;
+              
+                &lt;tr&gt;
+                  &lt;th&gt;Encounter&lt;/th&gt;
+                  &lt;th&gt;http://hl7.org/fhir/StructureDefinition/Encounter&lt;/th&gt;
+                  &lt;th/&gt;
+                  &lt;th&gt;
+                    
+                      &lt;b&gt;code filter: &lt;/b&gt;
+                      
+                      &lt;br/&gt;
+                      
+                      
+                      &lt;span style=&quot;padding-left: 4px;&quot;&gt;
+                          &lt;b&gt;path: &lt;/b&gt;&lt;span&gt;type&lt;/span&gt;
+                      &lt;/span&gt;
+                      
+                      &lt;br/&gt;
+                      
+                      
+                      
+                      &lt;span style=&quot;padding-left: 4px;&quot;&gt;
+                          &lt;b&gt;value set: &lt;/b&gt;&lt;span&gt;http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.666.5.307&lt;/span&gt;
+                      &lt;/span&gt;
+                      
+                      
+                    
+                  &lt;/th&gt;
+                &lt;/tr&gt;
+              
+                &lt;tr&gt;
+                  &lt;th&gt;Encounter&lt;/th&gt;
+                  &lt;th&gt;http://hl7.org/fhir/StructureDefinition/Encounter&lt;/th&gt;
+                  &lt;th/&gt;
+                  &lt;th&gt;
+                    
+                      &lt;b&gt;code filter: &lt;/b&gt;
+                      
+                      &lt;br/&gt;
+                      
+                      
+                      &lt;span style=&quot;padding-left: 4px;&quot;&gt;
+                          &lt;b&gt;path: &lt;/b&gt;&lt;span&gt;type&lt;/span&gt;
+                      &lt;/span&gt;
+                      
+                      &lt;br/&gt;
+                      
+                      
+                      
+                      &lt;span style=&quot;padding-left: 4px;&quot;&gt;
+                          &lt;b&gt;value set: &lt;/b&gt;&lt;span&gt;http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.117.1.7.1.292&lt;/span&gt;
+                      &lt;/span&gt;
+                      
+                      
+                    
+                  &lt;/th&gt;
+                &lt;/tr&gt;
+              
+                &lt;tr&gt;
+                  &lt;th&gt;Encounter&lt;/th&gt;
+                  &lt;th&gt;http://hl7.org/fhir/StructureDefinition/Encounter&lt;/th&gt;
+                  &lt;th/&gt;
+                  &lt;th&gt;
+                    
+                      &lt;b&gt;code filter: &lt;/b&gt;
+                      
+                      &lt;br/&gt;
+                      
+                      
+                      &lt;span style=&quot;padding-left: 4px;&quot;&gt;
+                          &lt;b&gt;path: &lt;/b&gt;&lt;span&gt;type&lt;/span&gt;
+                      &lt;/span&gt;
+                      
+                      &lt;br/&gt;
+                      
+                      
+                      
+                      &lt;span style=&quot;padding-left: 4px;&quot;&gt;
+                          &lt;b&gt;value set: &lt;/b&gt;&lt;span&gt;http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1082&lt;/span&gt;
+                      &lt;/span&gt;
+                      
+                      
+                    
+                  &lt;/th&gt;
+                &lt;/tr&gt;
+              
+                &lt;tr&gt;
+                  &lt;th&gt;Encounter&lt;/th&gt;
+                  &lt;th&gt;http://hl7.org/fhir/StructureDefinition/Encounter&lt;/th&gt;
+                  &lt;th/&gt;
+                  &lt;th&gt;
+                    
+                      &lt;b&gt;code filter: &lt;/b&gt;
+                      
+                      &lt;br/&gt;
+                      
+                      
+                      &lt;span style=&quot;padding-left: 4px;&quot;&gt;
+                          &lt;b&gt;path: &lt;/b&gt;&lt;span&gt;type&lt;/span&gt;
+                      &lt;/span&gt;
+                      
+                      &lt;br/&gt;
+                      
+                      
+                      
+                      &lt;span style=&quot;padding-left: 4px;&quot;&gt;
+                          &lt;b&gt;value set: &lt;/b&gt;&lt;span&gt;http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1053&lt;/span&gt;
+                      &lt;/span&gt;
+                      
+                      
+                    
+                  &lt;/th&gt;
+                &lt;/tr&gt;
+              
+                &lt;tr&gt;
+                  &lt;th&gt;Observation&lt;/th&gt;
+                  &lt;th&gt;http://hl7.org/fhir/StructureDefinition/Observation&lt;/th&gt;
+                  &lt;th/&gt;
+                  &lt;th&gt;
+                    
+                      &lt;b&gt;code filter: &lt;/b&gt;
+                      
+                      &lt;br/&gt;
+                      
+                      
+                      &lt;span style=&quot;padding-left: 4px;&quot;&gt;
+                          &lt;b&gt;path: &lt;/b&gt;&lt;span&gt;code&lt;/span&gt;
+                      &lt;/span&gt;
+                      
+                      &lt;br/&gt;
+                      
+                      
+                      
+                      &lt;span style=&quot;padding-left: 4px;&quot;&gt;
+                          &lt;b&gt;value set: &lt;/b&gt;&lt;span&gt;TBD&lt;/span&gt;
+                      &lt;/span&gt;
+                      
+                      
+                    
+                  &lt;/th&gt;
+                &lt;/tr&gt;
+              
+            &lt;/table&gt;
+          &lt;/td&gt;
+        &lt;/tr&gt;
+        
+
+        
+        
+        &lt;tr&gt;
+          &lt;td colspan=&quot;2&quot;&gt;
+            &lt;table&gt;
+              &lt;tr&gt;&lt;th&gt;&lt;a id=&quot;cql-content&quot;&gt;&lt;b&gt;Content: &lt;/b&gt;&lt;/a&gt; text/cql&lt;/th&gt;&lt;/tr&gt;
+              &lt;tr&gt;&lt;td&gt;&lt;pre&gt;&lt;code class=&quot;language-cql&quot;&gt;library example version '1.0.0'
+
+using FHIR version '4.0.1'
+
+include fhir.cqf.common.FHIRHelpers version '4.0.1'
+
+codesystem &amp;quot;Observation Category Codes&amp;quot;: 'http://terminology.hl7.org/CodeSystem/observation-category'
+
+valueset &amp;quot;Encounter Inpatient&amp;quot;: 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.666.5.307'
+valueset &amp;quot;Emergency Department Visit&amp;quot;: 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.117.1.7.1.292'
+valueset &amp;quot;Telephone Evaluation&amp;quot;: 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1082'
+valueset &amp;quot;Telephone Management&amp;quot;: 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1053'
+
+valueset &amp;quot;COVID-19 Screening Result&amp;quot;: 'TBD'
+
+code &amp;quot;Laboratory Observation Category&amp;quot;: 'laboratory' from &amp;quot;Observation Category Codes&amp;quot;
+
+parameter &amp;quot;Measurement Period&amp;quot; Interval&amp;lt;DateTime&amp;gt;
+
+context Patient
+
+define &amp;quot;Inpatient, Emergency, or Telephone Evaluation or Management Encounter&amp;quot;:
+  (
+    [Encounter: &amp;quot;Encounter Inpatient&amp;quot;]
+      union [Encounter: &amp;quot;Emergency Department Visit&amp;quot;]
+      union [Encounter: &amp;quot;Telephone Evaluation&amp;quot;]
+      union [Encounter: &amp;quot;Telephone Management&amp;quot;]
+  ) Encounter
+    where Encounter.status = 'finished'
+      and Encounter.period during &amp;quot;Measurement Period&amp;quot;
+
+define &amp;quot;Initial Population&amp;quot;:
+  exists (&amp;quot;Inpatient, Emergency, or Telephone Evaluation or Management Encounter&amp;quot;)
+
+define &amp;quot;Denominator&amp;quot;:
+  true
+
+define &amp;quot;COVID-19 Communicable Disease Screening&amp;quot;:
+  [Observation: &amp;quot;COVID-19 Screening Result&amp;quot;] Result
+    where exists (Result.category C where C ~ &amp;quot;Laboratory Observation Category&amp;quot;)
+      and Result.status in { 'final', 'amended', 'corrected' }
+      and Result.effective during &amp;quot;Measurement Period&amp;quot;
+
+define &amp;quot;Numerator&amp;quot;:
+  exists (&amp;quot;COVID-19 Communicable Disease Screening&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;
+            &lt;/table&gt;
+          &lt;/td&gt;
+        &lt;/tr&gt;
+        
+        
+        
+        
+        
+        &lt;tr&gt;
+          &lt;td colspan=&quot;2&quot;&gt;
+            &lt;table&gt;
+              &lt;tr&gt;&lt;th&gt;&lt;b&gt;Content: &lt;/b&gt; application/elm+xml&lt;/th&gt;&lt;/tr&gt;
+              &lt;tr&gt;&lt;td&gt;&lt;pre&gt;&lt;code&gt;Encoded data (38084 characters)&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;
+            &lt;/table&gt;
+          &lt;/td&gt;
+        &lt;/tr&gt;
+        
+        
+        
+        
+        &lt;tr&gt;
+          &lt;td colspan=&quot;2&quot;&gt;
+            &lt;table&gt;
+              &lt;tr&gt;&lt;th&gt;&lt;b&gt;Content: &lt;/b&gt; application/elm+json&lt;/th&gt;&lt;/tr&gt;
+              &lt;tr&gt;&lt;td&gt;&lt;pre&gt;&lt;code&gt;Encoded data (68000 characters)&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;
+            &lt;/table&gt;
+          &lt;/td&gt;
+        &lt;/tr&gt;
+        
+        
+    &lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;<a name="end-xhtml"></a>
+  &lt;/<a href="http://hl7.org/fhir/R4/domainresource.html#Library.text">text</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/library.html#Library.url">url</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://somewhere.org/fhir/uv/myig/Library/example&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/library.html#Library.version">version</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;0.2.0&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/library.html#Library.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Example&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/library.html#Library.title">title</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Example CQL Library&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/library.html#Library.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;draft&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/library.html#Library.experimental">experimental</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>=&quot;true&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/library.html#Library.type">type</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://terminology.hl7.org/CodeSystem/library-type&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;logic-library&quot;/&gt;
+    &lt;/<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+  &lt;/<a href="http://hl7.org/fhir/R4/library.html#Library.type">type</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/library.html#Library.subject_x_">subjectCodeableConcept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://hl7.org/fhir/resource-types&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;Patient&quot;/&gt;
+    &lt;/<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+  &lt;/<a href="http://hl7.org/fhir/R4/library.html#Library.subject_x_">subjectCodeableConcept</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/library.html#Library.date">date</a> <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">value</a>=&quot;2026-03-10T09:13:26-07:00&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/library.html#Library.publisher">publisher</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;HL7 International - [Some] Work Group&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/library.html#Library.contact">contact</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;url&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;http://hl7.org/Special/committees/[something]&quot;/&gt;
+    &lt;/<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>&gt;
+  &lt;/<a href="http://hl7.org/fhir/R4/library.html#Library.contact">contact</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/library.html#Library.description">description</a> <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">value</a>=&quot;Some example library&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/library.html#Library.jurisdiction">jurisdiction</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://unstats.un.org/unsd/methods/m49/m49.htm&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;001&quot;/&gt;
+    &lt;/<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+  &lt;/<a href="http://hl7.org/fhir/R4/library.html#Library.jurisdiction">jurisdiction</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/library.html#Library.relatedArtifact">relatedArtifact</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#RelatedArtifact#RelatedArtifact.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;depends-on&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#RelatedArtifact#RelatedArtifact.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Library FHIRHelpers&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#RelatedArtifact#RelatedArtifact.resource">resource</a>
+              <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;http://fhir.org/guides/cqf/common/Library/FHIRHelpers|4.0.1&quot;/&gt;
+  &lt;/<a href="http://hl7.org/fhir/R4/library.html#Library.relatedArtifact">relatedArtifact</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/library.html#Library.relatedArtifact">relatedArtifact</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#RelatedArtifact#RelatedArtifact.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;depends-on&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#RelatedArtifact#RelatedArtifact.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Code System Observation Category Codes&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#RelatedArtifact#RelatedArtifact.resource">resource</a>
+              <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;http://terminology.hl7.org/CodeSystem/observation-category&quot;/&gt;
+  &lt;/<a href="http://hl7.org/fhir/R4/library.html#Library.relatedArtifact">relatedArtifact</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/library.html#Library.relatedArtifact">relatedArtifact</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#RelatedArtifact#RelatedArtifact.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;depends-on&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#RelatedArtifact#RelatedArtifact.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Value Set Encounter Inpatient&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#RelatedArtifact#RelatedArtifact.resource">resource</a>
+              <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.666.5.307&quot;/&gt;
+  &lt;/<a href="http://hl7.org/fhir/R4/library.html#Library.relatedArtifact">relatedArtifact</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/library.html#Library.relatedArtifact">relatedArtifact</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#RelatedArtifact#RelatedArtifact.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;depends-on&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#RelatedArtifact#RelatedArtifact.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Value Set Emergency Department Visit&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#RelatedArtifact#RelatedArtifact.resource">resource</a>
+              <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.117.1.7.1.292&quot;/&gt;
+  &lt;/<a href="http://hl7.org/fhir/R4/library.html#Library.relatedArtifact">relatedArtifact</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/library.html#Library.relatedArtifact">relatedArtifact</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#RelatedArtifact#RelatedArtifact.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;depends-on&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#RelatedArtifact#RelatedArtifact.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Value Set Telephone Evaluation&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#RelatedArtifact#RelatedArtifact.resource">resource</a>
+              <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1082&quot;/&gt;
+  &lt;/<a href="http://hl7.org/fhir/R4/library.html#Library.relatedArtifact">relatedArtifact</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/library.html#Library.relatedArtifact">relatedArtifact</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#RelatedArtifact#RelatedArtifact.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;depends-on&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#RelatedArtifact#RelatedArtifact.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Value Set Telephone Management&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#RelatedArtifact#RelatedArtifact.resource">resource</a>
+              <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1053&quot;/&gt;
+  &lt;/<a href="http://hl7.org/fhir/R4/library.html#Library.relatedArtifact">relatedArtifact</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/library.html#Library.relatedArtifact">relatedArtifact</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#RelatedArtifact#RelatedArtifact.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;depends-on&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#RelatedArtifact#RelatedArtifact.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Value Set COVID-19 Screening Result&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#RelatedArtifact#RelatedArtifact.resource">resource</a> <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;TBD&quot;/&gt;
+  &lt;/<a href="http://hl7.org/fhir/R4/library.html#Library.relatedArtifact">relatedArtifact</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/library.html#Library.parameter">parameter</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#ParameterDefinition#ParameterDefinition.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;Measurement Period&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#ParameterDefinition#ParameterDefinition.use">use</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;in&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#ParameterDefinition#ParameterDefinition.min">min</a> <a href="http://hl7.org/fhir/R4/datatypes.html#integer">value</a>=&quot;0&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#ParameterDefinition#ParameterDefinition.max">max</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;1&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#ParameterDefinition#ParameterDefinition.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;Period&quot;/&gt;
+  &lt;/<a href="http://hl7.org/fhir/R4/library.html#Library.parameter">parameter</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/library.html#Library.parameter">parameter</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#ParameterDefinition#ParameterDefinition.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;Patient&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#ParameterDefinition#ParameterDefinition.use">use</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;out&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#ParameterDefinition#ParameterDefinition.min">min</a> <a href="http://hl7.org/fhir/R4/datatypes.html#integer">value</a>=&quot;0&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#ParameterDefinition#ParameterDefinition.max">max</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;1&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#ParameterDefinition#ParameterDefinition.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;Patient&quot;/&gt;
+  &lt;/<a href="http://hl7.org/fhir/R4/library.html#Library.parameter">parameter</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/library.html#Library.parameter">parameter</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#ParameterDefinition#ParameterDefinition.name">name</a>
+          <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;Inpatient, Emergency, or Telephone Evaluation or Management Encounter&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#ParameterDefinition#ParameterDefinition.use">use</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;out&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#ParameterDefinition#ParameterDefinition.min">min</a> <a href="http://hl7.org/fhir/R4/datatypes.html#integer">value</a>=&quot;0&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#ParameterDefinition#ParameterDefinition.max">max</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;*&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#ParameterDefinition#ParameterDefinition.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;Encounter&quot;/&gt;
+  &lt;/<a href="http://hl7.org/fhir/R4/library.html#Library.parameter">parameter</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/library.html#Library.parameter">parameter</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#ParameterDefinition#ParameterDefinition.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;Initial Population&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#ParameterDefinition#ParameterDefinition.use">use</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;out&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#ParameterDefinition#ParameterDefinition.min">min</a> <a href="http://hl7.org/fhir/R4/datatypes.html#integer">value</a>=&quot;0&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#ParameterDefinition#ParameterDefinition.max">max</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;1&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#ParameterDefinition#ParameterDefinition.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;boolean&quot;/&gt;
+  &lt;/<a href="http://hl7.org/fhir/R4/library.html#Library.parameter">parameter</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/library.html#Library.parameter">parameter</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#ParameterDefinition#ParameterDefinition.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;Denominator&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#ParameterDefinition#ParameterDefinition.use">use</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;out&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#ParameterDefinition#ParameterDefinition.min">min</a> <a href="http://hl7.org/fhir/R4/datatypes.html#integer">value</a>=&quot;0&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#ParameterDefinition#ParameterDefinition.max">max</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;1&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#ParameterDefinition#ParameterDefinition.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;boolean&quot;/&gt;
+  &lt;/<a href="http://hl7.org/fhir/R4/library.html#Library.parameter">parameter</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/library.html#Library.parameter">parameter</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#ParameterDefinition#ParameterDefinition.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;COVID-19 Communicable Disease Screening&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#ParameterDefinition#ParameterDefinition.use">use</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;out&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#ParameterDefinition#ParameterDefinition.min">min</a> <a href="http://hl7.org/fhir/R4/datatypes.html#integer">value</a>=&quot;0&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#ParameterDefinition#ParameterDefinition.max">max</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;*&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#ParameterDefinition#ParameterDefinition.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;Observation&quot;/&gt;
+  &lt;/<a href="http://hl7.org/fhir/R4/library.html#Library.parameter">parameter</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/library.html#Library.parameter">parameter</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#ParameterDefinition#ParameterDefinition.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;Numerator&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#ParameterDefinition#ParameterDefinition.use">use</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;out&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#ParameterDefinition#ParameterDefinition.min">min</a> <a href="http://hl7.org/fhir/R4/datatypes.html#integer">value</a>=&quot;0&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#ParameterDefinition#ParameterDefinition.max">max</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;1&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#ParameterDefinition#ParameterDefinition.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;boolean&quot;/&gt;
+  &lt;/<a href="http://hl7.org/fhir/R4/library.html#Library.parameter">parameter</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/library.html#Library.dataRequirement">dataRequirement</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#DataRequirement#DataRequirement.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;Encounter&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#DataRequirement#DataRequirement.profile">profile</a> <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/StructureDefinition/Encounter&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#DataRequirement#DataRequirement.codeFilter">codeFilter</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#DataRequirement#DataRequirement.codeFilter.path">path</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;type&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#DataRequirement#DataRequirement.codeFilter.valueSet">valueSet</a>
+                <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.666.5.307&quot;/&gt;
+    &lt;/<a href="http://hl7.org/fhir/R4/metadatatypes.html#DataRequirement#DataRequirement.codeFilter">codeFilter</a>&gt;
+  &lt;/<a href="http://hl7.org/fhir/R4/library.html#Library.dataRequirement">dataRequirement</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/library.html#Library.dataRequirement">dataRequirement</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#DataRequirement#DataRequirement.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;Encounter&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#DataRequirement#DataRequirement.profile">profile</a> <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/StructureDefinition/Encounter&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#DataRequirement#DataRequirement.codeFilter">codeFilter</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#DataRequirement#DataRequirement.codeFilter.path">path</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;type&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#DataRequirement#DataRequirement.codeFilter.valueSet">valueSet</a>
+                <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.117.1.7.1.292&quot;/&gt;
+    &lt;/<a href="http://hl7.org/fhir/R4/metadatatypes.html#DataRequirement#DataRequirement.codeFilter">codeFilter</a>&gt;
+  &lt;/<a href="http://hl7.org/fhir/R4/library.html#Library.dataRequirement">dataRequirement</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/library.html#Library.dataRequirement">dataRequirement</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#DataRequirement#DataRequirement.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;Encounter&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#DataRequirement#DataRequirement.profile">profile</a> <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/StructureDefinition/Encounter&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#DataRequirement#DataRequirement.codeFilter">codeFilter</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#DataRequirement#DataRequirement.codeFilter.path">path</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;type&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#DataRequirement#DataRequirement.codeFilter.valueSet">valueSet</a>
+                <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1082&quot;/&gt;
+    &lt;/<a href="http://hl7.org/fhir/R4/metadatatypes.html#DataRequirement#DataRequirement.codeFilter">codeFilter</a>&gt;
+  &lt;/<a href="http://hl7.org/fhir/R4/library.html#Library.dataRequirement">dataRequirement</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/library.html#Library.dataRequirement">dataRequirement</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#DataRequirement#DataRequirement.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;Encounter&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#DataRequirement#DataRequirement.profile">profile</a> <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/StructureDefinition/Encounter&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#DataRequirement#DataRequirement.codeFilter">codeFilter</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#DataRequirement#DataRequirement.codeFilter.path">path</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;type&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#DataRequirement#DataRequirement.codeFilter.valueSet">valueSet</a>
+                <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1053&quot;/&gt;
+    &lt;/<a href="http://hl7.org/fhir/R4/metadatatypes.html#DataRequirement#DataRequirement.codeFilter">codeFilter</a>&gt;
+  &lt;/<a href="http://hl7.org/fhir/R4/library.html#Library.dataRequirement">dataRequirement</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/library.html#Library.dataRequirement">dataRequirement</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#DataRequirement#DataRequirement.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;Observation&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#DataRequirement#DataRequirement.profile">profile</a> <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/StructureDefinition/Observation&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#DataRequirement#DataRequirement.codeFilter">codeFilter</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#DataRequirement#DataRequirement.codeFilter.path">path</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;code&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#DataRequirement#DataRequirement.codeFilter.valueSet">valueSet</a> <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;TBD&quot;/&gt;
+    &lt;/<a href="http://hl7.org/fhir/R4/metadatatypes.html#DataRequirement#DataRequirement.codeFilter">codeFilter</a>&gt;
+  &lt;/<a href="http://hl7.org/fhir/R4/library.html#Library.dataRequirement">dataRequirement</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/library.html#Library.content">content</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Attachment#Attachment.contentType">contentType</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;text/cql&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Attachment#Attachment.data">data</a>
+          <a href="http://hl7.org/fhir/R4/datatypes.html#base64Binary">value</a>=&quot;bGlicmFyeSBleGFtcGxlIHZlcnNpb24gJzEuMC4wJw0KDQp1c2luZyBGSElSIHZlcnNpb24gJzQuMC4xJw0KDQppbmNsdWRlIGZoaXIuY3FmLmNvbW1vbi5GSElSSGVscGVycyB2ZXJzaW9uICc0LjAuMScNCg0KY29kZXN5c3RlbSAiT2JzZXJ2YXRpb24gQ2F0ZWdvcnkgQ29kZXMiOiAnaHR0cDovL3Rlcm1pbm9sb2d5LmhsNy5vcmcvQ29kZVN5c3RlbS9vYnNlcnZhdGlvbi1jYXRlZ29yeScNCg0KdmFsdWVzZXQgIkVuY291bnRlciBJbnBhdGllbnQiOiAnaHR0cDovL2N0cy5ubG0ubmloLmdvdi9maGlyL1ZhbHVlU2V0LzIuMTYuODQwLjEuMTEzODgzLjMuNjY2LjUuMzA3Jw0KdmFsdWVzZXQgIkVtZXJnZW5jeSBEZXBhcnRtZW50IFZpc2l0IjogJ2h0dHA6Ly9jdHMubmxtLm5paC5nb3YvZmhpci9WYWx1ZVNldC8yLjE2Ljg0MC4xLjExMzg4My4zLjExNy4xLjcuMS4yOTInDQp2YWx1ZXNldCAiVGVsZXBob25lIEV2YWx1YXRpb24iOiAnaHR0cDovL2N0cy5ubG0ubmloLmdvdi9maGlyL1ZhbHVlU2V0LzIuMTYuODQwLjEuMTEzODgzLjMuNDY0LjEwMDMuMTAxLjEyLjEwODInDQp2YWx1ZXNldCAiVGVsZXBob25lIE1hbmFnZW1lbnQiOiAnaHR0cDovL2N0cy5ubG0ubmloLmdvdi9maGlyL1ZhbHVlU2V0LzIuMTYuODQwLjEuMTEzODgzLjMuNDY0LjEwMDMuMTAxLjEyLjEwNTMnDQoNCnZhbHVlc2V0ICJDT1ZJRC0xOSBTY3JlZW5pbmcgUmVzdWx0IjogJ1RCRCcNCg0KY29kZSAiTGFib3JhdG9yeSBPYnNlcnZhdGlvbiBDYXRlZ29yeSI6ICdsYWJvcmF0b3J5JyBmcm9tICJPYnNlcnZhdGlvbiBDYXRlZ29yeSBDb2RlcyINCg0KcGFyYW1ldGVyICJNZWFzdXJlbWVudCBQZXJpb2QiIEludGVydmFsPERhdGVUaW1lPg0KDQpjb250ZXh0IFBhdGllbnQNCg0KZGVmaW5lICJJbnBhdGllbnQsIEVtZXJnZW5jeSwgb3IgVGVsZXBob25lIEV2YWx1YXRpb24gb3IgTWFuYWdlbWVudCBFbmNvdW50ZXIiOg0KICAoDQogICAgW0VuY291bnRlcjogIkVuY291bnRlciBJbnBhdGllbnQiXQ0KICAgICAgdW5pb24gW0VuY291bnRlcjogIkVtZXJnZW5jeSBEZXBhcnRtZW50IFZpc2l0Il0NCiAgICAgIHVuaW9uIFtFbmNvdW50ZXI6ICJUZWxlcGhvbmUgRXZhbHVhdGlvbiJdDQogICAgICB1bmlvbiBbRW5jb3VudGVyOiAiVGVsZXBob25lIE1hbmFnZW1lbnQiXQ0KICApIEVuY291bnRlcg0KICAgIHdoZXJlIEVuY291bnRlci5zdGF0dXMgPSAnZmluaXNoZWQnDQogICAgICBhbmQgRW5jb3VudGVyLnBlcmlvZCBkdXJpbmcgIk1lYXN1cmVtZW50IFBlcmlvZCINCg0KZGVmaW5lICJJbml0aWFsIFBvcHVsYXRpb24iOg0KICBleGlzdHMgKCJJbnBhdGllbnQsIEVtZXJnZW5jeSwgb3IgVGVsZXBob25lIEV2YWx1YXRpb24gb3IgTWFuYWdlbWVudCBFbmNvdW50ZXIiKQ0KDQpkZWZpbmUgIkRlbm9taW5hdG9yIjoNCiAgdHJ1ZQ0KDQpkZWZpbmUgIkNPVklELTE5IENvbW11bmljYWJsZSBEaXNlYXNlIFNjcmVlbmluZyI6DQogIFtPYnNlcnZhdGlvbjogIkNPVklELTE5IFNjcmVlbmluZyBSZXN1bHQiXSBSZXN1bHQNCiAgICB3aGVyZSBleGlzdHMgKFJlc3VsdC5jYXRlZ29yeSBDIHdoZXJlIEMgfiAiTGFib3JhdG9yeSBPYnNlcnZhdGlvbiBDYXRlZ29yeSIpDQogICAgICBhbmQgUmVzdWx0LnN0YXR1cyBpbiB7ICdmaW5hbCcsICdhbWVuZGVkJywgJ2NvcnJlY3RlZCcgfQ0KICAgICAgYW5kIFJlc3VsdC5lZmZlY3RpdmUgZHVyaW5nICJNZWFzdXJlbWVudCBQZXJpb2QiDQoNCmRlZmluZSAiTnVtZXJhdG9yIjoNCiAgZXhpc3RzICgiQ09WSUQtMTkgQ29tbXVuaWNhYmxlIERpc2Vhc2UgU2NyZWVuaW5nIikNCg==&quot;/&gt;
+  &lt;/<a href="http://hl7.org/fhir/R4/library.html#Library.content">content</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/library.html#Library.content">content</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Attachment#Attachment.contentType">contentType</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;application/elm+xml&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Attachment#Attachment.data">data</a>
+          <a href="http://hl7.org/fhir/R4/datatypes.html#base64Binary">value</a>=&quot;PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCjxsaWJyYXJ5IHhtbG5zPSJ1cm46aGw3LW9yZzplbG06cjEiIHhtbG5zOnQ9InVybjpobDctb3JnOmVsbS10eXBlczpyMSIgeG1sbnM6eHNpPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYS1pbnN0YW5jZSIgeG1sbnM6eHNkPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYSIgeG1sbnM6Zmhpcj0iaHR0cDovL2hsNy5vcmcvZmhpciIgeG1sbnM6cWRtNDM9InVybjpoZWFsdGhpdC1nb3Y6cWRtOnY0XzMiIHhtbG5zOnFkbTUzPSJ1cm46aGVhbHRoaXQtZ292OnFkbTp2NV8zIiB4bWxuczphPSJ1cm46aGw3LW9yZzpjcWwtYW5ub3RhdGlvbnM6cjEiIGxvY2FsSWQ9IjAiPg0KICAgPGFubm90YXRpb24gdHJhbnNsYXRvck9wdGlvbnM9IkVuYWJsZUFubm90YXRpb25zLEVuYWJsZUxvY2F0b3JzLERpc2FibGVMaXN0RGVtb3Rpb24sRGlzYWJsZUxpc3RQcm9tb3Rpb24iIHNpZ25hdHVyZUxldmVsPSJOb25lIiB4c2k6dHlwZT0iYTpDcWxUb0VsbUluZm8iLz4NCiAgIDxhbm5vdGF0aW9uIG1lc3NhZ2U9IlRoZSBmdW5jdGlvbiBGSElSSGVscGVycy5Ub1N0cmluZyBoYXMgbXVsdGlwbGUgb3ZlcmxvYWRzIGFuZCBkdWUgdG8gdGhlIFNpZ25hdHVyZUxldmVsIHNldHRpbmcgKE5vbmUpLCB0aGUgb3ZlcmxvYWQgc2lnbmF0dXJlIGlzIG5vdCBiZWluZyBpbmNsdWRlZCBpbiB0aGUgb3V0cHV0LiBUaGlzIG1heSByZXN1bHQgaW4gYW1iaWd1b3VzIGZ1bmN0aW9uIHJlc29sdXRpb24gYXQgcnVudGltZSwgY29uc2lkZXIgc2V0dGluZyB0aGUgU2lnbmF0dXJlTGV2ZWwgdG8gT3ZlcmxvYWRzIG9yIEFsbCB0byBlbnN1cmUgdGhhdCB0aGUgb3V0cHV0IGluY2x1ZGVzIHN1ZmZpY2llbnQgaW5mb3JtYXRpb24gdG8gc3VwcG9ydCBjb3JyZWN0IG92ZXJsb2FkIHNlbGVjdGlvbiBhdCBydW50aW1lLiIgZXJyb3JUeXBlPSJzZW1hbnRpYyIgZXJyb3JTZXZlcml0eT0id2FybmluZyIgeHNpOnR5cGU9ImE6Q3FsVG9FbG1FcnJvciIvPg0KICAgPGFubm90YXRpb24gbWVzc2FnZT0iVGhlIGZ1bmN0aW9uIEZISVJIZWxwZXJzLlRvSW50ZXJ2YWwgaGFzIG11bHRpcGxlIG92ZXJsb2FkcyBhbmQgZHVlIHRvIHRoZSBTaWduYXR1cmVMZXZlbCBzZXR0aW5nIChOb25lKSwgdGhlIG92ZXJsb2FkIHNpZ25hdHVyZSBpcyBub3QgYmVpbmcgaW5jbHVkZWQgaW4gdGhlIG91dHB1dC4gVGhpcyBtYXkgcmVzdWx0IGluIGFtYmlndW91cyBmdW5jdGlvbiByZXNvbHV0aW9uIGF0IHJ1bnRpbWUsIGNvbnNpZGVyIHNldHRpbmcgdGhlIFNpZ25hdHVyZUxldmVsIHRvIE92ZXJsb2FkcyBvciBBbGwgdG8gZW5zdXJlIHRoYXQgdGhlIG91dHB1dCBpbmNsdWRlcyBzdWZmaWNpZW50IGluZm9ybWF0aW9uIHRvIHN1cHBvcnQgY29ycmVjdCBvdmVybG9hZCBzZWxlY3Rpb24gYXQgcnVudGltZS4iIGVycm9yVHlwZT0ic2VtYW50aWMiIGVycm9yU2V2ZXJpdHk9Indhcm5pbmciIHhzaTp0eXBlPSJhOkNxbFRvRWxtRXJyb3IiLz4NCiAgIDxhbm5vdGF0aW9uIG1lc3NhZ2U9IlRoZSBmdW5jdGlvbiBGSElSSGVscGVycy5Ub1N0cmluZyBoYXMgbXVsdGlwbGUgb3ZlcmxvYWRzIGFuZCBkdWUgdG8gdGhlIFNpZ25hdHVyZUxldmVsIHNldHRpbmcgKE5vbmUpLCB0aGUgb3ZlcmxvYWQgc2lnbmF0dXJlIGlzIG5vdCBiZWluZyBpbmNsdWRlZCBpbiB0aGUgb3V0cHV0LiBUaGlzIG1heSByZXN1bHQgaW4gYW1iaWd1b3VzIGZ1bmN0aW9uIHJlc29sdXRpb24gYXQgcnVudGltZSwgY29uc2lkZXIgc2V0dGluZyB0aGUgU2lnbmF0dXJlTGV2ZWwgdG8gT3ZlcmxvYWRzIG9yIEFsbCB0byBlbnN1cmUgdGhhdCB0aGUgb3V0cHV0IGluY2x1ZGVzIHN1ZmZpY2llbnQgaW5mb3JtYXRpb24gdG8gc3VwcG9ydCBjb3JyZWN0IG92ZXJsb2FkIHNlbGVjdGlvbiBhdCBydW50aW1lLiIgZXJyb3JUeXBlPSJzZW1hbnRpYyIgZXJyb3JTZXZlcml0eT0id2FybmluZyIgeHNpOnR5cGU9ImE6Q3FsVG9FbG1FcnJvciIvPg0KICAgPGFubm90YXRpb24gbWVzc2FnZT0iVGhlIGZ1bmN0aW9uIEZISVJIZWxwZXJzLlRvSW50ZXJ2YWwgaGFzIG11bHRpcGxlIG92ZXJsb2FkcyBhbmQgZHVlIHRvIHRoZSBTaWduYXR1cmVMZXZlbCBzZXR0aW5nIChOb25lKSwgdGhlIG92ZXJsb2FkIHNpZ25hdHVyZSBpcyBub3QgYmVpbmcgaW5jbHVkZWQgaW4gdGhlIG91dHB1dC4gVGhpcyBtYXkgcmVzdWx0IGluIGFtYmlndW91cyBmdW5jdGlvbiByZXNvbHV0aW9uIGF0IHJ1bnRpbWUsIGNvbnNpZGVyIHNldHRpbmcgdGhlIFNpZ25hdHVyZUxldmVsIHRvIE92ZXJsb2FkcyBvciBBbGwgdG8gZW5zdXJlIHRoYXQgdGhlIG91dHB1dCBpbmNsdWRlcyBzdWZmaWNpZW50IGluZm9ybWF0aW9uIHRvIHN1cHBvcnQgY29ycmVjdCBvdmVybG9hZCBzZWxlY3Rpb24gYXQgcnVudGltZS4iIGVycm9yVHlwZT0ic2VtYW50aWMiIGVycm9yU2V2ZXJpdHk9Indhcm5pbmciIHhzaTp0eXBlPSJhOkNxbFRvRWxtRXJyb3IiLz4NCiAgIDxhbm5vdGF0aW9uIG1lc3NhZ2U9IlRoZSBmdW5jdGlvbiBGSElSSGVscGVycy5Ub0RhdGVUaW1lIGhhcyBtdWx0aXBsZSBvdmVybG9hZHMgYW5kIGR1ZSB0byB0aGUgU2lnbmF0dXJlTGV2ZWwgc2V0dGluZyAoTm9uZSksIHRoZSBvdmVybG9hZCBzaWduYXR1cmUgaXMgbm90IGJlaW5nIGluY2x1ZGVkIGluIHRoZSBvdXRwdXQuIFRoaXMgbWF5IHJlc3VsdCBpbiBhbWJpZ3VvdXMgZnVuY3Rpb24gcmVzb2x1dGlvbiBhdCBydW50aW1lLCBjb25zaWRlciBzZXR0aW5nIHRoZSBTaWduYXR1cmVMZXZlbCB0byBPdmVybG9hZHMgb3IgQWxsIHRvIGVuc3VyZSB0aGF0IHRoZSBvdXRwdXQgaW5jbHVkZXMgc3VmZmljaWVudCBpbmZvcm1hdGlvbiB0byBzdXBwb3J0IGNvcnJlY3Qgb3ZlcmxvYWQgc2VsZWN0aW9uIGF0IHJ1bnRpbWUuIiBlcnJvclR5cGU9InNlbWFudGljIiBlcnJvclNldmVyaXR5PSJ3YXJuaW5nIiB4c2k6dHlwZT0iYTpDcWxUb0VsbUVycm9yIi8+DQogICA8YW5ub3RhdGlvbiBtZXNzYWdlPSJUaGUgZnVuY3Rpb24gRkhJUkhlbHBlcnMuVG9EYXRlVGltZSBoYXMgbXVsdGlwbGUgb3ZlcmxvYWRzIGFuZCBkdWUgdG8gdGhlIFNpZ25hdHVyZUxldmVsIHNldHRpbmcgKE5vbmUpLCB0aGUgb3ZlcmxvYWQgc2lnbmF0dXJlIGlzIG5vdCBiZWluZyBpbmNsdWRlZCBpbiB0aGUgb3V0cHV0LiBUaGlzIG1heSByZXN1bHQgaW4gYW1iaWd1b3VzIGZ1bmN0aW9uIHJlc29sdXRpb24gYXQgcnVudGltZSwgY29uc2lkZXIgc2V0dGluZyB0aGUgU2lnbmF0dXJlTGV2ZWwgdG8gT3ZlcmxvYWRzIG9yIEFsbCB0byBlbnN1cmUgdGhhdCB0aGUgb3V0cHV0IGluY2x1ZGVzIHN1ZmZpY2llbnQgaW5mb3JtYXRpb24gdG8gc3VwcG9ydCBjb3JyZWN0IG92ZXJsb2FkIHNlbGVjdGlvbiBhdCBydW50aW1lLiIgZXJyb3JUeXBlPSJzZW1hbnRpYyIgZXJyb3JTZXZlcml0eT0id2FybmluZyIgeHNpOnR5cGU9ImE6Q3FsVG9FbG1FcnJvciIvPg0KICAgPGFubm90YXRpb24geHNpOnR5cGU9ImE6QW5ub3RhdGlvbiI+DQogICAgICA8YTpzIHI9IjM1NiI+DQogICAgICAgICA8YTpzPmxpYnJhcnkgZXhhbXBsZSB2ZXJzaW9uICcxLjAuMCc8L2E6cz4NCiAgICAgIDwvYTpzPg0KICAgPC9hbm5vdGF0aW9uPg0KICAgPGlkZW50aWZpZXIgaWQ9ImV4YW1wbGUiIHN5c3RlbT0iaHR0cDovL3NvbWV3aGVyZS5vcmcvZmhpci91di9teWlnIiB2ZXJzaW9uPSIxLjAuMCIvPg0KICAgPHNjaGVtYUlkZW50aWZpZXIgaWQ9InVybjpobDctb3JnOmVsbSIgdmVyc2lvbj0icjEiLz4NCiAgIDx1c2luZ3M+DQogICAgICA8ZGVmIGxvY2FsSWQ9IjEiIGxvY2FsSWRlbnRpZmllcj0iU3lzdGVtIiB1cmk9InVybjpobDctb3JnOmVsbS10eXBlczpyMSIgdmVyc2lvbj0iMS4wLjAiLz4NCiAgICAgIDxkZWYgbG9jYWxJZD0iMjA2IiBsb2NhdG9yPSIzOjEtMzoyNiIgbG9jYWxJZGVudGlmaWVyPSJGSElSIiB1cmk9Imh0dHA6Ly9obDcub3JnL2ZoaXIiIHZlcnNpb249IjQuMC4xIj4NCiAgICAgICAgIDxhbm5vdGF0aW9uIHhzaTp0eXBlPSJhOkFubm90YXRpb24iPg0KICAgICAgICAgICAgPGE6cyByPSIyMDYiPg0KICAgICAgICAgICAgICAgPGE6cz51c2luZyA8L2E6cz4NCiAgICAgICAgICAgICAgIDxhOnM+DQogICAgICAgICAgICAgICAgICA8YTpzPkZISVI8L2E6cz4NCiAgICAgICAgICAgICAgIDwvYTpzPg0KICAgICAgICAgICAgICAgPGE6cz4gdmVyc2lvbiAnNC4wLjEnPC9hOnM+DQogICAgICAgICAgICA8L2E6cz4NCiAgICAgICAgIDwvYW5ub3RhdGlvbj4NCiAgICAgIDwvZGVmPg0KICAgPC91c2luZ3M+DQogICA8aW5jbHVkZXM+DQogICAgICA8ZGVmIGxvY2FsSWQ9IjIwOCIgbG9jYXRvcj0iNToxLTU6NTEiIGxvY2FsSWRlbnRpZmllcj0iRkhJUkhlbHBlcnMiIHBhdGg9Imh0dHA6Ly9maGlyLm9yZy9ndWlkZXMvY3FmL2NvbW1vbi9GSElSSGVscGVycyIgdmVyc2lvbj0iNC4wLjEiPg0KICAgICAgICAgPGFubm90YXRpb24geHNpOnR5cGU9ImE6QW5ub3RhdGlvbiI+DQogICAgICAgICAgICA8YTpzIHI9IjIwOCI+DQogICAgICAgICAgICAgICA8YTpzPmluY2x1ZGUgPC9hOnM+DQogICAgICAgICAgICAgICA8YTpzPg0KICAgICAgICAgICAgICAgICAgPGE6cz5maGlyLmNxZi5jb21tb24uRkhJUkhlbHBlcnM8L2E6cz4NCiAgICAgICAgICAgICAgIDwvYTpzPg0KICAgICAgICAgICAgICAgPGE6cz4gdmVyc2lvbiAnNC4wLjEnPC9hOnM+DQogICAgICAgICAgICA8L2E6cz4NCiAgICAgICAgIDwvYW5ub3RhdGlvbj4NCiAgICAgIDwvZGVmPg0KICAgPC9pbmNsdWRlcz4NCiAgIDxwYXJhbWV0ZXJzPg0KICAgICAgPGRlZiBsb2NhbElkPSIyMjUiIGxvY2F0b3I9IjE4OjEtMTg6NDkiIG5hbWU9Ik1lYXN1cmVtZW50IFBlcmlvZCIgYWNjZXNzTGV2ZWw9IlB1YmxpYyI+DQogICAgICAgICA8YW5ub3RhdGlvbiB4c2k6dHlwZT0iYTpBbm5vdGF0aW9uIj4NCiAgICAgICAgICAgIDxhOnMgcj0iMjI1Ij4NCiAgICAgICAgICAgICAgIDxhOnM+cGFyYW1ldGVyICZxdW90O01lYXN1cmVtZW50IFBlcmlvZCZxdW90OyA8L2E6cz4NCiAgICAgICAgICAgICAgIDxhOnMgcj0iMjI2Ij4NCiAgICAgICAgICAgICAgICAgIDxhOnM+SW50ZXJ2YWwmbHQ7PC9hOnM+DQogICAgICAgICAgICAgICAgICA8YTpzIHI9IjIyNyI+DQogICAgICAgICAgICAgICAgICAgICA8YTpzPkRhdGVUaW1lPC9hOnM+DQogICAgICAgICAgICAgICAgICA8L2E6cz4NCiAgICAgICAgICAgICAgICAgIDxhOnM+PjwvYTpzPg0KICAgICAgICAgICAgICAgPC9hOnM+DQogICAgICAgICAgICA8L2E6cz4NCiAgICAgICAgIDwvYW5ub3RhdGlvbj4NCiAgICAgICAgIDxwYXJhbWV0ZXJUeXBlU3BlY2lmaWVyIGxvY2FsSWQ9IjIyNiIgbG9jYXRvcj0iMTg6MzItMTg6NDkiIHhzaTp0eXBlPSJJbnRlcnZhbFR5cGVTcGVjaWZpZXIiPg0KICAgICAgICAgICAgPHBvaW50VHlwZSBsb2NhbElkPSIyMjciIGxvY2F0b3I9IjE4OjQxLTE4OjQ4IiBuYW1lPSJ0OkRhdGVUaW1lIiB4c2k6dHlwZT0iTmFtZWRUeXBlU3BlY2lmaWVyIi8+DQogICAgICAgICA8L3BhcmFtZXRlclR5cGVTcGVjaWZpZXI+DQogICAgICA8L2RlZj4NCiAgIDwvcGFyYW1ldGVycz4NCiAgIDxjb2RlU3lzdGVtcz4NCiAgICAgIDxkZWYgbG9jYWxJZD0iMjEwIiBsb2NhdG9yPSI3OjEtNzoxMDEiIG5hbWU9Ik9ic2VydmF0aW9uIENhdGVnb3J5IENvZGVzIiBpZD0iaHR0cDovL3Rlcm1pbm9sb2d5LmhsNy5vcmcvQ29kZVN5c3RlbS9vYnNlcnZhdGlvbi1jYXRlZ29yeSIgYWNjZXNzTGV2ZWw9IlB1YmxpYyI+DQogICAgICAgICA8YW5ub3RhdGlvbiB4c2k6dHlwZT0iYTpBbm5vdGF0aW9uIj4NCiAgICAgICAgICAgIDxhOnMgcj0iMjEwIj4NCiAgICAgICAgICAgICAgIDxhOnM+Y29kZXN5c3RlbSAmcXVvdDtPYnNlcnZhdGlvbiBDYXRlZ29yeSBDb2RlcyZxdW90OzogJ2h0dHA6Ly90ZXJtaW5vbG9neS5obDcub3JnL0NvZGVTeXN0ZW0vb2JzZXJ2YXRpb24tY2F0ZWdvcnknPC9hOnM+DQogICAgICAgICAgICA8L2E6cz4NCiAgICAgICAgIDwvYW5ub3RhdGlvbj4NCiAgICAgIDwvZGVmPg0KICAgPC9jb2RlU3lzdGVtcz4NCiAgIDx2YWx1ZVNldHM+DQogICAgICA8ZGVmIGxvY2FsSWQ9IjIxMiIgbG9jYXRvcj0iOToxLTk6MTAwIiBuYW1lPSJFbmNvdW50ZXIgSW5wYXRpZW50IiBpZD0iaHR0cDovL2N0cy5ubG0ubmloLmdvdi9maGlyL1ZhbHVlU2V0LzIuMTYuODQwLjEuMTEzODgzLjMuNjY2LjUuMzA3IiBhY2Nlc3NMZXZlbD0iUHVibGljIj4NCiAgICAgICAgIDxhbm5vdGF0aW9uIHhzaTp0eXBlPSJhOkFubm90YXRpb24iPg0KICAgICAgICAgICAgPGE6cyByPSIyMTIiPg0KICAgICAgICAgICAgICAgPGE6cz52YWx1ZXNldCAmcXVvdDtFbmNvdW50ZXIgSW5wYXRpZW50JnF1b3Q7OiAnaHR0cDovL2N0cy5ubG0ubmloLmdvdi9maGlyL1ZhbHVlU2V0LzIuMTYuODQwLjEuMTEzODgzLjMuNjY2LjUuMzA3JzwvYTpzPg0KICAgICAgICAgICAgPC9hOnM+DQogICAgICAgICA8L2Fubm90YXRpb24+DQogICAgICA8L2RlZj4NCiAgICAgIDxkZWYgbG9jYWxJZD0iMjE0IiBsb2NhdG9yPSIxMDoxLTEwOjExMSIgbmFtZT0iRW1lcmdlbmN5IERlcGFydG1lbnQgVmlzaXQiIGlkPSJodHRwOi8vY3RzLm5sbS5uaWguZ292L2ZoaXIvVmFsdWVTZXQvMi4xNi44NDAuMS4xMTM4ODMuMy4xMTcuMS43LjEuMjkyIiBhY2Nlc3NMZXZlbD0iUHVibGljIj4NCiAgICAgICAgIDxhbm5vdGF0aW9uIHhzaTp0eXBlPSJhOkFubm90YXRpb24iPg0KICAgICAgICAgICAgPGE6cyByPSIyMTQiPg0KICAgICAgICAgICAgICAgPGE6cz52YWx1ZXNldCAmcXVvdDtFbWVyZ2VuY3kgRGVwYXJ0bWVudCBWaXNpdCZxdW90OzogJ2h0dHA6Ly9jdHMubmxtLm5paC5nb3YvZmhpci9WYWx1ZVNldC8yLjE2Ljg0MC4xLjExMzg4My4zLjExNy4xLjcuMS4yOTInPC9hOnM+DQogICAgICAgICAgICA8L2E6cz4NCiAgICAgICAgIDwvYW5ub3RhdGlvbj4NCiAgICAgIDwvZGVmPg0KICAgICAgPGRlZiBsb2NhbElkPSIyMTYiIGxvY2F0b3I9IjExOjEtMTE6MTEyIiBuYW1lPSJUZWxlcGhvbmUgRXZhbHVhdGlvbiIgaWQ9Imh0dHA6Ly9jdHMubmxtLm5paC5nb3YvZmhpci9WYWx1ZVNldC8yLjE2Ljg0MC4xLjExMzg4My4zLjQ2NC4xMDAzLjEwMS4xMi4xMDgyIiBhY2Nlc3NMZXZlbD0iUHVibGljIj4NCiAgICAgICAgIDxhbm5vdGF0aW9uIHhzaTp0eXBlPSJhOkFubm90YXRpb24iPg0KICAgICAgICAgICAgPGE6cyByPSIyMTYiPg0KICAgICAgICAgICAgICAgPGE6cz52YWx1ZXNldCAmcXVvdDtUZWxlcGhvbmUgRXZhbHVhdGlvbiZxdW90OzogJ2h0dHA6Ly9jdHMubmxtLm5paC5nb3YvZmhpci9WYWx1ZVNldC8yLjE2Ljg0MC4xLjExMzg4My4zLjQ2NC4xMDAzLjEwMS4xMi4xMDgyJzwvYTpzPg0KICAgICAgICAgICAgPC9hOnM+DQogICAgICAgICA8L2Fubm90YXRpb24+DQogICAgICA8L2RlZj4NCiAgICAgIDxkZWYgbG9jYWxJZD0iMjE4IiBsb2NhdG9yPSIxMjoxLTEyOjExMiIgbmFtZT0iVGVsZXBob25lIE1hbmFnZW1lbnQiIGlkPSJodHRwOi8vY3RzLm5sbS5uaWguZ292L2ZoaXIvVmFsdWVTZXQvMi4xNi44NDAuMS4xMTM4ODMuMy40NjQuMTAwMy4xMDEuMTIuMTA1MyIgYWNjZXNzTGV2ZWw9IlB1YmxpYyI+DQogICAgICAgICA8YW5ub3RhdGlvbiB4c2k6dHlwZT0iYTpBbm5vdGF0aW9uIj4NCiAgICAgICAgICAgIDxhOnMgcj0iMjE4Ij4NCiAgICAgICAgICAgICAgIDxhOnM+dmFsdWVzZXQgJnF1b3Q7VGVsZXBob25lIE1hbmFnZW1lbnQmcXVvdDs6ICdodHRwOi8vY3RzLm5sbS5uaWguZ292L2ZoaXIvVmFsdWVTZXQvMi4xNi44NDAuMS4xMTM4ODMuMy40NjQuMTAwMy4xMDEuMTIuMTA1Myc8L2E6cz4NCiAgICAgICAgICAgIDwvYTpzPg0KICAgICAgICAgPC9hbm5vdGF0aW9uPg0KICAgICAgPC9kZWY+DQogICAgICA8ZGVmIGxvY2FsSWQ9IjIyMCIgbG9jYXRvcj0iMTQ6MS0xNDo0MyIgbmFtZT0iQ09WSUQtMTkgU2NyZWVuaW5nIFJlc3VsdCIgaWQ9IlRCRCIgYWNjZXNzTGV2ZWw9IlB1YmxpYyI+DQogICAgICAgICA8YW5ub3RhdGlvbiB4c2k6dHlwZT0iYTpBbm5vdGF0aW9uIj4NCiAgICAgICAgICAgIDxhOnMgcj0iMjIwIj4NCiAgICAgICAgICAgICAgIDxhOnM+dmFsdWVzZXQgJnF1b3Q7Q09WSUQtMTkgU2NyZWVuaW5nIFJlc3VsdCZxdW90OzogJ1RCRCc8L2E6cz4NCiAgICAgICAgICAgIDwvYTpzPg0KICAgICAgICAgPC9hbm5vdGF0aW9uPg0KICAgICAgPC9kZWY+DQogICA8L3ZhbHVlU2V0cz4NCiAgIDxjb2Rlcz4NCiAgICAgIDxkZWYgbG9jYWxJZD0iMjIyIiBsb2NhdG9yPSIxNjoxLTE2Ojg2IiBuYW1lPSJMYWJvcmF0b3J5IE9ic2VydmF0aW9uIENhdGVnb3J5IiBpZD0ibGFib3JhdG9yeSIgYWNjZXNzTGV2ZWw9IlB1YmxpYyI+DQogICAgICAgICA8YW5ub3RhdGlvbiB4c2k6dHlwZT0iYTpBbm5vdGF0aW9uIj4NCiAgICAgICAgICAgIDxhOnMgcj0iMjIyIj4NCiAgICAgICAgICAgICAgIDxhOnM+Y29kZSAmcXVvdDtMYWJvcmF0b3J5IE9ic2VydmF0aW9uIENhdGVnb3J5JnF1b3Q7OiAnbGFib3JhdG9yeScgZnJvbSA8L2E6cz4NCiAgICAgICAgICAgICAgIDxhOnMgcj0iMjIzIj4NCiAgICAgICAgICAgICAgICAgIDxhOnM+JnF1b3Q7T2JzZXJ2YXRpb24gQ2F0ZWdvcnkgQ29kZXMmcXVvdDs8L2E6cz4NCiAgICAgICAgICAgICAgIDwvYTpzPg0KICAgICAgICAgICAgPC9hOnM+DQogICAgICAgICA8L2Fubm90YXRpb24+DQogICAgICAgICA8Y29kZVN5c3RlbSBsb2NhbElkPSIyMjMiIGxvY2F0b3I9IjE2OjU5LTE2Ojg2IiBuYW1lPSJPYnNlcnZhdGlvbiBDYXRlZ29yeSBDb2RlcyIvPg0KICAgICAgPC9kZWY+DQogICA8L2NvZGVzPg0KICAgPGNvbnRleHRzPg0KICAgICAgPGRlZiBsb2NhbElkPSIyMzIiIGxvY2F0b3I9IjIwOjEtMjA6MTUiIG5hbWU9IlBhdGllbnQiLz4NCiAgIDwvY29udGV4dHM+DQogICA8c3RhdGVtZW50cz4NCiAgICAgIDxkZWYgbG9jYWxJZD0iMjMwIiBsb2NhdG9yPSIyMDoxLTIwOjE1IiBuYW1lPSJQYXRpZW50IiBjb250ZXh0PSJQYXRpZW50Ij4NCiAgICAgICAgIDxleHByZXNzaW9uIGxvY2FsSWQ9IjIzMSIgeHNpOnR5cGU9IlNpbmdsZXRvbkZyb20iPg0KICAgICAgICAgICAgPG9wZXJhbmQgbG9jYWxJZD0iMjI5IiBsb2NhdG9yPSIyMDoxLTIwOjE1IiBkYXRhVHlwZT0iZmhpcjpQYXRpZW50IiB0ZW1wbGF0ZUlkPSJodHRwOi8vaGw3Lm9yZy9maGlyL1N0cnVjdHVyZURlZmluaXRpb24vUGF0aWVudCIgeHNpOnR5cGU9IlJldHJpZXZlIi8+DQogICAgICAgICA8L2V4cHJlc3Npb24+DQogICAgICA8L2RlZj4NCiAgICAgIDxkZWYgbG9jYWxJZD0iMjM1IiBsb2NhdG9yPSIyMjoxLTMwOjU0IiBuYW1lPSJJbnBhdGllbnQsIEVtZXJnZW5jeSwgb3IgVGVsZXBob25lIEV2YWx1YXRpb24gb3IgTWFuYWdlbWVudCBFbmNvdW50ZXIiIGNvbnRleHQ9IlBhdGllbnQiIGFjY2Vzc0xldmVsPSJQdWJsaWMiPg0KICAgICAgICAgPGFubm90YXRpb24geHNpOnR5cGU9ImE6QW5ub3RhdGlvbiI+DQogICAgICAgICAgICA8YTpzIHI9IjIzNSI+DQogICAgICAgICAgICAgICA8YTpzPmRlZmluZSAmcXVvdDtJbnBhdGllbnQsIEVtZXJnZW5jeSwgb3IgVGVsZXBob25lIEV2YWx1YXRpb24gb3IgTWFuYWdlbWVudCBFbmNvdW50ZXImcXVvdDs6CiAgPC9hOnM+DQogICAgICAgICAgICAgICA8YTpzIHI9IjI5MSI+DQogICAgICAgICAgICAgICAgICA8YTpzPg0KICAgICAgICAgICAgICAgICAgICAgPGE6cyByPSIyMzYiPg0KICAgICAgICAgICAgICAgICAgICAgICAgPGE6cyByPSIyNzYiPg0KICAgICAgICAgICAgICAgICAgICAgICAgICAgPGE6cz4oCiAgICA8L2E6cz4NCiAgICAgICAgICAgICAgICAgICAgICAgICAgIDxhOnMgcj0iMjc2Ij4NCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxhOnMgcj0iMjY1Ij4NCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxhOnMgcj0iMjU1Ij4NCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxhOnMgcj0iMjM5Ij4NCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxhOnM+W0VuY291bnRlcjogPC9hOnM+DQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8YTpzPg0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPGE6cz4mcXVvdDtFbmNvdW50ZXIgSW5wYXRpZW50JnF1b3Q7PC9hOnM+DQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L2E6cz4NCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxhOnM+XTwvYTpzPg0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPC9hOnM+DQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8YTpzPgogICAgICB1bmlvbiA8L2E6cz4NCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxhOnMgcj0iMjQ4Ij4NCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxhOnM+W0VuY291bnRlcjogPC9hOnM+DQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8YTpzPg0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPGE6cz4mcXVvdDtFbWVyZ2VuY3kgRGVwYXJ0bWVudCBWaXNpdCZxdW90OzwvYTpzPg0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPC9hOnM+DQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8YTpzPl08L2E6cz4NCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDwvYTpzPg0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPC9hOnM+DQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8YTpzPgogICAgICB1bmlvbiA8L2E6cz4NCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxhOnMgcj0iMjU4Ij4NCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxhOnM+W0VuY291bnRlcjogPC9hOnM+DQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8YTpzPg0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPGE6cz4mcXVvdDtUZWxlcGhvbmUgRXZhbHVhdGlvbiZxdW90OzwvYTpzPg0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPC9hOnM+DQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8YTpzPl08L2E6cz4NCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDwvYTpzPg0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPC9hOnM+DQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8YTpzPgogICAgICB1bmlvbiA8L2E6cz4NCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxhOnMgcj0iMjY4Ij4NCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxhOnM+W0VuY291bnRlcjogPC9hOnM+DQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8YTpzPg0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPGE6cz4mcXVvdDtUZWxlcGhvbmUgTWFuYWdlbWVudCZxdW90OzwvYTpzPg0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPC9hOnM+DQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8YTpzPl08L2E6cz4NCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDwvYTpzPg0KICAgICAgICAgICAgICAgICAgICAgICAgICAgPC9hOnM+DQogICAgICAgICAgICAgICAgICAgICAgICAgICA8YTpzPgogICk8L2E6cz4NCiAgICAgICAgICAgICAgICAgICAgICAgIDwvYTpzPg0KICAgICAgICAgICAgICAgICAgICAgICAgPGE6cz4gRW5jb3VudGVyPC9hOnM+DQogICAgICAgICAgICAgICAgICAgICA8L2E6cz4NCiAgICAgICAgICAgICAgICAgIDwvYTpzPg0KICAgICAgICAgICAgICAgICAgPGE6cz4KICAgIDwvYTpzPg0KICAgICAgICAgICAgICAgICAgPGE6cyByPSIyNzgiPg0KICAgICAgICAgICAgICAgICAgICAgPGE6cz53aGVyZSA8L2E6cz4NCiAgICAgICAgICAgICAgICAgICAgIDxhOnMgcj0iMjc4Ij4NCiAgICAgICAgICAgICAgICAgICAgICAgIDxhOnMgcj0iMjc5Ij4NCiAgICAgICAgICAgICAgICAgICAgICAgICAgIDxhOnMgcj0iMjgxIj4NCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxhOnMgcj0iMjgwIj4NCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxhOnM+RW5jb3VudGVyPC9hOnM+DQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L2E6cz4NCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxhOnM+LjwvYTpzPg0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPGE6cyByPSIyODEiPg0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPGE6cz5zdGF0dXM8L2E6cz4NCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDwvYTpzPg0KICAgICAgICAgICAgICAgICAgICAgICAgICAgPC9hOnM+DQogICAgICAgICAgICAgICAgICAgICAgICAgICA8YTpzPiA9IDwvYTpzPg0KICAgICAgICAgICAgICAgICAgICAgICAgICAgPGE6cyByPSIyODIiPg0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPGE6cz4nZmluaXNoZWQnPC9hOnM+DQogICAgICAgICAgICAgICAgICAgICAgICAgICA8L2E6cz4NCiAgICAgICAgICAgICAgICAgICAgICAgIDwvYTpzPg0KICAgICAgICAgICAgICAgICAgICAgICAgPGE6cz4KICAgICAgYW5kIDwvYTpzPg0KICAgICAgICAgICAgICAgICAgICAgICAgPGE6cyByPSIyODgiPg0KICAgICAgICAgICAgICAgICAgICAgICAgICAgPGE6cyByPSIyODYiPg0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPGE6cyByPSIyODUiPg0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPGE6cz5FbmNvdW50ZXI8L2E6cz4NCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDwvYTpzPg0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPGE6cz4uPC9hOnM+DQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8YTpzIHI9IjI4NiI+DQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8YTpzPnBlcmlvZDwvYTpzPg0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPC9hOnM+DQogICAgICAgICAgICAgICAgICAgICAgICAgICA8L2E6cz4NCiAgICAgICAgICAgICAgICAgICAgICAgICAgIDxhOnMgcj0iMjg4Ij4gZHVyaW5nIDwvYTpzPg0KICAgICAgICAgICAgICAgICAgICAgICAgICAgPGE6cyByPSIyODciPg0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPGE6cz4mcXVvdDtNZWFzdXJlbWVudCBQZXJpb2QmcXVvdDs8L2E6cz4NCiAgICAgICAgICAgICAgICAgICAgICAgICAgIDwvYTpzPg0KICAgICAgICAgICAgICAgICAgICAgICAgPC9hOnM+DQogICAgICAgICAgICAgICAgICAgICA8L2E6cz4NCiAgICAgICAgICAgICAgICAgIDwvYTpzPg0KICAgICAgICAgICAgICAgPC9hOnM+DQogICAgICAgICAgICA8L2E6cz4NCiAgICAgICAgIDwvYW5ub3RhdGlvbj4NCiAgICAgICAgIDxleHByZXNzaW9uIGxvY2FsSWQ9IjI5MSIgbG9jYXRvcj0iMjM6My0zMDo1NCIgeHNpOnR5cGU9IlF1ZXJ5Ij4NCiAgICAgICAgICAgIDxzb3VyY2UgbG9jYWxJZD0iMjM2IiBsb2NhdG9yPSIyMzozLTI4OjEzIiBhbGlhcz0iRW5jb3VudGVyIj4NCiAgICAgICAgICAgICAgIDxleHByZXNzaW9uIGxvY2FsSWQ9IjI3NiIgbG9jYXRvcj0iMjM6My0yODozIiB4c2k6dHlwZT0iVW5pb24iPg0KICAgICAgICAgICAgICAgICAgPG9wZXJhbmQgbG9jYWxJZD0iMjU1IiBsb2NhdG9yPSIyNDo1LTI1OjUzIiB4c2k6dHlwZT0iVW5pb24iPg0KICAgICAgICAgICAgICAgICAgICAgPG9wZXJhbmQgbG9jYWxJZD0iMjM5IiBsb2NhdG9yPSIyNDo1LTI0OjM4IiBkYXRhVHlwZT0iZmhpcjpFbmNvdW50ZXIiIHRlbXBsYXRlSWQ9Imh0dHA6Ly9obDcub3JnL2ZoaXIvU3RydWN0dXJlRGVmaW5pdGlvbi9FbmNvdW50ZXIiIGNvZGVQcm9wZXJ0eT0idHlwZSIgY29kZUNvbXBhcmF0b3I9ImluIiB4c2k6dHlwZT0iUmV0cmlldmUiPg0KICAgICAgICAgICAgICAgICAgICAgICAgPGNvZGVzIGxvY2FsSWQ9IjIzOCIgbG9jYXRvcj0iMjQ6MTctMjQ6MzciIG5hbWU9IkVuY291bnRlciBJbnBhdGllbnQiIHByZXNlcnZlPSJ0cnVlIiB4c2k6dHlwZT0iVmFsdWVTZXRSZWYiLz4NCiAgICAgICAgICAgICAgICAgICAgIDwvb3BlcmFuZD4NCiAgICAgICAgICAgICAgICAgICAgIDxvcGVyYW5kIGxvY2FsSWQ9IjI0OCIgbG9jYXRvcj0iMjU6MTMtMjU6NTMiIGRhdGFUeXBlPSJmaGlyOkVuY291bnRlciIgdGVtcGxhdGVJZD0iaHR0cDovL2hsNy5vcmcvZmhpci9TdHJ1Y3R1cmVEZWZpbml0aW9uL0VuY291bnRlciIgY29kZVByb3BlcnR5PSJ0eXBlIiBjb2RlQ29tcGFyYXRvcj0iaW4iIHhzaTp0eXBlPSJSZXRyaWV2ZSI+DQogICAgICAgICAgICAgICAgICAgICAgICA8Y29kZXMgbG9jYWxJZD0iMjQ3IiBsb2NhdG9yPSIyNToyNS0yNTo1MiIgbmFtZT0iRW1lcmdlbmN5IERlcGFydG1lbnQgVmlzaXQiIHByZXNlcnZlPSJ0cnVlIiB4c2k6dHlwZT0iVmFsdWVTZXRSZWYiLz4NCiAgICAgICAgICAgICAgICAgICAgIDwvb3BlcmFuZD4NCiAgICAgICAgICAgICAgICAgIDwvb3BlcmFuZD4NCiAgICAgICAgICAgICAgICAgIDxvcGVyYW5kIGxvY2FsSWQ9IjI3NSIgeHNpOnR5cGU9IlVuaW9uIj4NCiAgICAgICAgICAgICAgICAgICAgIDxvcGVyYW5kIGxvY2FsSWQ9IjI1OCIgbG9jYXRvcj0iMjY6MTMtMjY6NDciIGRhdGFUeXBlPSJmaGlyOkVuY291bnRlciIgdGVtcGxhdGVJZD0iaHR0cDovL2hsNy5vcmcvZmhpci9TdHJ1Y3R1cmVEZWZpbml0aW9uL0VuY291bnRlciIgY29kZVByb3BlcnR5PSJ0eXBlIiBjb2RlQ29tcGFyYXRvcj0iaW4iIHhzaTp0eXBlPSJSZXRyaWV2ZSI+DQogICAgICAgICAgICAgICAgICAgICAgICA8Y29kZXMgbG9jYWxJZD0iMjU3IiBsb2NhdG9yPSIyNjoyNS0yNjo0NiIgbmFtZT0iVGVsZXBob25lIEV2YWx1YXRpb24iIHByZXNlcnZlPSJ0cnVlIiB4c2k6dHlwZT0iVmFsdWVTZXRSZWYiLz4NCiAgICAgICAgICAgICAgICAgICAgIDwvb3BlcmFuZD4NCiAgICAgICAgICAgICAgICAgICAgIDxvcGVyYW5kIGxvY2FsSWQ9IjI2OCIgbG9jYXRvcj0iMjc6MTMtMjc6NDciIGRhdGFUeXBlPSJmaGlyOkVuY291bnRlciIgdGVtcGxhdGVJZD0iaHR0cDovL2hsNy5vcmcvZmhpci9TdHJ1Y3R1cmVEZWZpbml0aW9uL0VuY291bnRlciIgY29kZVByb3BlcnR5PSJ0eXBlIiBjb2RlQ29tcGFyYXRvcj0iaW4iIHhzaTp0eXBlPSJSZXRyaWV2ZSI+DQogICAgICAgICAgICAgICAgICAgICAgICA8Y29kZXMgbG9jYWxJZD0iMjY3IiBsb2NhdG9yPSIyNzoyNS0yNzo0NiIgbmFtZT0iVGVsZXBob25lIE1hbmFnZW1lbnQiIHByZXNlcnZlPSJ0cnVlIiB4c2k6dHlwZT0iVmFsdWVTZXRSZWYiLz4NCiAgICAgICAgICAgICAgICAgICAgIDwvb3BlcmFuZD4NCiAgICAgICAgICAgICAgICAgIDwvb3BlcmFuZD4NCiAgICAgICAgICAgICAgIDwvZXhwcmVzc2lvbj4NCiAgICAgICAgICAgIDwvc291cmNlPg0KICAgICAgICAgICAgPHdoZXJlIGxvY2FsSWQ9IjI3OCIgbG9jYXRvcj0iMjk6NS0zMDo1NCIgeHNpOnR5cGU9IkFuZCI+DQogICAgICAgICAgICAgICA8b3BlcmFuZCBsb2NhbElkPSIyNzkiIGxvY2F0b3I9IjI5OjExLTI5OjM5IiB4c2k6dHlwZT0iRXF1YWwiPg0KICAgICAgICAgICAgICAgICAgPG9wZXJhbmQgbG9jYWxJZD0iMjg0IiBuYW1lPSJUb1N0cmluZyIgbGlicmFyeU5hbWU9IkZISVJIZWxwZXJzIiB4c2k6dHlwZT0iRnVuY3Rpb25SZWYiPg0KICAgICAgICAgICAgICAgICAgICAgPG9wZXJhbmQgbG9jYWxJZD0iMjgxIiBsb2NhdG9yPSIyOToxMS0yOToyNiIgcGF0aD0ic3RhdHVzIiBzY29wZT0iRW5jb3VudGVyIiB4c2k6dHlwZT0iUHJvcGVydHkiLz4NCiAgICAgICAgICAgICAgICAgIDwvb3BlcmFuZD4NCiAgICAgICAgICAgICAgICAgIDxvcGVyYW5kIGxvY2FsSWQ9IjI4MiIgbG9jYXRvcj0iMjk6MzAtMjk6MzkiIHZhbHVlVHlwZT0idDpTdHJpbmciIHZhbHVlPSJmaW5pc2hlZCIgeHNpOnR5cGU9IkxpdGVyYWwiLz4NCiAgICAgICAgICAgICAgIDwvb3BlcmFuZD4NCiAgICAgICAgICAgICAgIDxvcGVyYW5kIGxvY2FsSWQ9IjI4OCIgbG9jYXRvcj0iMzA6MTEtMzA6NTQiIHhzaTp0eXBlPSJJbmNsdWRlZEluIj4NCiAgICAgICAgICAgICAgICAgIDxvcGVyYW5kIGxvY2FsSWQ9IjI4OSIgbmFtZT0iVG9JbnRlcnZhbCIgbGlicmFyeU5hbWU9IkZISVJIZWxwZXJzIiB4c2k6dHlwZT0iRnVuY3Rpb25SZWYiPg0KICAgICAgICAgICAgICAgICAgICAgPG9wZXJhbmQgbG9jYWxJZD0iMjg2IiBsb2NhdG9yPSIzMDoxMS0zMDoyNiIgcGF0aD0icGVyaW9kIiBzY29wZT0iRW5jb3VudGVyIiB4c2k6dHlwZT0iUHJvcGVydHkiLz4NCiAgICAgICAgICAgICAgICAgIDwvb3BlcmFuZD4NCiAgICAgICAgICAgICAgICAgIDxvcGVyYW5kIGxvY2FsSWQ9IjI4NyIgbG9jYXRvcj0iMzA6MzUtMzA6NTQiIG5hbWU9Ik1lYXN1cmVtZW50IFBlcmlvZCIgeHNpOnR5cGU9IlBhcmFtZXRlclJlZiIvPg0KICAgICAgICAgICAgICAgPC9vcGVyYW5kPg0KICAgICAgICAgICAgPC93aGVyZT4NCiAgICAgICAgIDwvZXhwcmVzc2lvbj4NCiAgICAgIDwvZGVmPg0KICAgICAgPGRlZiBsb2NhbElkPSIyOTQiIGxvY2F0b3I9IjMyOjEtMzM6ODIiIG5hbWU9IkluaXRpYWwgUG9wdWxhdGlvbiIgY29udGV4dD0iUGF0aWVudCIgYWNjZXNzTGV2ZWw9IlB1YmxpYyI+DQogICAgICAgICA8YW5ub3RhdGlvbiB4c2k6dHlwZT0iYTpBbm5vdGF0aW9uIj4NCiAgICAgICAgICAgIDxhOnMgcj0iMjk0Ij4NCiAgICAgICAgICAgICAgIDxhOnM+ZGVmaW5lICZxdW90O0luaXRpYWwgUG9wdWxhdGlvbiZxdW90OzoKICA8L2E6cz4NCiAgICAgICAgICAgICAgIDxhOnMgcj0iMjk1Ij4NCiAgICAgICAgICAgICAgICAgIDxhOnM+ZXhpc3RzIDwvYTpzPg0KICAgICAgICAgICAgICAgICAgPGE6cyByPSIyOTYiPg0KICAgICAgICAgICAgICAgICAgICAgPGE6cz4oPC9hOnM+DQogICAgICAgICAgICAgICAgICAgICA8YTpzIHI9IjI5NiI+DQogICAgICAgICAgICAgICAgICAgICAgICA8YTpzPiZxdW90O0lucGF0aWVudCwgRW1lcmdlbmN5LCBvciBUZWxlcGhvbmUgRXZhbHVhdGlvbiBvciBNYW5hZ2VtZW50IEVuY291bnRlciZxdW90OzwvYTpzPg0KICAgICAgICAgICAgICAgICAgICAgPC9hOnM+DQogICAgICAgICAgICAgICAgICAgICA8YTpzPik8L2E6cz4NCiAgICAgICAgICAgICAgICAgIDwvYTpzPg0KICAgICAgICAgICAgICAgPC9hOnM+DQogICAgICAgICAgICA8L2E6cz4NCiAgICAgICAgIDwvYW5ub3RhdGlvbj4NCiAgICAgICAgIDxleHByZXNzaW9uIGxvY2FsSWQ9IjI5NSIgbG9jYXRvcj0iMzM6My0zMzo4MiIgeHNpOnR5cGU9IkV4aXN0cyI+DQogICAgICAgICAgICA8b3BlcmFuZCBsb2NhbElkPSIyOTYiIGxvY2F0b3I9IjMzOjEwLTMzOjgyIiBuYW1lPSJJbnBhdGllbnQsIEVtZXJnZW5jeSwgb3IgVGVsZXBob25lIEV2YWx1YXRpb24gb3IgTWFuYWdlbWVudCBFbmNvdW50ZXIiIHhzaTp0eXBlPSJFeHByZXNzaW9uUmVmIi8+DQogICAgICAgICA8L2V4cHJlc3Npb24+DQogICAgICA8L2RlZj4NCiAgICAgIDxkZWYgbG9jYWxJZD0iMjk5IiBsb2NhdG9yPSIzNToxLTM2OjYiIG5hbWU9IkRlbm9taW5hdG9yIiBjb250ZXh0PSJQYXRpZW50IiBhY2Nlc3NMZXZlbD0iUHVibGljIj4NCiAgICAgICAgIDxhbm5vdGF0aW9uIHhzaTp0eXBlPSJhOkFubm90YXRpb24iPg0KICAgICAgICAgICAgPGE6cyByPSIyOTkiPg0KICAgICAgICAgICAgICAgPGE6cyByPSIzMDAiPmRlZmluZSAmcXVvdDtEZW5vbWluYXRvciZxdW90OzoKICB0cnVlPC9hOnM+DQogICAgICAgICAgICA8L2E6cz4NCiAgICAgICAgIDwvYW5ub3RhdGlvbj4NCiAgICAgICAgIDxleHByZXNzaW9uIGxvY2FsSWQ9IjMwMCIgbG9jYXRvcj0iMzY6My0zNjo2IiB2YWx1ZVR5cGU9InQ6Qm9vbGVhbiIgdmFsdWU9InRydWUiIHhzaTp0eXBlPSJMaXRlcmFsIi8+DQogICAgICA8L2RlZj4NCiAgICAgIDxkZWYgbG9jYWxJZD0iMzAzIiBsb2NhdG9yPSIzODoxLTQyOjU0IiBuYW1lPSJDT1ZJRC0xOSBDb21tdW5pY2FibGUgRGlzZWFzZSBTY3JlZW5pbmciIGNvbnRleHQ9IlBhdGllbnQiIGFjY2Vzc0xldmVsPSJQdWJsaWMiPg0KICAgICAgICAgPGFubm90YXRpb24geHNpOnR5cGU9ImE6QW5ub3RhdGlvbiI+DQogICAgICAgICAgICA8YTpzIHI9IjMwMyI+DQogICAgICAgICAgICAgICA8YTpzPmRlZmluZSAmcXVvdDtDT1ZJRC0xOSBDb21tdW5pY2FibGUgRGlzZWFzZSBTY3JlZW5pbmcmcXVvdDs6CiAgPC9hOnM+DQogICAgICAgICAgICAgICA8YTpzIHI9IjM1MyI+DQogICAgICAgICAgICAgICAgICA8YTpzPg0KICAgICAgICAgICAgICAgICAgICAgPGE6cyByPSIzMDQiPg0KICAgICAgICAgICAgICAgICAgICAgICAgPGE6cyByPSIzMDciPg0KICAgICAgICAgICAgICAgICAgICAgICAgICAgPGE6cyByPSIzMDciPg0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPGE6cz5bT2JzZXJ2YXRpb246IDwvYTpzPg0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPGE6cz4NCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxhOnM+JnF1b3Q7Q09WSUQtMTkgU2NyZWVuaW5nIFJlc3VsdCZxdW90OzwvYTpzPg0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPC9hOnM+DQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8YTpzPl08L2E6cz4NCiAgICAgICAgICAgICAgICAgICAgICAgICAgIDwvYTpzPg0KICAgICAgICAgICAgICAgICAgICAgICAgPC9hOnM+DQogICAgICAgICAgICAgICAgICAgICAgICA8YTpzPiBSZXN1bHQ8L2E6cz4NCiAgICAgICAgICAgICAgICAgICAgIDwvYTpzPg0KICAgICAgICAgICAgICAgICAgPC9hOnM+DQogICAgICAgICAgICAgICAgICA8YTpzPgogICAgPC9hOnM+DQogICAgICAgICAgICAgICAgICA8YTpzIHI9IjMxMSI+DQogICAgICAgICAgICAgICAgICAgICA8YTpzPndoZXJlIDwvYTpzPg0KICAgICAgICAgICAgICAgICAgICAgPGE6cyByPSIzMTEiPg0KICAgICAgICAgICAgICAgICAgICAgICAgPGE6cyByPSIzMTIiPg0KICAgICAgICAgICAgICAgICAgICAgICAgICAgPGE6cyByPSIzMTMiPg0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPGE6cz5leGlzdHMgPC9hOnM+DQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8YTpzIHI9IjMyNCI+DQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8YTpzPig8L2E6cz4NCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxhOnMgcj0iMzI0Ij4NCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxhOnM+DQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8YTpzIHI9IjMxNCI+DQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8YTpzIHI9IjMxNiI+DQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8YTpzPg0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPGE6cz5SZXN1bHQuY2F0ZWdvcnk8L2E6cz4NCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDwvYTpzPg0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPC9hOnM+DQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8YTpzPiBDPC9hOnM+DQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L2E6cz4NCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDwvYTpzPg0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPGE6cz4gPC9hOnM+DQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8YTpzIHI9IjMxOCI+DQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8YTpzPndoZXJlIDwvYTpzPg0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPGE6cyByPSIzMTgiPg0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPGE6cyByPSIzMTkiPg0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPGE6cz5DPC9hOnM+DQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L2E6cz4NCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxhOnM+IH4gPC9hOnM+DQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8YTpzIHI9IjMyMCI+DQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8YTpzPiZxdW90O0xhYm9yYXRvcnkgT2JzZXJ2YXRpb24gQ2F0ZWdvcnkmcXVvdDs8L2E6cz4NCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDwvYTpzPg0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPC9hOnM+DQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L2E6cz4NCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDwvYTpzPg0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPGE6cz4pPC9hOnM+DQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L2E6cz4NCiAgICAgICAgICAgICAgICAgICAgICAgICAgIDwvYTpzPg0KICAgICAgICAgICAgICAgICAgICAgICAgICAgPGE6cz4KICAgICAgYW5kIDwvYTpzPg0KICAgICAgICAgICAgICAgICAgICAgICAgICAgPGE6cyByPSIzMzQiPg0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPGE6cyByPSIzMjYiPg0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPGE6cyByPSIzMjUiPg0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPGE6cz5SZXN1bHQ8L2E6cz4NCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDwvYTpzPg0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPGE6cz4uPC9hOnM+DQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8YTpzIHI9IjMyNiI+DQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8YTpzPnN0YXR1czwvYTpzPg0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPC9hOnM+DQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L2E6cz4NCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxhOnM+IGluIDwvYTpzPg0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPGE6cyByPSIzMjciPg0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPGE6cz57IDwvYTpzPg0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPGE6cyByPSIzMjgiPg0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPGE6cz4nZmluYWwnPC9hOnM+DQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L2E6cz4NCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxhOnM+LCA8L2E6cz4NCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxhOnMgcj0iMzMwIj4NCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxhOnM+J2FtZW5kZWQnPC9hOnM+DQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L2E6cz4NCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxhOnM+LCA8L2E6cz4NCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxhOnMgcj0iMzMyIj4NCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxhOnM+J2NvcnJlY3RlZCc8L2E6cz4NCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDwvYTpzPg0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPGE6cz4gfTwvYTpzPg0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPC9hOnM+DQogICAgICAgICAgICAgICAgICAgICAgICAgICA8L2E6cz4NCiAgICAgICAgICAgICAgICAgICAgICAgIDwvYTpzPg0KICAgICAgICAgICAgICAgICAgICAgICAgPGE6cz4KICAgICAgYW5kIDwvYTpzPg0KICAgICAgICAgICAgICAgICAgICAgICAgPGE6cyByPSIzNDIiPg0KICAgICAgICAgICAgICAgICAgICAgICAgICAgPGE6cyByPSIzMzciPg0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPGE6cyByPSIzMzYiPg0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPGE6cz5SZXN1bHQ8L2E6cz4NCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDwvYTpzPg0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPGE6cz4uPC9hOnM+DQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8YTpzIHI9IjMzNyI+DQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8YTpzPmVmZmVjdGl2ZTwvYTpzPg0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPC9hOnM+DQogICAgICAgICAgICAgICAgICAgICAgICAgICA8L2E6cz4NCiAgICAgICAgICAgICAgICAgICAgICAgICAgIDxhOnMgcj0iMzQyIj4gZHVyaW5nIDwvYTpzPg0KICAgICAgICAgICAgICAgICAgICAgICAgICAgPGE6cyByPSIzMzgiPg0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPGE6cz4mcXVvdDtNZWFzdXJlbWVudCBQZXJpb2QmcXVvdDs8L2E6cz4NCiAgICAgICAgICAgICAgICAgICAgICAgICAgIDwvYTpzPg0KICAgICAgICAgICAgICAgICAgICAgICAgPC9hOnM+DQogICAgICAgICAgICAgICAgICAgICA8L2E6cz4NCiAgICAgICAgICAgICAgICAgIDwvYTpzPg0KICAgICAgICAgICAgICAgPC9hOnM+DQogICAgICAgICAgICA8L2E6cz4NCiAgICAgICAgIDwvYW5ub3RhdGlvbj4NCiAgICAgICAgIDxleHByZXNzaW9uIGxvY2FsSWQ9IjM1MyIgbG9jYXRvcj0iMzk6My00Mjo1NCIgeHNpOnR5cGU9IlF1ZXJ5Ij4NCiAgICAgICAgICAgIDxzb3VyY2UgbG9jYWxJZD0iMzA0IiBsb2NhdG9yPSIzOTozLTM5OjUxIiBhbGlhcz0iUmVzdWx0Ij4NCiAgICAgICAgICAgICAgIDxleHByZXNzaW9uIGxvY2FsSWQ9IjMwNyIgbG9jYXRvcj0iMzk6My0zOTo0NCIgZGF0YVR5cGU9ImZoaXI6T2JzZXJ2YXRpb24iIHRlbXBsYXRlSWQ9Imh0dHA6Ly9obDcub3JnL2ZoaXIvU3RydWN0dXJlRGVmaW5pdGlvbi9PYnNlcnZhdGlvbiIgY29kZVByb3BlcnR5PSJjb2RlIiBjb2RlQ29tcGFyYXRvcj0iaW4iIHhzaTp0eXBlPSJSZXRyaWV2ZSI+DQogICAgICAgICAgICAgICAgICA8Y29kZXMgbG9jYWxJZD0iMzA2IiBsb2NhdG9yPSIzOToxNy0zOTo0MyIgbmFtZT0iQ09WSUQtMTkgU2NyZWVuaW5nIFJlc3VsdCIgcHJlc2VydmU9InRydWUiIHhzaTp0eXBlPSJWYWx1ZVNldFJlZiIvPg0KICAgICAgICAgICAgICAgPC9leHByZXNzaW9uPg0KICAgICAgICAgICAgPC9zb3VyY2U+DQogICAgICAgICAgICA8d2hlcmUgbG9jYWxJZD0iMzExIiBsb2NhdG9yPSI0MDo1LTQyOjU0IiB4c2k6dHlwZT0iQW5kIj4NCiAgICAgICAgICAgICAgIDxvcGVyYW5kIGxvY2FsSWQ9IjMxMiIgbG9jYXRvcj0iNDA6MTEtNDE6NjIiIHhzaTp0eXBlPSJBbmQiPg0KICAgICAgICAgICAgICAgICAgPG9wZXJhbmQgbG9jYWxJZD0iMzEzIiBsb2NhdG9yPSI0MDoxMS00MDo4MCIgeHNpOnR5cGU9IkV4aXN0cyI+DQogICAgICAgICAgICAgICAgICAgICA8b3BlcmFuZCBsb2NhbElkPSIzMjQiIGxvY2F0b3I9IjQwOjE4LTQwOjgwIiB4c2k6dHlwZT0iUXVlcnkiPg0KICAgICAgICAgICAgICAgICAgICAgICAgPHNvdXJjZSBsb2NhbElkPSIzMTQiIGxvY2F0b3I9IjQwOjE5LTQwOjM1IiBhbGlhcz0iQyI+DQogICAgICAgICAgICAgICAgICAgICAgICAgICA8ZXhwcmVzc2lvbiBsb2NhbElkPSIzMTYiIGxvY2F0b3I9IjQwOjE5LTQwOjMzIiBwYXRoPSJjYXRlZ29yeSIgc2NvcGU9IlJlc3VsdCIgeHNpOnR5cGU9IlByb3BlcnR5Ii8+DQogICAgICAgICAgICAgICAgICAgICAgICA8L3NvdXJjZT4NCiAgICAgICAgICAgICAgICAgICAgICAgIDx3aGVyZSBsb2NhbElkPSIzMTgiIGxvY2F0b3I9IjQwOjM3LTQwOjc5IiB4c2k6dHlwZT0iRXF1aXZhbGVudCI+DQogICAgICAgICAgICAgICAgICAgICAgICAgICA8b3BlcmFuZCBsb2NhbElkPSIzMjEiIG5hbWU9IlRvQ29uY2VwdCIgbGlicmFyeU5hbWU9IkZISVJIZWxwZXJzIiB4c2k6dHlwZT0iRnVuY3Rpb25SZWYiPg0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPG9wZXJhbmQgbG9jYWxJZD0iMzE5IiBsb2NhdG9yPSI0MDo0MyIgbmFtZT0iQyIgeHNpOnR5cGU9IkFsaWFzUmVmIi8+DQogICAgICAgICAgICAgICAgICAgICAgICAgICA8L29wZXJhbmQ+DQogICAgICAgICAgICAgICAgICAgICAgICAgICA8b3BlcmFuZCBsb2NhbElkPSIzMjMiIHhzaTp0eXBlPSJUb0NvbmNlcHQiPg0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPG9wZXJhbmQgbG9jYWxJZD0iMzIwIiBsb2NhdG9yPSI0MDo0Ny00MDo3OSIgbmFtZT0iTGFib3JhdG9yeSBPYnNlcnZhdGlvbiBDYXRlZ29yeSIgeHNpOnR5cGU9IkNvZGVSZWYiLz4NCiAgICAgICAgICAgICAgICAgICAgICAgICAgIDwvb3BlcmFuZD4NCiAgICAgICAgICAgICAgICAgICAgICAgIDwvd2hlcmU+DQogICAgICAgICAgICAgICAgICAgICA8L29wZXJhbmQ+DQogICAgICAgICAgICAgICAgICA8L29wZXJhbmQ+DQogICAgICAgICAgICAgICAgICA8b3BlcmFuZCBsb2NhbElkPSIzMzQiIGxvY2F0b3I9IjQxOjExLTQxOjYyIiB4c2k6dHlwZT0iSW4iPg0KICAgICAgICAgICAgICAgICAgICAgPG9wZXJhbmQgbG9jYWxJZD0iMzM1IiBuYW1lPSJUb1N0cmluZyIgbGlicmFyeU5hbWU9IkZISVJIZWxwZXJzIiB4c2k6dHlwZT0iRnVuY3Rpb25SZWYiPg0KICAgICAgICAgICAgICAgICAgICAgICAgPG9wZXJhbmQgbG9jYWxJZD0iMzI2IiBsb2NhdG9yPSI0MToxMS00MToyMyIgcGF0aD0ic3RhdHVzIiBzY29wZT0iUmVzdWx0IiB4c2k6dHlwZT0iUHJvcGVydHkiLz4NCiAgICAgICAgICAgICAgICAgICAgIDwvb3BlcmFuZD4NCiAgICAgICAgICAgICAgICAgICAgIDxvcGVyYW5kIGxvY2FsSWQ9IjMyNyIgbG9jYXRvcj0iNDE6MjgtNDE6NjIiIHhzaTp0eXBlPSJMaXN0Ij4NCiAgICAgICAgICAgICAgICAgICAgICAgIDxlbGVtZW50IGxvY2FsSWQ9IjMyOCIgbG9jYXRvcj0iNDE6MzAtNDE6MzYiIHZhbHVlVHlwZT0idDpTdHJpbmciIHZhbHVlPSJmaW5hbCIgeHNpOnR5cGU9IkxpdGVyYWwiLz4NCiAgICAgICAgICAgICAgICAgICAgICAgIDxlbGVtZW50IGxvY2FsSWQ9IjMzMCIgbG9jYXRvcj0iNDE6MzktNDE6NDciIHZhbHVlVHlwZT0idDpTdHJpbmciIHZhbHVlPSJhbWVuZGVkIiB4c2k6dHlwZT0iTGl0ZXJhbCIvPg0KICAgICAgICAgICAgICAgICAgICAgICAgPGVsZW1lbnQgbG9jYWxJZD0iMzMyIiBsb2NhdG9yPSI0MTo1MC00MTo2MCIgdmFsdWVUeXBlPSJ0OlN0cmluZyIgdmFsdWU9ImNvcnJlY3RlZCIgeHNpOnR5cGU9IkxpdGVyYWwiLz4NCiAgICAgICAgICAgICAgICAgICAgIDwvb3BlcmFuZD4NCiAgICAgICAgICAgICAgICAgIDwvb3BlcmFuZD4NCiAgICAgICAgICAgICAgIDwvb3BlcmFuZD4NCiAgICAgICAgICAgICAgIDxvcGVyYW5kIGxvY2FsSWQ9IjM0MiIgbG9jYXRvcj0iNDI6MTEtNDI6NTQiIHhzaTp0eXBlPSJJbiI+DQogICAgICAgICAgICAgICAgICA8b3BlcmFuZCBsb2NhbElkPSIzNDUiIHhzaTp0eXBlPSJDYXNlIj4NCiAgICAgICAgICAgICAgICAgICAgIDxjYXNlSXRlbSBsb2NhbElkPSIzNDYiPg0KICAgICAgICAgICAgICAgICAgICAgICAgPHdoZW4gbG9jYWxJZD0iMzQ3IiBpc1R5cGU9ImZoaXI6ZGF0ZVRpbWUiIHhzaTp0eXBlPSJJcyI+DQogICAgICAgICAgICAgICAgICAgICAgICAgICA8b3BlcmFuZCBsb2NhbElkPSIzMzciIGxvY2F0b3I9IjQyOjExLTQyOjI2IiBwYXRoPSJlZmZlY3RpdmUiIHNjb3BlPSJSZXN1bHQiIHhzaTp0eXBlPSJQcm9wZXJ0eSIvPg0KICAgICAgICAgICAgICAgICAgICAgICAgPC93aGVuPg0KICAgICAgICAgICAgICAgICAgICAgICAgPHRoZW4gbG9jYWxJZD0iMzQ0IiBuYW1lPSJUb0RhdGVUaW1lIiBsaWJyYXJ5TmFtZT0iRkhJUkhlbHBlcnMiIHhzaTp0eXBlPSJGdW5jdGlvblJlZiI+DQogICAgICAgICAgICAgICAgICAgICAgICAgICA8b3BlcmFuZCBsb2NhbElkPSIzNDMiIGFzVHlwZT0iZmhpcjpkYXRlVGltZSIgeHNpOnR5cGU9IkFzIj4NCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxvcGVyYW5kIGxvY2FsSWQ9IjMzNyIgbG9jYXRvcj0iNDI6MTEtNDI6MjYiIHBhdGg9ImVmZmVjdGl2ZSIgc2NvcGU9IlJlc3VsdCIgeHNpOnR5cGU9IlByb3BlcnR5Ii8+DQogICAgICAgICAgICAgICAgICAgICAgICAgICA8L29wZXJhbmQ+DQogICAgICAgICAgICAgICAgICAgICAgICA8L3RoZW4+DQogICAgICAgICAgICAgICAgICAgICA8L2Nhc2VJdGVtPg0KICAgICAgICAgICAgICAgICAgICAgPGNhc2VJdGVtIGxvY2FsSWQ9IjM0OCI+DQogICAgICAgICAgICAgICAgICAgICAgICA8d2hlbiBsb2NhbElkPSIzNDkiIGlzVHlwZT0iZmhpcjppbnN0YW50IiB4c2k6dHlwZT0iSXMiPg0KICAgICAgICAgICAgICAgICAgICAgICAgICAgPG9wZXJhbmQgbG9jYWxJZD0iMzM3IiBsb2NhdG9yPSI0MjoxMS00MjoyNiIgcGF0aD0iZWZmZWN0aXZlIiBzY29wZT0iUmVzdWx0IiB4c2k6dHlwZT0iUHJvcGVydHkiLz4NCiAgICAgICAgICAgICAgICAgICAgICAgIDwvd2hlbj4NCiAgICAgICAgICAgICAgICAgICAgICAgIDx0aGVuIGxvY2FsSWQ9IjM1MSIgbmFtZT0iVG9EYXRlVGltZSIgbGlicmFyeU5hbWU9IkZISVJIZWxwZXJzIiB4c2k6dHlwZT0iRnVuY3Rpb25SZWYiPg0KICAgICAgICAgICAgICAgICAgICAgICAgICAgPG9wZXJhbmQgbG9jYWxJZD0iMzUwIiBhc1R5cGU9ImZoaXI6aW5zdGFudCIgeHNpOnR5cGU9IkFzIj4NCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxvcGVyYW5kIGxvY2FsSWQ9IjMzNyIgbG9jYXRvcj0iNDI6MTEtNDI6MjYiIHBhdGg9ImVmZmVjdGl2ZSIgc2NvcGU9IlJlc3VsdCIgeHNpOnR5cGU9IlByb3BlcnR5Ii8+DQogICAgICAgICAgICAgICAgICAgICAgICAgICA8L29wZXJhbmQ+DQogICAgICAgICAgICAgICAgICAgICAgICA8L3RoZW4+DQogICAgICAgICAgICAgICAgICAgICA8L2Nhc2VJdGVtPg0KICAgICAgICAgICAgICAgICAgICAgPGVsc2UgbG9jYWxJZD0iMzUyIiB4c2k6dHlwZT0iTnVsbCIvPg0KICAgICAgICAgICAgICAgICAgPC9vcGVyYW5kPg0KICAgICAgICAgICAgICAgICAgPG9wZXJhbmQgbG9jYWxJZD0iMzM4IiBsb2NhdG9yPSI0MjozNS00Mjo1NCIgbmFtZT0iTWVhc3VyZW1lbnQgUGVyaW9kIiB4c2k6dHlwZT0iUGFyYW1ldGVyUmVmIi8+DQogICAgICAgICAgICAgICA8L29wZXJhbmQ+DQogICAgICAgICAgICA8L3doZXJlPg0KICAgICAgICAgPC9leHByZXNzaW9uPg0KICAgICAgPC9kZWY+DQogICAgICA8ZGVmIGxvY2FsSWQ9IjM1NiIgbG9jYXRvcj0iNDQ6MS00NTo1MiIgbmFtZT0iTnVtZXJhdG9yIiBjb250ZXh0PSJQYXRpZW50IiBhY2Nlc3NMZXZlbD0iUHVibGljIj4NCiAgICAgICAgIDxhbm5vdGF0aW9uIHhzaTp0eXBlPSJhOkFubm90YXRpb24iPg0KICAgICAgICAgICAgPGE6cyByPSIzNTYiPg0KICAgICAgICAgICAgICAgPGE6cz5kZWZpbmUgJnF1b3Q7TnVtZXJhdG9yJnF1b3Q7OgogIDwvYTpzPg0KICAgICAgICAgICAgICAgPGE6cyByPSIzNTciPg0KICAgICAgICAgICAgICAgICAgPGE6cz5leGlzdHMgPC9hOnM+DQogICAgICAgICAgICAgICAgICA8YTpzIHI9IjM1OCI+DQogICAgICAgICAgICAgICAgICAgICA8YTpzPig8L2E6cz4NCiAgICAgICAgICAgICAgICAgICAgIDxhOnMgcj0iMzU4Ij4NCiAgICAgICAgICAgICAgICAgICAgICAgIDxhOnM+JnF1b3Q7Q09WSUQtMTkgQ29tbXVuaWNhYmxlIERpc2Vhc2UgU2NyZWVuaW5nJnF1b3Q7PC9hOnM+DQogICAgICAgICAgICAgICAgICAgICA8L2E6cz4NCiAgICAgICAgICAgICAgICAgICAgIDxhOnM+KTwvYTpzPg0KICAgICAgICAgICAgICAgICAgPC9hOnM+DQogICAgICAgICAgICAgICA8L2E6cz4NCiAgICAgICAgICAgIDwvYTpzPg0KICAgICAgICAgPC9hbm5vdGF0aW9uPg0KICAgICAgICAgPGV4cHJlc3Npb24gbG9jYWxJZD0iMzU3IiBsb2NhdG9yPSI0NTozLTQ1OjUyIiB4c2k6dHlwZT0iRXhpc3RzIj4NCiAgICAgICAgICAgIDxvcGVyYW5kIGxvY2FsSWQ9IjM1OCIgbG9jYXRvcj0iNDU6MTAtNDU6NTIiIG5hbWU9IkNPVklELTE5IENvbW11bmljYWJsZSBEaXNlYXNlIFNjcmVlbmluZyIgeHNpOnR5cGU9IkV4cHJlc3Npb25SZWYiLz4NCiAgICAgICAgIDwvZXhwcmVzc2lvbj4NCiAgICAgIDwvZGVmPg0KICAgPC9zdGF0ZW1lbnRzPg0KPC9saWJyYXJ5Pg0K&quot;/&gt;
+  &lt;/<a href="http://hl7.org/fhir/R4/library.html#Library.content">content</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/library.html#Library.content">content</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Attachment#Attachment.contentType">contentType</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;application/elm+json&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Attachment#Attachment.data">data</a>
+          <a href="http://hl7.org/fhir/R4/datatypes.html#base64Binary">value</a>=&quot;ew0KICAgImxpYnJhcnkiIDogew0KICAgICAgImxvY2FsSWQiIDogIjAiLA0KICAgICAgImFubm90YXRpb24iIDogWyB7DQogICAgICAgICAidHJhbnNsYXRvck9wdGlvbnMiIDogIkVuYWJsZUFubm90YXRpb25zLEVuYWJsZUxvY2F0b3JzLERpc2FibGVMaXN0RGVtb3Rpb24sRGlzYWJsZUxpc3RQcm9tb3Rpb24iLA0KICAgICAgICAgInNpZ25hdHVyZUxldmVsIiA6ICJOb25lIiwNCiAgICAgICAgICJ0eXBlIiA6ICJDcWxUb0VsbUluZm8iDQogICAgICB9LCB7DQogICAgICAgICAibWVzc2FnZSIgOiAiVGhlIGZ1bmN0aW9uIEZISVJIZWxwZXJzLlRvU3RyaW5nIGhhcyBtdWx0aXBsZSBvdmVybG9hZHMgYW5kIGR1ZSB0byB0aGUgU2lnbmF0dXJlTGV2ZWwgc2V0dGluZyAoTm9uZSksIHRoZSBvdmVybG9hZCBzaWduYXR1cmUgaXMgbm90IGJlaW5nIGluY2x1ZGVkIGluIHRoZSBvdXRwdXQuIFRoaXMgbWF5IHJlc3VsdCBpbiBhbWJpZ3VvdXMgZnVuY3Rpb24gcmVzb2x1dGlvbiBhdCBydW50aW1lLCBjb25zaWRlciBzZXR0aW5nIHRoZSBTaWduYXR1cmVMZXZlbCB0byBPdmVybG9hZHMgb3IgQWxsIHRvIGVuc3VyZSB0aGF0IHRoZSBvdXRwdXQgaW5jbHVkZXMgc3VmZmljaWVudCBpbmZvcm1hdGlvbiB0byBzdXBwb3J0IGNvcnJlY3Qgb3ZlcmxvYWQgc2VsZWN0aW9uIGF0IHJ1bnRpbWUuIiwNCiAgICAgICAgICJlcnJvclR5cGUiIDogInNlbWFudGljIiwNCiAgICAgICAgICJlcnJvclNldmVyaXR5IiA6ICJ3YXJuaW5nIiwNCiAgICAgICAgICJ0eXBlIiA6ICJDcWxUb0VsbUVycm9yIg0KICAgICAgfSwgew0KICAgICAgICAgIm1lc3NhZ2UiIDogIlRoZSBmdW5jdGlvbiBGSElSSGVscGVycy5Ub0ludGVydmFsIGhhcyBtdWx0aXBsZSBvdmVybG9hZHMgYW5kIGR1ZSB0byB0aGUgU2lnbmF0dXJlTGV2ZWwgc2V0dGluZyAoTm9uZSksIHRoZSBvdmVybG9hZCBzaWduYXR1cmUgaXMgbm90IGJlaW5nIGluY2x1ZGVkIGluIHRoZSBvdXRwdXQuIFRoaXMgbWF5IHJlc3VsdCBpbiBhbWJpZ3VvdXMgZnVuY3Rpb24gcmVzb2x1dGlvbiBhdCBydW50aW1lLCBjb25zaWRlciBzZXR0aW5nIHRoZSBTaWduYXR1cmVMZXZlbCB0byBPdmVybG9hZHMgb3IgQWxsIHRvIGVuc3VyZSB0aGF0IHRoZSBvdXRwdXQgaW5jbHVkZXMgc3VmZmljaWVudCBpbmZvcm1hdGlvbiB0byBzdXBwb3J0IGNvcnJlY3Qgb3ZlcmxvYWQgc2VsZWN0aW9uIGF0IHJ1bnRpbWUuIiwNCiAgICAgICAgICJlcnJvclR5cGUiIDogInNlbWFudGljIiwNCiAgICAgICAgICJlcnJvclNldmVyaXR5IiA6ICJ3YXJuaW5nIiwNCiAgICAgICAgICJ0eXBlIiA6ICJDcWxUb0VsbUVycm9yIg0KICAgICAgfSwgew0KICAgICAgICAgIm1lc3NhZ2UiIDogIlRoZSBmdW5jdGlvbiBGSElSSGVscGVycy5Ub1N0cmluZyBoYXMgbXVsdGlwbGUgb3ZlcmxvYWRzIGFuZCBkdWUgdG8gdGhlIFNpZ25hdHVyZUxldmVsIHNldHRpbmcgKE5vbmUpLCB0aGUgb3ZlcmxvYWQgc2lnbmF0dXJlIGlzIG5vdCBiZWluZyBpbmNsdWRlZCBpbiB0aGUgb3V0cHV0LiBUaGlzIG1heSByZXN1bHQgaW4gYW1iaWd1b3VzIGZ1bmN0aW9uIHJlc29sdXRpb24gYXQgcnVudGltZSwgY29uc2lkZXIgc2V0dGluZyB0aGUgU2lnbmF0dXJlTGV2ZWwgdG8gT3ZlcmxvYWRzIG9yIEFsbCB0byBlbnN1cmUgdGhhdCB0aGUgb3V0cHV0IGluY2x1ZGVzIHN1ZmZpY2llbnQgaW5mb3JtYXRpb24gdG8gc3VwcG9ydCBjb3JyZWN0IG92ZXJsb2FkIHNlbGVjdGlvbiBhdCBydW50aW1lLiIsDQogICAgICAgICAiZXJyb3JUeXBlIiA6ICJzZW1hbnRpYyIsDQogICAgICAgICAiZXJyb3JTZXZlcml0eSIgOiAid2FybmluZyIsDQogICAgICAgICAidHlwZSIgOiAiQ3FsVG9FbG1FcnJvciINCiAgICAgIH0sIHsNCiAgICAgICAgICJtZXNzYWdlIiA6ICJUaGUgZnVuY3Rpb24gRkhJUkhlbHBlcnMuVG9JbnRlcnZhbCBoYXMgbXVsdGlwbGUgb3ZlcmxvYWRzIGFuZCBkdWUgdG8gdGhlIFNpZ25hdHVyZUxldmVsIHNldHRpbmcgKE5vbmUpLCB0aGUgb3ZlcmxvYWQgc2lnbmF0dXJlIGlzIG5vdCBiZWluZyBpbmNsdWRlZCBpbiB0aGUgb3V0cHV0LiBUaGlzIG1heSByZXN1bHQgaW4gYW1iaWd1b3VzIGZ1bmN0aW9uIHJlc29sdXRpb24gYXQgcnVudGltZSwgY29uc2lkZXIgc2V0dGluZyB0aGUgU2lnbmF0dXJlTGV2ZWwgdG8gT3ZlcmxvYWRzIG9yIEFsbCB0byBlbnN1cmUgdGhhdCB0aGUgb3V0cHV0IGluY2x1ZGVzIHN1ZmZpY2llbnQgaW5mb3JtYXRpb24gdG8gc3VwcG9ydCBjb3JyZWN0IG92ZXJsb2FkIHNlbGVjdGlvbiBhdCBydW50aW1lLiIsDQogICAgICAgICAiZXJyb3JUeXBlIiA6ICJzZW1hbnRpYyIsDQogICAgICAgICAiZXJyb3JTZXZlcml0eSIgOiAid2FybmluZyIsDQogICAgICAgICAidHlwZSIgOiAiQ3FsVG9FbG1FcnJvciINCiAgICAgIH0sIHsNCiAgICAgICAgICJtZXNzYWdlIiA6ICJUaGUgZnVuY3Rpb24gRkhJUkhlbHBlcnMuVG9EYXRlVGltZSBoYXMgbXVsdGlwbGUgb3ZlcmxvYWRzIGFuZCBkdWUgdG8gdGhlIFNpZ25hdHVyZUxldmVsIHNldHRpbmcgKE5vbmUpLCB0aGUgb3ZlcmxvYWQgc2lnbmF0dXJlIGlzIG5vdCBiZWluZyBpbmNsdWRlZCBpbiB0aGUgb3V0cHV0LiBUaGlzIG1heSByZXN1bHQgaW4gYW1iaWd1b3VzIGZ1bmN0aW9uIHJlc29sdXRpb24gYXQgcnVudGltZSwgY29uc2lkZXIgc2V0dGluZyB0aGUgU2lnbmF0dXJlTGV2ZWwgdG8gT3ZlcmxvYWRzIG9yIEFsbCB0byBlbnN1cmUgdGhhdCB0aGUgb3V0cHV0IGluY2x1ZGVzIHN1ZmZpY2llbnQgaW5mb3JtYXRpb24gdG8gc3VwcG9ydCBjb3JyZWN0IG92ZXJsb2FkIHNlbGVjdGlvbiBhdCBydW50aW1lLiIsDQogICAgICAgICAiZXJyb3JUeXBlIiA6ICJzZW1hbnRpYyIsDQogICAgICAgICAiZXJyb3JTZXZlcml0eSIgOiAid2FybmluZyIsDQogICAgICAgICAidHlwZSIgOiAiQ3FsVG9FbG1FcnJvciINCiAgICAgIH0sIHsNCiAgICAgICAgICJtZXNzYWdlIiA6ICJUaGUgZnVuY3Rpb24gRkhJUkhlbHBlcnMuVG9EYXRlVGltZSBoYXMgbXVsdGlwbGUgb3ZlcmxvYWRzIGFuZCBkdWUgdG8gdGhlIFNpZ25hdHVyZUxldmVsIHNldHRpbmcgKE5vbmUpLCB0aGUgb3ZlcmxvYWQgc2lnbmF0dXJlIGlzIG5vdCBiZWluZyBpbmNsdWRlZCBpbiB0aGUgb3V0cHV0LiBUaGlzIG1heSByZXN1bHQgaW4gYW1iaWd1b3VzIGZ1bmN0aW9uIHJlc29sdXRpb24gYXQgcnVudGltZSwgY29uc2lkZXIgc2V0dGluZyB0aGUgU2lnbmF0dXJlTGV2ZWwgdG8gT3ZlcmxvYWRzIG9yIEFsbCB0byBlbnN1cmUgdGhhdCB0aGUgb3V0cHV0IGluY2x1ZGVzIHN1ZmZpY2llbnQgaW5mb3JtYXRpb24gdG8gc3VwcG9ydCBjb3JyZWN0IG92ZXJsb2FkIHNlbGVjdGlvbiBhdCBydW50aW1lLiIsDQogICAgICAgICAiZXJyb3JUeXBlIiA6ICJzZW1hbnRpYyIsDQogICAgICAgICAiZXJyb3JTZXZlcml0eSIgOiAid2FybmluZyIsDQogICAgICAgICAidHlwZSIgOiAiQ3FsVG9FbG1FcnJvciINCiAgICAgIH0sIHsNCiAgICAgICAgICJ0eXBlIiA6ICJBbm5vdGF0aW9uIiwNCiAgICAgICAgICJzIiA6IHsNCiAgICAgICAgICAgICJyIiA6ICIzNTYiLA0KICAgICAgICAgICAgInMiIDogWyB7DQogICAgICAgICAgICAgICAidmFsdWUiIDogWyAiIiwibGlicmFyeSBleGFtcGxlIHZlcnNpb24gJzEuMC4wJyIgXQ0KICAgICAgICAgICAgfSBdDQogICAgICAgICB9DQogICAgICB9IF0sDQogICAgICAiaWRlbnRpZmllciIgOiB7DQogICAgICAgICAiaWQiIDogImV4YW1wbGUiLA0KICAgICAgICAgInN5c3RlbSIgOiAiaHR0cDovL3NvbWV3aGVyZS5vcmcvZmhpci91di9teWlnIiwNCiAgICAgICAgICJ2ZXJzaW9uIiA6ICIxLjAuMCINCiAgICAgIH0sDQogICAgICAic2NoZW1hSWRlbnRpZmllciIgOiB7DQogICAgICAgICAiaWQiIDogInVybjpobDctb3JnOmVsbSIsDQogICAgICAgICAidmVyc2lvbiIgOiAicjEiDQogICAgICB9LA0KICAgICAgInVzaW5ncyIgOiB7DQogICAgICAgICAiZGVmIiA6IFsgew0KICAgICAgICAgICAgImxvY2FsSWQiIDogIjEiLA0KICAgICAgICAgICAgImxvY2FsSWRlbnRpZmllciIgOiAiU3lzdGVtIiwNCiAgICAgICAgICAgICJ1cmkiIDogInVybjpobDctb3JnOmVsbS10eXBlczpyMSIsDQogICAgICAgICAgICAidmVyc2lvbiIgOiAiMS4wLjAiDQogICAgICAgICB9LCB7DQogICAgICAgICAgICAibG9jYWxJZCIgOiAiMjA2IiwNCiAgICAgICAgICAgICJsb2NhdG9yIiA6ICIzOjEtMzoyNiIsDQogICAgICAgICAgICAibG9jYWxJZGVudGlmaWVyIiA6ICJGSElSIiwNCiAgICAgICAgICAgICJ1cmkiIDogImh0dHA6Ly9obDcub3JnL2ZoaXIiLA0KICAgICAgICAgICAgInZlcnNpb24iIDogIjQuMC4xIiwNCiAgICAgICAgICAgICJhbm5vdGF0aW9uIiA6IFsgew0KICAgICAgICAgICAgICAgInR5cGUiIDogIkFubm90YXRpb24iLA0KICAgICAgICAgICAgICAgInMiIDogew0KICAgICAgICAgICAgICAgICAgInIiIDogIjIwNiIsDQogICAgICAgICAgICAgICAgICAicyIgOiBbIHsNCiAgICAgICAgICAgICAgICAgICAgICJ2YWx1ZSIgOiBbICIiLCJ1c2luZyAiIF0NCiAgICAgICAgICAgICAgICAgIH0sIHsNCiAgICAgICAgICAgICAgICAgICAgICJzIiA6IFsgew0KICAgICAgICAgICAgICAgICAgICAgICAgInZhbHVlIiA6IFsgIkZISVIiIF0NCiAgICAgICAgICAgICAgICAgICAgIH0gXQ0KICAgICAgICAgICAgICAgICAgfSwgew0KICAgICAgICAgICAgICAgICAgICAgInZhbHVlIiA6IFsgIiB2ZXJzaW9uICc0LjAuMSciIF0NCiAgICAgICAgICAgICAgICAgIH0gXQ0KICAgICAgICAgICAgICAgfQ0KICAgICAgICAgICAgfSBdDQogICAgICAgICB9IF0NCiAgICAgIH0sDQogICAgICAiaW5jbHVkZXMiIDogew0KICAgICAgICAgImRlZiIgOiBbIHsNCiAgICAgICAgICAgICJsb2NhbElkIiA6ICIyMDgiLA0KICAgICAgICAgICAgImxvY2F0b3IiIDogIjU6MS01OjUxIiwNCiAgICAgICAgICAgICJsb2NhbElkZW50aWZpZXIiIDogIkZISVJIZWxwZXJzIiwNCiAgICAgICAgICAgICJwYXRoIiA6ICJodHRwOi8vZmhpci5vcmcvZ3VpZGVzL2NxZi9jb21tb24vRkhJUkhlbHBlcnMiLA0KICAgICAgICAgICAgInZlcnNpb24iIDogIjQuMC4xIiwNCiAgICAgICAgICAgICJhbm5vdGF0aW9uIiA6IFsgew0KICAgICAgICAgICAgICAgInR5cGUiIDogIkFubm90YXRpb24iLA0KICAgICAgICAgICAgICAgInMiIDogew0KICAgICAgICAgICAgICAgICAgInIiIDogIjIwOCIsDQogICAgICAgICAgICAgICAgICAicyIgOiBbIHsNCiAgICAgICAgICAgICAgICAgICAgICJ2YWx1ZSIgOiBbICIiLCJpbmNsdWRlICIgXQ0KICAgICAgICAgICAgICAgICAgfSwgew0KICAgICAgICAgICAgICAgICAgICAgInMiIDogWyB7DQogICAgICAgICAgICAgICAgICAgICAgICAidmFsdWUiIDogWyAiZmhpciIsIi4iLCJjcWYiLCIuIiwiY29tbW9uIiwiLiIsIkZISVJIZWxwZXJzIiBdDQogICAgICAgICAgICAgICAgICAgICB9IF0NCiAgICAgICAgICAgICAgICAgIH0sIHsNCiAgICAgICAgICAgICAgICAgICAgICJ2YWx1ZSIgOiBbICIgdmVyc2lvbiAiLCInNC4wLjEnIiBdDQogICAgICAgICAgICAgICAgICB9IF0NCiAgICAgICAgICAgICAgIH0NCiAgICAgICAgICAgIH0gXQ0KICAgICAgICAgfSBdDQogICAgICB9LA0KICAgICAgInBhcmFtZXRlcnMiIDogew0KICAgICAgICAgImRlZiIgOiBbIHsNCiAgICAgICAgICAgICJsb2NhbElkIiA6ICIyMjUiLA0KICAgICAgICAgICAgImxvY2F0b3IiIDogIjE4OjEtMTg6NDkiLA0KICAgICAgICAgICAgIm5hbWUiIDogIk1lYXN1cmVtZW50IFBlcmlvZCIsDQogICAgICAgICAgICAiYWNjZXNzTGV2ZWwiIDogIlB1YmxpYyIsDQogICAgICAgICAgICAiYW5ub3RhdGlvbiIgOiBbIHsNCiAgICAgICAgICAgICAgICJ0eXBlIiA6ICJBbm5vdGF0aW9uIiwNCiAgICAgICAgICAgICAgICJzIiA6IHsNCiAgICAgICAgICAgICAgICAgICJyIiA6ICIyMjUiLA0KICAgICAgICAgICAgICAgICAgInMiIDogWyB7DQogICAgICAgICAgICAgICAgICAgICAidmFsdWUiIDogWyAiIiwicGFyYW1ldGVyICIsIlwiTWVhc3VyZW1lbnQgUGVyaW9kXCIiLCIgIiBdDQogICAgICAgICAgICAgICAgICB9LCB7DQogICAgICAgICAgICAgICAgICAgICAiciIgOiAiMjI2IiwNCiAgICAgICAgICAgICAgICAgICAgICJzIiA6IFsgew0KICAgICAgICAgICAgICAgICAgICAgICAgInZhbHVlIiA6IFsgIkludGVydmFsPCIgXQ0KICAgICAgICAgICAgICAgICAgICAgfSwgew0KICAgICAgICAgICAgICAgICAgICAgICAgInIiIDogIjIyNyIsDQogICAgICAgICAgICAgICAgICAgICAgICAicyIgOiBbIHsNCiAgICAgICAgICAgICAgICAgICAgICAgICAgICJ2YWx1ZSIgOiBbICJEYXRlVGltZSIgXQ0KICAgICAgICAgICAgICAgICAgICAgICAgfSBdDQogICAgICAgICAgICAgICAgICAgICB9LCB7DQogICAgICAgICAgICAgICAgICAgICAgICAidmFsdWUiIDogWyAiPiIgXQ0KICAgICAgICAgICAgICAgICAgICAgfSBdDQogICAgICAgICAgICAgICAgICB9IF0NCiAgICAgICAgICAgICAgIH0NCiAgICAgICAgICAgIH0gXSwNCiAgICAgICAgICAgICJwYXJhbWV0ZXJUeXBlU3BlY2lmaWVyIiA6IHsNCiAgICAgICAgICAgICAgICJsb2NhbElkIiA6ICIyMjYiLA0KICAgICAgICAgICAgICAgImxvY2F0b3IiIDogIjE4OjMyLTE4OjQ5IiwNCiAgICAgICAgICAgICAgICJ0eXBlIiA6ICJJbnRlcnZhbFR5cGVTcGVjaWZpZXIiLA0KICAgICAgICAgICAgICAgInBvaW50VHlwZSIgOiB7DQogICAgICAgICAgICAgICAgICAibG9jYWxJZCIgOiAiMjI3IiwNCiAgICAgICAgICAgICAgICAgICJsb2NhdG9yIiA6ICIxODo0MS0xODo0OCIsDQogICAgICAgICAgICAgICAgICAibmFtZSIgOiAie3VybjpobDctb3JnOmVsbS10eXBlczpyMX1EYXRlVGltZSIsDQogICAgICAgICAgICAgICAgICAidHlwZSIgOiAiTmFtZWRUeXBlU3BlY2lmaWVyIg0KICAgICAgICAgICAgICAgfQ0KICAgICAgICAgICAgfQ0KICAgICAgICAgfSBdDQogICAgICB9LA0KICAgICAgImNvZGVTeXN0ZW1zIiA6IHsNCiAgICAgICAgICJkZWYiIDogWyB7DQogICAgICAgICAgICAibG9jYWxJZCIgOiAiMjEwIiwNCiAgICAgICAgICAgICJsb2NhdG9yIiA6ICI3OjEtNzoxMDEiLA0KICAgICAgICAgICAgIm5hbWUiIDogIk9ic2VydmF0aW9uIENhdGVnb3J5IENvZGVzIiwNCiAgICAgICAgICAgICJpZCIgOiAiaHR0cDovL3Rlcm1pbm9sb2d5LmhsNy5vcmcvQ29kZVN5c3RlbS9vYnNlcnZhdGlvbi1jYXRlZ29yeSIsDQogICAgICAgICAgICAiYWNjZXNzTGV2ZWwiIDogIlB1YmxpYyIsDQogICAgICAgICAgICAiYW5ub3RhdGlvbiIgOiBbIHsNCiAgICAgICAgICAgICAgICJ0eXBlIiA6ICJBbm5vdGF0aW9uIiwNCiAgICAgICAgICAgICAgICJzIiA6IHsNCiAgICAgICAgICAgICAgICAgICJyIiA6ICIyMTAiLA0KICAgICAgICAgICAgICAgICAgInMiIDogWyB7DQogICAgICAgICAgICAgICAgICAgICAidmFsdWUiIDogWyAiIiwiY29kZXN5c3RlbSAiLCJcIk9ic2VydmF0aW9uIENhdGVnb3J5IENvZGVzXCIiLCI6ICIsIidodHRwOi8vdGVybWlub2xvZ3kuaGw3Lm9yZy9Db2RlU3lzdGVtL29ic2VydmF0aW9uLWNhdGVnb3J5JyIgXQ0KICAgICAgICAgICAgICAgICAgfSBdDQogICAgICAgICAgICAgICB9DQogICAgICAgICAgICB9IF0NCiAgICAgICAgIH0gXQ0KICAgICAgfSwNCiAgICAgICJ2YWx1ZVNldHMiIDogew0KICAgICAgICAgImRlZiIgOiBbIHsNCiAgICAgICAgICAgICJsb2NhbElkIiA6ICIyMTIiLA0KICAgICAgICAgICAgImxvY2F0b3IiIDogIjk6MS05OjEwMCIsDQogICAgICAgICAgICAibmFtZSIgOiAiRW5jb3VudGVyIElucGF0aWVudCIsDQogICAgICAgICAgICAiaWQiIDogImh0dHA6Ly9jdHMubmxtLm5paC5nb3YvZmhpci9WYWx1ZVNldC8yLjE2Ljg0MC4xLjExMzg4My4zLjY2Ni41LjMwNyIsDQogICAgICAgICAgICAiYWNjZXNzTGV2ZWwiIDogIlB1YmxpYyIsDQogICAgICAgICAgICAiYW5ub3RhdGlvbiIgOiBbIHsNCiAgICAgICAgICAgICAgICJ0eXBlIiA6ICJBbm5vdGF0aW9uIiwNCiAgICAgICAgICAgICAgICJzIiA6IHsNCiAgICAgICAgICAgICAgICAgICJyIiA6ICIyMTIiLA0KICAgICAgICAgICAgICAgICAgInMiIDogWyB7DQogICAgICAgICAgICAgICAgICAgICAidmFsdWUiIDogWyAiIiwidmFsdWVzZXQgIiwiXCJFbmNvdW50ZXIgSW5wYXRpZW50XCIiLCI6ICIsIidodHRwOi8vY3RzLm5sbS5uaWguZ292L2ZoaXIvVmFsdWVTZXQvMi4xNi44NDAuMS4xMTM4ODMuMy42NjYuNS4zMDcnIiBdDQogICAgICAgICAgICAgICAgICB9IF0NCiAgICAgICAgICAgICAgIH0NCiAgICAgICAgICAgIH0gXSwNCiAgICAgICAgICAgICJjb2RlU3lzdGVtIiA6IFsgXQ0KICAgICAgICAgfSwgew0KICAgICAgICAgICAgImxvY2FsSWQiIDogIjIxNCIsDQogICAgICAgICAgICAibG9jYXRvciIgOiAiMTA6MS0xMDoxMTEiLA0KICAgICAgICAgICAgIm5hbWUiIDogIkVtZXJnZW5jeSBEZXBhcnRtZW50IFZpc2l0IiwNCiAgICAgICAgICAgICJpZCIgOiAiaHR0cDovL2N0cy5ubG0ubmloLmdvdi9maGlyL1ZhbHVlU2V0LzIuMTYuODQwLjEuMTEzODgzLjMuMTE3LjEuNy4xLjI5MiIsDQogICAgICAgICAgICAiYWNjZXNzTGV2ZWwiIDogIlB1YmxpYyIsDQogICAgICAgICAgICAiYW5ub3RhdGlvbiIgOiBbIHsNCiAgICAgICAgICAgICAgICJ0eXBlIiA6ICJBbm5vdGF0aW9uIiwNCiAgICAgICAgICAgICAgICJzIiA6IHsNCiAgICAgICAgICAgICAgICAgICJyIiA6ICIyMTQiLA0KICAgICAgICAgICAgICAgICAgInMiIDogWyB7DQogICAgICAgICAgICAgICAgICAgICAidmFsdWUiIDogWyAiIiwidmFsdWVzZXQgIiwiXCJFbWVyZ2VuY3kgRGVwYXJ0bWVudCBWaXNpdFwiIiwiOiAiLCInaHR0cDovL2N0cy5ubG0ubmloLmdvdi9maGlyL1ZhbHVlU2V0LzIuMTYuODQwLjEuMTEzODgzLjMuMTE3LjEuNy4xLjI5MiciIF0NCiAgICAgICAgICAgICAgICAgIH0gXQ0KICAgICAgICAgICAgICAgfQ0KICAgICAgICAgICAgfSBdLA0KICAgICAgICAgICAgImNvZGVTeXN0ZW0iIDogWyBdDQogICAgICAgICB9LCB7DQogICAgICAgICAgICAibG9jYWxJZCIgOiAiMjE2IiwNCiAgICAgICAgICAgICJsb2NhdG9yIiA6ICIxMToxLTExOjExMiIsDQogICAgICAgICAgICAibmFtZSIgOiAiVGVsZXBob25lIEV2YWx1YXRpb24iLA0KICAgICAgICAgICAgImlkIiA6ICJodHRwOi8vY3RzLm5sbS5uaWguZ292L2ZoaXIvVmFsdWVTZXQvMi4xNi44NDAuMS4xMTM4ODMuMy40NjQuMTAwMy4xMDEuMTIuMTA4MiIsDQogICAgICAgICAgICAiYWNjZXNzTGV2ZWwiIDogIlB1YmxpYyIsDQogICAgICAgICAgICAiYW5ub3RhdGlvbiIgOiBbIHsNCiAgICAgICAgICAgICAgICJ0eXBlIiA6ICJBbm5vdGF0aW9uIiwNCiAgICAgICAgICAgICAgICJzIiA6IHsNCiAgICAgICAgICAgICAgICAgICJyIiA6ICIyMTYiLA0KICAgICAgICAgICAgICAgICAgInMiIDogWyB7DQogICAgICAgICAgICAgICAgICAgICAidmFsdWUiIDogWyAiIiwidmFsdWVzZXQgIiwiXCJUZWxlcGhvbmUgRXZhbHVhdGlvblwiIiwiOiAiLCInaHR0cDovL2N0cy5ubG0ubmloLmdvdi9maGlyL1ZhbHVlU2V0LzIuMTYuODQwLjEuMTEzODgzLjMuNDY0LjEwMDMuMTAxLjEyLjEwODInIiBdDQogICAgICAgICAgICAgICAgICB9IF0NCiAgICAgICAgICAgICAgIH0NCiAgICAgICAgICAgIH0gXSwNCiAgICAgICAgICAgICJjb2RlU3lzdGVtIiA6IFsgXQ0KICAgICAgICAgfSwgew0KICAgICAgICAgICAgImxvY2FsSWQiIDogIjIxOCIsDQogICAgICAgICAgICAibG9jYXRvciIgOiAiMTI6MS0xMjoxMTIiLA0KICAgICAgICAgICAgIm5hbWUiIDogIlRlbGVwaG9uZSBNYW5hZ2VtZW50IiwNCiAgICAgICAgICAgICJpZCIgOiAiaHR0cDovL2N0cy5ubG0ubmloLmdvdi9maGlyL1ZhbHVlU2V0LzIuMTYuODQwLjEuMTEzODgzLjMuNDY0LjEwMDMuMTAxLjEyLjEwNTMiLA0KICAgICAgICAgICAgImFjY2Vzc0xldmVsIiA6ICJQdWJsaWMiLA0KICAgICAgICAgICAgImFubm90YXRpb24iIDogWyB7DQogICAgICAgICAgICAgICAidHlwZSIgOiAiQW5ub3RhdGlvbiIsDQogICAgICAgICAgICAgICAicyIgOiB7DQogICAgICAgICAgICAgICAgICAiciIgOiAiMjE4IiwNCiAgICAgICAgICAgICAgICAgICJzIiA6IFsgew0KICAgICAgICAgICAgICAgICAgICAgInZhbHVlIiA6IFsgIiIsInZhbHVlc2V0ICIsIlwiVGVsZXBob25lIE1hbmFnZW1lbnRcIiIsIjogIiwiJ2h0dHA6Ly9jdHMubmxtLm5paC5nb3YvZmhpci9WYWx1ZVNldC8yLjE2Ljg0MC4xLjExMzg4My4zLjQ2NC4xMDAzLjEwMS4xMi4xMDUzJyIgXQ0KICAgICAgICAgICAgICAgICAgfSBdDQogICAgICAgICAgICAgICB9DQogICAgICAgICAgICB9IF0sDQogICAgICAgICAgICAiY29kZVN5c3RlbSIgOiBbIF0NCiAgICAgICAgIH0sIHsNCiAgICAgICAgICAgICJsb2NhbElkIiA6ICIyMjAiLA0KICAgICAgICAgICAgImxvY2F0b3IiIDogIjE0OjEtMTQ6NDMiLA0KICAgICAgICAgICAgIm5hbWUiIDogIkNPVklELTE5IFNjcmVlbmluZyBSZXN1bHQiLA0KICAgICAgICAgICAgImlkIiA6ICJUQkQiLA0KICAgICAgICAgICAgImFjY2Vzc0xldmVsIiA6ICJQdWJsaWMiLA0KICAgICAgICAgICAgImFubm90YXRpb24iIDogWyB7DQogICAgICAgICAgICAgICAidHlwZSIgOiAiQW5ub3RhdGlvbiIsDQogICAgICAgICAgICAgICAicyIgOiB7DQogICAgICAgICAgICAgICAgICAiciIgOiAiMjIwIiwNCiAgICAgICAgICAgICAgICAgICJzIiA6IFsgew0KICAgICAgICAgICAgICAgICAgICAgInZhbHVlIiA6IFsgIiIsInZhbHVlc2V0ICIsIlwiQ09WSUQtMTkgU2NyZWVuaW5nIFJlc3VsdFwiIiwiOiAiLCInVEJEJyIgXQ0KICAgICAgICAgICAgICAgICAgfSBdDQogICAgICAgICAgICAgICB9DQogICAgICAgICAgICB9IF0sDQogICAgICAgICAgICAiY29kZVN5c3RlbSIgOiBbIF0NCiAgICAgICAgIH0gXQ0KICAgICAgfSwNCiAgICAgICJjb2RlcyIgOiB7DQogICAgICAgICAiZGVmIiA6IFsgew0KICAgICAgICAgICAgImxvY2FsSWQiIDogIjIyMiIsDQogICAgICAgICAgICAibG9jYXRvciIgOiAiMTY6MS0xNjo4NiIsDQogICAgICAgICAgICAibmFtZSIgOiAiTGFib3JhdG9yeSBPYnNlcnZhdGlvbiBDYXRlZ29yeSIsDQogICAgICAgICAgICAiaWQiIDogImxhYm9yYXRvcnkiLA0KICAgICAgICAgICAgImFjY2Vzc0xldmVsIiA6ICJQdWJsaWMiLA0KICAgICAgICAgICAgImFubm90YXRpb24iIDogWyB7DQogICAgICAgICAgICAgICAidHlwZSIgOiAiQW5ub3RhdGlvbiIsDQogICAgICAgICAgICAgICAicyIgOiB7DQogICAgICAgICAgICAgICAgICAiciIgOiAiMjIyIiwNCiAgICAgICAgICAgICAgICAgICJzIiA6IFsgew0KICAgICAgICAgICAgICAgICAgICAgInZhbHVlIiA6IFsgIiIsImNvZGUgIiwiXCJMYWJvcmF0b3J5IE9ic2VydmF0aW9uIENhdGVnb3J5XCIiLCI6ICIsIidsYWJvcmF0b3J5JyIsIiBmcm9tICIgXQ0KICAgICAgICAgICAgICAgICAgfSwgew0KICAgICAgICAgICAgICAgICAgICAgInIiIDogIjIyMyIsDQogICAgICAgICAgICAgICAgICAgICAicyIgOiBbIHsNCiAgICAgICAgICAgICAgICAgICAgICAgICJ2YWx1ZSIgOiBbICJcIk9ic2VydmF0aW9uIENhdGVnb3J5IENvZGVzXCIiIF0NCiAgICAgICAgICAgICAgICAgICAgIH0gXQ0KICAgICAgICAgICAgICAgICAgfSBdDQogICAgICAgICAgICAgICB9DQogICAgICAgICAgICB9IF0sDQogICAgICAgICAgICAiY29kZVN5c3RlbSIgOiB7DQogICAgICAgICAgICAgICAibG9jYWxJZCIgOiAiMjIzIiwNCiAgICAgICAgICAgICAgICJsb2NhdG9yIiA6ICIxNjo1OS0xNjo4NiIsDQogICAgICAgICAgICAgICAibmFtZSIgOiAiT2JzZXJ2YXRpb24gQ2F0ZWdvcnkgQ29kZXMiDQogICAgICAgICAgICB9DQogICAgICAgICB9IF0NCiAgICAgIH0sDQogICAgICAiY29udGV4dHMiIDogew0KICAgICAgICAgImRlZiIgOiBbIHsNCiAgICAgICAgICAgICJsb2NhbElkIiA6ICIyMzIiLA0KICAgICAgICAgICAgImxvY2F0b3IiIDogIjIwOjEtMjA6MTUiLA0KICAgICAgICAgICAgIm5hbWUiIDogIlBhdGllbnQiDQogICAgICAgICB9IF0NCiAgICAgIH0sDQogICAgICAic3RhdGVtZW50cyIgOiB7DQogICAgICAgICAiZGVmIiA6IFsgew0KICAgICAgICAgICAgImxvY2FsSWQiIDogIjIzMCIsDQogICAgICAgICAgICAibG9jYXRvciIgOiAiMjA6MS0yMDoxNSIsDQogICAgICAgICAgICAibmFtZSIgOiAiUGF0aWVudCIsDQogICAgICAgICAgICAiY29udGV4dCIgOiAiUGF0aWVudCIsDQogICAgICAgICAgICAiZXhwcmVzc2lvbiIgOiB7DQogICAgICAgICAgICAgICAibG9jYWxJZCIgOiAiMjMxIiwNCiAgICAgICAgICAgICAgICJ0eXBlIiA6ICJTaW5nbGV0b25Gcm9tIiwNCiAgICAgICAgICAgICAgICJzaWduYXR1cmUiIDogWyBdLA0KICAgICAgICAgICAgICAgIm9wZXJhbmQiIDogew0KICAgICAgICAgICAgICAgICAgImxvY2FsSWQiIDogIjIyOSIsDQogICAgICAgICAgICAgICAgICAibG9jYXRvciIgOiAiMjA6MS0yMDoxNSIsDQogICAgICAgICAgICAgICAgICAiZGF0YVR5cGUiIDogIntodHRwOi8vaGw3Lm9yZy9maGlyfVBhdGllbnQiLA0KICAgICAgICAgICAgICAgICAgInRlbXBsYXRlSWQiIDogImh0dHA6Ly9obDcub3JnL2ZoaXIvU3RydWN0dXJlRGVmaW5pdGlvbi9QYXRpZW50IiwNCiAgICAgICAgICAgICAgICAgICJ0eXBlIiA6ICJSZXRyaWV2ZSIsDQogICAgICAgICAgICAgICAgICAiaW5jbHVkZSIgOiBbIF0sDQogICAgICAgICAgICAgICAgICAiY29kZUZpbHRlciIgOiBbIF0sDQogICAgICAgICAgICAgICAgICAiZGF0ZUZpbHRlciIgOiBbIF0sDQogICAgICAgICAgICAgICAgICAib3RoZXJGaWx0ZXIiIDogWyBdDQogICAgICAgICAgICAgICB9DQogICAgICAgICAgICB9DQogICAgICAgICB9LCB7DQogICAgICAgICAgICAibG9jYWxJZCIgOiAiMjM1IiwNCiAgICAgICAgICAgICJsb2NhdG9yIiA6ICIyMjoxLTMwOjU0IiwNCiAgICAgICAgICAgICJuYW1lIiA6ICJJbnBhdGllbnQsIEVtZXJnZW5jeSwgb3IgVGVsZXBob25lIEV2YWx1YXRpb24gb3IgTWFuYWdlbWVudCBFbmNvdW50ZXIiLA0KICAgICAgICAgICAgImNvbnRleHQiIDogIlBhdGllbnQiLA0KICAgICAgICAgICAgImFjY2Vzc0xldmVsIiA6ICJQdWJsaWMiLA0KICAgICAgICAgICAgImFubm90YXRpb24iIDogWyB7DQogICAgICAgICAgICAgICAidHlwZSIgOiAiQW5ub3RhdGlvbiIsDQogICAgICAgICAgICAgICAicyIgOiB7DQogICAgICAgICAgICAgICAgICAiciIgOiAiMjM1IiwNCiAgICAgICAgICAgICAgICAgICJzIiA6IFsgew0KICAgICAgICAgICAgICAgICAgICAgInZhbHVlIiA6IFsgIiIsImRlZmluZSAiLCJcIklucGF0aWVudCwgRW1lcmdlbmN5LCBvciBUZWxlcGhvbmUgRXZhbHVhdGlvbiBvciBNYW5hZ2VtZW50IEVuY291bnRlclwiIiwiOlxuICAiIF0NCiAgICAgICAgICAgICAgICAgIH0sIHsNCiAgICAgICAgICAgICAgICAgICAgICJyIiA6ICIyOTEiLA0KICAgICAgICAgICAgICAgICAgICAgInMiIDogWyB7DQogICAgICAgICAgICAgICAgICAgICAgICAicyIgOiBbIHsNCiAgICAgICAgICAgICAgICAgICAgICAgICAgICJyIiA6ICIyMzYiLA0KICAgICAgICAgICAgICAgICAgICAgICAgICAgInMiIDogWyB7DQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAiciIgOiAiMjc2IiwNCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICJzIiA6IFsgew0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgInZhbHVlIiA6IFsgIihcbiAgICAiIF0NCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIH0sIHsNCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICJyIiA6ICIyNzYiLA0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgInMiIDogWyB7DQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAiciIgOiAiMjY1IiwNCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICJzIiA6IFsgew0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgInIiIDogIjI1NSIsDQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAicyIgOiBbIHsNCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICJyIiA6ICIyMzkiLA0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgInMiIDogWyB7DQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAidmFsdWUiIDogWyAiWyIsIkVuY291bnRlciIsIjogIiBdDQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICB9LCB7DQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAicyIgOiBbIHsNCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICJ2YWx1ZSIgOiBbICJcIkVuY291bnRlciBJbnBhdGllbnRcIiIgXQ0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgfSBdDQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICB9LCB7DQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAidmFsdWUiIDogWyAiXSIgXQ0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgfSBdDQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICB9LCB7DQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAidmFsdWUiIDogWyAiXG4gICAgICB1bmlvbiAiIF0NCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIH0sIHsNCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICJyIiA6ICIyNDgiLA0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgInMiIDogWyB7DQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAidmFsdWUiIDogWyAiWyIsIkVuY291bnRlciIsIjogIiBdDQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICB9LCB7DQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAicyIgOiBbIHsNCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICJ2YWx1ZSIgOiBbICJcIkVtZXJnZW5jeSBEZXBhcnRtZW50IFZpc2l0XCIiIF0NCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIH0gXQ0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgfSwgew0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgInZhbHVlIiA6IFsgIl0iIF0NCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIH0gXQ0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgfSBdDQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICB9LCB7DQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAidmFsdWUiIDogWyAiXG4gICAgICB1bmlvbiAiIF0NCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIH0sIHsNCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICJyIiA6ICIyNTgiLA0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgInMiIDogWyB7DQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAidmFsdWUiIDogWyAiWyIsIkVuY291bnRlciIsIjogIiBdDQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICB9LCB7DQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAicyIgOiBbIHsNCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICJ2YWx1ZSIgOiBbICJcIlRlbGVwaG9uZSBFdmFsdWF0aW9uXCIiIF0NCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIH0gXQ0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgfSwgew0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgInZhbHVlIiA6IFsgIl0iIF0NCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIH0gXQ0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgfSBdDQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICB9LCB7DQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAidmFsdWUiIDogWyAiXG4gICAgICB1bmlvbiAiIF0NCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIH0sIHsNCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICJyIiA6ICIyNjgiLA0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgInMiIDogWyB7DQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAidmFsdWUiIDogWyAiWyIsIkVuY291bnRlciIsIjogIiBdDQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICB9LCB7DQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAicyIgOiBbIHsNCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICJ2YWx1ZSIgOiBbICJcIlRlbGVwaG9uZSBNYW5hZ2VtZW50XCIiIF0NCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIH0gXQ0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgfSwgew0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgInZhbHVlIiA6IFsgIl0iIF0NCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIH0gXQ0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgfSBdDQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICB9LCB7DQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAidmFsdWUiIDogWyAiXG4gICkiIF0NCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIH0gXQ0KICAgICAgICAgICAgICAgICAgICAgICAgICAgfSwgew0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgInZhbHVlIiA6IFsgIiAiLCJFbmNvdW50ZXIiIF0NCiAgICAgICAgICAgICAgICAgICAgICAgICAgIH0gXQ0KICAgICAgICAgICAgICAgICAgICAgICAgfSBdDQogICAgICAgICAgICAgICAgICAgICB9LCB7DQogICAgICAgICAgICAgICAgICAgICAgICAidmFsdWUiIDogWyAiXG4gICAgIiBdDQogICAgICAgICAgICAgICAgICAgICB9LCB7DQogICAgICAgICAgICAgICAgICAgICAgICAiciIgOiAiMjc4IiwNCiAgICAgICAgICAgICAgICAgICAgICAgICJzIiA6IFsgew0KICAgICAgICAgICAgICAgICAgICAgICAgICAgInZhbHVlIiA6IFsgIndoZXJlICIgXQ0KICAgICAgICAgICAgICAgICAgICAgICAgfSwgew0KICAgICAgICAgICAgICAgICAgICAgICAgICAgInIiIDogIjI3OCIsDQogICAgICAgICAgICAgICAgICAgICAgICAgICAicyIgOiBbIHsNCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICJyIiA6ICIyNzkiLA0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgInMiIDogWyB7DQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAiciIgOiAiMjgxIiwNCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICJzIiA6IFsgew0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgInIiIDogIjI4MCIsDQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAicyIgOiBbIHsNCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICJ2YWx1ZSIgOiBbICJFbmNvdW50ZXIiIF0NCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIH0gXQ0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgfSwgew0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgInZhbHVlIiA6IFsgIi4iIF0NCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIH0sIHsNCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICJyIiA6ICIyODEiLA0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgInMiIDogWyB7DQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAidmFsdWUiIDogWyAic3RhdHVzIiBdDQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICB9IF0NCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIH0gXQ0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgfSwgew0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgInZhbHVlIiA6IFsgIiAiLCI9IiwiICIgXQ0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgfSwgew0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgInIiIDogIjI4MiIsDQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAicyIgOiBbIHsNCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICJ2YWx1ZSIgOiBbICInZmluaXNoZWQnIiBdDQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICB9IF0NCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIH0gXQ0KICAgICAgICAgICAgICAgICAgICAgICAgICAgfSwgew0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgInZhbHVlIiA6IFsgIlxuICAgICAgYW5kICIgXQ0KICAgICAgICAgICAgICAgICAgICAgICAgICAgfSwgew0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgInIiIDogIjI4OCIsDQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAicyIgOiBbIHsNCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICJyIiA6ICIyODYiLA0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgInMiIDogWyB7DQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAiciIgOiAiMjg1IiwNCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICJzIiA6IFsgew0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgInZhbHVlIiA6IFsgIkVuY291bnRlciIgXQ0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgfSBdDQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICB9LCB7DQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAidmFsdWUiIDogWyAiLiIgXQ0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgfSwgew0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgInIiIDogIjI4NiIsDQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAicyIgOiBbIHsNCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICJ2YWx1ZSIgOiBbICJwZXJpb2QiIF0NCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIH0gXQ0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgfSBdDQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICB9LCB7DQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAiciIgOiAiMjg4IiwNCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICJ2YWx1ZSIgOiBbICIgIiwiZHVyaW5nIiwiICIgXQ0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgfSwgew0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgInIiIDogIjI4NyIsDQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAicyIgOiBbIHsNCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICJ2YWx1ZSIgOiBbICJcIk1lYXN1cmVtZW50IFBlcmlvZFwiIiBdDQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICB9IF0NCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIH0gXQ0KICAgICAgICAgICAgICAgICAgICAgICAgICAgfSBdDQogICAgICAgICAgICAgICAgICAgICAgICB9IF0NCiAgICAgICAgICAgICAgICAgICAgIH0gXQ0KICAgICAgICAgICAgICAgICAgfSBdDQogICAgICAgICAgICAgICB9DQogICAgICAgICAgICB9IF0sDQogICAgICAgICAgICAiZXhwcmVzc2lvbiIgOiB7DQogICAgICAgICAgICAgICAibG9jYWxJZCIgOiAiMjkxIiwNCiAgICAgICAgICAgICAgICJsb2NhdG9yIiA6ICIyMzozLTMwOjU0IiwNCiAgICAgICAgICAgICAgICJ0eXBlIiA6ICJRdWVyeSIsDQogICAgICAgICAgICAgICAic291cmNlIiA6IFsgew0KICAgICAgICAgICAgICAgICAgImxvY2FsSWQiIDogIjIzNiIsDQogICAgICAgICAgICAgICAgICAibG9jYXRvciIgOiAiMjM6My0yODoxMyIsDQogICAgICAgICAgICAgICAgICAiYWxpYXMiIDogIkVuY291bnRlciIsDQogICAgICAgICAgICAgICAgICAiZXhwcmVzc2lvbiIgOiB7DQogICAgICAgICAgICAgICAgICAgICAibG9jYWxJZCIgOiAiMjc2IiwNCiAgICAgICAgICAgICAgICAgICAgICJsb2NhdG9yIiA6ICIyMzozLTI4OjMiLA0KICAgICAgICAgICAgICAgICAgICAgInR5cGUiIDogIlVuaW9uIiwNCiAgICAgICAgICAgICAgICAgICAgICJzaWduYXR1cmUiIDogWyBdLA0KICAgICAgICAgICAgICAgICAgICAgIm9wZXJhbmQiIDogWyB7DQogICAgICAgICAgICAgICAgICAgICAgICAibG9jYWxJZCIgOiAiMjU1IiwNCiAgICAgICAgICAgICAgICAgICAgICAgICJsb2NhdG9yIiA6ICIyNDo1LTI1OjUzIiwNCiAgICAgICAgICAgICAgICAgICAgICAgICJ0eXBlIiA6ICJVbmlvbiIsDQogICAgICAgICAgICAgICAgICAgICAgICAic2lnbmF0dXJlIiA6IFsgXSwNCiAgICAgICAgICAgICAgICAgICAgICAgICJvcGVyYW5kIiA6IFsgew0KICAgICAgICAgICAgICAgICAgICAgICAgICAgImxvY2FsSWQiIDogIjIzOSIsDQogICAgICAgICAgICAgICAgICAgICAgICAgICAibG9jYXRvciIgOiAiMjQ6NS0yNDozOCIsDQogICAgICAgICAgICAgICAgICAgICAgICAgICAiZGF0YVR5cGUiIDogIntodHRwOi8vaGw3Lm9yZy9maGlyfUVuY291bnRlciIsDQogICAgICAgICAgICAgICAgICAgICAgICAgICAidGVtcGxhdGVJZCIgOiAiaHR0cDovL2hsNy5vcmcvZmhpci9TdHJ1Y3R1cmVEZWZpbml0aW9uL0VuY291bnRlciIsDQogICAgICAgICAgICAgICAgICAgICAgICAgICAiY29kZVByb3BlcnR5IiA6ICJ0eXBlIiwNCiAgICAgICAgICAgICAgICAgICAgICAgICAgICJjb2RlQ29tcGFyYXRvciIgOiAiaW4iLA0KICAgICAgICAgICAgICAgICAgICAgICAgICAgInR5cGUiIDogIlJldHJpZXZlIiwNCiAgICAgICAgICAgICAgICAgICAgICAgICAgICJjb2RlcyIgOiB7DQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAibG9jYWxJZCIgOiAiMjM4IiwNCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICJsb2NhdG9yIiA6ICIyNDoxNy0yNDozNyIsDQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAibmFtZSIgOiAiRW5jb3VudGVyIElucGF0aWVudCIsDQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAicHJlc2VydmUiIDogdHJ1ZSwNCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICJ0eXBlIiA6ICJWYWx1ZVNldFJlZiINCiAgICAgICAgICAgICAgICAgICAgICAgICAgIH0sDQogICAgICAgICAgICAgICAgICAgICAgICAgICAiaW5jbHVkZSIgOiBbIF0sDQogICAgICAgICAgICAgICAgICAgICAgICAgICAiY29kZUZpbHRlciIgOiBbIF0sDQogICAgICAgICAgICAgICAgICAgICAgICAgICAiZGF0ZUZpbHRlciIgOiBbIF0sDQogICAgICAgICAgICAgICAgICAgICAgICAgICAib3RoZXJGaWx0ZXIiIDogWyBdDQogICAgICAgICAgICAgICAgICAgICAgICB9LCB7DQogICAgICAgICAgICAgICAgICAgICAgICAgICAibG9jYWxJZCIgOiAiMjQ4IiwNCiAgICAgICAgICAgICAgICAgICAgICAgICAgICJsb2NhdG9yIiA6ICIyNToxMy0yNTo1MyIsDQogICAgICAgICAgICAgICAgICAgICAgICAgICAiZGF0YVR5cGUiIDogIntodHRwOi8vaGw3Lm9yZy9maGlyfUVuY291bnRlciIsDQogICAgICAgICAgICAgICAgICAgICAgICAgICAidGVtcGxhdGVJZCIgOiAiaHR0cDovL2hsNy5vcmcvZmhpci9TdHJ1Y3R1cmVEZWZpbml0aW9uL0VuY291bnRlciIsDQogICAgICAgICAgICAgICAgICAgICAgICAgICAiY29kZVByb3BlcnR5IiA6ICJ0eXBlIiwNCiAgICAgICAgICAgICAgICAgICAgICAgICAgICJjb2RlQ29tcGFyYXRvciIgOiAiaW4iLA0KICAgICAgICAgICAgICAgICAgICAgICAgICAgInR5cGUiIDogIlJldHJpZXZlIiwNCiAgICAgICAgICAgICAgICAgICAgICAgICAgICJjb2RlcyIgOiB7DQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAibG9jYWxJZCIgOiAiMjQ3IiwNCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICJsb2NhdG9yIiA6ICIyNToyNS0yNTo1MiIsDQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAibmFtZSIgOiAiRW1lcmdlbmN5IERlcGFydG1lbnQgVmlzaXQiLA0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgInByZXNlcnZlIiA6IHRydWUsDQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAidHlwZSIgOiAiVmFsdWVTZXRSZWYiDQogICAgICAgICAgICAgICAgICAgICAgICAgICB9LA0KICAgICAgICAgICAgICAgICAgICAgICAgICAgImluY2x1ZGUiIDogWyBdLA0KICAgICAgICAgICAgICAgICAgICAgICAgICAgImNvZGVGaWx0ZXIiIDogWyBdLA0KICAgICAgICAgICAgICAgICAgICAgICAgICAgImRhdGVGaWx0ZXIiIDogWyBdLA0KICAgICAgICAgICAgICAgICAgICAgICAgICAgIm90aGVyRmlsdGVyIiA6IFsgXQ0KICAgICAgICAgICAgICAgICAgICAgICAgfSBdDQogICAgICAgICAgICAgICAgICAgICB9LCB7DQogICAgICAgICAgICAgICAgICAgICAgICAibG9jYWxJZCIgOiAiMjc1IiwNCiAgICAgICAgICAgICAgICAgICAgICAgICJ0eXBlIiA6ICJVbmlvbiIsDQogICAgICAgICAgICAgICAgICAgICAgICAic2lnbmF0dXJlIiA6IFsgXSwNCiAgICAgICAgICAgICAgICAgICAgICAgICJvcGVyYW5kIiA6IFsgew0KICAgICAgICAgICAgICAgICAgICAgICAgICAgImxvY2FsSWQiIDogIjI1OCIsDQogICAgICAgICAgICAgICAgICAgICAgICAgICAibG9jYXRvciIgOiAiMjY6MTMtMjY6NDciLA0KICAgICAgICAgICAgICAgICAgICAgICAgICAgImRhdGFUeXBlIiA6ICJ7aHR0cDovL2hsNy5vcmcvZmhpcn1FbmNvdW50ZXIiLA0KICAgICAgICAgICAgICAgICAgICAgICAgICAgInRlbXBsYXRlSWQiIDogImh0dHA6Ly9obDcub3JnL2ZoaXIvU3RydWN0dXJlRGVmaW5pdGlvbi9FbmNvdW50ZXIiLA0KICAgICAgICAgICAgICAgICAgICAgICAgICAgImNvZGVQcm9wZXJ0eSIgOiAidHlwZSIsDQogICAgICAgICAgICAgICAgICAgICAgICAgICAiY29kZUNvbXBhcmF0b3IiIDogImluIiwNCiAgICAgICAgICAgICAgICAgICAgICAgICAgICJ0eXBlIiA6ICJSZXRyaWV2ZSIsDQogICAgICAgICAgICAgICAgICAgICAgICAgICAiY29kZXMiIDogew0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgImxvY2FsSWQiIDogIjI1NyIsDQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAibG9jYXRvciIgOiAiMjY6MjUtMjY6NDYiLA0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIm5hbWUiIDogIlRlbGVwaG9uZSBFdmFsdWF0aW9uIiwNCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICJwcmVzZXJ2ZSIgOiB0cnVlLA0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgInR5cGUiIDogIlZhbHVlU2V0UmVmIg0KICAgICAgICAgICAgICAgICAgICAgICAgICAgfSwNCiAgICAgICAgICAgICAgICAgICAgICAgICAgICJpbmNsdWRlIiA6IFsgXSwNCiAgICAgICAgICAgICAgICAgICAgICAgICAgICJjb2RlRmlsdGVyIiA6IFsgXSwNCiAgICAgICAgICAgICAgICAgICAgICAgICAgICJkYXRlRmlsdGVyIiA6IFsgXSwNCiAgICAgICAgICAgICAgICAgICAgICAgICAgICJvdGhlckZpbHRlciIgOiBbIF0NCiAgICAgICAgICAgICAgICAgICAgICAgIH0sIHsNCiAgICAgICAgICAgICAgICAgICAgICAgICAgICJsb2NhbElkIiA6ICIyNjgiLA0KICAgICAgICAgICAgICAgICAgICAgICAgICAgImxvY2F0b3IiIDogIjI3OjEzLTI3OjQ3IiwNCiAgICAgICAgICAgICAgICAgICAgICAgICAgICJkYXRhVHlwZSIgOiAie2h0dHA6Ly9obDcub3JnL2ZoaXJ9RW5jb3VudGVyIiwNCiAgICAgICAgICAgICAgICAgICAgICAgICAgICJ0ZW1wbGF0ZUlkIiA6ICJodHRwOi8vaGw3Lm9yZy9maGlyL1N0cnVjdHVyZURlZmluaXRpb24vRW5jb3VudGVyIiwNCiAgICAgICAgICAgICAgICAgICAgICAgICAgICJjb2RlUHJvcGVydHkiIDogInR5cGUiLA0KICAgICAgICAgICAgICAgICAgICAgICAgICAgImNvZGVDb21wYXJhdG9yIiA6ICJpbiIsDQogICAgICAgICAgICAgICAgICAgICAgICAgICAidHlwZSIgOiAiUmV0cmlldmUiLA0KICAgICAgICAgICAgICAgICAgICAgICAgICAgImNvZGVzIiA6IHsNCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICJsb2NhbElkIiA6ICIyNjciLA0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgImxvY2F0b3IiIDogIjI3OjI1LTI3OjQ2IiwNCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICJuYW1lIiA6ICJUZWxlcGhvbmUgTWFuYWdlbWVudCIsDQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAicHJlc2VydmUiIDogdHJ1ZSwNCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICJ0eXBlIiA6ICJWYWx1ZVNldFJlZiINCiAgICAgICAgICAgICAgICAgICAgICAgICAgIH0sDQogICAgICAgICAgICAgICAgICAgICAgICAgICAiaW5jbHVkZSIgOiBbIF0sDQogICAgICAgICAgICAgICAgICAgICAgICAgICAiY29kZUZpbHRlciIgOiBbIF0sDQogICAgICAgICAgICAgICAgICAgICAgICAgICAiZGF0ZUZpbHRlciIgOiBbIF0sDQogICAgICAgICAgICAgICAgICAgICAgICAgICAib3RoZXJGaWx0ZXIiIDogWyBdDQogICAgICAgICAgICAgICAgICAgICAgICB9IF0NCiAgICAgICAgICAgICAgICAgICAgIH0gXQ0KICAgICAgICAgICAgICAgICAgfQ0KICAgICAgICAgICAgICAgfSBdLA0KICAgICAgICAgICAgICAgImxldCIgOiBbIF0sDQogICAgICAgICAgICAgICAicmVsYXRpb25zaGlwIiA6IFsgXSwNCiAgICAgICAgICAgICAgICJ3aGVyZSIgOiB7DQogICAgICAgICAgICAgICAgICAibG9jYWxJZCIgOiAiMjc4IiwNCiAgICAgICAgICAgICAgICAgICJsb2NhdG9yIiA6ICIyOTo1LTMwOjU0IiwNCiAgICAgICAgICAgICAgICAgICJ0eXBlIiA6ICJBbmQiLA0KICAgICAgICAgICAgICAgICAgInNpZ25hdHVyZSIgOiBbIF0sDQogICAgICAgICAgICAgICAgICAib3BlcmFuZCIgOiBbIHsNCiAgICAgICAgICAgICAgICAgICAgICJsb2NhbElkIiA6ICIyNzkiLA0KICAgICAgICAgICAgICAgICAgICAgImxvY2F0b3IiIDogIjI5OjExLTI5OjM5IiwNCiAgICAgICAgICAgICAgICAgICAgICJ0eXBlIiA6ICJFcXVhbCIsDQogICAgICAgICAgICAgICAgICAgICAic2lnbmF0dXJlIiA6IFsgXSwNCiAgICAgICAgICAgICAgICAgICAgICJvcGVyYW5kIiA6IFsgew0KICAgICAgICAgICAgICAgICAgICAgICAgImxvY2FsSWQiIDogIjI4NCIsDQogICAgICAgICAgICAgICAgICAgICAgICAibmFtZSIgOiAiVG9TdHJpbmciLA0KICAgICAgICAgICAgICAgICAgICAgICAgImxpYnJhcnlOYW1lIiA6ICJGSElSSGVscGVycyIsDQogICAgICAgICAgICAgICAgICAgICAgICAidHlwZSIgOiAiRnVuY3Rpb25SZWYiLA0KICAgICAgICAgICAgICAgICAgICAgICAgInNpZ25hdHVyZSIgOiBbIF0sDQogICAgICAgICAgICAgICAgICAgICAgICAib3BlcmFuZCIgOiBbIHsNCiAgICAgICAgICAgICAgICAgICAgICAgICAgICJsb2NhbElkIiA6ICIyODEiLA0KICAgICAgICAgICAgICAgICAgICAgICAgICAgImxvY2F0b3IiIDogIjI5OjExLTI5OjI2IiwNCiAgICAgICAgICAgICAgICAgICAgICAgICAgICJwYXRoIiA6ICJzdGF0dXMiLA0KICAgICAgICAgICAgICAgICAgICAgICAgICAgInNjb3BlIiA6ICJFbmNvdW50ZXIiLA0KICAgICAgICAgICAgICAgICAgICAgICAgICAgInR5cGUiIDogIlByb3BlcnR5Ig0KICAgICAgICAgICAgICAgICAgICAgICAgfSBdDQogICAgICAgICAgICAgICAgICAgICB9LCB7DQogICAgICAgICAgICAgICAgICAgICAgICAibG9jYWxJZCIgOiAiMjgyIiwNCiAgICAgICAgICAgICAgICAgICAgICAgICJsb2NhdG9yIiA6ICIyOTozMC0yOTozOSIsDQogICAgICAgICAgICAgICAgICAgICAgICAidmFsdWVUeXBlIiA6ICJ7dXJuOmhsNy1vcmc6ZWxtLXR5cGVzOnIxfVN0cmluZyIsDQogICAgICAgICAgICAgICAgICAgICAgICAidmFsdWUiIDogImZpbmlzaGVkIiwNCiAgICAgICAgICAgICAgICAgICAgICAgICJ0eXBlIiA6ICJMaXRlcmFsIg0KICAgICAgICAgICAgICAgICAgICAgfSBdDQogICAgICAgICAgICAgICAgICB9LCB7DQogICAgICAgICAgICAgICAgICAgICAibG9jYWxJZCIgOiAiMjg4IiwNCiAgICAgICAgICAgICAgICAgICAgICJsb2NhdG9yIiA6ICIzMDoxMS0zMDo1NCIsDQogICAgICAgICAgICAgICAgICAgICAidHlwZSIgOiAiSW5jbHVkZWRJbiIsDQogICAgICAgICAgICAgICAgICAgICAic2lnbmF0dXJlIiA6IFsgXSwNCiAgICAgICAgICAgICAgICAgICAgICJvcGVyYW5kIiA6IFsgew0KICAgICAgICAgICAgICAgICAgICAgICAgImxvY2FsSWQiIDogIjI4OSIsDQogICAgICAgICAgICAgICAgICAgICAgICAibmFtZSIgOiAiVG9JbnRlcnZhbCIsDQogICAgICAgICAgICAgICAgICAgICAgICAibGlicmFyeU5hbWUiIDogIkZISVJIZWxwZXJzIiwNCiAgICAgICAgICAgICAgICAgICAgICAgICJ0eXBlIiA6ICJGdW5jdGlvblJlZiIsDQogICAgICAgICAgICAgICAgICAgICAgICAic2lnbmF0dXJlIiA6IFsgXSwNCiAgICAgICAgICAgICAgICAgICAgICAgICJvcGVyYW5kIiA6IFsgew0KICAgICAgICAgICAgICAgICAgICAgICAgICAgImxvY2FsSWQiIDogIjI4NiIsDQogICAgICAgICAgICAgICAgICAgICAgICAgICAibG9jYXRvciIgOiAiMzA6MTEtMzA6MjYiLA0KICAgICAgICAgICAgICAgICAgICAgICAgICAgInBhdGgiIDogInBlcmlvZCIsDQogICAgICAgICAgICAgICAgICAgICAgICAgICAic2NvcGUiIDogIkVuY291bnRlciIsDQogICAgICAgICAgICAgICAgICAgICAgICAgICAidHlwZSIgOiAiUHJvcGVydHkiDQogICAgICAgICAgICAgICAgICAgICAgICB9IF0NCiAgICAgICAgICAgICAgICAgICAgIH0sIHsNCiAgICAgICAgICAgICAgICAgICAgICAgICJsb2NhbElkIiA6ICIyODciLA0KICAgICAgICAgICAgICAgICAgICAgICAgImxvY2F0b3IiIDogIjMwOjM1LTMwOjU0IiwNCiAgICAgICAgICAgICAgICAgICAgICAgICJuYW1lIiA6ICJNZWFzdXJlbWVudCBQZXJpb2QiLA0KICAgICAgICAgICAgICAgICAgICAgICAgInR5cGUiIDogIlBhcmFtZXRlclJlZiINCiAgICAgICAgICAgICAgICAgICAgIH0gXQ0KICAgICAgICAgICAgICAgICAgfSBdDQogICAgICAgICAgICAgICB9DQogICAgICAgICAgICB9DQogICAgICAgICB9LCB7DQogICAgICAgICAgICAibG9jYWxJZCIgOiAiMjk0IiwNCiAgICAgICAgICAgICJsb2NhdG9yIiA6ICIzMjoxLTMzOjgyIiwNCiAgICAgICAgICAgICJuYW1lIiA6ICJJbml0aWFsIFBvcHVsYXRpb24iLA0KICAgICAgICAgICAgImNvbnRleHQiIDogIlBhdGllbnQiLA0KICAgICAgICAgICAgImFjY2Vzc0xldmVsIiA6ICJQdWJsaWMiLA0KICAgICAgICAgICAgImFubm90YXRpb24iIDogWyB7DQogICAgICAgICAgICAgICAidHlwZSIgOiAiQW5ub3RhdGlvbiIsDQogICAgICAgICAgICAgICAicyIgOiB7DQogICAgICAgICAgICAgICAgICAiciIgOiAiMjk0IiwNCiAgICAgICAgICAgICAgICAgICJzIiA6IFsgew0KICAgICAgICAgICAgICAgICAgICAgInZhbHVlIiA6IFsgIiIsImRlZmluZSAiLCJcIkluaXRpYWwgUG9wdWxhdGlvblwiIiwiOlxuICAiIF0NCiAgICAgICAgICAgICAgICAgIH0sIHsNCiAgICAgICAgICAgICAgICAgICAgICJyIiA6ICIyOTUiLA0KICAgICAgICAgICAgICAgICAgICAgInMiIDogWyB7DQogICAgICAgICAgICAgICAgICAgICAgICAidmFsdWUiIDogWyAiZXhpc3RzICIgXQ0KICAgICAgICAgICAgICAgICAgICAgfSwgew0KICAgICAgICAgICAgICAgICAgICAgICAgInIiIDogIjI5NiIsDQogICAgICAgICAgICAgICAgICAgICAgICAicyIgOiBbIHsNCiAgICAgICAgICAgICAgICAgICAgICAgICAgICJ2YWx1ZSIgOiBbICIoIiBdDQogICAgICAgICAgICAgICAgICAgICAgICB9LCB7DQogICAgICAgICAgICAgICAgICAgICAgICAgICAiciIgOiAiMjk2IiwNCiAgICAgICAgICAgICAgICAgICAgICAgICAgICJzIiA6IFsgew0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgInZhbHVlIiA6IFsgIlwiSW5wYXRpZW50LCBFbWVyZ2VuY3ksIG9yIFRlbGVwaG9uZSBFdmFsdWF0aW9uIG9yIE1hbmFnZW1lbnQgRW5jb3VudGVyXCIiIF0NCiAgICAgICAgICAgICAgICAgICAgICAgICAgIH0gXQ0KICAgICAgICAgICAgICAgICAgICAgICAgfSwgew0KICAgICAgICAgICAgICAgICAgICAgICAgICAgInZhbHVlIiA6IFsgIikiIF0NCiAgICAgICAgICAgICAgICAgICAgICAgIH0gXQ0KICAgICAgICAgICAgICAgICAgICAgfSBdDQogICAgICAgICAgICAgICAgICB9IF0NCiAgICAgICAgICAgICAgIH0NCiAgICAgICAgICAgIH0gXSwNCiAgICAgICAgICAgICJleHByZXNzaW9uIiA6IHsNCiAgICAgICAgICAgICAgICJsb2NhbElkIiA6ICIyOTUiLA0KICAgICAgICAgICAgICAgImxvY2F0b3IiIDogIjMzOjMtMzM6ODIiLA0KICAgICAgICAgICAgICAgInR5cGUiIDogIkV4aXN0cyIsDQogICAgICAgICAgICAgICAic2lnbmF0dXJlIiA6IFsgXSwNCiAgICAgICAgICAgICAgICJvcGVyYW5kIiA6IHsNCiAgICAgICAgICAgICAgICAgICJsb2NhbElkIiA6ICIyOTYiLA0KICAgICAgICAgICAgICAgICAgImxvY2F0b3IiIDogIjMzOjEwLTMzOjgyIiwNCiAgICAgICAgICAgICAgICAgICJuYW1lIiA6ICJJbnBhdGllbnQsIEVtZXJnZW5jeSwgb3IgVGVsZXBob25lIEV2YWx1YXRpb24gb3IgTWFuYWdlbWVudCBFbmNvdW50ZXIiLA0KICAgICAgICAgICAgICAgICAgInR5cGUiIDogIkV4cHJlc3Npb25SZWYiDQogICAgICAgICAgICAgICB9DQogICAgICAgICAgICB9DQogICAgICAgICB9LCB7DQogICAgICAgICAgICAibG9jYWxJZCIgOiAiMjk5IiwNCiAgICAgICAgICAgICJsb2NhdG9yIiA6ICIzNToxLTM2OjYiLA0KICAgICAgICAgICAgIm5hbWUiIDogIkRlbm9taW5hdG9yIiwNCiAgICAgICAgICAgICJjb250ZXh0IiA6ICJQYXRpZW50IiwNCiAgICAgICAgICAgICJhY2Nlc3NMZXZlbCIgOiAiUHVibGljIiwNCiAgICAgICAgICAgICJhbm5vdGF0aW9uIiA6IFsgew0KICAgICAgICAgICAgICAgInR5cGUiIDogIkFubm90YXRpb24iLA0KICAgICAgICAgICAgICAgInMiIDogew0KICAgICAgICAgICAgICAgICAgInIiIDogIjI5OSIsDQogICAgICAgICAgICAgICAgICAicyIgOiBbIHsNCiAgICAgICAgICAgICAgICAgICAgICJyIiA6ICIzMDAiLA0KICAgICAgICAgICAgICAgICAgICAgInZhbHVlIiA6IFsgIiIsImRlZmluZSAiLCJcIkRlbm9taW5hdG9yXCIiLCI6XG4gICIsInRydWUiIF0NCiAgICAgICAgICAgICAgICAgIH0gXQ0KICAgICAgICAgICAgICAgfQ0KICAgICAgICAgICAgfSBdLA0KICAgICAgICAgICAgImV4cHJlc3Npb24iIDogew0KICAgICAgICAgICAgICAgImxvY2FsSWQiIDogIjMwMCIsDQogICAgICAgICAgICAgICAibG9jYXRvciIgOiAiMzY6My0zNjo2IiwNCiAgICAgICAgICAgICAgICJ2YWx1ZVR5cGUiIDogInt1cm46aGw3LW9yZzplbG0tdHlwZXM6cjF9Qm9vbGVhbiIsDQogICAgICAgICAgICAgICAidmFsdWUiIDogInRydWUiLA0KICAgICAgICAgICAgICAgInR5cGUiIDogIkxpdGVyYWwiDQogICAgICAgICAgICB9DQogICAgICAgICB9LCB7DQogICAgICAgICAgICAibG9jYWxJZCIgOiAiMzAzIiwNCiAgICAgICAgICAgICJsb2NhdG9yIiA6ICIzODoxLTQyOjU0IiwNCiAgICAgICAgICAgICJuYW1lIiA6ICJDT1ZJRC0xOSBDb21tdW5pY2FibGUgRGlzZWFzZSBTY3JlZW5pbmciLA0KICAgICAgICAgICAgImNvbnRleHQiIDogIlBhdGllbnQiLA0KICAgICAgICAgICAgImFjY2Vzc0xldmVsIiA6ICJQdWJsaWMiLA0KICAgICAgICAgICAgImFubm90YXRpb24iIDogWyB7DQogICAgICAgICAgICAgICAidHlwZSIgOiAiQW5ub3RhdGlvbiIsDQogICAgICAgICAgICAgICAicyIgOiB7DQogICAgICAgICAgICAgICAgICAiciIgOiAiMzAzIiwNCiAgICAgICAgICAgICAgICAgICJzIiA6IFsgew0KICAgICAgICAgICAgICAgICAgICAgInZhbHVlIiA6IFsgIiIsImRlZmluZSAiLCJcIkNPVklELTE5IENvbW11bmljYWJsZSBEaXNlYXNlIFNjcmVlbmluZ1wiIiwiOlxuICAiIF0NCiAgICAgICAgICAgICAgICAgIH0sIHsNCiAgICAgICAgICAgICAgICAgICAgICJyIiA6ICIzNTMiLA0KICAgICAgICAgICAgICAgICAgICAgInMiIDogWyB7DQogICAgICAgICAgICAgICAgICAgICAgICAicyIgOiBbIHsNCiAgICAgICAgICAgICAgICAgICAgICAgICAgICJyIiA6ICIzMDQiLA0KICAgICAgICAgICAgICAgICAgICAgICAgICAgInMiIDogWyB7DQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAiciIgOiAiMzA3IiwNCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICJzIiA6IFsgew0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgInIiIDogIjMwNyIsDQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAicyIgOiBbIHsNCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICJ2YWx1ZSIgOiBbICJbIiwiT2JzZXJ2YXRpb24iLCI6ICIgXQ0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgfSwgew0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgInMiIDogWyB7DQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAidmFsdWUiIDogWyAiXCJDT1ZJRC0xOSBTY3JlZW5pbmcgUmVzdWx0XCIiIF0NCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIH0gXQ0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgfSwgew0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgInZhbHVlIiA6IFsgIl0iIF0NCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIH0gXQ0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgfSBdDQogICAgICAgICAgICAgICAgICAgICAgICAgICB9LCB7DQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAidmFsdWUiIDogWyAiICIsIlJlc3VsdCIgXQ0KICAgICAgICAgICAgICAgICAgICAgICAgICAgfSBdDQogICAgICAgICAgICAgICAgICAgICAgICB9IF0NCiAgICAgICAgICAgICAgICAgICAgIH0sIHsNCiAgICAgICAgICAgICAgICAgICAgICAgICJ2YWx1ZSIgOiBbICJcbiAgICAiIF0NCiAgICAgICAgICAgICAgICAgICAgIH0sIHsNCiAgICAgICAgICAgICAgICAgICAgICAgICJyIiA6ICIzMTEiLA0KICAgICAgICAgICAgICAgICAgICAgICAgInMiIDogWyB7DQogICAgICAgICAgICAgICAgICAgICAgICAgICAidmFsdWUiIDogWyAid2hlcmUgIiBdDQogICAgICAgICAgICAgICAgICAgICAgICB9LCB7DQogICAgICAgICAgICAgICAgICAgICAgICAgICAiciIgOiAiMzExIiwNCiAgICAgICAgICAgICAgICAgICAgICAgICAgICJzIiA6IFsgew0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgInIiIDogIjMxMiIsDQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAicyIgOiBbIHsNCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICJyIiA6ICIzMTMiLA0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgInMiIDogWyB7DQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAidmFsdWUiIDogWyAiZXhpc3RzICIgXQ0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgfSwgew0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgInIiIDogIjMyNCIsDQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAicyIgOiBbIHsNCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICJ2YWx1ZSIgOiBbICIoIiBdDQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICB9LCB7DQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAiciIgOiAiMzI0IiwNCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICJzIiA6IFsgew0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgInMiIDogWyB7DQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAiciIgOiAiMzE0IiwNCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICJzIiA6IFsgew0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgInIiIDogIjMxNiIsDQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAicyIgOiBbIHsNCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICJzIiA6IFsgew0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgInZhbHVlIiA6IFsgIlJlc3VsdCIsIi4iLCJjYXRlZ29yeSIgXQ0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgfSBdDQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICB9IF0NCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIH0sIHsNCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICJ2YWx1ZSIgOiBbICIgIiwiQyIgXQ0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgfSBdDQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICB9IF0NCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIH0sIHsNCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICJ2YWx1ZSIgOiBbICIgIiBdDQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICB9LCB7DQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAiciIgOiAiMzE4IiwNCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICJzIiA6IFsgew0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgInZhbHVlIiA6IFsgIndoZXJlICIgXQ0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgfSwgew0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgInIiIDogIjMxOCIsDQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAicyIgOiBbIHsNCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICJyIiA6ICIzMTkiLA0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgInMiIDogWyB7DQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAidmFsdWUiIDogWyAiQyIgXQ0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgfSBdDQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICB9LCB7DQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAidmFsdWUiIDogWyAiICIsIn4iLCIgIiBdDQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICB9LCB7DQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAiciIgOiAiMzIwIiwNCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICJzIiA6IFsgew0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgInZhbHVlIiA6IFsgIlwiTGFib3JhdG9yeSBPYnNlcnZhdGlvbiBDYXRlZ29yeVwiIiBdDQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICB9IF0NCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIH0gXQ0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgfSBdDQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICB9IF0NCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIH0sIHsNCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICJ2YWx1ZSIgOiBbICIpIiBdDQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICB9IF0NCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIH0gXQ0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgfSwgew0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgInZhbHVlIiA6IFsgIlxuICAgICAgYW5kICIgXQ0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgfSwgew0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgInIiIDogIjMzNCIsDQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAicyIgOiBbIHsNCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICJyIiA6ICIzMjYiLA0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgInMiIDogWyB7DQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAiciIgOiAiMzI1IiwNCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICJzIiA6IFsgew0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgInZhbHVlIiA6IFsgIlJlc3VsdCIgXQ0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgfSBdDQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICB9LCB7DQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAidmFsdWUiIDogWyAiLiIgXQ0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgfSwgew0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgInIiIDogIjMyNiIsDQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAicyIgOiBbIHsNCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICJ2YWx1ZSIgOiBbICJzdGF0dXMiIF0NCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIH0gXQ0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgfSBdDQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICB9LCB7DQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAidmFsdWUiIDogWyAiIGluICIgXQ0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgfSwgew0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgInIiIDogIjMyNyIsDQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAicyIgOiBbIHsNCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICJ2YWx1ZSIgOiBbICJ7ICIgXQ0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgfSwgew0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgInIiIDogIjMyOCIsDQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAicyIgOiBbIHsNCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICJ2YWx1ZSIgOiBbICInZmluYWwnIiBdDQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICB9IF0NCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIH0sIHsNCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICJ2YWx1ZSIgOiBbICIsICIgXQ0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgfSwgew0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgInIiIDogIjMzMCIsDQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAicyIgOiBbIHsNCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICJ2YWx1ZSIgOiBbICInYW1lbmRlZCciIF0NCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIH0gXQ0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgfSwgew0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgInZhbHVlIiA6IFsgIiwgIiBdDQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICB9LCB7DQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAiciIgOiAiMzMyIiwNCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICJzIiA6IFsgew0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgInZhbHVlIiA6IFsgIidjb3JyZWN0ZWQnIiBdDQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICB9IF0NCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIH0sIHsNCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICJ2YWx1ZSIgOiBbICIgfSIgXQ0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgfSBdDQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICB9IF0NCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIH0gXQ0KICAgICAgICAgICAgICAgICAgICAgICAgICAgfSwgew0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgInZhbHVlIiA6IFsgIlxuICAgICAgYW5kICIgXQ0KICAgICAgICAgICAgICAgICAgICAgICAgICAgfSwgew0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgInIiIDogIjM0MiIsDQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAicyIgOiBbIHsNCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICJyIiA6ICIzMzciLA0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgInMiIDogWyB7DQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAiciIgOiAiMzM2IiwNCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICJzIiA6IFsgew0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgInZhbHVlIiA6IFsgIlJlc3VsdCIgXQ0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgfSBdDQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICB9LCB7DQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAidmFsdWUiIDogWyAiLiIgXQ0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgfSwgew0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgInIiIDogIjMzNyIsDQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAicyIgOiBbIHsNCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICJ2YWx1ZSIgOiBbICJlZmZlY3RpdmUiIF0NCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIH0gXQ0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgfSBdDQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICB9LCB7DQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAiciIgOiAiMzQyIiwNCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICJ2YWx1ZSIgOiBbICIgIiwiZHVyaW5nIiwiICIgXQ0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgfSwgew0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgInIiIDogIjMzOCIsDQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAicyIgOiBbIHsNCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICJ2YWx1ZSIgOiBbICJcIk1lYXN1cmVtZW50IFBlcmlvZFwiIiBdDQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICB9IF0NCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIH0gXQ0KICAgICAgICAgICAgICAgICAgICAgICAgICAgfSBdDQogICAgICAgICAgICAgICAgICAgICAgICB9IF0NCiAgICAgICAgICAgICAgICAgICAgIH0gXQ0KICAgICAgICAgICAgICAgICAgfSBdDQogICAgICAgICAgICAgICB9DQogICAgICAgICAgICB9IF0sDQogICAgICAgICAgICAiZXhwcmVzc2lvbiIgOiB7DQogICAgICAgICAgICAgICAibG9jYWxJZCIgOiAiMzUzIiwNCiAgICAgICAgICAgICAgICJsb2NhdG9yIiA6ICIzOTozLTQyOjU0IiwNCiAgICAgICAgICAgICAgICJ0eXBlIiA6ICJRdWVyeSIsDQogICAgICAgICAgICAgICAic291cmNlIiA6IFsgew0KICAgICAgICAgICAgICAgICAgImxvY2FsSWQiIDogIjMwNCIsDQogICAgICAgICAgICAgICAgICAibG9jYXRvciIgOiAiMzk6My0zOTo1MSIsDQogICAgICAgICAgICAgICAgICAiYWxpYXMiIDogIlJlc3VsdCIsDQogICAgICAgICAgICAgICAgICAiZXhwcmVzc2lvbiIgOiB7DQogICAgICAgICAgICAgICAgICAgICAibG9jYWxJZCIgOiAiMzA3IiwNCiAgICAgICAgICAgICAgICAgICAgICJsb2NhdG9yIiA6ICIzOTozLTM5OjQ0IiwNCiAgICAgICAgICAgICAgICAgICAgICJkYXRhVHlwZSIgOiAie2h0dHA6Ly9obDcub3JnL2ZoaXJ9T2JzZXJ2YXRpb24iLA0KICAgICAgICAgICAgICAgICAgICAgInRlbXBsYXRlSWQiIDogImh0dHA6Ly9obDcub3JnL2ZoaXIvU3RydWN0dXJlRGVmaW5pdGlvbi9PYnNlcnZhdGlvbiIsDQogICAgICAgICAgICAgICAgICAgICAiY29kZVByb3BlcnR5IiA6ICJjb2RlIiwNCiAgICAgICAgICAgICAgICAgICAgICJjb2RlQ29tcGFyYXRvciIgOiAiaW4iLA0KICAgICAgICAgICAgICAgICAgICAgInR5cGUiIDogIlJldHJpZXZlIiwNCiAgICAgICAgICAgICAgICAgICAgICJjb2RlcyIgOiB7DQogICAgICAgICAgICAgICAgICAgICAgICAibG9jYWxJZCIgOiAiMzA2IiwNCiAgICAgICAgICAgICAgICAgICAgICAgICJsb2NhdG9yIiA6ICIzOToxNy0zOTo0MyIsDQogICAgICAgICAgICAgICAgICAgICAgICAibmFtZSIgOiAiQ09WSUQtMTkgU2NyZWVuaW5nIFJlc3VsdCIsDQogICAgICAgICAgICAgICAgICAgICAgICAicHJlc2VydmUiIDogdHJ1ZSwNCiAgICAgICAgICAgICAgICAgICAgICAgICJ0eXBlIiA6ICJWYWx1ZVNldFJlZiINCiAgICAgICAgICAgICAgICAgICAgIH0sDQogICAgICAgICAgICAgICAgICAgICAiaW5jbHVkZSIgOiBbIF0sDQogICAgICAgICAgICAgICAgICAgICAiY29kZUZpbHRlciIgOiBbIF0sDQogICAgICAgICAgICAgICAgICAgICAiZGF0ZUZpbHRlciIgOiBbIF0sDQogICAgICAgICAgICAgICAgICAgICAib3RoZXJGaWx0ZXIiIDogWyBdDQogICAgICAgICAgICAgICAgICB9DQogICAgICAgICAgICAgICB9IF0sDQogICAgICAgICAgICAgICAibGV0IiA6IFsgXSwNCiAgICAgICAgICAgICAgICJyZWxhdGlvbnNoaXAiIDogWyBdLA0KICAgICAgICAgICAgICAgIndoZXJlIiA6IHsNCiAgICAgICAgICAgICAgICAgICJsb2NhbElkIiA6ICIzMTEiLA0KICAgICAgICAgICAgICAgICAgImxvY2F0b3IiIDogIjQwOjUtNDI6NTQiLA0KICAgICAgICAgICAgICAgICAgInR5cGUiIDogIkFuZCIsDQogICAgICAgICAgICAgICAgICAic2lnbmF0dXJlIiA6IFsgXSwNCiAgICAgICAgICAgICAgICAgICJvcGVyYW5kIiA6IFsgew0KICAgICAgICAgICAgICAgICAgICAgImxvY2FsSWQiIDogIjMxMiIsDQogICAgICAgICAgICAgICAgICAgICAibG9jYXRvciIgOiAiNDA6MTEtNDE6NjIiLA0KICAgICAgICAgICAgICAgICAgICAgInR5cGUiIDogIkFuZCIsDQogICAgICAgICAgICAgICAgICAgICAic2lnbmF0dXJlIiA6IFsgXSwNCiAgICAgICAgICAgICAgICAgICAgICJvcGVyYW5kIiA6IFsgew0KICAgICAgICAgICAgICAgICAgICAgICAgImxvY2FsSWQiIDogIjMxMyIsDQogICAgICAgICAgICAgICAgICAgICAgICAibG9jYXRvciIgOiAiNDA6MTEtNDA6ODAiLA0KICAgICAgICAgICAgICAgICAgICAgICAgInR5cGUiIDogIkV4aXN0cyIsDQogICAgICAgICAgICAgICAgICAgICAgICAic2lnbmF0dXJlIiA6IFsgXSwNCiAgICAgICAgICAgICAgICAgICAgICAgICJvcGVyYW5kIiA6IHsNCiAgICAgICAgICAgICAgICAgICAgICAgICAgICJsb2NhbElkIiA6ICIzMjQiLA0KICAgICAgICAgICAgICAgICAgICAgICAgICAgImxvY2F0b3IiIDogIjQwOjE4LTQwOjgwIiwNCiAgICAgICAgICAgICAgICAgICAgICAgICAgICJ0eXBlIiA6ICJRdWVyeSIsDQogICAgICAgICAgICAgICAgICAgICAgICAgICAic291cmNlIiA6IFsgew0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgImxvY2FsSWQiIDogIjMxNCIsDQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAibG9jYXRvciIgOiAiNDA6MTktNDA6MzUiLA0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgImFsaWFzIiA6ICJDIiwNCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICJleHByZXNzaW9uIiA6IHsNCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICJsb2NhbElkIiA6ICIzMTYiLA0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgImxvY2F0b3IiIDogIjQwOjE5LTQwOjMzIiwNCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICJwYXRoIiA6ICJjYXRlZ29yeSIsDQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAic2NvcGUiIDogIlJlc3VsdCIsDQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAidHlwZSIgOiAiUHJvcGVydHkiDQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICB9DQogICAgICAgICAgICAgICAgICAgICAgICAgICB9IF0sDQogICAgICAgICAgICAgICAgICAgICAgICAgICAibGV0IiA6IFsgXSwNCiAgICAgICAgICAgICAgICAgICAgICAgICAgICJyZWxhdGlvbnNoaXAiIDogWyBdLA0KICAgICAgICAgICAgICAgICAgICAgICAgICAgIndoZXJlIiA6IHsNCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICJsb2NhbElkIiA6ICIzMTgiLA0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgImxvY2F0b3IiIDogIjQwOjM3LTQwOjc5IiwNCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICJ0eXBlIiA6ICJFcXVpdmFsZW50IiwNCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICJzaWduYXR1cmUiIDogWyBdLA0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIm9wZXJhbmQiIDogWyB7DQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAibG9jYWxJZCIgOiAiMzIxIiwNCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICJuYW1lIiA6ICJUb0NvbmNlcHQiLA0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgImxpYnJhcnlOYW1lIiA6ICJGSElSSGVscGVycyIsDQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAidHlwZSIgOiAiRnVuY3Rpb25SZWYiLA0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgInNpZ25hdHVyZSIgOiBbIF0sDQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAib3BlcmFuZCIgOiBbIHsNCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICJsb2NhbElkIiA6ICIzMTkiLA0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgImxvY2F0b3IiIDogIjQwOjQzIiwNCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICJuYW1lIiA6ICJDIiwNCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICJ0eXBlIiA6ICJBbGlhc1JlZiINCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIH0gXQ0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgfSwgew0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgImxvY2FsSWQiIDogIjMyMyIsDQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAidHlwZSIgOiAiVG9Db25jZXB0IiwNCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICJzaWduYXR1cmUiIDogWyBdLA0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIm9wZXJhbmQiIDogew0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgImxvY2FsSWQiIDogIjMyMCIsDQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAibG9jYXRvciIgOiAiNDA6NDctNDA6NzkiLA0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIm5hbWUiIDogIkxhYm9yYXRvcnkgT2JzZXJ2YXRpb24gQ2F0ZWdvcnkiLA0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgInR5cGUiIDogIkNvZGVSZWYiDQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICB9DQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICB9IF0NCiAgICAgICAgICAgICAgICAgICAgICAgICAgIH0NCiAgICAgICAgICAgICAgICAgICAgICAgIH0NCiAgICAgICAgICAgICAgICAgICAgIH0sIHsNCiAgICAgICAgICAgICAgICAgICAgICAgICJsb2NhbElkIiA6ICIzMzQiLA0KICAgICAgICAgICAgICAgICAgICAgICAgImxvY2F0b3IiIDogIjQxOjExLTQxOjYyIiwNCiAgICAgICAgICAgICAgICAgICAgICAgICJ0eXBlIiA6ICJJbiIsDQogICAgICAgICAgICAgICAgICAgICAgICAic2lnbmF0dXJlIiA6IFsgXSwNCiAgICAgICAgICAgICAgICAgICAgICAgICJvcGVyYW5kIiA6IFsgew0KICAgICAgICAgICAgICAgICAgICAgICAgICAgImxvY2FsSWQiIDogIjMzNSIsDQogICAgICAgICAgICAgICAgICAgICAgICAgICAibmFtZSIgOiAiVG9TdHJpbmciLA0KICAgICAgICAgICAgICAgICAgICAgICAgICAgImxpYnJhcnlOYW1lIiA6ICJGSElSSGVscGVycyIsDQogICAgICAgICAgICAgICAgICAgICAgICAgICAidHlwZSIgOiAiRnVuY3Rpb25SZWYiLA0KICAgICAgICAgICAgICAgICAgICAgICAgICAgInNpZ25hdHVyZSIgOiBbIF0sDQogICAgICAgICAgICAgICAgICAgICAgICAgICAib3BlcmFuZCIgOiBbIHsNCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICJsb2NhbElkIiA6ICIzMjYiLA0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgImxvY2F0b3IiIDogIjQxOjExLTQxOjIzIiwNCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICJwYXRoIiA6ICJzdGF0dXMiLA0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgInNjb3BlIiA6ICJSZXN1bHQiLA0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgInR5cGUiIDogIlByb3BlcnR5Ig0KICAgICAgICAgICAgICAgICAgICAgICAgICAgfSBdDQogICAgICAgICAgICAgICAgICAgICAgICB9LCB7DQogICAgICAgICAgICAgICAgICAgICAgICAgICAibG9jYWxJZCIgOiAiMzI3IiwNCiAgICAgICAgICAgICAgICAgICAgICAgICAgICJsb2NhdG9yIiA6ICI0MToyOC00MTo2MiIsDQogICAgICAgICAgICAgICAgICAgICAgICAgICAidHlwZSIgOiAiTGlzdCIsDQogICAgICAgICAgICAgICAgICAgICAgICAgICAiZWxlbWVudCIgOiBbIHsNCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICJsb2NhbElkIiA6ICIzMjgiLA0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgImxvY2F0b3IiIDogIjQxOjMwLTQxOjM2IiwNCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICJ2YWx1ZVR5cGUiIDogInt1cm46aGw3LW9yZzplbG0tdHlwZXM6cjF9U3RyaW5nIiwNCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICJ2YWx1ZSIgOiAiZmluYWwiLA0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgInR5cGUiIDogIkxpdGVyYWwiDQogICAgICAgICAgICAgICAgICAgICAgICAgICB9LCB7DQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAibG9jYWxJZCIgOiAiMzMwIiwNCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICJsb2NhdG9yIiA6ICI0MTozOS00MTo0NyIsDQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAidmFsdWVUeXBlIiA6ICJ7dXJuOmhsNy1vcmc6ZWxtLXR5cGVzOnIxfVN0cmluZyIsDQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAidmFsdWUiIDogImFtZW5kZWQiLA0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgInR5cGUiIDogIkxpdGVyYWwiDQogICAgICAgICAgICAgICAgICAgICAgICAgICB9LCB7DQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAibG9jYWxJZCIgOiAiMzMyIiwNCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICJsb2NhdG9yIiA6ICI0MTo1MC00MTo2MCIsDQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAidmFsdWVUeXBlIiA6ICJ7dXJuOmhsNy1vcmc6ZWxtLXR5cGVzOnIxfVN0cmluZyIsDQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAidmFsdWUiIDogImNvcnJlY3RlZCIsDQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAidHlwZSIgOiAiTGl0ZXJhbCINCiAgICAgICAgICAgICAgICAgICAgICAgICAgIH0gXQ0KICAgICAgICAgICAgICAgICAgICAgICAgfSBdDQogICAgICAgICAgICAgICAgICAgICB9IF0NCiAgICAgICAgICAgICAgICAgIH0sIHsNCiAgICAgICAgICAgICAgICAgICAgICJsb2NhbElkIiA6ICIzNDIiLA0KICAgICAgICAgICAgICAgICAgICAgImxvY2F0b3IiIDogIjQyOjExLTQyOjU0IiwNCiAgICAgICAgICAgICAgICAgICAgICJ0eXBlIiA6ICJJbiIsDQogICAgICAgICAgICAgICAgICAgICAic2lnbmF0dXJlIiA6IFsgXSwNCiAgICAgICAgICAgICAgICAgICAgICJvcGVyYW5kIiA6IFsgew0KICAgICAgICAgICAgICAgICAgICAgICAgImxvY2FsSWQiIDogIjM0NSIsDQogICAgICAgICAgICAgICAgICAgICAgICAidHlwZSIgOiAiQ2FzZSIsDQogICAgICAgICAgICAgICAgICAgICAgICAiY2FzZUl0ZW0iIDogWyB7DQogICAgICAgICAgICAgICAgICAgICAgICAgICAibG9jYWxJZCIgOiAiMzQ2IiwNCiAgICAgICAgICAgICAgICAgICAgICAgICAgICJ3aGVuIiA6IHsNCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICJsb2NhbElkIiA6ICIzNDciLA0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgImlzVHlwZSIgOiAie2h0dHA6Ly9obDcub3JnL2ZoaXJ9ZGF0ZVRpbWUiLA0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgInR5cGUiIDogIklzIiwNCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICJzaWduYXR1cmUiIDogWyBdLA0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIm9wZXJhbmQiIDogew0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgImxvY2FsSWQiIDogIjMzNyIsDQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAibG9jYXRvciIgOiAiNDI6MTEtNDI6MjYiLA0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgInBhdGgiIDogImVmZmVjdGl2ZSIsDQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAic2NvcGUiIDogIlJlc3VsdCIsDQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAidHlwZSIgOiAiUHJvcGVydHkiDQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICB9DQogICAgICAgICAgICAgICAgICAgICAgICAgICB9LA0KICAgICAgICAgICAgICAgICAgICAgICAgICAgInRoZW4iIDogew0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgImxvY2FsSWQiIDogIjM0NCIsDQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAibmFtZSIgOiAiVG9EYXRlVGltZSIsDQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAibGlicmFyeU5hbWUiIDogIkZISVJIZWxwZXJzIiwNCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICJ0eXBlIiA6ICJGdW5jdGlvblJlZiIsDQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAic2lnbmF0dXJlIiA6IFsgXSwNCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICJvcGVyYW5kIiA6IFsgew0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgImxvY2FsSWQiIDogIjM0MyIsDQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAiYXNUeXBlIiA6ICJ7aHR0cDovL2hsNy5vcmcvZmhpcn1kYXRlVGltZSIsDQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAidHlwZSIgOiAiQXMiLA0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgInNpZ25hdHVyZSIgOiBbIF0sDQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAib3BlcmFuZCIgOiB7DQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAibG9jYWxJZCIgOiAiMzM3IiwNCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICJsb2NhdG9yIiA6ICI0MjoxMS00MjoyNiIsDQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAicGF0aCIgOiAiZWZmZWN0aXZlIiwNCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICJzY29wZSIgOiAiUmVzdWx0IiwNCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICJ0eXBlIiA6ICJQcm9wZXJ0eSINCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIH0NCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIH0gXQ0KICAgICAgICAgICAgICAgICAgICAgICAgICAgfQ0KICAgICAgICAgICAgICAgICAgICAgICAgfSwgew0KICAgICAgICAgICAgICAgICAgICAgICAgICAgImxvY2FsSWQiIDogIjM0OCIsDQogICAgICAgICAgICAgICAgICAgICAgICAgICAid2hlbiIgOiB7DQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAibG9jYWxJZCIgOiAiMzQ5IiwNCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICJpc1R5cGUiIDogIntodHRwOi8vaGw3Lm9yZy9maGlyfWluc3RhbnQiLA0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgInR5cGUiIDogIklzIiwNCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICJzaWduYXR1cmUiIDogWyBdLA0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIm9wZXJhbmQiIDogew0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgImxvY2FsSWQiIDogIjMzNyIsDQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAibG9jYXRvciIgOiAiNDI6MTEtNDI6MjYiLA0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgInBhdGgiIDogImVmZmVjdGl2ZSIsDQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAic2NvcGUiIDogIlJlc3VsdCIsDQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAidHlwZSIgOiAiUHJvcGVydHkiDQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICB9DQogICAgICAgICAgICAgICAgICAgICAgICAgICB9LA0KICAgICAgICAgICAgICAgICAgICAgICAgICAgInRoZW4iIDogew0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgImxvY2FsSWQiIDogIjM1MSIsDQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAibmFtZSIgOiAiVG9EYXRlVGltZSIsDQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAibGlicmFyeU5hbWUiIDogIkZISVJIZWxwZXJzIiwNCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICJ0eXBlIiA6ICJGdW5jdGlvblJlZiIsDQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAic2lnbmF0dXJlIiA6IFsgXSwNCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICJvcGVyYW5kIiA6IFsgew0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgImxvY2FsSWQiIDogIjM1MCIsDQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAiYXNUeXBlIiA6ICJ7aHR0cDovL2hsNy5vcmcvZmhpcn1pbnN0YW50IiwNCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICJ0eXBlIiA6ICJBcyIsDQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAic2lnbmF0dXJlIiA6IFsgXSwNCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICJvcGVyYW5kIiA6IHsNCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICJsb2NhbElkIiA6ICIzMzciLA0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgImxvY2F0b3IiIDogIjQyOjExLTQyOjI2IiwNCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICJwYXRoIiA6ICJlZmZlY3RpdmUiLA0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgInNjb3BlIiA6ICJSZXN1bHQiLA0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgInR5cGUiIDogIlByb3BlcnR5Ig0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgfQ0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgfSBdDQogICAgICAgICAgICAgICAgICAgICAgICAgICB9DQogICAgICAgICAgICAgICAgICAgICAgICB9IF0sDQogICAgICAgICAgICAgICAgICAgICAgICAiZWxzZSIgOiB7DQogICAgICAgICAgICAgICAgICAgICAgICAgICAibG9jYWxJZCIgOiAiMzUyIiwNCiAgICAgICAgICAgICAgICAgICAgICAgICAgICJ0eXBlIiA6ICJOdWxsIg0KICAgICAgICAgICAgICAgICAgICAgICAgfQ0KICAgICAgICAgICAgICAgICAgICAgfSwgew0KICAgICAgICAgICAgICAgICAgICAgICAgImxvY2FsSWQiIDogIjMzOCIsDQogICAgICAgICAgICAgICAgICAgICAgICAibG9jYXRvciIgOiAiNDI6MzUtNDI6NTQiLA0KICAgICAgICAgICAgICAgICAgICAgICAgIm5hbWUiIDogIk1lYXN1cmVtZW50IFBlcmlvZCIsDQogICAgICAgICAgICAgICAgICAgICAgICAidHlwZSIgOiAiUGFyYW1ldGVyUmVmIg0KICAgICAgICAgICAgICAgICAgICAgfSBdDQogICAgICAgICAgICAgICAgICB9IF0NCiAgICAgICAgICAgICAgIH0NCiAgICAgICAgICAgIH0NCiAgICAgICAgIH0sIHsNCiAgICAgICAgICAgICJsb2NhbElkIiA6ICIzNTYiLA0KICAgICAgICAgICAgImxvY2F0b3IiIDogIjQ0OjEtNDU6NTIiLA0KICAgICAgICAgICAgIm5hbWUiIDogIk51bWVyYXRvciIsDQogICAgICAgICAgICAiY29udGV4dCIgOiAiUGF0aWVudCIsDQogICAgICAgICAgICAiYWNjZXNzTGV2ZWwiIDogIlB1YmxpYyIsDQogICAgICAgICAgICAiYW5ub3RhdGlvbiIgOiBbIHsNCiAgICAgICAgICAgICAgICJ0eXBlIiA6ICJBbm5vdGF0aW9uIiwNCiAgICAgICAgICAgICAgICJzIiA6IHsNCiAgICAgICAgICAgICAgICAgICJyIiA6ICIzNTYiLA0KICAgICAgICAgICAgICAgICAgInMiIDogWyB7DQogICAgICAgICAgICAgICAgICAgICAidmFsdWUiIDogWyAiIiwiZGVmaW5lICIsIlwiTnVtZXJhdG9yXCIiLCI6XG4gICIgXQ0KICAgICAgICAgICAgICAgICAgfSwgew0KICAgICAgICAgICAgICAgICAgICAgInIiIDogIjM1NyIsDQogICAgICAgICAgICAgICAgICAgICAicyIgOiBbIHsNCiAgICAgICAgICAgICAgICAgICAgICAgICJ2YWx1ZSIgOiBbICJleGlzdHMgIiBdDQogICAgICAgICAgICAgICAgICAgICB9LCB7DQogICAgICAgICAgICAgICAgICAgICAgICAiciIgOiAiMzU4IiwNCiAgICAgICAgICAgICAgICAgICAgICAgICJzIiA6IFsgew0KICAgICAgICAgICAgICAgICAgICAgICAgICAgInZhbHVlIiA6IFsgIigiIF0NCiAgICAgICAgICAgICAgICAgICAgICAgIH0sIHsNCiAgICAgICAgICAgICAgICAgICAgICAgICAgICJyIiA6ICIzNTgiLA0KICAgICAgICAgICAgICAgICAgICAgICAgICAgInMiIDogWyB7DQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAidmFsdWUiIDogWyAiXCJDT1ZJRC0xOSBDb21tdW5pY2FibGUgRGlzZWFzZSBTY3JlZW5pbmdcIiIgXQ0KICAgICAgICAgICAgICAgICAgICAgICAgICAgfSBdDQogICAgICAgICAgICAgICAgICAgICAgICB9LCB7DQogICAgICAgICAgICAgICAgICAgICAgICAgICAidmFsdWUiIDogWyAiKSIgXQ0KICAgICAgICAgICAgICAgICAgICAgICAgfSBdDQogICAgICAgICAgICAgICAgICAgICB9IF0NCiAgICAgICAgICAgICAgICAgIH0gXQ0KICAgICAgICAgICAgICAgfQ0KICAgICAgICAgICAgfSBdLA0KICAgICAgICAgICAgImV4cHJlc3Npb24iIDogew0KICAgICAgICAgICAgICAgImxvY2FsSWQiIDogIjM1NyIsDQogICAgICAgICAgICAgICAibG9jYXRvciIgOiAiNDU6My00NTo1MiIsDQogICAgICAgICAgICAgICAidHlwZSIgOiAiRXhpc3RzIiwNCiAgICAgICAgICAgICAgICJzaWduYXR1cmUiIDogWyBdLA0KICAgICAgICAgICAgICAgIm9wZXJhbmQiIDogew0KICAgICAgICAgICAgICAgICAgImxvY2FsSWQiIDogIjM1OCIsDQogICAgICAgICAgICAgICAgICAibG9jYXRvciIgOiAiNDU6MTAtNDU6NTIiLA0KICAgICAgICAgICAgICAgICAgIm5hbWUiIDogIkNPVklELTE5IENvbW11bmljYWJsZSBEaXNlYXNlIFNjcmVlbmluZyIsDQogICAgICAgICAgICAgICAgICAidHlwZSIgOiAiRXhwcmVzc2lvblJlZiINCiAgICAgICAgICAgICAgIH0NCiAgICAgICAgICAgIH0NCiAgICAgICAgIH0gXQ0KICAgICAgfQ0KICAgfQ0KfQ==&quot;/&gt;
+  &lt;/<a href="http://hl7.org/fhir/R4/library.html#Library.content">content</a>&gt;
+&lt;/<a href="http://hl7.org/fhir/R4/library.html#Library">Library</a>&gt;</code></pre>
+
+
+  <!-- insert notes if present -->
+  
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+  <script type="text/javascript" src="assets/js/flags.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+
+  <script type="text/javascript" src="assets/js/togglechanges.js"> </script>
+
+  <script type="text/javascript" src="assets/js/requirements-table.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container" data-fhir="generated">  <!-- container -->
+
+      <div style="background-color:var(--footer-nav-bg-color)">
+        <table style="width:100%">
+          <tbody>
+            <tr>
+              <td style="text-align:var(--ig-left);">&#xA0;
+
+                <a href="Library-example-testing.html">&lt; zurück</a>
+
+              </td>
+              <td style="text-align:center">
+                <a href="#top">Anfang</a>
+              </td>
+              <td style="text-align:var(--ig-right);">&#xA0;
+
+                <a href="Library-example.json.html">weiter ></a>
+
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="inner-wrapper">
+        <p>
+
+
+
+          IG © 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="http://hl7.org/Special/committees/[something]">HL7 International - [Some] Work Group</a>.  
+          Package example.fhir.uv.myig#0.2.0 basiert auf <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Erstellt 
+  <span title="2026-03-10 09:13:00 -0700">
+    2026-03-10
+  </span>
+
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Inhaltsverzeichnis</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="../qa.html">QA-Bericht</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

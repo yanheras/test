@@ -1,0 +1,77 @@
+# example.fhir.uv.myig#0.2.0: Your User Friendly Name for MyIG Here(en)
+
+## Pages
+
+* [MyIG Home Page](en/index.md)
+* [Example Server](en/ActorDefinition-example-testing.md)
+* [Example Server](en/ActorDefinition-example.ai.md)
+* [](en/ActorDefinition-example.change.history.md)
+* [Example Server](en/ActorDefinition-example.md)
+* [Example Server - JSON Representation](en/ActorDefinition-example.json.md)
+* [Example Server - TTL Representation](en/ActorDefinition-example.ttl.md)
+* [Example Server - XML Representation](en/ActorDefinition-example.xml.md)
+* [Artifacts Summary](en/artifacts.md)
+* [Background](en/background.md)
+* [IG Change History](en/changes.md)
+* [Useful Downloads](en/downloads.md)
+* [Fragments](en/fragments.md)
+* [Detailed Specification](en/spec.md)
+* [Spec sub-page](en/spec2.md)
+
+## Resources
+
+### CodeSystems
+
+* [CodeSystem fake](en/CodeSystem-cs-fake.md)
+
+### ValueSets
+
+* [ValueSet fake](en/ValueSet-valueset-fake.md)
+* [ValueSet with no code-system](en/ValueSet-valueset-no-codesystem.md)
+
+### Logicals
+
+* [My Logical Model](en/StructureDefinition-MyLogical.md)
+
+### Resource Profiles
+
+* [My Observation Profile](en/StructureDefinition-myObservation.md)
+* [My Favorite Patient Profile](en/StructureDefinition-mypatient.md)
+* [Some Practitioner profile](en/StructureDefinition-mypractitioner.md)
+
+### Extensions
+
+* [My awesome extension](en/StructureDefinition-ext-myExtension.md)
+
+### Basics
+
+* [example](en/Basic-example.md)
+
+### Binaries
+
+* [example](en/Binary-example.md)
+* [image-example](en/Binary-image-example.md)
+
+### Bundles
+
+* [h1](en/Bundle-h1.md)
+
+### ImplementationGuides
+
+* [Your User Friendly Name for MyIG Here](en/ImplementationGuide-example.fhir.uv.myig.md)
+
+### Libraries
+
+* [Example Library Image](en/Library-example-image.md)
+* [Example Library](en/Library-example-sql.md)
+* [Example CQL Library](en/Library-example.md)
+
+### Questionnaires
+
+* [Cancer Quality Forum Questionnaire 2012](en/Questionnaire-example.md)
+
+### Examples
+
+* [logical-example (Binary)](en/Binary-logical-example.md)
+* [example (Observation)](en/Observation-example.md)
+* [example (Patient)](en/Patient-example.md)

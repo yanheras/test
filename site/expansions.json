@@ -1,0 +1,222 @@
+{
+  "resourceType" : "Bundle",
+  "id" : "aa9f0df6-d2ae-4ebe-8519-2de000545a85",
+  "meta" : {
+    "lastUpdated" : "2026-03-10T09:13:26.263-07:00"
+  },
+  "type" : "collection",
+  "entry" : [{
+    "fullUrl" : "http://somewhere.org/fhir/uv/myig/ValueSet/valueset-fake",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" data-fhir=\"generated\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion performed internally based on <a href=\"CodeSystem-cs-fake.html\">codesystem CodeSystem fake v0.2.0 (CodeSystem)</a><span class=\"copy-text-inline\"><button data-clipboard-text=\"http://somewhere.org/fhir/uv/myig/CodeSystem/cs-fake|0.2.0\" title=\"Click to Copy URL\" class=\"btn-copy\"> </button></span></p><p>This value set contains 1 concepts</p><table class=\"codes\" data-fhir=\"generated\"><tr><td><b>System</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display (en)</b></td><td><b>JSON</b></td><td><b>XML</b></td></tr><tr><td><a name=\"x-http://somewhere.org/fhir/uv/myig/CodeSystem/cs-fake-01\"> </a><code>http://somewhere.org/fhir/uv/myig/CodeSystem/cs-fake</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-cs-fake.html#cs-fake-01\">01</a></td><td>VS1</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://somewhere.org/fhir/uv/myig/CodeSystem/cs-fake&quot;, &quot;version&quot;: &quot;0.2.0&quot;, &quot;code&quot;: &quot;01&quot;, &quot;display&quot;: &quot;VS1&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://somewhere.org/fhir/uv/myig/CodeSystem/cs-fake&quot;&gt;&lt;version value=&quot;0.2.0&quot;&gt;&lt;code value=&quot;01&quot;&gt;&lt;display value=&quot;VS1&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr></table></div>"
+      },
+      "url" : "http://somewhere.org/fhir/uv/myig/ValueSet/valueset-fake",
+      "version" : "0.2.0",
+      "name" : "ValueSetFake",
+      "title" : "ValueSet fake",
+      "status" : "draft",
+      "experimental" : true,
+      "date" : "2015-06-22",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "001"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:d08930d0-141d-40c7-9a8e-65522e9dff49",
+        "timestamp" : "2026-03-10T09:16:36-07:00",
+        "total" : 1,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "displayLanguage",
+          "valueCode" : "en"
+        },
+        {
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://somewhere.org/fhir/uv/myig/CodeSystem/cs-fake|0.2.0"
+        }],
+        "contains" : [{
+          "system" : "http://somewhere.org/fhir/uv/myig/CodeSystem/cs-fake",
+          "code" : "01",
+          "display" : "VS1"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://somewhere.org/fhir/uv/myig/ValueSet/valueset-fake",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" data-fhir=\"generated\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion performed internally based on <a href=\"CodeSystem-cs-fake.html\">codesystem CodeSystem fake v0.2.0 (CodeSystem)</a><span class=\"copy-text-inline\"><button data-clipboard-text=\"http://somewhere.org/fhir/uv/myig/CodeSystem/cs-fake|0.2.0\" title=\"Click to Copy URL\" class=\"btn-copy\"> </button></span></p><p>This value set contains 1 concepts</p><table class=\"codes\" data-fhir=\"generated\"><tr><td><b>System</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display (en)</b></td><td><b>JSON</b></td><td><b>XML</b></td></tr><tr><td><a name=\"x-http://somewhere.org/fhir/uv/myig/CodeSystem/cs-fake-01\"> </a><code>http://somewhere.org/fhir/uv/myig/CodeSystem/cs-fake</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-cs-fake.html#cs-fake-01\">01</a></td><td>VS1</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://somewhere.org/fhir/uv/myig/CodeSystem/cs-fake&quot;, &quot;version&quot;: &quot;0.2.0&quot;, &quot;code&quot;: &quot;01&quot;, &quot;display&quot;: &quot;VS1&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://somewhere.org/fhir/uv/myig/CodeSystem/cs-fake&quot;&gt;&lt;version value=&quot;0.2.0&quot;&gt;&lt;code value=&quot;01&quot;&gt;&lt;display value=&quot;VS1&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr></table></div>"
+      },
+      "url" : "http://somewhere.org/fhir/uv/myig/ValueSet/valueset-fake",
+      "version" : "0.2.0",
+      "name" : "ValueSetFake",
+      "title" : "ValueSet fake",
+      "status" : "draft",
+      "experimental" : true,
+      "date" : "2015-06-22",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "001"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:d08930d0-141d-40c7-9a8e-65522e9dff49",
+        "timestamp" : "2026-03-10T09:16:36-07:00",
+        "total" : 1,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "displayLanguage",
+          "valueCode" : "en"
+        },
+        {
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://somewhere.org/fhir/uv/myig/CodeSystem/cs-fake|0.2.0"
+        }],
+        "contains" : [{
+          "system" : "http://somewhere.org/fhir/uv/myig/CodeSystem/cs-fake",
+          "code" : "01",
+          "display" : "VS1"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://somewhere.org/fhir/uv/myig/ValueSet/valueset-fake",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" data-fhir=\"generated\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion performed internally based on <a href=\"CodeSystem-cs-fake.html\">codesystem CodeSystem fake v0.2.0 (CodeSystem)</a><span class=\"copy-text-inline\"><button data-clipboard-text=\"http://somewhere.org/fhir/uv/myig/CodeSystem/cs-fake|0.2.0\" title=\"Click to Copy URL\" class=\"btn-copy\"> </button></span></p><p>This value set contains 1 concepts</p><table class=\"codes\" data-fhir=\"generated\"><tr><td><b>System</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display (de)</b></td><td><b>JSON</b></td><td><b>XML</b></td></tr><tr><td><a name=\"x-http://somewhere.org/fhir/uv/myig/CodeSystem/cs-fake-01\"> </a><code>http://somewhere.org/fhir/uv/myig/CodeSystem/cs-fake</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-cs-fake.html#cs-fake-01\">01</a></td><td/><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://somewhere.org/fhir/uv/myig/CodeSystem/cs-fake&quot;, &quot;version&quot;: &quot;0.2.0&quot;, &quot;code&quot;: &quot;01&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://somewhere.org/fhir/uv/myig/CodeSystem/cs-fake&quot;&gt;&lt;version value=&quot;0.2.0&quot;&gt;&lt;code value=&quot;01&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr></table></div>"
+      },
+      "url" : "http://somewhere.org/fhir/uv/myig/ValueSet/valueset-fake",
+      "version" : "0.2.0",
+      "name" : "ValueSetFake",
+      "title" : "ValueSet fake",
+      "status" : "draft",
+      "experimental" : true,
+      "date" : "2015-06-22",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "001"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:969c0b20-7c0d-41ca-9f8a-5f59dc512063",
+        "timestamp" : "2026-03-10T09:16:40-07:00",
+        "total" : 1,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "displayLanguage",
+          "valueCode" : "de"
+        },
+        {
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://somewhere.org/fhir/uv/myig/CodeSystem/cs-fake|0.2.0"
+        }],
+        "contains" : [{
+          "system" : "http://somewhere.org/fhir/uv/myig/CodeSystem/cs-fake",
+          "code" : "01"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://somewhere.org/fhir/uv/myig/ValueSet/valueset-fake",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" data-fhir=\"generated\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion effectuée en interne basée sur <a href=\"CodeSystem-cs-fake.html\">codesystem CodeSystem fake v0.2.0 (CodeSystem)</a><span class=\"copy-text-inline\"><button data-clipboard-text=\"http://somewhere.org/fhir/uv/myig/CodeSystem/cs-fake|0.2.0\" title=\"Cliquer pour copier l'URL\" class=\"btn-copy\"> </button></span></p><p>Ce jeu de valeur (ValueSet) contient 1 concepts</p><table class=\"codes\" data-fhir=\"generated\"><tr><td><b>Système</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Affichage (fr)</b></td><td><b>JSON</b></td><td><b>XML</b></td></tr><tr><td><a name=\"x-http://somewhere.org/fhir/uv/myig/CodeSystem/cs-fake-01\"> </a><code>http://somewhere.org/fhir/uv/myig/CodeSystem/cs-fake</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-cs-fake.html#cs-fake-01\">01</a></td><td/><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://somewhere.org/fhir/uv/myig/CodeSystem/cs-fake&quot;, &quot;version&quot;: &quot;0.2.0&quot;, &quot;code&quot;: &quot;01&quot;}\" title=\"Cliquer pour copier en tant que Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://somewhere.org/fhir/uv/myig/CodeSystem/cs-fake&quot;&gt;&lt;version value=&quot;0.2.0&quot;&gt;&lt;code value=&quot;01&quot;&gt;&lt;/coding&gt;\" title=\"Cliquer pour copier en tant que Coding\" class=\"btn-copy\"> </button></span></td></tr></table></div>"
+      },
+      "url" : "http://somewhere.org/fhir/uv/myig/ValueSet/valueset-fake",
+      "version" : "0.2.0",
+      "name" : "ValueSetFake",
+      "title" : "ValueSet fake",
+      "status" : "draft",
+      "experimental" : true,
+      "date" : "2015-06-22",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "001"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:a5c5016b-5d71-49a1-92c6-386bcd7db76a",
+        "timestamp" : "2026-03-10T09:16:42-07:00",
+        "total" : 1,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "displayLanguage",
+          "valueCode" : "fr"
+        },
+        {
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://somewhere.org/fhir/uv/myig/CodeSystem/cs-fake|0.2.0"
+        }],
+        "contains" : [{
+          "system" : "http://somewhere.org/fhir/uv/myig/CodeSystem/cs-fake",
+          "code" : "01"
+        }]
+      }
+    }
+  }]
+}
